@@ -1,6 +1,7 @@
 #+TITLE: Core Vocabulary Directory
 
 * Introduction
+Original code was taken from [mdr/github].
 
 * Installation
 
