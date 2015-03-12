@@ -1,0 +1,119 @@
+{
+		"name": "DCat" ,
+		"children": [
+				{ "name": "at.md" ,
+					"children": [
+							{ "name": "Dataset" ,
+								"children": [
+										{
+												"name": "adms:contactPoint/email" ,"children": [
+														{"name": "maintainer_email" ,"size": 1000}]
+										},
+										{
+												"name": "adms:contactPoint/fn" ,"children": [
+														{"name": "maintainer" ,"size": 1000}]
+										},
+										{
+												"name": "dcat:keyword" ,"children": [
+														{"name": "tags/name" ,"size": 100}]
+										},
+										{
+												"name": "dcat:theme" ,"children": [
+														{"name": "extras/key[categorization]-value" ,"size": 100}]
+										},
+										{
+												"name": "dct:description" ,"children": [
+														{"name": "notes" ,"size": 100}]
+										},
+										{
+												"name": "dct:title" ,"children": [
+														{"name": "title" ,"size": 100}]
+										}
+								] },
+							{ "name": "Distribution" ,
+								"children": [
+										{
+												"name": "dcat:accessURL" ,"children": [
+														{"name": "resources/url" ,"size": 100}]
+										},
+										{
+												"name": "dct:description" ,"children": [
+														{"name": "resources/description" ,"size": 100}]
+										},
+										{
+												"name": "dct:format" ,"children": [
+														{"name": "resources/format" ,"size": 100}]
+										},
+										{
+												"name": "dct:issued" ,"children": [
+														{"name": "resources/revision_timestamp" ,"size": 100}]
+										},
+										{
+												"name": "dct:license" ,"children": [
+														{"name": "license_url" ,"size": 100}]
+										},
+										{
+												"name": "dct:title" ,"children": [
+														{"name": "resources/name" ,"size": 100}]
+										}
+								] }
+					] },
+				{ "name": "de.md" ,
+					"children": [
+							{ "name": "Dataset" ,
+								"children": [
+										{
+												"name": "adms:contactPoint/email" ,"children": [
+														{"name": "maintainer_email" ,"size": 100}]
+										},
+										{
+												"name": "adms:contactPoint/fn" ,"children": [
+														{"name": "maintainer" ,"size": 100}]
+										},
+										{
+												"name": "dcat:keyword" ,"children": [
+														{"name": "tags/name" ,"size": 100}]
+										},
+										{
+												"name": "dcat:theme" ,"children": [
+														{"name": "extras/key[categorization]-value" ,"size": 100}]
+										},
+										{
+												"name": "dct:description" ,"children": [
+														{"name": "notes" ,"size": 100}]
+										},
+										{
+												"name": "dct:title" ,"children": [
+														{"name": "title" ,"size": 100}]
+										}
+								]
+							},
+							{ "name": "Distribution" ,
+								"children": [
+										{
+												"name": "dcat:accessURL" ,"children": [
+														{"name": "resources/url" ,"size": 100}]
+										},
+										{
+												"name": "dct:description" ,"children": [
+														{"name": "resources/description" ,"size": 100}]
+										},
+										{
+												"name": "dct:format" ,"children": [
+														{"name": "resources/format" ,"size": 100}]
+										},
+										{
+												"name": "dct:issued" ,"children": [
+														{"name": "resources/revision_timestamp" ,"size": 100}]
+										},
+										{
+												"name": "dct:license" ,"children": [
+														{"name": "license_url" ,"size": 100}]
+										},
+										{
+												"name": "dct:title" ,"children": [
+														{"name": "resources/name" ,"size": 100}]
+										}
+								] } 
+					] }
+		] }

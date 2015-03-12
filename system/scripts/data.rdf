@@ -1,0 +1,169 @@
+@prefix mdr: <http://mdr.semic.eu/def#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://localhost:8890/id/mycontext/br/BR1> a mdr:BusinessRule ;
+    mdr:affects <http://localhost:8890/id/mycontext/dec/IR4> ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R3> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The business activity must refer to a NACE activity"@en .
+
+<http://localhost:8890/id/mycontext/br/BR2> a mdr:BusinessRule ;
+    mdr:affects <http://localhost:8890/id/mycontext/dec/IR7> ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R1> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The legal form of the business must be recognized by the business' country of origin"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR1> a mdr:InformationRequirement ;
+    rdfs:label "Request identifier"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R5> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Identifier of the business activity registration request"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR10> a mdr:InformationRequirement ;
+    rdfs:label "Requestor identifier"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R2> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Unique identifier of the person that is creating the business activity registration request."@en .
+
+<http://localhost:8890/id/mycontext/ir/IR2> a mdr:InformationRequirement ;
+    rdfs:label "Request date issue"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R5> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Date of issuance of the business activity registration request"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR3> a mdr:InformationRequirement ;
+    rdfs:label "Request PSC issuer"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R5> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Identifier of the PSC that collected and issued the business activity registration request"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR4> a mdr:InformationRequirement ;
+    rdfs:label "Business activity"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R3> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Textual description of the activity performed by the legal entity that is requested for registration"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR5> a mdr:InformationRequirement ;
+    rdfs:label "Business activity code"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R3> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Activity performed by the legal entity that is requested for registration, coded"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR6> a mdr:InformationRequirement ;
+    rdfs:label "Business name"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R1> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Name of the legal entity that is requesting the business activity registration request."@en .
+
+<http://localhost:8890/id/mycontext/ir/IR7> a mdr:InformationRequirement ;
+    rdfs:label "Business legal form"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R1> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Type of the legal entity that is requesting the business activity registration request."@en .
+
+<http://localhost:8890/id/mycontext/ir/IR8> a mdr:InformationRequirement ;
+    rdfs:label "Business country"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R1> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The country of origin of the business entity of which the activity registration is requested"@en .
+
+<http://localhost:8890/id/mycontext/ir/IR9> a mdr:InformationRequirement ;
+    rdfs:label "Requestor name"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/requirement/R2> ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "Name of the person that is creating the business activity registration request on behalf of a business entity"@en .
+
+<http://localhost:8890/id/mycontext/requirement/R4> a mdr:HighLevelRequirement ;
+    rdfs:label "Documents"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G1>,
+        <http://localhost:8890/id/mycontext/goal/G2>,
+        <http://localhost:8890/id/mycontext/goal/G3> ;
+    mdr:rationale "The receiving PSC has to be able to identify unstructured documents to automate the processing of the request. "@en ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The provided documents have to be identified and their purpose has to be described"@en .
+
+<http://localhost:8890/id/mycontext/requirement/R2> a mdr:HighLevelRequirement ;
+    rdfs:label "Requestor"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G4> ;
+    mdr:rationale "The receiving PSC has to ensure the requestor is capable of requesting the service on behalf of the business."@en ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The person requesting the service on behalf of the business has to be identified"@en .
+
+<http://localhost:8890/id/mycontext/goal/G3> a mdr:Goal ;
+    rdfs:label "Decrease Costs and save time"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    rdfs:comment "To enable competent authorities to check for validity and suitability of the information and supporting documents submitted by the businesses."@en .
+
+<http://localhost:8890/id/mycontext/goal/G4> a mdr:Goal ;
+    rdfs:label "Improve Security"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    rdfs:comment "To increase the security and reliability of the business activity registration transactions"@en .
+
+<http://localhost:8890/id/mycontext/requirement/R3> a mdr:HighLevelRequirement ;
+    rdfs:label "Business activity"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G1>,
+        <http://localhost:8890/id/mycontext/goal/G2> ;
+    mdr:rationale "The receiving PSC has to know for which business activity the requester is registering for."@en ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The business activity to be registered has to be identified"@en .
+
+<http://localhost:8890/id/mycontext/requirement/R5> a mdr:HighLevelRequirement ;
+    rdfs:label "Identification"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G1>,
+        <http://localhost:8890/id/mycontext/goal/G2>,
+        <http://localhost:8890/id/mycontext/goal/G3> ;
+    mdr:rationale "The business request has to be uniquely identifiable, with information about its issuance."@en ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The business request has to be identified"@en .
+
+<http://localhost:8890/id/mycontext/goal/G2> a mdr:Goal ;
+    rdfs:label "Improve Management Efficacy"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    rdfs:comment "To harmonize the business activity registration both at European level and at national level."@en .
+
+<http://localhost:8890/id/mycontext/requirement/R1> a mdr:HighLevelRequirement ;
+    rdfs:label "Business information"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G1>,
+        <http://localhost:8890/id/mycontext/goal/G4> ;
+    mdr:rationale "The receiving PSC needs to know which business requests the business registration activity to be able to understand the documents he has to receive."@en ;
+    mdr:transaction <http://localhost:8890/id/mycontext/transaction/T1> ;
+    skos:definition "The business requesting the registration of the activity has to be identified"@en .
+
+<http://localhost:8890/id/mycontext/goal/G1> a mdr:Goal ;
+    rdfs:label "Improve Business Process Performance"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    rdfs:comment "To simplify the business activity registration procedure both for the businesses and competent authorities"@en .
+
+<http://localhost:8890/id/mycontext/transaction/T1> a mdr:Transaction ;
+    rdfs:label "Business Activity Request"@en ;
+    mdr:context <http://localhost:8890/id/mycontext/> ;
+    mdr:implements <http://localhost:8890/id/mycontext/goal/G1>,
+        <http://localhost:8890/id/mycontext/goal/G2>,
+        <http://localhost:8890/id/mycontext/goal/G3>,
+        <http://localhost:8890/id/mycontext/goal/G4> ;
+    rdfs:comment "The request for the registration of a business activity by the business person"@en .
+
+<http://localhost:8890/id/mycontext/> a mdr:Context .
+
+

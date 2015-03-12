@@ -1,0 +1,130 @@
+@prefix mdr: <http://mdr.semic.eu/def#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+
+@base <http://vocabs.tenforce.com/mdr/id/regorg/> .
+
+<> a mdr:Context .
+
+
+###############################################################################
+# Object classes
+###############################################################################
+
+<class/RegisteredOrganization> a mdr:ObjectClass ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:RegisteredOrganization ;
+    rdfs:label "Registered Organization"@en ;
+    skos:definition "rov:RegisteredOrganization is the key class for the Registered Organization vocabulary and represents an organization that is legally registered. In many countries there is a single registry although in others, such as Spain and Germany, multiple registries exist. A Registered Organization is able to trade, is legally liable for its actions, accounts, tax affairs etc. Legal entity status is conferred by the act of registration cf. org:FormalOrganization that applies to any legal entity, including those created by other legal means. This makes registered organizations distinct from the broader concept of organizations, groups or, in some jurisdictions, sole traders. Many organizations exist that are not legal entities yet to the outside world they have staff, hierarchies, locations etc. Other organizations exist that are an umbrella for several legal entities (universities are often good examples of this). This vocabulary is concerned solely with registered organizations. In RDF, Registered Organization is a sub class of the Organization Ontology's org:FormalOrganization which is itself a sub class of the more general 'Agent' class found in FOAF and Dublin Core that does encompass organizations, natural persons, groups etc. - i.e. an Agent is any entity that is able to carry out actions."@en .
+
+<class/Identifier> a mdr:ObjectClass ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI adms:Identifier ;
+    rdfs:label "Identifier"@en ;
+    skos:definition "This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of Core Components Data Type Catalogue Version 3.1 (http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf) In RDF this is expressed using the following properties: - the content string should be provided using skos:notation, datatyped with the identifier scheme (including the version number if appropriate); - use dcterms:creator to link to a class describing the agency that manages the identifier scheme or adms:schemaAgency to provide the name as a literal. Although not part of the ADMS conceptual model, it may be useful to provide further properties to the Identifier class such as dcterms:created to provide the date on which the identifier was issued."@en .
+
+<class/Agent> a mdr:ObjectClass ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI dcterms:Agent ;
+    rdfs:label "Agent"@en ;
+    skos:definition "A resource that acts or has the power to act."@en ;
+    rdfs:comment "Examples of Agent include person, organization, and software agent."@en .
+
+###############################################################################
+# Properties
+###############################################################################
+
+<property/legalName> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:legalName ;
+    rdfs:label "legal name"@en ;
+    mdr:representation rdfs:Literal .
+
+<property/orgType> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:orgType ;
+	rdfs:label "company type"@en ;
+	mdr:representation skos:Concept .
+
+<property/orgStatus> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:orgStatus ;
+	rdfs:label "company status"@en ;
+	mdr:representation skos:Concept .
+
+<property/orgActivity> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:orgActivity ;
+	rdfs:label "company activity"@en ;
+	mdr:representation skos:Concept .
+
+<property/registration> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:registration ;
+	rdfs:label "registration"@en ;
+	mdr:representation <class/Identifier> .
+
+<property/hasRegisteredOrganization> a mdr:Property ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:hasURI rov:hasRegisteredOrganization ;
+	rdfs:label "registered organization"@en ;
+    mdr:representation <class/RegisteredOrganization> .
+
+
+###############################################################################
+# Data Elements
+###############################################################################
+
+<element/RegisteredOrganizationLegalName> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/RegisteredOrganization> ;
+    mdr:property <property/legalName> ;
+    skos:definition "The legal name of the business. A business might have more than one legal name, particularly in countries with more than one official language. In such cases the language of the string should be identified."@en .
+
+<element/RegisteredOrganizationType> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/RegisteredOrganization> ;
+    mdr:property <property/orgType> ;
+	skos:definition "This property records the type of organization. Familiar types are SA, PLC, LLC, GmbH etc. Each jurisdiction will have a limited set of recognized company types and these should be used in a consistent manner using a SKOS Concept Scheme. rov:orgType is a sub class of org:classification which has a range of skos:Concept."@en .
+
+<element/RegisteredOrganizationActivity> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/RegisteredOrganization> ;
+    mdr:property <property/orgActivity> ;
+	skos:definition "The activity of a company should be recorded using a controlled vocabulary expressed as a SKOS concept scheme. Several such vocabularies exist, many of which map to the UN's ISIC codes. Where a particular controlled vocabulary is in use within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred choice for European interoperability is NACE. rov:orgActivity is a sub class of org:classification which has a range of skos:Concept."@en .
+
+<element/RegisteredOrganizationStatus> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/RegisteredOrganization> ;
+    mdr:property <property/orgStatus> ;
+	skos:definition "Terms like insolvent, bankrupt and in receivership are likely to have different legal implications in different jurisdictions. Best Practice for recording various other status levels is to use the relevant jurisdiction's terms and to do so in a consistent manner using a SKOS Concept Scheme. rov:orgStatus is a sub class of org:classification which has a range of skos:Concept."@en .
+
+<element/RegisteredOrganizationRegistration> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/RegisteredOrganization> ;
+    mdr:property <property/registration> ;
+	skos:definition "The registration is a fundamental relationship between a legal entity and the authority with which it is registered and that confers legal status upon it. rov:registration is a sub property of adms:identifier which has a range of adms:Identifier. rov:registration has a domain of rov:RegisteredOrganization."@en .
+
+<element/AgentHasRegisteredOrganization> a mdr:DataElement ;
+    mdr:context <> ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    mdr:objectClass <class/Agent> ;
+    mdr:property <property/hasRegisteredOrganization> ;
+    skos:definition "The has registered organization relationship can be used to link any dcterms:Agent (equivalent class foaf:Agent) to a Registered Organization that in some way acts as a registered legal entity for it. This is useful, for example, where an organization includes one or more legal entities, or where a natural person is also registered as a legal entity. rov:hasRegisteredOrganization has a range of rov:RegisteredOrganization."@en .

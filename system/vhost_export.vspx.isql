@@ -1,0 +1,83 @@
+DB.DBA.VHOST_REMOVE (
+	 lhost=>'*ini*',
+	 vhost=>'*ini*',
+	 lpath=>'/mdr'
+);
+
+DB.DBA.VHOST_DEFINE (
+	 lhost=>'*ini*',
+	 vhost=>'*ini*',
+	 lpath=>'/mdr',
+	 ppath=>'/mdr/www/',
+	 is_dav=>0,
+	 def_page=>'index.html',
+	 vsp_user=>'dba',
+	 ses_vars=>1,
+	 opts=>vector ('xml_templates', 'yes', 'executable', 'yes', 'browse_sheet', '', 'url_rewrite', 'http_rule_list_5'),
+	 is_default_host=>0
+);
+
+
+    
+
+DB.DBA.URLREWRITE_CREATE_RULELIST ( 
+'http_rule_list_5', 1, 
+  vector ('http_rule_9', 'http_rule_10', 'http_rule_11', 'http_rule_12'));
+
+DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
+'http_rule_9', 1, 
+  '/mdr/id/(.*)', 
+vector ('par_1'), 
+1, 
+'/mdr/doc/%s', 
+vector ('par_1'), 
+NULL, 
+NULL, 
+1, 
+303, 
+'' 
+);
+
+DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
+'http_rule_10', 1, 
+  '/mdr/doc/([^/.]*)(?:/([^/.]*))?(?:\.(.*))?', 
+vector ('par_1', 'par_2', 'par_3', 'par_4'), 
+4, 
+'/mdr/description.vsp?namespace=%U&type=%U&id=%U&format=%U', 
+vector ('par_1', 'par_2', 'par_3', 'par_4'), 
+NULL, 
+NULL, 
+1, 
+303, 
+'' 
+);
+
+DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
+'http_rule_11', 1, 
+  '/mdr/about/([^/]*)/(.*)', 
+vector ('par_1', 'par_2'), 
+2, 
+'/mdr/description.vsp?format=%U&uri=%s', 
+vector ('par_1', 'par_2'), 
+NULL, 
+NULL, 
+1, 
+0, 
+'' 
+);
+
+DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
+'http_rule_12', 1, 
+  '/mdr/search(.*)', 
+vector ('par_1'), 
+1, 
+'/mdr/search.vsp%s', 
+vector ('par_1'), 
+NULL, 
+NULL, 
+1, 
+0, 
+'' 
+);
+
+DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);

@@ -1,0 +1,841 @@
+{
+"name": "DCat" ,
+"children": [
+{ "name": "dcat:Dataset/adms:contactPoint/email" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:contactPoint/fn" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:contactPoint/vcard:email" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "contact-email" ,"size": 100},{"name": "extras/key[contact-email]-value" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "author_email" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "contact_email" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "maintainer_email" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:contactPoint/vcard:fn" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "extras/key[contact-name]-value" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "contact_name" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "maintainer" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:contactPoint/vcard:tel" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "gb" ,"children": [
+{"name": "extras/key[contact-phone]-value" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:contactPoint/vcard:url" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "odp" ,"children": [
+{"name": "contact_webpage" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:version" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "version" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "version" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "version" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "version" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "revision_id" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "version" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/adms:versionNotes" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "odp" ,"children": [
+{"name": "version_description" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dcat:keyword" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "keywords/name" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "tags/name" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dcat:landingPage" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "fr" ,"children": [
+{"name": "resources/id" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+] }
+,{
+"name": "se" ,"children": [
+{"name": "url" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dcat:theme" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "extras/key[categorization]-value" ,"size": 100},{"name": "groups/name" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "extras/key[categories]-value" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "extras/key[theme_available]-value" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "extras/key[theme-primary]-value" ,"size": 100},{"name": "theme-primary" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "extras/key[categorization]-value" ,"size": 100},{"name": "groups/name" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "eurovoc_thesaurus" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:accrualPeriodicity" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "extras/key[frequency-of-update]-value" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "update_frequency" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "update_frequency" ,"size": 100},{"name": "update_frequency-other" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "accrual_periodicity" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "update_frequency" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:description" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "notes" ,"size": 100},{"name": "notes_en" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "notes" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "notes" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:identifier" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "fi" ,"children": [
+{"name": "id" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "id" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "identifier" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "id" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:issued" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "extras/key[date_released]-value" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "created" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "date_released" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "release_date" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "metadata_created" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:language" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "odp" ,"children": [
+{"name": "language" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:modified" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "fi" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "revision_timestamp" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "revision_timestamp" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "modified_date" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "metadata_modified" ,"size": 100},{"name": "revision_timestamp" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "metadata_modified" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:publisher" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "extras/key[agency]-value" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "extras/key[published_by]-value" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "groups/name" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "published_by" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "author" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "groups/name" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:spatial" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "extras/key[spatial-text]-value" ,"size": 100},{"name": "extras/key[spatial]-value" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "extras/key[geographic_coverage]-value" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "geographic_coverage" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "geographical_coverage" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:temporal" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "fi" ,"children": [
+{"name": "extras/key[temporal_coverage-from]-value" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:temporal/end" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "odp" ,"children": [
+{"name": "temporal_coverage_to" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:temporal/start" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "odp" ,"children": [
+{"name": "temporal_coverage_from" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/dct:title" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "title" ,"size": 100},{"name": "title_en" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "title" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "title" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/foaf:Agent/foaf:emailTo" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "ro" ,"children": [
+{"name": "extras/key[publisher_email]-value" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Dataset/foaf:Agent/foaf:name" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "ro" ,"children": [
+{"name": "extras/key[publisher]-value" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/adms:status" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/state" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/state" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dcat:accessURL" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/id" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources" ,"size": 100},{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dcat:byteSize" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "gb" ,"children": [
+{"name": "resources/size" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/size" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/size" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dcat:downloadURL" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "gb" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/url" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dcat:mediaType" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/file" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/mimetype" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/file" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:description" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/description" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:format" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/format" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:issued" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/created" ,"size": 100},{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/created" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:license" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "license_id" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "extras/key[license_url]-value" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "license_id" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "license_id" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "license_url" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:modified" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "fi" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "fr" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/last_modified" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "it" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/revision_timestamp" ,"size": 100}] }
+] }
+ ] }
+,{ "name": "dcat:Distribution/dct:title" ,
+"children": [
+{ "name": "exactMatch" ,
+"children": [
+{
+"name": "de" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "ie" ,"children": [
+{"name": "resources/title" ,"size": 100}] }
+,{
+"name": "nl" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "odp" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "ro" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "se" ,"children": [
+{"name": "resources/name" ,"size": 100}] }
+,{
+"name": "sk" ,"children": [
+{"name": "resources/title" ,"size": 100}] }
+] }
+ ] }
+] }

@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://mdr.semic.eu/def#"
+     xml:base="http://mdr.semic.eu/def"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://mdr.semic.eu/def">
+        <rdfs:comment>The Metadata Registry Ontology describes data elements for use in the context of e-Documents. It is inspired by the ISO 11179-3 meta-model, and adds classes and properties to support the e-Document engineering methodology described in D1.2 of the SEMIC 4 project in the context of ISA Action 2.15 of the European Commission.</rdfs:comment>
+        <dc:title>Metadata Registry Ontology</dc:title>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mdr.semic.eu/def#affects -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#affects">
+        <rdfs:label>affects</rdfs:label>
+        <rdfs:comment>States that the business rule affects (defines or constraints) a data element concept.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#BusinessRule"/>
+        <rdfs:range rdf:resource="http://mdr.semic.eu/def#InformationRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#concretizedBy -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#concretizedBy">
+        <rdfs:label>concretized by</rdfs:label>
+        <rdfs:comment>The concretization (an object class or data element) of a requirement (resp. a transaction or an information requirement).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#context -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#context">
+        <rdfs:label>has context</rdfs:label>
+        <rdfs:comment>The context of the element.</rdfs:comment>
+        <rdfs:range rdf:resource="http://mdr.semic.eu/def#Context"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#hasURI -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#hasURI">
+        <rdfs:label>has URI</rdfs:label>
+        <rdfs:comment>The RDF URI representing the object class or property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#hasXMLNamespace -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#hasXMLNamespace">
+        <rdfs:label>has XML namespace</rdfs:label>
+        <rdfs:comment>The XML namespace that contains the representation of the object class or property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#implements -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#implements">
+        <rdfs:label>implements</rdfs:label>
+        <rdfs:comment>(Partial) implementation of a higher level concept.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#objectClass -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#objectClass">
+        <rdfs:label>in object class</rdfs:label>
+        <rdfs:comment>The Object Class of the Data Element.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+        <rdfs:range rdf:resource="http://mdr.semic.eu/def#ObjectClass"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#property -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#property">
+        <rdfs:label>has property</rdfs:label>
+        <rdfs:comment>The Property of the Data Element.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+        <rdfs:range rdf:resource="http://mdr.semic.eu/def#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#representation -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#representation">
+        <rdfs:label>representation</rdfs:label>
+        <rdfs:comment>The representation of a Property. It is either a Data Type (for basic properties) or an Object Class (for association properties).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#transaction -->
+
+    <owl:ObjectProperty rdf:about="http://mdr.semic.eu/def#transaction">
+        <rdfs:label>in transaction</rdfs:label>
+        <rdfs:comment>The transaction containing this elements.</rdfs:comment>
+        <rdfs:range rdf:resource="http://mdr.semic.eu/def#Transaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mdr.semic.eu/def#example -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#example">
+        <rdfs:label>example</rdfs:label>
+        <rdfs:comment>An example of the Data Element.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#hasXMLLocalPart -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#hasXMLLocalPart">
+        <rdfs:label>has XML local part</rdfs:label>
+        <rdfs:comment>The XML local part inside the XML namespace that represents the object class or property.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#maxCardinality -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#maxCardinality">
+        <rdfs:label>maximum cardinality</rdfs:label>
+        <rdfs:comment>The maximum cardinality of a Data Element.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#minCardinality -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#minCardinality">
+        <rdfs:label>minimum cardinality</rdfs:label>
+        <rdfs:comment>The minimum cardinality of a Data Element.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+        <rdfs:range rdf:resource="&xsd;nonNegativeInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#objectClassName -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#objectClassName">
+        <rdfs:label>object class name</rdfs:label>
+        <rdfs:comment>The name of the Object Class (corresponds to ccts:ObjectClass).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#ObjectClass"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#order -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#order">
+        <rdfs:label>order</rdfs:label>
+        <rdfs:comment>The order of the Data Element within its Object Class.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataElement"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#propertyTerm -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#propertyTerm">
+        <rdfs:label>property term</rdfs:label>
+        <rdfs:comment>The term of the Property (corresponds to ccts:PropertyTerm).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#Property"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#propertyTermQualifier -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#propertyTermQualifier">
+        <rdfs:label>property term qualifier</rdfs:label>
+        <rdfs:comment>The qualifier of the term of a Property (corresponds to ccts:PropertyTermQualifier).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#Property"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#rationale -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#rationale">
+        <rdfs:label>rationale</rdfs:label>
+        <rdfs:comment>The rationale of a requirement.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#HighLevelRequirement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#representationQualifier -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#representationQualifier">
+        <rdfs:label>representation term qualifier</rdfs:label>
+        <rdfs:comment>The qualifier of the representation term of the Property (corresponds to ccts:DataTypeQualifier or ccts:AssociatedObjectClassQualifier).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#Property"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://mdr.semic.eu/def#representationTerm -->
+
+    <owl:DatatypeProperty rdf:about="http://mdr.semic.eu/def#representationTerm">
+        <rdfs:label>representation term</rdfs:label>
+        <rdfs:comment>The representation term of the Data Type (corresponds to ccts:RepresentationTermName).</rdfs:comment>
+        <rdfs:domain rdf:resource="http://mdr.semic.eu/def#DataType"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://mdr.semic.eu/def#BusinessRule -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#BusinessRule">
+        <rdfs:label>Business Rule</rdfs:label>
+        <rdfs:comment>Statement that defines or constrains some aspect of the transaction.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#Context -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#Context">
+        <rdfs:label>Context</rdfs:label>
+        <rdfs:comment>Universe of discourse. A context may encompass a whole library of data elements (like UBL) or a single business process.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#DataElement -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#DataElement">
+        <rdfs:label>Data Element</rdfs:label>
+        <rdfs:comment>A unit of data of an Object Class. A Data Element is either an attribute of the Object Class (BBIE) or an association with another Object Class (ASBIE).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#DataType -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#DataType">
+        <rdfs:label>Data Type</rdfs:label>
+        <rdfs:comment>A Data Type is the representation term of a basic property.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#Goal -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#Goal">
+        <rdfs:label>Goal</rdfs:label>
+        <rdfs:comment>A goal that has to be achieved with the exchange of e-Documents.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#HighLevelRequirement -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#HighLevelRequirement">
+        <rdfs:label>High-level Requirement</rdfs:label>
+        <rdfs:comment>A high-level requirement that a transaction must fulfill.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#InformationRequirement -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#InformationRequirement">
+        <rdfs:label>Information Requirement</rdfs:label>
+        <rdfs:comment>A requirement on the information model of a transaction that derives from one or more high-level requirements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#ObjectClass -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#ObjectClass">
+        <rdfs:label>Object Class</rdfs:label>
+        <rdfs:comment>A collection of data elements that can be reused as is. An e-Document format is an Object Class that implements a Transaction.
+
+An Object Class in CCTS and UBL is called an ABIE.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#Property -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#Property">
+        <rdfs:label>Property</rdfs:label>
+        <rdfs:comment>A reusable property, defined by a property term and a representation. For basic properties (for BBIEs), the representation is a data type. For association properties (for ASBIEs), the representation is the associated Object Class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://mdr.semic.eu/def#Transaction -->
+
+    <owl:Class rdf:about="http://mdr.semic.eu/def#Transaction">
+        <rdfs:label>Transaction</rdfs:label>
+        <rdfs:comment>A Transaction is the exchange of one e-Document. Each Transaction defines an e-Document format.</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

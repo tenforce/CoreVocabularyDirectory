@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  XSLT script to show search results.
+  This script is used in search.vsp.
+
+  Copyright 2014 European Union
+  Author: Vianney le Clément de Saint-Marcq (PwC EU Services)
+
+  Licensed under the EUPL, Version 1.1 or - as soon they
+  will be approved by the European Commission - subsequent
+  versions of the EUPL (the "Licence");
+  You may not use this work except in compliance with the
+  Licence.
+  You may obtain a copy of the Licence at:
+  http://ec.europa.eu/idabc/eupl
+
+  Unless required by applicable law or agreed to in
+  writing, software distributed under the Licence is
+  distributed on an "AS IS" basis,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+  express or implied.
+  See the Licence for the specific language governing
+  permissions and limitations under the Licence.
+
+-->
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:mdr="http://vocabs.tenforce.com/mdr/def#"
+  exclude-result-prefixes="xsl rdf rdfs skos mdr">
+
+  <xsl:param name="keyword" />
+
+  <xsl:include href="file://mdr/xslt/include.xsl" />
+
+  <xsl:template match="rdf:RDF">
+    <xsl:call-template name="html">
+      <xsl:with-param name="title">
+        Search: <xsl:value-of select="$keyword" />
+      </xsl:with-param>
+      <xsl:with-param name="body">
+        <section>
+          <h2>Results for ‘<xsl:value-of select="$keyword" />’</h2>
+          <p><a href="/">« Return to the homepage</a></p>
+          <div id="results">
+            <xsl:choose>
+              <xsl:when test="//rdf:type">
+                <xsl:call-template name="results">
+                  <xsl:with-param name="type">ObjectClass</xsl:with-param>
+                  <xsl:with-param name="title">Object classes</xsl:with-param>
+                </xsl:call-template>
+                <xsl:call-template name="results">
+                  <xsl:with-param name="type">DataElement</xsl:with-param>
+                  <xsl:with-param name="title">Data elements</xsl:with-param>
+                </xsl:call-template>
+              </xsl:when>
+              <xsl:otherwise>
+                <div class="error">Sorry, no results were found.</div>
+              </xsl:otherwise>
+            </xsl:choose>
+          </div>
+        </section>
+      </xsl:with-param>
+    </xsl:call-template>
+  </xsl:template>
+
+  <xsl:template name="results">
+    <xsl:param name="type" />
+    <xsl:param name="title" />
+    <xsl:variable name="results" select="//rdf:Description[rdf:type/@rdf:resource = concat('http://mdr.semic.eu/def#', $type)]" />
+    <xsl:if test="$results">
+      <table class="results">
+        <thead>
+          <tr>
+            <th><xsl:value-of select="$title" /></th>
+          </tr>
+        </thead>
+        <tbody>
+          <xsl:for-each select="$results">
+            <tr><td>
+              <xsl:if test="mdr:context">
+                <xsl:call-template name="rdf-value">
+                  <xsl:with-param name="element" select="mdr:context" />
+                  <xsl:with-param name="strip-uri" select="true()" />
+                </xsl:call-template>
+                <xsl:text>: </xsl:text>
+              </xsl:if>
+              <xsl:call-template name="rdf-value">
+                <xsl:with-param name="element" select="." />
+                <xsl:with-param name="strip-uri" select="true()" />
+              </xsl:call-template>
+              <xsl:if test="skos:definition">
+                <div class="description">
+                  <xsl:call-template name="rdf-value">
+                    <xsl:with-param name="element" select="skos:definition" />
+                  </xsl:call-template>
+                </div>
+              </xsl:if>
+            </td></tr>
+          </xsl:for-each>
+        </tbody>
+      </table>
+    </xsl:if>
+  </xsl:template>
+
+</xsl:stylesheet>
+<!-- vim:set ts=2 sw=2 et: -->

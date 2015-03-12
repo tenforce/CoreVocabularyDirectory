@@ -1,0 +1,122 @@
+@prefix mdr: <http://mdr.semic.eu/def#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+# Basic RDF datatypes
+# Label and definitions are provided by the RDFS vocabulary.
+
+rdfs:Resource a mdr:ObjectClass ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> .
+
+rdfs:Literal a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> .
+
+# Well-known typed literals
+
+xsd:string a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "String"@en .
+
+xsd:string a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Boolean"@en .
+
+xsd:float a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Float"@en .
+
+xsd:double a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Double"@en .
+
+xsd:decimal a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Decimal"@en .
+
+xsd:integer a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Integer"@en .
+
+xsd:negativeInteger a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Negative Integer"@en .
+
+xsd:positiveInteger a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Positive Integer"@en .
+
+xsd:nonNegativeInteger a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Non-negative Integer"@en .
+
+xsd:nonPositiveInteger a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Non-positive Integer"@en .
+
+xsd:long a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "64-bits Integer"@en .
+
+xsd:int a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "32-bits Integer"@en .
+
+xsd:short a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "16-bits Integer"@en .
+
+xsd:byte a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Byte"@en .
+
+xsd:unsignedLong a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Unsigned 64-bits Integer"@en .
+
+xsd:unsignedInt a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Unsigned 32-bits Integer"@en .
+
+xsd:unsignedShort a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Unsigned 16-bits Integer"@en .
+
+xsd:unsignedByte a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Unisigned Byte"@en .
+
+xsd:duration a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Duration"@en .
+
+xsd:dateTime a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Date Time"@en .
+
+xsd:time a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Time"@en .
+
+xsd:date a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Date"@en .
+
+xsd:hexBinary a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Hexadecimal Binary"@en .
+
+xsd:base64Binary a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "Base-64 Binary"@en .
+
+xsd:anyURI a mdr:DataType ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> ;
+    rdfs:label "URI Literal"@en .
+
+# Miscellaneous
+
+skos:Concept a mdr:ObjectClass ;
+    adms:representationTechnique <http://purl.org/adms/representationtechnique/RDFSchema> .

@@ -1,0 +1,303 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix mdr: <http://mdr.semic.eu/def#> .
+@prefix ublclass: <http://mdr.semic.eu/id/ubl/class/> .
+@prefix ublprop: <http://mdr.semic.eu/id/ubl/property/> .
+@prefix ubldt: <http://mdr.semic.eu/id/ubl/datatype/> .
+
+@base <http://mdr.semic.eu/id/esens-activity-registration/> .
+
+## Context
+
+<> a mdr:Context ;
+    rdfs:label "e-SENS Activity Registration"@en ;
+    rdfs:comment "Mini-pilot on e-Document engineering using the example of the activity registration of a business in a foreign Member State. The example was provided by e-SENS WP5.4 on Business lifecycle piloting." .
+
+## Main object class representing the transaction
+
+<class/BusinessActivityRegistrationRequestType> a mdr:ObjectClass ;
+    mdr:context <> ;
+    mdr:objectClassName "Business Activity Registration Request" ;
+    rdfs:label "Business Activity Registration Request"@en ;
+    skos:definition "A request for registering an activity"@en .
+
+<transaction/T1> mdr:concretizedBy <class/BusinessActivityRegistrationRequestType> .
+
+## Data Elements of the main object class
+
+<element/BusinessActivityRegistrationRequestUBLVersionID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property ublprop:UBLVersionID ;
+    mdr:order 1 ;
+    mdr:minCardinality "0"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:example "2.0.5" ;
+    skos:definition "The earliest version of the UBL 2 schema for this document type that defines all of the elements that might be encountered in the current instance."@en .
+
+<element/BusinessActivityRegistrationRequestCustomizationID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property ublprop:CustomizationID ;
+    mdr:order 2 ;
+    mdr:minCardinality "0"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:example "NES" ;
+    skos:definition "Identifies a user-defined customization of UBL for a specific use."@en .
+
+<element/BusinessActivityRegistrationRequestProfileID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property ublprop:ProfileID ;
+    mdr:order 3 ;
+    mdr:minCardinality "0"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:example "BasicProcurementProcess" ;
+    skos:definition "Identifies a user-defined profile of the customization of UBL being used."@en .
+
+<element/BusinessActivityRegistrationRequestProfileExecutionID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property ublprop:ProfileExecutionID ;
+    mdr:order 4 ;
+    mdr:minCardinality "0"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:example "BPP-1001" ;
+    skos:definition "Identifies an instance of executing a profile, to associate all transactions in a collaboration."@en .
+
+<element/BusinessActivityRegistrationRequestRequestDate> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/RequestDate> ;
+    mdr:order 5 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The date of the request for a return authorization"@en .
+
+<ir/IR2> mdr:concretizedBy <element/BusinessActivityRegistrationRequestRequestDate> .
+
+<element/BusinessActivityRegistrationRequestRequestID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/RequestID> ;
+    mdr:order 6 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "Identifier of the business activity registration request"@en .
+
+<ir/IR1> mdr:concretizedBy <element/BusinessActivityRegistrationRequestRequestID> .
+
+<element/BusinessActivityRegistrationRequestPointSingleContactID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/PointSingleContactID> ;
+    mdr:order 7 ;
+    mdr:minCardinality "0"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "Identifier of the PSC that collected and issued the business activity registration request"@en .
+
+<ir/IR3> mdr:concretizedBy <element/BusinessActivityRegistrationRequestPointSingleContactID> .
+
+<element/BusinessActivityRegistrationRequestCompanyActivity> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/CompanyActivity> ;
+    mdr:order 8 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The business activity to be registered."@en .
+
+<ir/IR4> mdr:concretizedBy <element/BusinessActivityRegistrationRequestCompanyActivity> .
+<ir/IR5> mdr:concretizedBy <element/BusinessActivityRegistrationRequestCompanyActivity> .
+
+<element/BusinessActivityRegistrationRequestRequestingParty> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/RequestingParty> ;
+    mdr:order 9 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The party requesting the registration"@en .
+
+<ir/IR9> mdr:concretizedBy <element/BusinessActivityRegistrationRequestRequestingParty> .
+<ir/IR10> mdr:concretizedBy <element/BusinessActivityRegistrationRequestRequestingParty> .
+
+<element/BusinessActivityRegistrationRequestCvbusiness> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/BusinessActivityRegistrationRequestType> ;
+    mdr:property <property/Cvbusiness> ;
+    mdr:order 10 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The legal entity requested for registration"@en .
+
+<ir/IR6> mdr:concretizedBy <element/BusinessActivityRegistrationRequestCvbusiness> .
+<ir/IR7> mdr:concretizedBy <element/BusinessActivityRegistrationRequestCvbusiness> .
+<ir/IR8> mdr:concretizedBy <element/BusinessActivityRegistrationRequestCvbusiness> .
+
+## Properties for the main object class
+
+<property/RequestDate> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Request Date" ;
+    mdr:representation ubldt:Date .
+
+<property/RequestID> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Request Identifier" ;
+    mdr:representation ubldt:Identifier .
+
+<property/PointSingleContactID> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Point Single Contact Identifier" ;
+    mdr:representation ubldt:Identifier .
+
+<property/CompanyActivity> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Company Activity" ;
+    mdr:representation <class/CompanyActivityType> .
+
+<property/RequestingParty> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Party" ;
+    mdr:propertyTermQualifier "Requesting" ;
+    mdr:representation ublclass:Party .
+
+<property/Cvbusiness> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Cvbusiness" ;
+    mdr:representation <class/CvbusinessType> .
+
+## Auxiliary classes
+
+# Company Activity
+
+<class/CompanyActivityType> a mdr:ObjectClass ;
+    mdr:context <> ;
+    mdr:objectClassName "Company Activity" ;
+    rdfs:label "Company Activity"@en ;
+    skos:definition "Activity performed by the legal entity"@en .
+
+<element/CompanyActivityActivityCode> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CompanyActivityType> ;
+    mdr:property <property/ActivityCode> ;
+    mdr:order 1 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "A code identifying the activity"@en .
+
+<element/CompanyActivityActivityDescription> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CompanyActivityType> ;
+    mdr:property <property/ActivityDescription> ;
+    mdr:order 2 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "Textual description of the activity"@en .
+
+<property/ActivityCode> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Code" ;
+    mdr:propertyTermQualifier "Activity" ;
+    mdr:representation ubldt:Code .
+
+<property/ActivityDescription> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Description" ;
+    mdr:propertyTermQualifier "Activity" ;
+    mdr:representation ubldt:Text .
+
+# Cvbusiness
+
+<class/CvbusinessType> a mdr:ObjectClass ;
+    mdr:context <> ;
+    mdr:objectClassName "Cvbusiness" ;
+    rdfs:label "Cvbusiness"@en ;
+    skos:definition "A Core Vocabulary Business"@en .
+
+<element/CvbusinessLegalID> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/LegalID> ;
+    mdr:order 1 ;
+    mdr:minCardinality "1"^^xsd:nonNegativeInteger ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The legal identifier"@en .
+
+<element/CvbusinessLegalName> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/LegalName> ;
+    mdr:order 2 ;
+    skos:definition "Legal Name of a Cvbusiness"@en .
+
+<element/CvbusinessAlternativeName> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/AlternativeName> ;
+    mdr:order 3 ;
+    skos:definition "Alternative Name of a Cvbusiness"@en .
+
+<element/CvbusinessCompanyStatusCode> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/CompanyStatusCode> ;
+    mdr:order 4 ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "Identifier for the company's status"@en .
+
+<element/CvbusinessCompanyTypeCode> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/CompanyTypeCode> ;
+    mdr:order 5 ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "Identifier for the company's type"@en .
+
+<element/CvbusinessCompanyActivity> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/CompanyActivity> ;
+    mdr:order 6 ;
+    skos:definition "The company's activities"@en .
+
+<element/CvbusinessBusinessAddress> a mdr:DataElement ;
+    mdr:context <> ;
+    mdr:objectClass <class/CvbusinessType> ;
+    mdr:property <property/BusinessAddress> ;
+    mdr:order 7 ;
+    mdr:maxCardinality "1"^^xsd:nonNegativeInteger ;
+    skos:definition "The address of the company"@en .
+
+<property/LegalID> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Legal Identifier" ;
+    mdr:representation ubldt:Identifier .
+
+<property/LegalName> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Legal Name" ;
+    mdr:representation ubldt:Text .
+
+<property/AlternativeName> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Alternative Name" ;
+    mdr:representation ubldt:Text .
+
+<property/CompanyStatusCode> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Company Status" ;
+    mdr:representation ubldt:Code .
+
+<property/CompanyTypeCode> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Company Type" ;
+    mdr:representation ubldt:Code .
+
+<property/BusinessAddress> a mdr:Property ;
+    mdr:context <> ;
+    mdr:propertyTerm "Address" ;
+    mdr:propertyTermQualifier "Business" ;
+    mdr:representation ublclass:Address .

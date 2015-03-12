@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Vocabulary Mappings Directory</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="https://www.semic.eu">
+      <img src="images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
+    </a>
+  </div>
+  <h1>Vocabulary Mapping Directory</h1>
+</header>
+
+<section id="registry">
+  <h2>Browse the metadata registry</h2>
+
+  <p>Using the <a href="/def">ontology</a> inspired by the
+		<a href="http://en.wikipedia.org/wiki/ISO/IEC_11179">ISO 11179-3</a>
+		meta-model, the following libraries have been modelled:
+  <ul>
+    <li><a href="/mdr/id/cv/">Core Vocabularies</a>,</li>
+    <li>
+			DCAT/ODS Mappings:
+			<ul>
+				<li><a href="/mdr/id/dcat/">Browsable View</a>,</li>
+				<li>
+					<a href="visualisation/tree.html">Tree Visualisation 
+						of the DCAT/ODS mapping</a>
+				</li>
+				<li>
+					<a href="EuroVocmappings_v0.03-1.xlsx">EuroVoc Value Mapping Table</a>
+				</li>
+				</ul>
+			</li>
+    <li><a href="/mdr/id/ubl/">OASIS UBL 2.1 Common Library</a>,</li>
+  </ul>
+
+  <p>Examples of some registry entry points are the following examples
+  (Core Vocabularies):
+		<ul>
+    <li>the <a href="/mdr/id/cv/property/PersonFamilyName">Person Familty Name</a> property (Core Vocabularies);</li>
+    <li>the <a href="/mdr/id/cv/property/AddressPostCode">Address Post Code</a> Property;</li>
+    <li>the <a href="/mdr/id/cv/property/PersonCountryOfBirth">Person Country Of Birth</a> Property;</li>
+  </ul>
+  </p>
+
+  <p>Or use the box below to search the registry for object classes and data
+  elements.</p>
+
+  <div>
+    <form id="searchform">
+      <input id="query" type="text" />
+      <input type="submit" value="Search" />
+    </form>
+  </div>
+  <div id="results"></div>
+</section>
+
+<footer>
+  <p>This work is supported by
+  <a href="http://ec.europa.eu/isa/actions/01-trusted-information-exchange/1-1action_en.htm" target="_blank">Action 1.1</a>
+  of the
+  <a href="http://ec.europa.eu/isa/" target="_blank">Interoperability Solutions
+  for European Public Adminstrations (ISA)</a> Programme of the European
+  Commission.</p>
+
+  <p><strong>Linked Data pilots:</strong>
+    <a href="http://location.testproject.eu/BEL">Core Location pilot</a> |
+    <a href="http://data.ydmed.gov.gr/">Greek Pilot</a> |
+    <a href="http://cpsv.testproject.eu/CPSV">Core Public Service pilot</a> |
+    <a href="http://org.testproject.eu/MAREG">Organisation Ontology pilot</a> |
+    <a href="http://health.testproject.eu/PPP">Plant Protection Products pilot</a> |
+    <a href="http://maritime.testproject.eu/CISE">Maritime Surveillance pilot</a>
+  </p>
+
+  <p>
+    <a href="https://joinup.ec.europa.eu/asset/dcat_application_profile/description" target="_blank"><img alt="DCAT application profile for European data portals" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms/description" target="_blank"><img alt="Asset Description Metadata Schema (ADMS)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/adms_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms_foss/description" target="_blank"><img alt="Asset Description Metadata Schema for Software (ADMS.SW)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/ADMS_SW_Logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_business/description" target="_blank"><img alt="Core Business Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_business_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_person/description"><img alt="Core Person Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_person_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_location/description" target="_blank"><img alt="Core Location Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_location_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_public_service/description" target="_blank"><img alt="Core Public Service Vocabulary" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_public_service_logo.png" width="70" height="70" /></a>
+    <a href="http://ec.europa.eu/isa/" target="_blank"><img alt="isa" src="http://joinup.ec.europa.eu/sites/default/files/ckeditor_files/images/isa_logo.png" width="70" height="70" /></a>
+  </p>
+
+  <p>Some icons by <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com</a> used under CC-BY license.</p>
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38243808-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>
+<!-- vim:set ts=2 sw=2 et: -->
