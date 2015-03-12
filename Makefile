@@ -1,9 +1,11 @@
 DOCKER=docker
 
+SYSTEM=system
+
 data:
-	( cd mdr; ./configure.sh )
-	mdr/scripts/cvxsl2mdr.py excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx > data.ttl
-	mdr/scripts/dcatxsl2mdr.py excelfiles/DCatVocabularies-v0.1.xlsx > dcatods.ttl
+	( cd system; ./configure.sh )
+	system/scripts/cvxsl2mdr.py excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx > data.ttl
+	system/scripts/dcatxsl2mdr.py excelfiles/DCatVocabularies-v0.1.xlsx > dcatods.ttl
 
 image:	data
 	sudo ${DOCKER} build -t mdrtest2 .

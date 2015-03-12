@@ -29,7 +29,7 @@ path.link {
   <body>
     <div id="body">
       <div id="footer">
-        DCAT-AP Mappings
+        DCAT-AP Mappings (S)
         <div class="hint">click or option-click to expand or collapse (d3.layout.tree)</div>
       </div>
     <script type="text/javascript">
@@ -88,7 +88,7 @@ function update(source) {
   var nodeEnter = node.enter().append("svg:g")
       .attr("class", "node")
       .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-      .on("click", function(d) { toggle(d); update(d); });
+       .on("click", function(d) { toggle(d); update(d); });
 
   nodeEnter.append("svg:circle")
       .attr("r", 1e-6)
@@ -98,6 +98,7 @@ function update(source) {
       .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
       .attr("dy", ".35em")
       .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .attr("xlink:href", function(d) { return d.link; })
       .text(function(d) { return d.name; })
       .style("fill-opacity", 1e-6);
 

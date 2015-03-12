@@ -1,4 +1,4 @@
-# MDR
+# SYSTEM
 #
 # VERSION				0.0.1
 
@@ -11,10 +11,11 @@ RUN apt-get install virtuoso-opensource-6.1 -y
 RUN apt-get install virtuoso-vad-conductor -y
 RUN apt-get -y install rsyslog
 ADD ./logentries.conf /etc/rsyslog.d/logentries.conf
-COPY mdr/data/* /var/lib/virtuoso-opensource-6.1/db/data/
+COPY system/data/* /var/lib/virtuoso-opensource-6.1/db/data/
 ADD data.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 ADD dcatods.ttl /var/lib/virtuoso-opensource-6.1/db/data/
-COPY mdr /var/lib/virtuoso-opensource-6.1/vsp/mdr
+COPY system /var/lib/virtuoso-opensource-6.1/vsp/mdr
+RUN ls /var/lib/virtuoso-opensource-6.1/vsp/mdr
 COPY virtuoso.ini /etc/virtuoso-opensource-6.1/virtuoso.ini
 EXPOSE 8890 
 EXPOSE 1111

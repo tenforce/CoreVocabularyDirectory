@@ -2,20 +2,24 @@
 "name": "DCat" ,
 "children": [
 { "name": "dcat:Dataset" ,
+"link": "http://stackoverflow.com/dcat:Dataset",
 "children": [
 { "name": "adms:contactPoint/email" ,
+"link": "http://stackoverflow.com/adms:contactPoint/email",
 "children": [
 {
 "name": "de" ,"children": [
 {"name": "maintainer_email" ,"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/fn" ,
+"link": "http://stackoverflow.com/adms:contactPoint/fn",
 "children": [
 {
 "name": "de" ,"children": [
 {"name": "maintainer" ,"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:email" ,
+"link": "http://stackoverflow.com/adms:contactPoint/vcard:email",
 "children": [
 {
 "name": "at" ,"children": [
@@ -52,6 +56,7 @@
 {"name": "maintainer_email" ,"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:fn" ,
+"link": "http://stackoverflow.com/adms:contactPoint/vcard:fn",
 "children": [
 {
 "name": "at" ,"children": [
@@ -91,18 +96,21 @@
 {"name": "maintainer" ,"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:tel" ,
+"link": "http://stackoverflow.com/adms:contactPoint/vcard:tel",
 "children": [
 {
 "name": "gb" ,"children": [
 {"name": "extras/key[contact-phone]-value" ,"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:url" ,
+"link": "http://stackoverflow.com/adms:contactPoint/vcard:url",
 "children": [
 {
 "name": "odp" ,"children": [
 {"name": "contact_webpage" ,"size": 100}] }
 ] }
 ,{ "name": "adms:version" ,
+"link": "http://stackoverflow.com/adms:version",
 "children": [
 {
 "name": "de" ,"children": [
@@ -123,13 +131,15 @@
 "name": "sk" ,"children": [
 {"name": "version" ,"size": 100}] }
 ] }
-,{ "name": "adms:versionNotes" ,
+,{ "name": "adms:versionNotes",
+"link": "http://stackoverflow.com/adms:versionNotes",
 "children": [
 {
 "name": "odp" ,"children": [
 {"name": "version_description" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:keyword" ,
+"link": "http://stackoverflow.com/dcat:keyword",
 "children": [
 {
 "name": "at" ,"children": [
@@ -169,6 +179,7 @@
 {"name": "tags/name" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:landingPage" ,
+"link": "http://stackoverflow.com/dcat:landingPage",
 "children": [
 {
 "name": "fr" ,"children": [
@@ -181,6 +192,7 @@
 {"name": "url" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:theme" ,
+"link": "http://stackoverflow.com/dcat:theme",
 "children": [
 {
 "name": "at" ,"children": [
@@ -205,6 +217,7 @@
 {"name": "eurovoc_thesaurus" ,"size": 100}] }
 ] }
 ,{ "name": "dct:accrualPeriodicity" ,
+"link": "http://stackoverflow.com/dct:accrualPeriodicity",
 "children": [
 {
 "name": "at" ,"children": [
@@ -223,6 +236,7 @@
 {"name": "accrual_periodicity" ,"size": 100}] }
 ] }
 ,{ "name": "dct:description" ,
+"link": "http://stackoverflow.com/dct:description",
 "children": [
 {
 "name": "at" ,"children": [
@@ -262,6 +276,7 @@
 {"name": "notes" ,"size": 100}] }
 ] }
 ,{ "name": "dct:identifier" ,
+"link": "http://stackoverflow.com/dct:identifier",
 "children": [
 {
 "name": "at" ,"children": [
@@ -277,6 +292,7 @@
 {"name": "identifier" ,"size": 100}] }
 ] }
 ,{ "name": "dct:issued" ,
+"link": "http://stackoverflow.com/dct:issued",
 "children": [
 {
 "name": "at" ,"children": [
@@ -316,12 +332,14 @@
 {"name": "metadata_created" ,"size": 100}] }
 ] }
 ,{ "name": "dct:language" ,
+"link": "http://stackoverflow.com/dct:language",
 "children": [
 {
 "name": "odp" ,"children": [
 {"name": "language" ,"size": 100}] }
 ] }
 ,{ "name": "dct:modified" ,
+"link": "http://stackoverflow.com/dct:modified",
 "children": [
 {
 "name": "at" ,"children": [
@@ -358,6 +376,7 @@
 {"name": "metadata_modified" ,"size": 100}] }
 ] }
 ,{ "name": "dct:publisher" ,
+"link": "http://stackoverflow.com/dct:publisher",
 "children": [
 {
 "name": "de" ,"children": [
@@ -391,6 +410,7 @@
 {"name": "groups/name" ,"size": 100}] }
 ] }
 ,{ "name": "dct:spatial" ,
+"link": "http://stackoverflow.com/dct:spatial",
 "children": [
 {
 "name": "de" ,"children": [
@@ -406,24 +426,28 @@
 {"name": "geographical_coverage" ,"size": 100}] }
 ] }
 ,{ "name": "dct:temporal" ,
+"link": "http://stackoverflow.com/dct:temporal",
 "children": [
 {
 "name": "fi" ,"children": [
 {"name": "extras/key[temporal_coverage-from]-value" ,"size": 100}] }
 ] }
 ,{ "name": "dct:temporal/end" ,
+"link": "http://stackoverflow.com/dct:temporal/end",
 "children": [
 {
 "name": "odp" ,"children": [
 {"name": "temporal_coverage_to" ,"size": 100}] }
 ] }
 ,{ "name": "dct:temporal/start" ,
+"link": "http://stackoverflow.com/dct:temporal/start",
 "children": [
 {
 "name": "odp" ,"children": [
 {"name": "temporal_coverage_from" ,"size": 100}] }
 ] }
 ,{ "name": "dct:title" ,
+"link": "http://stackoverflow.com/dct:title",
 "children": [
 {
 "name": "at" ,"children": [
@@ -463,12 +487,14 @@
 {"name": "title" ,"size": 100}] }
 ] }
 ,{ "name": "foaf:Agent/foaf:emailTo" ,
+"link": "http://stackoverflow.com/foaf:Agent/foaf:emailTo",
 "children": [
 {
 "name": "at" ,"children": [
 {"name": "extras/key[publisher_email]-value" ,"size": 100}] }
 ] }
 ,{ "name": "foaf:Agent/foaf:name" ,
+"link": "http://stackoverflow.com/foaf:Agent/foaf:name",
 "children": [
 {
 "name": "at" ,"children": [
@@ -476,8 +502,10 @@
 ] }
  ] }
 ,{ "name": "dcat:Distribution" ,
+"link": "http://stackoverflow.com/dcat:Distribution",
 "children": [
 { "name": "adms:status" ,
+"link": "http://stackoverflow.com/adms:status",
 "children": [
 {
 "name": "de" ,"children": [
@@ -487,6 +515,7 @@
 {"name": "resources/state" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:accessURL" ,
+"link": "http://stackoverflow.com/dcat:accessURL",
 "children": [
 {
 "name": "at" ,"children": [
@@ -526,6 +555,7 @@
 {"name": "resources/url" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:byteSize" ,
+"link": "http://stackoverflow.com/dcat:byteSize",
 "children": [
 {
 "name": "gb" ,"children": [
@@ -538,6 +568,7 @@
 {"name": "resources/size" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:downloadURL" ,
+"link": "http://stackoverflow.com/dcat:downloadURL",
 "children": [
 {
 "name": "gb" ,"children": [
@@ -553,10 +584,14 @@
 {"name": "resources/url" ,"size": 100}] }
 ] }
 ,{ "name": "dcat:mediaType" ,
+"link": "http://stackoverflow.com/dcat:mediaType",
 "children": [
 {
 "name": "de" ,"children": [
 {"name": "resources/file" ,"size": 100}] }
+,{
+"name": "gb" ,"children": [
+{"name": "resources/mimetype" ,"size": 100}] }
 ,{
 "name": "odp" ,"children": [
 {"name": "resources/mimetype" ,"size": 100}] }
@@ -565,6 +600,7 @@
 {"name": "resources/file" ,"size": 100}] }
 ] }
 ,{ "name": "dct:description" ,
+"link": "http://stackoverflow.com/dct:description",
 "children": [
 {
 "name": "at" ,"children": [
@@ -598,6 +634,7 @@
 {"name": "resources/description" ,"size": 100}] }
 ] }
 ,{ "name": "dct:format" ,
+"link": "http://stackoverflow.com/dct:format",
 "children": [
 {
 "name": "at" ,"children": [
@@ -637,6 +674,7 @@
 {"name": "resources/format" ,"size": 100}] }
 ] }
 ,{ "name": "dct:issued" ,
+"link": "http://stackoverflow.com/dct:issued",
 "children": [
 {
 "name": "at" ,"children": [
@@ -676,6 +714,7 @@
 {"name": "resources/created" ,"size": 100}] }
 ] }
 ,{ "name": "dct:license" ,
+"link": "http://stackoverflow.com/dct:license",
 "children": [
 {
 "name": "at" ,"children": [
@@ -712,6 +751,7 @@
 {"name": "license_url" ,"size": 100}] }
 ] }
 ,{ "name": "dct:modified" ,
+"link": "http://stackoverflow.com/dct:modified",
 "children": [
 {
 "name": "at" ,"children": [
@@ -751,6 +791,7 @@
 {"name": "resources/revision_timestamp" ,"size": 100}] }
 ] }
 ,{ "name": "dct:title" ,
+"link": "http://stackoverflow.com/dct:title",
 "children": [
 {
 "name": "at" ,"children": [
