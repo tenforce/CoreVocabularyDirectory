@@ -28,6 +28,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:locn="http://www.w3.org/ns/locn#"
+  xmlns:mdr="http://mdr.semic.eu/def#"
   exclude-result-prefixes="xsl ns rdf rdfs locn">
 
   <xsl:param name="baseuri" select="'%BASEURI%'" />
@@ -232,6 +233,19 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
+
+	<!--  -->
+  <xsl:template name="rdf-context">
+    <xsl:param name="id" />
+    <xsl:param name="strip-uri" select="false()" />
+
+		<xsl:variable name="cc" 
+									select="//rdf:Description[@rdf:about=$id]/mdr:context/@rdf:resource"/>
+    <xsl:call-template name="rdf-value">
+      <xsl:with-param name="element" 
+											select="//rdf:Description[@rdf:about=$cc]" />
+    </xsl:call-template>
+	</xsl:template>
 
   <!-- Add a HTML link for a resource, with the rdfs:label if it exists. -->
   <xsl:template name="rdf-link">

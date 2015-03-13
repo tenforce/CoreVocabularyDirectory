@@ -216,13 +216,13 @@ class CommonVocabularySpreadsheet:
                datamodel= self.cv_datamodelid(item["data model"])
                g.add((datamodel, RDF.type, MDR.Context))
                g.add((datamodel, RDFS.label, self.text(item["data model"])))
+               g.add((datamodel, RDFS.seeAlso, self.text(item["mapping code url"])))
                g.add((ubluri, MDR.context, datamodel))
                # g.add((ubluri, MDR.hasURI, rdflib.term.URIRef(UBLNS+item["identifier"])))
                g.add((ubluri, RDF.type, MDR.Property))
                g.add((ubluri, RDFS.label, self.text(item["identifier"])))
 #              g.add((ubluri, RDFS.comment, self.text(item["label"])))
                g.add((ubluri, RDFS.label, self.text(item["identifier"])))
-               g.add((ubluri, RDFS.seeAlso, self.text(item["mapping code url"])))
                g.add((ubluri, SKOS.editorialNote, self.text(item["mapping comment"])))
                g.add((ubluri, MDR.propertyTerm, self.text(item["label"])))
                g.add((ubluri, SKOS.definition, self.text(item["definition"].strip())))
@@ -239,10 +239,39 @@ class CommonVocabularySpreadsheet:
                else:
                   exit;
 
+    def cv_sdmx(self, item, g):
+        uri = self.uri("property", item["dcat vocabulary identifier"].replace(" ",""))
+        if item["mapping relation"] != "Has no match":
+            for sdmxuri in self.cv_ref(item["sdmx vocabulary identifier"],item["label"]):
+               datamodel= self.cv_datamodelid(item["data model"])
+               g.add((datamodel, RDF.type, MDR.Context))
+               g.add((datamodel, RDFS.label, self.text(item["data model"])))
+               g.add((sdmxuri, MDR.context, datamodel))
+               # g.add((sdmxuri, MDR.hasURI, rdflib.term.URIRef(UBLNS+item["identifier"])))
+               g.add((sdmxuri, RDF.type, MDR.Property))
+               g.add((sdmxuri, RDFS.label, self.text(item["sdmx vocabulary identifier"])))
+               g.add((sdmxuri, RDFS.comment, self.text(item["sdmx comment"])))
+               g.add((sdmxuri, SKOS.editorialNote, self.text(item["mapping comment"])))
+               g.add((sdmxuri, MDR.propertyTerm, self.text(item["label"])))
+               g.add((sdmxuri, SKOS.definition, self.text(item["sdmx definition"].strip())))
+               g.add((sdmxuri, MDR.rationale, self.text(item["mapping comment"].strip())))
+               if item["mapping relation"].strip() == "exact match":
+                  g.add((uri,SKOS.exactMatch,sdmxuri))
+               elif item["mapping relation"] == "Has close match":
+                  g.add((uri,SKOS.closeMatch,sdmxuri))
+               elif item["mapping relation"] == "Has broard match":
+                  g.add((uri,SKOS.broadMatch,sdmxuri))
+               elif item["mapping relation"] == "Has narrow match":
+                  g.add((uri,SKOS.narrowMatch,sdmxuri))
+               else:
+                  exit;
+
     def convert_mapping_file(self, g):
         '''Add the contents of the 'Mappings' sheet to the graph g.'''
         for item in self.read_sheet("ODS Mappings", ""):
             self.cv_ubl(item,g);
+        for item in self.read_sheet("SDMX Mappings", ""):
+            self.cv_sdmx(item,g);
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()

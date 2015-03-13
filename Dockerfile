@@ -16,7 +16,7 @@ ADD data.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 ADD dcatods.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 COPY system /var/lib/virtuoso-opensource-6.1/vsp/mdr
 RUN ls /var/lib/virtuoso-opensource-6.1/vsp/mdr
-COPY virtuoso.ini /etc/virtuoso-opensource-6.1/virtuoso.ini
+COPY virtuoso-setup/virtuoso.ini /etc/virtuoso-opensource-6.1/virtuoso.ini
 EXPOSE 8890 
 EXPOSE 1111
 RUN cd /var/lib/virtuoso-opensource-6.1/db \

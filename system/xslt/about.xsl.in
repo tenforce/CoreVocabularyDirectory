@@ -113,8 +113,8 @@
                 </xsl:call-template>
               </td>
 							<td>
-                <xsl:call-template name="rdf-value">
-                  <xsl:with-param name="element" select="mdr:context" />
+                <xsl:call-template name="rdf-context">
+                  <xsl:with-param name="id" select="@rdf:resource"/>
                 </xsl:call-template>
 							</td>
             </tr>
@@ -144,8 +144,8 @@
                 </xsl:call-template>
               </td>
 							<td>
-                <xsl:call-template name="rdf-value">
-                  <xsl:with-param name="element" select="mdr:context" />
+                <xsl:call-template name="rdf-context">
+                  <xsl:with-param name="id" select="@rdf:resource"/>
                 </xsl:call-template>
 							</td>
             </tr>

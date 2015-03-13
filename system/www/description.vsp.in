@@ -61,17 +61,26 @@ query := 'CONSTRUCT {
   ?s rdfs:label ?slabel .
   ?p rdfs:label ?plabel .
   ?o rdfs:label ?olabel .
+  ?o mdr:context ?c .
+  ?c rdfs:label ?clabel.
 } WHERE {
   {
     <URI> ?p ?o
     OPTIONAL { { SELECT ?p ?label AS ?plabel
                  WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
-    OPTIONAL { { SELECT ?o ?label AS ?olabel
-                 WHERE { ?o rdfs:label ?label } GROUP BY ?o } }
+    OPTIONAL { { SELECT ?o ?label AS ?olabel ?c ?clabel
+                 WHERE { ?o rdfs:label ?label 
+								          OPTIONAL { ?o mdr:context ?c 
+													      OPTIONAL { ?c rdfs:label ?clabel } }
+								 } GROUP BY ?o } }
   } UNION {
     ?s ?p <URI>
-    OPTIONAL { { SELECT ?p ?label AS ?plabel
-                 WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
+    OPTIONAL { { SELECT ?p ?label AS ?plabel 
+                 WHERE { ?p rdfs:label ?label 
+								 } GROUP BY ?p } }
+    OPTIONAL { { SELECT ?c ?clabel WHERE {
+								   OPTIONAL { <URI> mdr:context ?c .
+                              ?c rdfs:label ?clabel } } } }
     OPTIONAL { { SELECT ?s ?label AS ?slabel
                  WHERE { ?s rdfs:label ?label } GROUP BY ?s } }
   }

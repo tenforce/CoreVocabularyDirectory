@@ -2,9 +2,31 @@
 
 * Introduction
 Original code was taken from [mdr/github].
-
 * Installation
+The assumption is that a linux system is being used for development
+and eventual deployment.
 
 * Development
 ** Docker Usage
+
 ** Network Configuration
+For local development the dockerfile can be used to mimic the eventual
+system. This requires a local system override of the
+vocabs.tenforce.com machine (/etc/hosts)
+
+127.0.0.1             vocabs.tenforce.com
+* Deployment & Testing
+- Note :: First test using the Docker image
+
+This consists of several actions
+- Tar the mdr directory (*tar cvzf mdr.tgz mdr*)
+- Copy the mdr.tgz file to the remote system
+Then on the remote sustem
+- switch off apache2 and tomcat7 services (virtuoso will be on port 80)
+  - Note :: Other configuration will be needed if those services are needed.
+- Unpack the mdr.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp directory
+- Update the virtuoso.ini file,
+- execute the vhost_*.sql file using isql-vt
+- then using the virtuoso conductor, upload the datafiles into the
+  http://vocabs.tenforce.com/webDAV graph.
+Restart the virtuoso-opensource service.
