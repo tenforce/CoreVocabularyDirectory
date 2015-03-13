@@ -20,8 +20,9 @@
 -- See the Licence for the specific language governing
 -- permissions and limitations under the Licence.
 
-declare _q, _limit varchar;
+declare _q, _id, _limit varchar;
 _q := get_keyword('q', params, '');
+_id := get_keyword('id', params, '');
 _limit := atoi(get_keyword('limit', params, '0'));
 
 -- Note: VSPs seem to always run with charset ISO-8859-1. Hence, while every
@@ -43,7 +44,12 @@ if(_q <> '') {
   filter := sprintf('FILTER(CONTAINS(LCASE(STR(?label)), LCASE("%s")) || CONTAINS(LCASE(STR(?definition)), LCASE("%s")))',
                     _q, _q);
 } else {
-  filter := '';
+	if(_id <> '') {
+				 keyword := charset_recode(_id, 'UTF-8', '_WIDE_');
+  			 filter := sprintf('FILTER(CONTAINS(LCASE(STR(?label)), LCASE("%s")))', _id);
+  } else {
+         filter := '';
+  }
 }
 if(_limit > 0) {
   limit := sprintf('LIMIT %d', _limit);
@@ -70,7 +76,17 @@ query := sprintf('CONSTRUCT {
                         } %s }
                     } UNION {
                       { SELECT * WHERE {
-                          ?s a mdr:DataElement .
+											    ?s a mdr:DataElement .
+                          OPTIONAL { ?s mdr:context ?context .
+                                     OPTIONAL { ?context rdfs:label ?contextname } }
+                          OPTIONAL { ?s rdfs:label ?label }
+                          OPTIONAL { ?s skos:definition ?definition }
+                          %s
+                          ?s a ?class .
+                        } %s }
+                    } UNION {
+                      { SELECT * WHERE {
+											    ?s a mdr:Property .
                           OPTIONAL { ?s mdr:context ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
@@ -79,7 +95,7 @@ query := sprintf('CONSTRUCT {
                           ?s a ?class .
                         } %s }
                     }
-                  }', filter, limit, filter, limit);
+                  }', filter, limit, filter, limit, filter, limit);
 
 declare rset, triples, ses any;
 rset := DB.DBA.SPARQL_EVAL_TO_ARRAY(query, '%DEFAULT_GRAPH%', 0);
