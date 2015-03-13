@@ -28,6 +28,6 @@ clean:
 	sudo service ${DOCKER} restart
 
 cleanall:
-	sudo ${DOCKER} rm `sudo ${DOCKER} ps -a -q`
+	sudo ${DOCKER} rm -f `sudo ${DOCKER} ps -a -q`
 	sudo ${DOCKER} rmi `sudo ${DOCKER} images -q`
 	sudo service ${DOCKER} restart

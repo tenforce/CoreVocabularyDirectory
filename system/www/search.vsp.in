@@ -46,7 +46,7 @@ if(_q <> '') {
 } else {
 	if(_id <> '') {
 				 keyword := charset_recode(_id, 'UTF-8', '_WIDE_');
-  			 filter := sprintf('FILTER(CONTAINS(LCASE(STR(?label)), LCASE("%s")))', _id);
+         filter := sprintf('FILTER(CONTAINS(LCASE(STR(?label)), LCASE("%s")))', keyword);
   } else {
          filter := '';
   }

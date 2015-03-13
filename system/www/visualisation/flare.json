@@ -2,824 +2,1276 @@
 "name": "DCat" ,
 "children": [
 { "name": "dcat:Dataset" ,
-"link": "http://stackoverflow.com/dcat:Dataset",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset",
 "children": [
 { "name": "adms:contactPoint/email" ,
-"link": "http://stackoverflow.com/adms:contactPoint/email",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/email",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/fn" ,
-"link": "http://stackoverflow.com/adms:contactPoint/fn",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/fn",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:email" ,
-"link": "http://stackoverflow.com/adms:contactPoint/vcard:email",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/vcard:email",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "contact-email" ,"size": 100},{"name": "extras/key[contact-email]-value" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "contact-email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=contact-email",
+"size": 100},{"name": "extras/key[contact-email]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[contact-email]-value",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "author_email" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "author_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author_email",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "contact_email" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "contact_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=contact_email",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "maintainer_email" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "maintainer_email" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer_email",
+"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:fn" ,
-"link": "http://stackoverflow.com/adms:contactPoint/vcard:fn",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/vcard:fn",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "extras/key[contact-name]-value" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "extras/key[contact-name]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[contact-name]-value",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "contact_name" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "contact_name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=contact_name",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "maintainer" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "maintainer" ,"link": "http://vocabs.tenforce.com/mdr/search?q=maintainer",
+"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:tel" ,
-"link": "http://stackoverflow.com/adms:contactPoint/vcard:tel",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/vcard:tel",
 "children": [
 {
-"name": "gb" ,"children": [
-{"name": "extras/key[contact-phone]-value" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "extras/key[contact-phone]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[contact-phone]-value",
+"size": 100}] }
 ] }
 ,{ "name": "adms:contactPoint/vcard:url" ,
-"link": "http://stackoverflow.com/adms:contactPoint/vcard:url",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:contactPoint/vcard:url",
 "children": [
 {
-"name": "odp" ,"children": [
-{"name": "contact_webpage" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "contact_webpage" ,"link": "http://vocabs.tenforce.com/mdr/search?q=contact_webpage",
+"size": 100}] }
 ] }
 ,{ "name": "adms:version" ,
-"link": "http://stackoverflow.com/adms:version",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:version",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "version" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "version" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "version" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "version" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "version" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "version" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "version" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "version" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "revision_id" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "revision_id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=revision_id",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "version" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "version" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version",
+"size": 100}] }
 ] }
-,{ "name": "adms:versionNotes",
-"link": "http://stackoverflow.com/adms:versionNotes",
+,{ "name": "adms:versionNotes" ,
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/adms:versionNotes",
 "children": [
 {
-"name": "odp" ,"children": [
-{"name": "version_description" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "version_description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=version_description",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:keyword" ,
-"link": "http://stackoverflow.com/dcat:keyword",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dcat:keyword",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "keywords/name" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "keywords/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=keywords/name",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "tags/name" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "tags/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=tags/name",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:landingPage" ,
-"link": "http://stackoverflow.com/dcat:landingPage",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dcat:landingPage",
 "children": [
 {
-"name": "fr" ,"children": [
-{"name": "resources/id" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "resources/id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/id",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
 ] }
 ,{
-"name": "se" ,"children": [
-{"name": "url" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=url",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:theme" ,
-"link": "http://stackoverflow.com/dcat:theme",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dcat:theme",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "extras/key[categorization]-value" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "extras/key[categorization]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[categorization]-value",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "extras/key[categorization]-value" ,"size": 100},{"name": "groups/name" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "extras/key[categorization]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[categorization]-value",
+"size": 100},{"name": "groups/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=groups/name",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "extras/key[categories]-value" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "extras/key[categories]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[categories]-value",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "extras/key[theme_available]-value" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "extras/key[theme_available]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[theme_available]-value",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "extras/key[theme-primary]-value" ,"size": 100},{"name": "theme-primary" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "extras/key[theme-primary]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[theme-primary]-value",
+"size": 100},{"name": "theme-primary" ,"link": "http://vocabs.tenforce.com/mdr/search?q=theme-primary",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "groups/name" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "groups/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=groups/name",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "eurovoc_thesaurus" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "eurovoc_thesaurus" ,"link": "http://vocabs.tenforce.com/mdr/search?q=eurovoc_thesaurus",
+"size": 100}] }
 ] }
 ,{ "name": "dct:accrualPeriodicity" ,
-"link": "http://stackoverflow.com/dct:accrualPeriodicity",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:accrualPeriodicity",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "update_frequency" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "update_frequency" ,"link": "http://vocabs.tenforce.com/mdr/search?q=update_frequency",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "extras/key[frequency-of-update]-value" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "extras/key[frequency-of-update]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[frequency-of-update]-value",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "update_frequency" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "update_frequency" ,"link": "http://vocabs.tenforce.com/mdr/search?q=update_frequency",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "update_frequency" ,"size": 100},{"name": "update_frequency-other" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "update_frequency" ,"link": "http://vocabs.tenforce.com/mdr/search?q=update_frequency",
+"size": 100},{"name": "update_frequency-other" ,"link": "http://vocabs.tenforce.com/mdr/search?q=update_frequency-other",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "accrual_periodicity" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "accrual_periodicity" ,"link": "http://vocabs.tenforce.com/mdr/search?q=accrual_periodicity",
+"size": 100}] }
 ] }
 ,{ "name": "dct:description" ,
-"link": "http://stackoverflow.com/dct:description",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:description",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "notes" ,"size": 100},{"name": "notes_en" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100},{"name": "notes_en" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes_en",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "notes" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "notes" ,"link": "http://vocabs.tenforce.com/mdr/search?q=notes",
+"size": 100}] }
 ] }
 ,{ "name": "dct:identifier" ,
-"link": "http://stackoverflow.com/dct:identifier",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:identifier",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "id" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=id",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "id" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=id",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "id" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=id",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "identifier" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "identifier" ,"link": "http://vocabs.tenforce.com/mdr/search?q=identifier",
+"size": 100}] }
 ] }
 ,{ "name": "dct:issued" ,
-"link": "http://stackoverflow.com/dct:issued",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:issued",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "extras/key[date_released]-value" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "extras/key[date_released]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[date_released]-value",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "created" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=created",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "date_released" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "date_released" ,"link": "http://vocabs.tenforce.com/mdr/search?q=date_released",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "release_date" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "release_date" ,"link": "http://vocabs.tenforce.com/mdr/search?q=release_date",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "metadata_created" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "metadata_created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_created",
+"size": 100}] }
 ] }
 ,{ "name": "dct:language" ,
-"link": "http://stackoverflow.com/dct:language",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:language",
 "children": [
 {
-"name": "odp" ,"children": [
-{"name": "language" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "language" ,"link": "http://vocabs.tenforce.com/mdr/search?q=language",
+"size": 100}] }
 ] }
 ,{ "name": "dct:modified" ,
-"link": "http://stackoverflow.com/dct:modified",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:modified",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "revision_timestamp" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=revision_timestamp",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "revision_timestamp" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=revision_timestamp",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "modified_date" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "modified_date" ,"link": "http://vocabs.tenforce.com/mdr/search?q=modified_date",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "revision_timestamp" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=revision_timestamp",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "metadata_modified" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "metadata_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=metadata_modified",
+"size": 100}] }
 ] }
 ,{ "name": "dct:publisher" ,
-"link": "http://stackoverflow.com/dct:publisher",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:publisher",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "extras/key[agency]-value" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "extras/key[agency]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[agency]-value",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "extras/key[published_by]-value" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "extras/key[published_by]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[published_by]-value",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "groups/name" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "groups/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=groups/name",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "published_by" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "published_by" ,"link": "http://vocabs.tenforce.com/mdr/search?q=published_by",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "author" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "author" ,"link": "http://vocabs.tenforce.com/mdr/search?q=author",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "groups/name" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "groups/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=groups/name",
+"size": 100}] }
 ] }
 ,{ "name": "dct:spatial" ,
-"link": "http://stackoverflow.com/dct:spatial",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:spatial",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "extras/key[spatial-text]-value" ,"size": 100},{"name": "extras/key[spatial]-value" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "extras/key[spatial-text]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[spatial-text]-value",
+"size": 100},{"name": "extras/key[spatial]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[spatial]-value",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "extras/key[geographic_coverage]-value" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "extras/key[geographic_coverage]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[geographic_coverage]-value",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "geographic_coverage" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "geographic_coverage" ,"link": "http://vocabs.tenforce.com/mdr/search?q=geographic_coverage",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "geographical_coverage" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "geographical_coverage" ,"link": "http://vocabs.tenforce.com/mdr/search?q=geographical_coverage",
+"size": 100}] }
 ] }
 ,{ "name": "dct:temporal" ,
-"link": "http://stackoverflow.com/dct:temporal",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:temporal",
 "children": [
 {
-"name": "fi" ,"children": [
-{"name": "extras/key[temporal_coverage-from]-value" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "extras/key[temporal_coverage-from]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[temporal_coverage-from]-value",
+"size": 100}] }
 ] }
 ,{ "name": "dct:temporal/end" ,
-"link": "http://stackoverflow.com/dct:temporal/end",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:temporal/end",
 "children": [
 {
-"name": "odp" ,"children": [
-{"name": "temporal_coverage_to" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "temporal_coverage_to" ,"link": "http://vocabs.tenforce.com/mdr/search?q=temporal_coverage_to",
+"size": 100}] }
 ] }
 ,{ "name": "dct:temporal/start" ,
-"link": "http://stackoverflow.com/dct:temporal/start",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:temporal/start",
 "children": [
 {
-"name": "odp" ,"children": [
-{"name": "temporal_coverage_from" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "temporal_coverage_from" ,"link": "http://vocabs.tenforce.com/mdr/search?q=temporal_coverage_from",
+"size": 100}] }
 ] }
 ,{ "name": "dct:title" ,
-"link": "http://stackoverflow.com/dct:title",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/dct:title",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "title" ,"size": 100},{"name": "title_en" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100},{"name": "title_en" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title_en",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "title" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=title",
+"size": 100}] }
 ] }
 ,{ "name": "foaf:Agent/foaf:emailTo" ,
-"link": "http://stackoverflow.com/foaf:Agent/foaf:emailTo",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/foaf:Agent/foaf:emailTo",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "extras/key[publisher_email]-value" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "extras/key[publisher_email]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[publisher_email]-value",
+"size": 100}] }
 ] }
 ,{ "name": "foaf:Agent/foaf:name" ,
-"link": "http://stackoverflow.com/foaf:Agent/foaf:name",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Dataset/foaf:Agent/foaf:name",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "extras/key[publisher]-value" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "extras/key[publisher]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[publisher]-value",
+"size": 100}] }
 ] }
  ] }
 ,{ "name": "dcat:Distribution" ,
-"link": "http://stackoverflow.com/dcat:Distribution",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution",
 "children": [
 { "name": "adms:status" ,
-"link": "http://stackoverflow.com/adms:status",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/adms:status",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "resources/state" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/state" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/state",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/state" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/state" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/state",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:accessURL" ,
-"link": "http://stackoverflow.com/dcat:accessURL",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dcat:accessURL",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/id" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/id",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
 ] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:byteSize" ,
-"link": "http://stackoverflow.com/dcat:byteSize",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dcat:byteSize",
 "children": [
 {
-"name": "gb" ,"children": [
-{"name": "resources/size" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/size" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/size",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/size" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/size" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/size",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/size" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/size" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/size",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:downloadURL" ,
-"link": "http://stackoverflow.com/dcat:downloadURL",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dcat:downloadURL",
 "children": [
 {
-"name": "gb" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/url" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/url",
+"size": 100}] }
 ] }
 ,{ "name": "dcat:mediaType" ,
-"link": "http://stackoverflow.com/dcat:mediaType",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dcat:mediaType",
 "children": [
 {
-"name": "de" ,"children": [
-{"name": "resources/file" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/file" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/file",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/mimetype" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/mimetype" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/mimetype",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/mimetype" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/mimetype" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/mimetype",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/file" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/file" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/file",
+"size": 100}] }
 ] }
 ,{ "name": "dct:description" ,
-"link": "http://stackoverflow.com/dct:description",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:description",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/description" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/description" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/description",
+"size": 100}] }
 ] }
 ,{ "name": "dct:format" ,
-"link": "http://stackoverflow.com/dct:format",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:format",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/format" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/format" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/format",
+"size": 100}] }
 ] }
 ,{ "name": "dct:issued" ,
-"link": "http://stackoverflow.com/dct:issued",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:issued",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/created" ,"size": 100},{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100},{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/created" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/created" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/created",
+"size": 100}] }
 ] }
 ,{ "name": "dct:license" ,
-"link": "http://stackoverflow.com/dct:license",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:license",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "license_id" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "license_id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_id",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "extras/key[license_url]-value" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "extras/key[license_url]-value" ,"link": "http://vocabs.tenforce.com/mdr/search?q=extras/key[license_url]-value",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "license_id" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "license_id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_id",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "license_id" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "license_id" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_id",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "license_url" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "license_url" ,"link": "http://vocabs.tenforce.com/mdr/search?q=license_url",
+"size": 100}] }
 ] }
 ,{ "name": "dct:modified" ,
-"link": "http://stackoverflow.com/dct:modified",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:modified",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "fi" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "fi" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fi",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "fr" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "fr" ,"link": "http://vocabs.tenforce.com/mdr/search?q=fr",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/last_modified" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/last_modified" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/last_modified",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "it" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "it" ,"link": "http://vocabs.tenforce.com/mdr/search?q=it",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/revision_timestamp" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/revision_timestamp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/revision_timestamp",
+"size": 100}] }
 ] }
 ,{ "name": "dct:title" ,
-"link": "http://stackoverflow.com/dct:title",
+"link": "http://vocabs.tenforce.com/mdr/search?id=dcat:Distribution/dct:title",
 "children": [
 {
-"name": "at" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "at" ,"link": "http://vocabs.tenforce.com/mdr/search?q=at",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "de" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "de" ,"link": "http://vocabs.tenforce.com/mdr/search?q=de",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "gb" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "gb" ,"link": "http://vocabs.tenforce.com/mdr/search?q=gb",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "ie" ,"children": [
-{"name": "resources/title" ,"size": 100}] }
+"name": "ie" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ie",
+"children": [
+{"name": "resources/title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/title",
+"size": 100}] }
 ,{
-"name": "nl" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "nl" ,"link": "http://vocabs.tenforce.com/mdr/search?q=nl",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "odp" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "odp" ,"link": "http://vocabs.tenforce.com/mdr/search?q=odp",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "ro" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "ro" ,"link": "http://vocabs.tenforce.com/mdr/search?q=ro",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "se" ,"children": [
-{"name": "resources/name" ,"size": 100}] }
+"name": "se" ,"link": "http://vocabs.tenforce.com/mdr/search?q=se",
+"children": [
+{"name": "resources/name" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/name",
+"size": 100}] }
 ,{
-"name": "sk" ,"children": [
-{"name": "resources/title" ,"size": 100}] }
+"name": "sk" ,"link": "http://vocabs.tenforce.com/mdr/search?q=sk",
+"children": [
+{"name": "resources/title" ,"link": "http://vocabs.tenforce.com/mdr/search?q=resources/title",
+"size": 100}] }
 ] }
  ] }
 ] }
