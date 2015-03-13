@@ -41,8 +41,8 @@
 				</li>
 		</ul>
 		</li>
-		<li><a href="http://vocabs.tenforce.com/mdr/about/html/http%3A%2F%2Fvocabs.tenforce.com%2Fdcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
-		<li><a href="http://vocabs.tenforce.com/mdr/about/html/http%3A%2F%2Fvocabs.tenforce.com%2F2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
+		<li><a href="http://vocabs.tenforce.com/mdr/about/html/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
+		<li><a href="http://vocabs.tenforce.com/mdr/about/html/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
     <li>
 			DCAT-AP Open Data Support Mappings:
 			<ul>

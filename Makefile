@@ -13,7 +13,7 @@ dcatods.ttl: excelfiles/DCatVocabularies-v0.1.xlsx system/scripts/dcatxsl2mdr.py
 
 mdr.tgz: data
 	mkdir mdr
-	cp -r system mdr
+	cp -r system/* mdr
 	cp excelfiles/*.xlsx mdr/www
 	tar cvf mdr.tar mdr
 
