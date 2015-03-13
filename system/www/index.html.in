@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Vocabulary Mappings Directory</title>
+  <title>Core Vocabulary Mappings Directory</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
@@ -17,19 +17,34 @@
       <img src="images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
     </a>
   </div>
-  <h1>Vocabulary Mapping Directory</h1>
+  <h1>Core Vocabulary Mapping Directory</h1>
 </header>
 
 <section id="registry">
-  <h2>Browse the metadata registry</h2>
+  <h2>Browse the mappings</h2>
 
-  <p>Using the <a href="/def">ontology</a> inspired by the
-		<a href="http://en.wikipedia.org/wiki/ISO/IEC_11179">ISO 11179-3</a>
-		meta-model, the following libraries have been modelled:
+  <p>The platform has mappings available for the following vocabularies:
   <ul>
-    <li><a href="/mdr/id/cv/">Core Vocabularies</a>,</li>
+    <li><a href="/mdr/id/cv/">Core Vocabularies</a>,
+			<ul>
+				<li>
+					<a href="Core_Vocabularies_v1.1_v0.31.xlsx">Core Vocabularies Mapping Table</a>
+				</li>
+				<li>
+					<p>Examples of some entry points are:
+						<ul>
+							<li>the <a href="/mdr/id/cv/property/PersonFamilyName">Person Familty Name</a> property (Core Vocabularies);</li>
+							<li>the <a href="/mdr/id/cv/property/AddressPostCode">Address Post Code</a> Property;</li>
+							<li>the <a href="/mdr/id/cv/property/PersonCountryOfBirth">Person Country Of Birth</a> Property;</li>
+						</ul>
+					</p>
+				</li>
+		</ul>
+		</li>
+		<li><a href="http://vocabs.tenforce.com/mdr/about/html/http%3A%2F%2Fvocabs.tenforce.com%2Fdcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
+		<li><a href="http://vocabs.tenforce.com/mdr/about/html/http%3A%2F%2Fvocabs.tenforce.com%2F2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
     <li>
-			DCAT/ODS Mappings:
+			DCAT-AP Open Data Support Mappings:
 			<ul>
 				<li><a href="/mdr/id/dcat/">Browsable View</a>,</li>
 				<li>
@@ -39,22 +54,12 @@
 				<li>
 					<a href="EuroVocmappings_v0.03-1.xlsx">EuroVoc Value Mapping Table</a>
 				</li>
-				</ul>
-			</li>
-    <li><a href="/mdr/id/ubl/">OASIS UBL 2.1 Common Library</a>,</li>
+			</ul>
+		</li>
   </ul>
 
-  <p>Examples of some registry entry points are the following examples
-  (Core Vocabularies):
-		<ul>
-    <li>the <a href="/mdr/id/cv/property/PersonFamilyName">Person Familty Name</a> property (Core Vocabularies);</li>
-    <li>the <a href="/mdr/id/cv/property/AddressPostCode">Address Post Code</a> Property;</li>
-    <li>the <a href="/mdr/id/cv/property/PersonCountryOfBirth">Person Country Of Birth</a> Property;</li>
-  </ul>
-  </p>
-
-  <p>Or use the box below to search the registry for object classes and data
-  elements.</p>
+  
+  <p>Or use the box below to search the core vocabulary mapping directory.</p>
 
   <div>
     <form id="searchform">
