@@ -1,5 +1,5 @@
 <?vsp
--- /mdr/search handler script
+-- /vdm/search handler script
 --
 -- Copyright 2014 European Union
 -- Author: Vianney le Clément de Saint-Marcq (PwC EU Services)
@@ -59,15 +59,15 @@ if(_limit > 0) {
 
 query := sprintf('CONSTRUCT {
                     ?s a ?class .
-                    ?s mdr:context ?context .
+                    ?s vdm:context ?context .
 										?s rdfs:label ?label .
 										?s skos:definition ?definition .
                     ?context rdfs:label ?contextname .
                   } WHERE {
                     {
                       { SELECT * WHERE {
-                          ?s a mdr:ObjectClass .
-                          OPTIONAL { ?s mdr:context ?context .
+                          ?s a vdm:ObjectClass .
+                          OPTIONAL { ?s vdm:context ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }
@@ -76,8 +76,8 @@ query := sprintf('CONSTRUCT {
                         } %s }
                     } UNION {
                       { SELECT * WHERE {
-											    ?s a mdr:DataElement .
-                          OPTIONAL { ?s mdr:context ?context .
+											    ?s a vdm:DataElement .
+                          OPTIONAL { ?s vdm:context ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }
@@ -86,8 +86,8 @@ query := sprintf('CONSTRUCT {
                         } %s }
                     } UNION {
                       { SELECT * WHERE {
-											    ?s a mdr:Property .
-                          OPTIONAL { ?s mdr:context ?context .
+											    ?s a vdm:Property .
+                          OPTIONAL { ?s vdm:context ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }

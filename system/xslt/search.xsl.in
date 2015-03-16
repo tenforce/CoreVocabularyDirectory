@@ -28,8 +28,8 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:mdr="%BASEURI%def#"
-  exclude-result-prefixes="xsl rdf rdfs skos mdr">
+  xmlns:vdm="%BASEURI%def#"
+  exclude-result-prefixes="xsl rdf rdfs skos vdm">
 
   <xsl:param name="keyword" />
 
@@ -43,7 +43,7 @@
       <xsl:with-param name="body">
         <section>
           <h2>Results for ‘<xsl:value-of select="$keyword" />’</h2>
-          <p><a href="/mdr/">« Return to the homepage</a></p>
+          <p><a href="/vdm/">« Return to the homepage</a></p>
           <div id="results">
             <xsl:choose>
               <xsl:when test="//rdf:type">
@@ -73,7 +73,7 @@
   <xsl:template name="results">
     <xsl:param name="type" />
     <xsl:param name="title" />
-    <xsl:variable name="results" select="//rdf:Description[rdf:type/@rdf:resource = concat('http://mdr.semic.eu/def#', $type)]" />
+    <xsl:variable name="results" select="//rdf:Description[rdf:type/@rdf:resource = concat('http://vocabs.tenforce.com/def#', $type)]" />
     <xsl:if test="$results">
       <table class="results">
         <thead>
@@ -84,9 +84,9 @@
         <tbody>
           <xsl:for-each select="$results">
             <tr><td>
-              <xsl:if test="mdr:context">
+              <xsl:if test="vdm:context">
                 <xsl:call-template name="rdf-value">
-                  <xsl:with-param name="element" select="mdr:context" />
+                  <xsl:with-param name="element" select="vdm:context" />
                   <xsl:with-param name="strip-uri" select="true()" />
                 </xsl:call-template>
                 <xsl:text>: </xsl:text>

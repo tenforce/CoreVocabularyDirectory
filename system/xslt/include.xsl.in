@@ -28,7 +28,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:locn="http://www.w3.org/ns/locn#"
-  xmlns:mdr="http://mdr.semic.eu/def#"
+  xmlns:vdm="http://vocabs.tenforce.com/def#"
   exclude-result-prefixes="xsl ns rdf rdfs locn">
 
   <xsl:param name="baseuri" select="'%BASEURI%'" />
@@ -62,9 +62,9 @@
         <meta charset="UTF-8" />
         <title><xsl:value-of select="$title" /></title>
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="/mdr/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="/vdm/css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
-        <link rel="stylesheet" type="text/css" href="/mdr/css/screen.css" />
+        <link rel="stylesheet" type="text/css" href="/vdm/css/screen.css" />
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
       </head>
       <body>
@@ -240,7 +240,7 @@
     <xsl:param name="strip-uri" select="false()" />
 
 		<xsl:variable name="cc" 
-									select="//rdf:Description[@rdf:about=$id]/mdr:context/@rdf:resource"/>
+									select="//rdf:Description[@rdf:about=$id]/vdm:context/@rdf:resource"/>
     <xsl:call-template name="rdf-value">
       <xsl:with-param name="element" 
 											select="//rdf:Description[@rdf:about=$cc]" />
@@ -332,7 +332,7 @@
     <xsl:param name="uri" />
     <xsl:param name="format">html</xsl:param>
     <xsl:choose>
-      <xsl:when test="starts-with(string($uri), concat($baseuri, '/mdr/id/'))">
+      <xsl:when test="starts-with(string($uri), concat($baseuri, '/vdm/id/'))">
         <xsl:choose>
           <xsl:when test="$format = 'html'">
             <xsl:value-of select="string($uri)" />
@@ -361,7 +361,7 @@
     <xsl:param name="uri" />
     <xsl:param name="format">html</xsl:param>
 
-    <xsl:text>/mdr/about/</xsl:text>
+    <xsl:text>/vdm/about/</xsl:text>
     <xsl:value-of select="$format" />
     <xsl:text>/</xsl:text>
     <xsl:call-template name="urlencode">

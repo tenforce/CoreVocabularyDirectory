@@ -31,10 +31,10 @@ function doSearch() {
   var query = $("#query").val();
   $("#results")
     .empty()
-    .append('<p class="more"><a href="/mdr/search?' +
+    .append('<p class="more"><a href="/vdm/search?' +
             $.param({'q': query}) +
             '">See all results &raquo;</a></p>');
-  $.get("/mdr/search", {
+  $.get("/vdm/search", {
     'q': query,
     'limit': 10
   }, function(data) {
@@ -60,11 +60,11 @@ $(function() {
     doSearch();
     event.preventDefault();
   });
-  fillExample('goals', 'SELECT DISTINCT ?id ?name ?description WHERE { ?id a mdr:Goal ; rdfs:label ?name ; rdfs:comment ?description } ORDER BY ?id');
-  fillExample('transactions', 'SELECT DISTINCT ?id ?name ?description ?goal WHERE { ?id a mdr:Transaction ; rdfs:label ?name ; rdfs:comment ?description ; mdr:implements ?goal } ORDER BY ?id ?goal');
-  fillExample('requirements', 'SELECT DISTINCT ?id ?name ?statement ?rationale ?transaction ?goal WHERE { ?id a mdr:HighLevelRequirement ; rdfs:label ?name ; skos:definition ?statement ; mdr:rationale ?rationale ; mdr:transaction ?transaction ; mdr:implements ?goal } ORDER BY ?id ?goal');
-  fillExample('information', 'SELECT DISTINCT ?id ?name ?definition ?transaction ?requirement WHERE { ?id a mdr:InformationRequirement ; rdfs:label ?name ; skos:definition ?definition ; mdr:transaction ?transaction ; mdr:implements ?requirement } ORDER BY ?id');
-  fillExample('rules', 'SELECT DISTINCT ?id ?rule ?transaction ?ir ?requirement WHERE { ?id a mdr:BusinessRule ; skos:definition ?rule ; mdr:transaction ?transaction ; mdr:affects ?ir ; mdr:implements ?requirement } ORDER BY ?id');
+  fillExample('goals', 'SELECT DISTINCT ?id ?name ?description WHERE { ?id a vdm:Goal ; rdfs:label ?name ; rdfs:comment ?description } ORDER BY ?id');
+  fillExample('transactions', 'SELECT DISTINCT ?id ?name ?description ?goal WHERE { ?id a vdm:Transaction ; rdfs:label ?name ; rdfs:comment ?description ; vdm:implements ?goal } ORDER BY ?id ?goal');
+  fillExample('requirements', 'SELECT DISTINCT ?id ?name ?statement ?rationale ?transaction ?goal WHERE { ?id a vdm:HighLevelRequirement ; rdfs:label ?name ; skos:definition ?statement ; vdm:rationale ?rationale ; vdm:transaction ?transaction ; vdm:implements ?goal } ORDER BY ?id ?goal');
+  fillExample('information', 'SELECT DISTINCT ?id ?name ?definition ?transaction ?requirement WHERE { ?id a vdm:InformationRequirement ; rdfs:label ?name ; skos:definition ?definition ; vdm:transaction ?transaction ; vdm:implements ?requirement } ORDER BY ?id');
+  fillExample('rules', 'SELECT DISTINCT ?id ?rule ?transaction ?ir ?requirement WHERE { ?id a vdm:BusinessRule ; skos:definition ?rule ; vdm:transaction ?transaction ; vdm:affects ?ir ; vdm:implements ?requirement } ORDER BY ?id');
 });
 
 /* vim:set ts=2 sw=2 et: */

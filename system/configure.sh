@@ -25,8 +25,8 @@ set -e -u
 # Default values
 IP=vocabs.tenforce.com
 #IP=188.64.53.147
-BASEURI="http://${IP}/mdr/"
-ROOTURI="file://mdr/"
+BASEURI="http://${IP}/vdm/"
+ROOTURI="file://vdm/"
 DEFAULT_GRAPH="http://${IP}/DAV"
 GOOGLE_ANALYTICS="UA-38243808-1"
 

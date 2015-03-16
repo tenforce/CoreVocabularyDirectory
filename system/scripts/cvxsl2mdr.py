@@ -31,8 +31,8 @@ import hashlib
 
 from rdflib import URIRef, Literal
 from rdflib.namespace import RDF, RDFS, SKOS
-MDR = rdflib.Namespace("http://mdr.semic.eu/def#")
-CVNS = rdflib.Namespace("http://vocabs.tenforce.com/mdr/id/")
+VDM = rdflib.Namespace("http://vocabs.tenforce.com/def#")
+CVNS = rdflib.Namespace("http://vocabs.tenforce.com/vdm/id/")
 UBLNS = rdflib.Namespace("http://ubl/terms#")
 
 class CommonVocabularySpreadsheet:
@@ -87,10 +87,10 @@ class CommonVocabularySpreadsheet:
         '''Return the RDF Graph corresponding to the spreadsheet.'''
         g = rdflib.Graph()
         g.bind("skos", str(SKOS))
-        g.bind("mdr", str(MDR))
+        g.bind("vdm", str(VDM))
         g.bind("cv", str(CVNS))
         g.bind("ubl", str(UBLNS))
-        g.add((URIRef(self.ns), RDF.type, MDR.Context))
+        g.add((URIRef(self.ns), RDF.type, VDM.Context))
         self.convert_core_vocabularies(g)
         self.convert_datatypes(g)
         self.convert_mapping_file(g)
@@ -110,59 +110,59 @@ class CommonVocabularySpreadsheet:
 
     def cv_class(self,item,g):
         uri = self.uri("class", item["identifier"])
-        g.add((uri, MDR.context, URIRef(self.ns)))
-        g.add((uri, MDR.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
-        g.add((uri, RDF.type, MDR.ObjectClass))
-        g.add((uri, MDR.objectClassName, self.text(item["term"])))
-        # g.add((uri, MDR.propertyTerm, self.text(item["term"])))
+        g.add((uri, VDM.context, URIRef(self.ns)))
+        g.add((uri, VDM.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
+        g.add((uri, RDF.type, VDM.ObjectClass))
+        g.add((uri, VDM.objectClassName, self.text(item["term"])))
+        # g.add((uri, VDM.propertyTerm, self.text(item["term"])))
         # g.add((uri, RDFS.comment, self.text(item["definition"].strip())))
         g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
-        g.add((uri, MDR.rationale, self.text(item["description"].strip())))
+        g.add((uri, VDM.rationale, self.text(item["description"].strip())))
 
     def cv_property(self,item,g):
         uri = self.uri("property", item["identifier"])
-        g.add((uri, MDR.context, URIRef(self.ns)))
-        g.add((uri, RDF.type, MDR.Property))
-        g.add((uri, MDR.objectClass, self.uri("class",item["class"].replace(" ",""))))
-        g.add((uri, MDR.property, self.uri("class",item["data type"].replace(" ",""))))
-        g.add((uri, MDR.representation, RDFS.Literal))
-        g.add((uri, MDR.propertyTerm, self.text(item["term"])))
+        g.add((uri, VDM.context, URIRef(self.ns)))
+        g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, VDM.objectClass, self.uri("class",item["class"].replace(" ",""))))
+        g.add((uri, VDM.property, self.uri("class",item["data type"].replace(" ",""))))
+        g.add((uri, VDM.representation, RDFS.Literal))
+        g.add((uri, VDM.propertyTerm, self.text(item["term"])))
         # g.add((uri, RDFS.comment, self.text(item["definition"])))
         g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
-        g.add((uri, MDR.rationale, self.text(item["description"].strip())))
-        g.add((uri, MDR.example, self.text(item["examples"])))
+        g.add((uri, VDM.rationale, self.text(item["description"].strip())))
+        g.add((uri, VDM.example, self.text(item["examples"])))
         g.add((uri, SKOS.editorialNote, self.text(item["comments for next version"])))
 
     def cv_association(self,item,g):
         uri = self.uri("property", item["identifier"])
-        g.add((uri, MDR.context, URIRef(self.ns)))
-        g.add((uri, MDR.property, self.uri("class",item["data type"].replace(" ",""))))
-        g.add((uri, RDF.type, MDR.Property))
-        g.add((uri, MDR.objectClass, self.uri("class",item["class"].replace(" ",""))))
-        g.add((uri, MDR.propertyTerm, self.text(item["term"])))
+        g.add((uri, VDM.context, URIRef(self.ns)))
+        g.add((uri, VDM.property, self.uri("class",item["data type"].replace(" ",""))))
+        g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, VDM.objectClass, self.uri("class",item["class"].replace(" ",""))))
+        g.add((uri, VDM.propertyTerm, self.text(item["term"])))
         g.add((uri, RDFS.comment, self.text(item["definition"])))
-        g.add((uri, MDR.rationale, self.text(item["description"].strip())))
+        g.add((uri, VDM.rationale, self.text(item["description"].strip())))
 
     def cv_composite_type(self,item,g):
         uri = self.uri("datatype", item["identifier"])
-        g.add((uri, MDR.context, URIRef(self.ns)))
-        g.add((uri, MDR.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
-        g.add((uri, RDF.type, MDR.DataType))
-        g.add((uri, MDR.representationTerm, self.text(item["primitive type"])))
-        g.add((uri, MDR.propertyTerm, self.text(item["term"])))
+        g.add((uri, VDM.context, URIRef(self.ns)))
+        g.add((uri, VDM.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
+        g.add((uri, RDF.type, VDM.DataType))
+        g.add((uri, VDM.representationTerm, self.text(item["primitive type"])))
+        g.add((uri, VDM.propertyTerm, self.text(item["term"])))
         g.add((uri, RDFS.comment, self.text(item["definition"])))
-        g.add((uri, MDR.rationale, self.text(item["description"].strip())))
+        g.add((uri, VDM.rationale, self.text(item["description"].strip())))
 
     def cv_attribute(self,item,g):
         uri = self.uri("datatype", item["identifier"])
-        g.add((uri, MDR.context, URIRef(self.ns)))
-        g.add((uri, MDR.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
-        g.add((uri, RDF.type, MDR.DataType))
-        g.add((uri, MDR.propertyTerm, self.text(item["term"])))
-        g.add((uri, MDR.representation, self.uri("datatype",item["data type"].replace(" ",""))))
+        g.add((uri, VDM.context, URIRef(self.ns)))
+        g.add((uri, VDM.hasURI, rdflib.term.URIRef(CVNS+item["identifier"])))
+        g.add((uri, RDF.type, VDM.DataType))
+        g.add((uri, VDM.propertyTerm, self.text(item["term"])))
+        g.add((uri, VDM.representation, self.uri("datatype",item["data type"].replace(" ",""))))
         # g.add((uri, RDFS.comment, self.text(item["definition"])))
         g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
-        g.add((uri, MDR.rationale, self.text(item["description"].strip())))
+        g.add((uri, VDM.rationale, self.text(item["description"].strip())))
 
     def convert_datatypes(self, g):
         '''Add the contents of the 'Data Types' sheet to the graph g.'''
@@ -207,18 +207,18 @@ class CommonVocabularySpreadsheet:
         if item["mapping relation"] != "Has no match":
             for ubluri in self.cv_ref(item["identifier"],item["label"]):
                datamodel= self.cv_datamodelid(item["data model"])
-               g.add((datamodel, RDF.type, MDR.Context))
+               g.add((datamodel, RDF.type, VDM.Context))
                g.add((datamodel, RDFS.label, self.text(item["data model"])))
-               g.add((ubluri, MDR.context, datamodel))
-               # g.add((ubluri, MDR.hasURI, rdflib.term.URIRef(UBLNS+item["identifier"])))
-               g.add((ubluri, RDF.type, MDR.Property))
+               g.add((ubluri, VDM.context, datamodel))
+               # g.add((ubluri, VDM.hasURI, rdflib.term.URIRef(UBLNS+item["identifier"])))
+               g.add((ubluri, RDF.type, VDM.Property))
                g.add((ubluri, RDFS.label, self.text(item["identifier"])))
 #              g.add((ubluri, RDFS.comment, self.text(item["label"])))
                g.add((ubluri, SKOS.altLabel, self.text(item["label"])))
                g.add((ubluri, SKOS.editorialNote, self.text(item["mapping comment"])))
-               g.add((ubluri, MDR.propertyTerm, self.text(item["label"])))
+               g.add((ubluri, VDM.propertyTerm, self.text(item["label"])))
                g.add((ubluri, RDFS.comment, self.text(item["definition"].strip())))
-               g.add((ubluri, MDR.rationale, self.text(item["mapping comment"].strip())))
+               g.add((ubluri, VDM.rationale, self.text(item["mapping comment"].strip())))
                if item["mapping relation"] == "Has exact match":
                   g.add((uri,SKOS.exactMatch,ubluri))
                elif item["mapping relation"] == "Has close match":
@@ -237,10 +237,10 @@ class CommonVocabularySpreadsheet:
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.description = "Convert a spreadsheet to MDR RDF."
+    ap.description = "Convert a spreadsheet to VDM RDF."
     ap.add_argument("xlsfile", help="input XLS(X) file")
     ap.add_argument("-N", "--namespace",
-                    default="http://vocabs.tenforce.com/mdr/id/cv/",
+                    default="http://vocabs.tenforce.com/vdm/id/cv/",
                     help="output namespace (default: %(default)s)")
     ap.add_argument("-f", "--format", default="turtle",
                     help="serialization format (default: %(default)s)")

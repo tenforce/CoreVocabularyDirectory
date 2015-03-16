@@ -30,7 +30,7 @@
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:dcterms="http://purl.org/dc/terms/"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:mdr="http://mdr.semic.eu/def#"
+  xmlns:vdm="http://vocabs.tenforce.com/def#"
   exclude-result-prefixes="xsl rdf rdfs dc dcterms skos">
 
   <xsl:include href="%ROOTURI%xslt/include.xsl" />
@@ -84,7 +84,7 @@
 							<td>
 								<xsl:call-template name="rdf-value">
 									<xsl:with-param name="element" select="." />
-									<xsl:with-param name="strip-uri" select="not(self::mdr:context)" />
+									<xsl:with-param name="strip-uri" select="not(self::vdm:context)" />
 								</xsl:call-template>
 							</td>
 						</tr>

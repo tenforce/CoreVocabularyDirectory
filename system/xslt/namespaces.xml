@@ -44,6 +44,10 @@
     <uri>http://mdr.semic.eu/def#</uri>
   </namespace>
   <namespace>
+    <prefix>vdm</prefix>
+    <uri>http://vocabs.tenforce.com/def#</uri>
+  </namespace>
+  <namespace>
     <prefix>cac</prefix>
     <uri>urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2:</uri>
   </namespace>

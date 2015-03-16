@@ -61,7 +61,7 @@ query := 'CONSTRUCT {
   ?s rdfs:label ?slabel .
   ?p rdfs:label ?plabel .
   ?o rdfs:label ?olabel .
-  ?o mdr:context ?c .
+  ?o vdm:context ?c .
   ?c rdfs:label ?clabel.
 } WHERE {
   {
@@ -70,7 +70,7 @@ query := 'CONSTRUCT {
                  WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
     OPTIONAL { { SELECT ?o ?label AS ?olabel ?c ?clabel
                  WHERE { ?o rdfs:label ?label 
-								          OPTIONAL { ?o mdr:context ?c 
+								          OPTIONAL { ?o vdm:context ?c 
 													      OPTIONAL { ?c rdfs:label ?clabel } }
 								 } GROUP BY ?o } }
   } UNION {
@@ -79,7 +79,7 @@ query := 'CONSTRUCT {
                  WHERE { ?p rdfs:label ?label 
 								 } GROUP BY ?p } }
     OPTIONAL { { SELECT ?c ?clabel WHERE {
-								   OPTIONAL { <URI> mdr:context ?c .
+								   OPTIONAL { <URI> vdm:context ?c .
                               ?c rdfs:label ?clabel } } } }
     OPTIONAL { { SELECT ?s ?label AS ?slabel
                  WHERE { ?s rdfs:label ?label } GROUP BY ?s } }

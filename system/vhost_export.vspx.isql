@@ -1,14 +1,14 @@
 DB.DBA.VHOST_REMOVE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
-	 lpath=>'/mdr'
+	 lpath=>'/vdm'
 );
 
 DB.DBA.VHOST_DEFINE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
-	 lpath=>'/mdr',
-	 ppath=>'/mdr/www/',
+	 lpath=>'/vdm',
+	 ppath=>'/vdm/www/',
 	 is_dav=>0,
 	 def_page=>'index.html',
 	 vsp_user=>'dba',
@@ -26,10 +26,10 @@ DB.DBA.URLREWRITE_CREATE_RULELIST (
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_9', 1, 
-  '/mdr/id/(.*)', 
+  '/vdm/id/(.*)', 
 vector ('par_1'), 
 1, 
-'/mdr/doc/%s', 
+'/vdm/doc/%s', 
 vector ('par_1'), 
 NULL, 
 NULL, 
@@ -40,10 +40,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_10', 1, 
-  '/mdr/doc/([^/.]*)(?:/([^/.]*))?(?:\.(.*))?', 
+  '/vdm/doc/([^/.]*)(?:/([^/.]*))?(?:\.(.*))?', 
 vector ('par_1', 'par_2', 'par_3', 'par_4'), 
 4, 
-'/mdr/description.vsp?namespace=%U&type=%U&id=%U&format=%U', 
+'/vdm/description.vsp?namespace=%U&type=%U&id=%U&format=%U', 
 vector ('par_1', 'par_2', 'par_3', 'par_4'), 
 NULL, 
 NULL, 
@@ -54,10 +54,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_11', 1, 
-  '/mdr/about/([^/]*)/(.*)', 
+  '/vdm/about/([^/]*)/(.*)', 
 vector ('par_1', 'par_2'), 
 2, 
-'/mdr/description.vsp?format=%U&uri=%s', 
+'/vdm/description.vsp?format=%U&uri=%s', 
 vector ('par_1', 'par_2'), 
 NULL, 
 NULL, 
@@ -68,10 +68,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_12', 1, 
-  '/mdr/search(.*)', 
+  '/vdm/search(.*)', 
 vector ('par_1'), 
 1, 
-'/mdr/search.vsp%s', 
+'/vdm/search.vsp%s', 
 vector ('par_1'), 
 NULL, 
 NULL, 
@@ -81,3 +81,4 @@ NULL,
 );
 
 DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);
+DB.DBA.XML_SET_NS_DECL ('vdm', 'http://vocabs.tenforce.com/def#', 2);
