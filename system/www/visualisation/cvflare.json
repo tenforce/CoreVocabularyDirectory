@@ -1,0 +1,2501 @@
+{
+"name": "Core Vocabulary Mappings" ,
+"children": [
+{
+"name": "Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address",
+"children": [
+{
+"name": "Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "ortsteil_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ortsteil_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Address_line_2_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_line_2_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:Address_",
+"size": 200},{"name": "nc:AddressDeliveryPointID_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressDeliveryPointID_",
+"size": 200},{"name": "nc:AddressDeliveryPointText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressDeliveryPointText_",
+"size": 200},{"name": "nc:AddressUrbanizationName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressUrbanizationName_",
+"size": 200},{"name": "nc:LocationCityName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationCityName_",
+"size": 200},{"name": "scr:AddressIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=scr:AddressIdentification_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Country_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_",
+"size": 200},{"name": "Address._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Identifier_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Buitenlandse_Niet_Natuurlijk_Persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Buitenlandse_Niet_Natuurlijk_Persoon_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetsadress_adressomrÃ¥de_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_adressomrÃ¥de_",
+"size": 200},{"name": "postadress_postort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postadress_postort_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._City_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Name._Text_",
+"size": 200},{"name": "Address._City_Sub-Division_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Sub-Division_Name._Text_",
+"size": 200},{"name": "Address._Country_Sub-Division_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_Sub-Division_Name._Text_",
+"size": 200},{"name": "Address._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Identification._Identifier_",
+"size": 200},{"name": "Address._Postcode._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postcode._Code_",
+"size": 200},{"name": "Person._Residence._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Residence._Address_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:address_",
+"size": 200},{"name": "locn:addressArea_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:addressArea_",
+"size": 200},{"name": "locn:addressId_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:addressId_",
+"size": 200},{"name": "locn:adminUnitL1_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:adminUnitL1_",
+"size": 200},{"name": "locn:adminUnitL2_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:adminUnitL2_",
+"size": 200},{"name": "locn:fullAddress_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:fullAddress_",
+"size": 200},{"name": "locn:locatorDesignator_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:locatorDesignator_",
+"size": 200},{"name": "locn:locatorName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:locatorName_",
+"size": 200},{"name": "locn:poBox_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:poBox_",
+"size": 200},{"name": "locn:postCode_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:postCode_",
+"size": 200},{"name": "locn:postName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:postName_",
+"size": 200},{"name": "locn:thoroughfare_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:thoroughfare_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200},{"name": "hausnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=hausnummer_",
+"size": 200},{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200},{"name": "ort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ort_",
+"size": 200},{"name": "postfach_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postfach_",
+"size": 200},{"name": "postleitzahl_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postleitzahl_",
+"size": 200},{"name": "staat_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=staat_",
+"size": 200},{"name": "strasse_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=strasse_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Address_line_1_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_line_1_",
+"size": 200},{"name": "Country_code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country_code_",
+"size": 200},{"name": "County_subdivision_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=County_subdivision_",
+"size": 200},{"name": "Item_country_or_login_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Item_country_or_login_",
+"size": 200},{"name": "Post_code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Post_code_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:AddressFullText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressFullText_",
+"size": 200},{"name": "nc:LocationPostalCode_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationPostalCode_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._City_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Name._Name_",
+"size": 200},{"name": "Address._City_Subdivision_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Subdivision_Name._Name_",
+"size": 200},{"name": "Address._Country_Subentity._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_Subentity._Text_",
+"size": 200},{"name": "Address._Postal_Zone._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postal_Zone._Text_",
+"size": 200},{"name": "Address._Postbox._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postbox._Text_",
+"size": 200},{"name": "Location._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Address_",
+"size": 200},{"name": "Person._Residence_Address._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Residence_Address._Address_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://brk.kadaster.nl/def/gegevenselement/PostbusLocatie/postbusnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://brk.kadaster.nl/def/gegevenselement/PostbusLocatie/postbusnummer_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/concept/Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/concept/Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/concept/Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/concept/Woonadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeentedeel-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeentedeel-Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Woonadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Woonadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Adres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Adres_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Rechtspersoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Rechtspersoon_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/adres-Adres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/adres-Adres_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcode-Binnenlandsadres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcode-Binnenlandsadres_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcodeWoonplaats-Buitenlandsadres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcodeWoonplaats-Buitenlandsadres_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetadress_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetadress_",
+"size": 200},{"name": "postadress_postnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postadress_postnummer_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Post_Office_Box._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Post_Office_Box._Text_",
+"size": 200},{"name": "Address._Street_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Street_Name._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Address_Area" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_Area",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "ortsteil_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ortsteil_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:AddressUrbanizationName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressUrbanizationName_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetsadress_adressomrÃ¥de_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_adressomrÃ¥de_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._City_Sub-Division_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Sub-Division_Name._Text_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:addressArea_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:addressArea_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._City_Subdivision_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Subdivision_Name._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeentedeel-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeentedeel-Briefadres_in_Nederland_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Address_ID" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_ID",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "scr:AddressIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=scr:AddressIdentification_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Identifier_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Identification._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:addressId_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:addressId_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Admin_Unit_L1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Admin_Unit_L1",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Country_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:adminUnitL1_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:adminUnitL1_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "staat_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=staat_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Country_code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country_code_",
+"size": 200},{"name": "Item_country_or_login_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Item_country_or_login_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Admin_Unit_L2" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Admin_Unit_L2",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Country_Sub-Division_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_Sub-Division_Name._Text_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:adminUnitL2_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:adminUnitL2_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "County_subdivision_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=County_subdivision_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Country_Subentity._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Country_Subentity._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Full_Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Full_Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:fullAddress_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:fullAddress_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:AddressFullText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressFullText_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Adres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Adres_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Locator_Designator" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Locator_Designator",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:locatorDesignator_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:locatorDesignator_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "hausnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=hausnummer_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Locator_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Locator_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:locatorName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:locatorName_",
+"size": 200} ] }] }
+] }
+,{
+"name": "PO_Box" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=PO_Box",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:AddressDeliveryPointID_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressDeliveryPointID_",
+"size": 200},{"name": "nc:AddressDeliveryPointText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:AddressDeliveryPointText_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:poBox_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:poBox_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "postfach_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postfach_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Postbox._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postbox._Text_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://brk.kadaster.nl/def/gegevenselement/PostbusLocatie/postbusnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://brk.kadaster.nl/def/gegevenselement/PostbusLocatie/postbusnummer_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Post_Office_Box._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Post_Office_Box._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Post_Code" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Post_Code",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Postcode._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postcode._Code_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:postCode_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:postCode_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "postleitzahl_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postleitzahl_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Post_code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Post_code_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:LocationPostalCode_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationPostalCode_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._Postal_Zone._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Postal_Zone._Text_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Woonadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcode-Binnenlandsadres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcode-Binnenlandsadres_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcodeWoonplaats-Buitenlandsadres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcodeWoonplaats-Buitenlandsadres_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "postadress_postnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postadress_postnummer_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Post_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Post_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:LocationCityName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationCityName_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "postadress_postort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=postadress_postort_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._City_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Name._Text_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:postName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:postName_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "ort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ort_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Address._City_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._City_Name._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Woonadres_in_Nederland_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Registered_Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Registered_Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤lle_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤lle_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Registration_Address._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Registration_Address._Address_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤lle_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤lle_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Thoroughfare" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Thoroughfare",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Address_line_2_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_line_2_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:thoroughfare_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:thoroughfare_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "strasse_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=strasse_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Address_line_1_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address_line_1_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Address._Street_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address._Street_Name._Text_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Agent" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Agent",
+"children": [
+{
+"name": "Plays_Role" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Plays_Role",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:hasRole_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:hasRole_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Provides" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Provides",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:provides_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:provides_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Uses" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Uses",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:uses_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:uses_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Geometry" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geometry",
+"children": [
+{
+"name": "Coordinates" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Coordinates",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:geometry_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geometry_",
+"size": 200} ] }] }
+] }
+,{
+"name": "CRS" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=CRS",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location_Coordinate._Coordinate_System_Code._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location_Coordinate._Coordinate_System_Code._Code_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "koordinatensystem_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=koordinatensystem_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Geographical_Coordinate._System._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geographical_Coordinate._System._Identifier_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Geometry" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geometry",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:geometry_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geometry_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Anschrift.goekodierung_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Anschrift.goekodierung_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "cbrn:GeographicPoint_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cbrn:GeographicPoint_",
+"size": 200},{"name": "nc:LocationGeospatialCoordinate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationGeospatialCoordinate_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location_Coordinate._Coordinate_System_Code._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location_Coordinate._Coordinate_System_Code._Code_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:geometry_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geometry_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "koordinatensystem_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=koordinatensystem_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Geographical_Coordinate._System._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geographical_Coordinate._System._Identifier_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Jurisdiction" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Jurisdiction",
+"children": [
+{
+"name": "Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Country._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country._Name_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Country._Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country._Name._Text_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Legal_Entity" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Legal_Entity",
+"children": [
+{
+"name": "Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Buitenlandse_Niet_Natuurlijk_Persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Buitenlandse_Niet_Natuurlijk_Persoon_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Rechtspersoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Rechtspersoon_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/adres-Adres_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/adres-Adres_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Alternative_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Alternative_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Buyer_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Buyer_name_",
+"size": 200},{"name": "Payee_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Payee_name_",
+"size": 200},{"name": "Seller_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/naam-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/naam-Vestiging_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Company_Activity" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Company_Activity",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:OrganizationActivityText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:OrganizationActivityText_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Organization._Operations_Scope._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Organization._Operations_Scope._Code_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:orgActivity_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:orgActivity_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "zweck_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=zweck_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party._Industry_Classification_Code._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party._Industry_Classification_Code._Code_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Maatschappelijke_Activiteit_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Maatschappelijke_Activiteit_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/KvK-Nummer-Maatschappelijke_Activiteit_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/KvK-Nummer-Maatschappelijke_Activiteit_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶retag_verksamhetsbeskrivning_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶retag_verksamhetsbeskrivning_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Company_Status" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Company_Status",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:OrganizationStatus_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:OrganizationStatus_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Company_Liquidation_Status_Code._Code" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Company_Liquidation_Status_Code._Code",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶rfarande_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶rfarande_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:orgStatus_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:orgStatus_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Company_Type" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Company_Type",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:OrganizationCategory_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:OrganizationCategory_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Company_Legal_Form_Code._Code" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Company_Legal_Form_Code._Code",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Organization._Legal_Classification._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Organization._Legal_Classification._Code_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:orgType_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:orgType_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "rechtsform_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rechtsform_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/rechtsvorm-Rechtspersoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/rechtsvorm-Rechtspersoon_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶retag_fÃ¶retagsform_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶retag_fÃ¶retagsform_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Identifier" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Identifier",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Seller_tax_representative_VAT_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_tax_representative_VAT_identifier_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "j:OrganizationIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=j:OrganizationIdentification_",
+"size": 200},{"name": "nc:OrganizationIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:OrganizationIdentification_",
+"size": 200},{"name": "nc:OrganizationTaxIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:OrganizationTaxIdentification_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Company_Identifier._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Company_Identifier._Identifier_",
+"size": 200},{"name": "Party._Party_Identification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party._Party_Identification_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/vestigingsnummer-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/vestigingsnummer-Vestiging_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Organization._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Organization._Identification._Identifier_",
+"size": 200},{"name": "Organization._Tax_Registration._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Organization._Tax_Registration._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:registration_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:registration_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Buyer_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Buyer_identifier_",
+"size": 200},{"name": "Buyer_VAT_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Buyer_VAT_identifier_",
+"size": 200},{"name": "Financial_institution_branch_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Financial_institution_branch_identifier_",
+"size": 200},{"name": "Financial_institution_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Financial_institution_identifier_",
+"size": 200},{"name": "Payee_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Payee_identifier_",
+"size": 200},{"name": "Seller_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_identifier_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶retag_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶retag_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Legal_Identifier" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Legal_Identifier",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤nd_fÃ¶r_F-skatt_hos_Skatteverket_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤nd_fÃ¶r_F-skatt_hos_Skatteverket_",
+"size": 200},{"name": "Arbetsgivarregistrerad_hos_Skatteverket_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Arbetsgivarregistrerad_hos_Skatteverket_",
+"size": 200},{"name": "Ã¶retag_hos_Bolagsverket_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶retag_hos_Bolagsverket_",
+"size": 200},{"name": "Momsregistrerad_hos_Skatteverket_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Momsregistrerad_hos_Skatteverket_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:registration_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:registration_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Registierung.id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Registierung.id_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Buyer_legal_registration_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Buyer_legal_registration_identifier_",
+"size": 200},{"name": "Payee_legal_registration_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Payee_legal_registration_identifier_",
+"size": 200},{"name": "Seller_legal_registration_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_legal_registration_identifier_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/RSIN-Niet_Natuurlijk_Persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/RSIN-Niet_Natuurlijk_Persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Legal_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Legal_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "NameOrganisation.name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NameOrganisation.name_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Seller_legal_registration_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_legal_registration_name_",
+"size": 200},{"name": "Seller_tax_representative_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Seller_tax_representative_name_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rov:legalName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rov:legalName_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Registration_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Registration_Name._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Onderneming_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Onderneming_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Vestiging_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/statutairenaam-Niet_Natuurlijk_Persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/statutairenaam-Niet_Natuurlijk_Persoon_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶retagsnamn_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶retagsnamn_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Location" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Locatie_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Locatie_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Registered_Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Registered_Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤lle_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤lle_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Party_Legal_Entity._Registration_Address._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Party_Legal_Entity._Registration_Address._Address_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤lle_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤lle_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Location" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location",
+"children": [
+{
+"name": "Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:Address_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:address_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Address_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetadress_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetadress_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Geographic_Identifier" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geographic_Identifier",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:LocationIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationIdentification_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Identifier_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Location._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Identification._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "rdfs:seeAlso_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rdfs:seeAlso_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Delivered_to_location_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Delivered_to_location_identifier_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Geographic_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geographic_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetsadress_kommunnamn_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_kommunnamn_",
+"size": 200},{"name": "Ã¤genhetsadress_populÃ¤rnamn_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_populÃ¤rnamn_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:geographicName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geographicName_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:LocationName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationName_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Name_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Location._Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Name._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Geometry" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geometry",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Anschrift.goekodierung_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Anschrift.goekodierung_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "cbrn:GeographicPoint_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cbrn:GeographicPoint_",
+"size": 200},{"name": "nc:LocationGeospatialCoordinate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationGeospatialCoordinate_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:geometry_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geometry_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Location" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Anschrift.goekodierung_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Anschrift.goekodierung_",
+"size": 200},{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "cbrn:GeographicPoint_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cbrn:GeographicPoint_",
+"size": 200},{"name": "nc:Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:Address_",
+"size": 200},{"name": "nc:LocationGeospatialCoordinate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationGeospatialCoordinate_",
+"size": 200},{"name": "nc:LocationIdentification_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationIdentification_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Identifier_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetsadress_kommunnamn_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_kommunnamn_",
+"size": 200},{"name": "Ã¤genhetsadress_populÃ¤rnamn_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetsadress_populÃ¤rnamn_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Location._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Identification._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:address_",
+"size": 200},{"name": "locn:geographicName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geographicName_",
+"size": 200},{"name": "locn:geometry_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:geometry_",
+"size": 200},{"name": "rdfs:seeAlso_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=rdfs:seeAlso_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Delivered_to_location_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Delivered_to_location_identifier_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:LocationName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:LocationName_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Location._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Address_",
+"size": 200},{"name": "Location._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Locatie_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Locatie_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¤genhetadress_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¤genhetadress_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Location._Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Location._Name._Text_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Person" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person",
+"children": [
+{
+"name": "Address" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Address",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Residence._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Residence._Address_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "locn:address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=locn:address_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "anschrift_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=anschrift_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Residence_Address._Address_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Residence_Address._Address_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/concept/Briefadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/concept/Briefadres_in_Nederland_",
+"size": 200},{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/concept/Woonadres_in_Nederland_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/concept/Woonadres_in_Nederland_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Birth_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Birth_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:birthName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:birthName_",
+"size": 200} ] },{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Name_and_family_name_at_Birth_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Name_and_family_name_at_Birth_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "geburtsname_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=geburtsname_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Citizenship" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Citizenship",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonCitizenship_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonCitizenship_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:citizenship_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:citizenship_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "staatsangehoerigkeit_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=staatsangehoerigkeit_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Nationaliteit_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Nationaliteit_persoon-Natuurlijk_persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Country_Of_Birth" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country_Of_Birth",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonNationality_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonNationality_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Birth_Country._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Birth_Country._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:countryOfBirth_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:countryOfBirth_",
+"size": 200} ] },{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Place_of_birth_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Place_of_birth_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteland_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteland_persoon-Natuurlijk_persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Country_Of_Death" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Country_Of_Death",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:countryOfDeath_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:countryOfDeath_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Land_overlijden_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Land_overlijden_persoon-Natuurlijk_persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Date_Of_Birth" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Date_Of_Birth",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "schema:birthDate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=schema:birthDate_",
+"size": 200} ] },{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Date_of_birth_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Date_of_birth_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Geburt.datum_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geburt.datum_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonBirthDate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonBirthDate_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Birth_Date._Date_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Birth_Date._Date_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboortedatum_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboortedatum_persoon-Natuurlijk_persoon_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Birth._Date_Time_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Birth._Date_Time_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Date_Of_Death" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Date_Of_Death",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "schema:deathDate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=schema:deathDate_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Tod.datum_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Tod.datum_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonDeathDate_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonDeathDate_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Datum_overlijden_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Datum_overlijden_persoon-Natuurlijk_persoon_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¶dfÃ¶rklarad_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¶dfÃ¶rklarad_",
+"size": 200},{"name": "fysisk_p_avliden_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fysisk_p_avliden_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Death._Date_Time_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Death._Date_Time_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Family_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Family_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Current_family_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Current_family_name_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "familienname_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=familienname_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "foaf:familyName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=foaf:familyName_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonSurName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonSurName_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Family_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Family_Name._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geslachtsnaam_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geslachtsnaam_persoon-Natuurlijk_persoon_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Family_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Family_Name._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Full_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Full_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "foaf:name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=foaf:name_",
+"size": 200} ] },{"name": "MUG-_BII" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=MUG-_BII",
+"children": [
+{"name": "Contact_person_name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Contact_person_name_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonFullName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonFullName_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "Ã¥_fysisk_person_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Ã¥_fysisk_person_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Gender" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Gender",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonSex_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonSex_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "schema:gender_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=schema:gender_",
+"size": 200} ] },{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Gender_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Gender_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "geschlecht_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=geschlecht_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Gender_Code._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Gender_Code._Code_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/doc/gegevenselement/Geslachtsaanduiding_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/doc/gegevenselement/Geslachtsaanduiding_persoon-Natuurlijk_persoon_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Gender._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Gender._Code_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Given_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Given_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "Current_first_name(s)_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Current_first_name(s)_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "foaf:givenName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=foaf:givenName_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonGivenName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonGivenName_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._First_Name._Name_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._First_Name._Name_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Voornamen_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Voornamen_persoon-Natuurlijk_persoon_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Given_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Given_Name._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Identifier" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Identifier",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "eIDAS_minimum_dataset" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=eIDAS_minimum_dataset",
+"children": [
+{"name": "A_uniqueness_identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=A_uniqueness_identifier_",
+"size": 200} ] },{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Identifier_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Identification._Identifier_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Identification._Identifier_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "at" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=at",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "fi" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=fi",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "ie" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=ie",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "id_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=id_",
+"size": 200},{"name": "NatuerlichePerson._identifikationsnummer_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NatuerlichePerson._identifikationsnummer_",
+"size": 200} ] },{"name": "Swedish_Company_data_model" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Swedish_Company_data_model",
+"children": [
+{"name": "person_teknisk_identitet_(UUID)_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person_teknisk_identitet_(UUID)_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Patronymic_Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Patronymic_Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:patronymicName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:patronymicName_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Place_Of_Birth" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Place_Of_Birth",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "OASIS_UBL_Common_Library_2.1" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=OASIS_UBL_Common_Library_2.1",
+"children": [
+{"name": "Person._Birthplace_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Birthplace_Name._Text_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Person._Birthplace_Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Person._Birthplace_Name._Text_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:placeOfBirth_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:placeOfBirth_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Geburt.geburtsort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Geburt.geburtsort_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:PersonBirthLocation_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:PersonBirthLocation_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteplaats_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteplaats_persoon-Natuurlijk_persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Place_Of_Death" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Place_Of_Death",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:placeOfDeath_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:placeOfDeath_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Tod.sterbeort_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Tod.sterbeort_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "m:PersonDeathLocation_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=m:PersonDeathLocation_",
+"size": 200} ] },{"name": "Stelselcatalogus" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Stelselcatalogus",
+"children": [
+{"name": "http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Plaats_overlijden_persoon-Natuurlijk_persoon_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Plaats_overlijden_persoon-Natuurlijk_persoon_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Residency" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Residency",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "person:residency_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=person:residency_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Public_Service" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Public_Service",
+"children": [
+{
+"name": "Channel" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Channel",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:hasChannel_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:hasChannel_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "kanal_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=kanal_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Description" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Description",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "cyfs:ServiceDescriptionText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cyfs:ServiceDescriptionText_",
+"size": 200},{"name": "nc:ActivityDescriptionText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:ActivityDescriptionText_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:description_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:description_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Service._Description._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Service._Description._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Follows" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Follows",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:follows_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:follows_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Homepage" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Homepage",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "foaf:homepage_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=foaf:homepage_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Input" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Input",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:hasInput_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:hasInput_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Language" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Language",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:language_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:language_",
+"size": 200} ] },{"name": "KoSIT_-_XOV" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=KoSIT_-_XOV",
+"children": [
+{"name": "Sprache_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Sprache_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Name" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Name",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:title_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:title_",
+"size": 200},{"name": "skos:prefLabel_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=skos:prefLabel_",
+"size": 200} ] },{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:ActivityName_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:ActivityName_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Service._Name._Text_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Service._Name._Text_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Physically_Available_At" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Physically_Available_At",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:physicallyAvailableAt_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:physicallyAvailableAt_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Produces" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Produces",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:produces_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:produces_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Related" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Related",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:relation_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:relation_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Requires" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Requires",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:requires_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:requires_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Temporal" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Temporal",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Service._Effective._Period_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Service._Effective._Period_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Type" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Type",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#closeMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#closeMatch",
+"children": [
+{"name": "NIEM_3.0" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=NIEM_3.0",
+"children": [
+{"name": "nc:ActivityCategoryText_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=nc:ActivityCategoryText_",
+"size": 200} ] }] }
+,{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "dcterms:type_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=dcterms:type_",
+"size": 200} ] },{"name": "UN/CEFACT_CCL_13B" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=UN/CEFACT_CCL_13B",
+"children": [
+{"name": "Service._Type._Code_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Service._Type._Code_",
+"size": 200} ] }] }
+] }
+ ] }
+,{
+"name": "Rule" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Rule",
+"children": [
+{
+"name": "Creator" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Creator",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:produces_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:produces_",
+"size": 200} ] }] }
+] }
+,{
+"name": "Implements" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Implements",
+"children": [
+{
+"name": "http://www.w3.org/2004/02/skos/core#exactMatch" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=http://www.w3.org/2004/02/skos/core#exactMatch",
+"children": [
+{"name": "Core_Vocabularies_RDF_Schemas" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=Core_Vocabularies_RDF_Schemas",
+"children": [
+{"name": "cpsv:implements_" ,
+"link": "http://vocabs.tenforce.com/vdm/search?id=cpsv:implements_",
+"size": 200} ] }] }
+] }
+ ] }
+] }
