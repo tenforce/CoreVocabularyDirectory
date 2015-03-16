@@ -36,6 +36,9 @@
 							<li>the <a href="/vdm/id/cv/property/PersonFamilyName">Person Familty Name</a> property (Core Vocabularies);</li>
 							<li>the <a href="/vdm/id/cv/property/AddressPostCode">Address Post Code</a> Property;</li>
 							<li>the <a href="/vdm/id/cv/property/PersonCountryOfBirth">Person Country Of Birth</a> Property;</li>
+							<li>
+								<a href="visualisation/cvtree.html">Tree visualisation of the core vocabulary mapping</a>
+							</li>
 						</ul>
 					</p>
 				</li>

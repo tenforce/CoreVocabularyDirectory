@@ -11,11 +11,12 @@ data.ttl: excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx system/scripts/cvxsl2mdr.
 dcatods.ttl: excelfiles/DCatVocabularies-v0.1.xlsx system/scripts/dcatxsl2mdr.py 
 	system/scripts/dcatxsl2mdr.py excelfiles/DCatVocabularies-v0.1.xlsx > dcatods.ttl
 
-mdr.tgz: data
-	mkdir mdr
-	cp -r system/* mdr
-	cp excelfiles/*.xlsx mdr/www
-	tar cvf mdr.tar mdr
+vdm.tgz: data
+	mkdir vdm
+	cp -r system/* vdm
+	cp excelfiles/*.xlsx vdm/www
+	tar cvzf vdm.tgz vdm
+	rm -rf vdm
 
 image:	data
 	sudo ${DOCKER} build -t mdrtest2 .
