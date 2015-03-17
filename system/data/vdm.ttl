@@ -1,0 +1,135 @@
+@prefix vdm: <http://vocabs.tenforce.com/def#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+
+# Basic RDF datatypes
+# Label and definitions are provided by the RDFS vocabulary.
+
+
+# The vocabulary based on the Excel template for the core vocabularies
+# This vocabulary is an adhoc structure that only covers the information required for the 
+# Core Vocabulary Mappings Directory
+
+vdm:DataModel a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "Data Model";
+    skos:definition "A data model".
+
+vdm:has_datamodel a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "part of data  Model";
+    skos:definition "The data model to which the concept belongs".
+
+  
+vdm:InternalIdentifier a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "Internal Identifier";
+    skos:definition "An identifier used only in the context of the Core Vocabularies Mappings Directory".
+
+vdm:has_interalidentifier a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has internal identifier";
+    skos:definition "The internal identifier of the concept".
+
+
+vdm:TermLabel a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A term or label for concepts";
+    skos:definition "A term or a label".
+
+vdm:has_termlabel a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has label";
+    skos:definition "The human readible term or label used for a concept".
+
+
+vdm:Type  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A type";
+    skos:definition "A concept class: property, class, attribute, association, ...".
+
+
+vdm:has_type a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has type";
+    skos:definition "The type of the concept".
+
+
+vdm:DataModelClass  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A class in a data Model";
+    skos:definition "A class in a data model, used to group concepts within a data model".
+
+vdm:has_datamodelclass a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "part of class";
+    skos:definition "The grouping concept (mostly a class) of the concepts in a datamodel".
+
+
+vdm:DataType  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "Data Type";
+    skos:definition "A data type".
+
+vdm:has_datatype a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has data type";
+    skos:definition "The data type of a concept".
+
+
+vdm:Definition a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A definition";
+    skos:definition "A definition".
+
+vdm:has_definition a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has definition";
+    skos:definition "The definition of a concept".
+
+
+vdm:Description  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "Description";
+    skos:definition "A description".
+
+vdm:has_description a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has description";
+    skos:definition "The description of a concept".
+
+
+vdm:PublicIdentifier a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A Public Identifier";
+    skos:definition "The public identifier for the concept. In the VDM application local URI's are used to identify the concepts because the dereferenceability can be achieved.".
+
+vdm:has_publicidentifier a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has public idenfitier";
+    skos:definition "the public identifier of a concept".
+
+
+vdm:Example  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "An example";
+    skos:definition "An example".
+
+vdm:has_example a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "has example";
+    skos:definition "the example of a concept".
+
+
+vdm:Comment  a skos:Concept;
+    a rdfs:Class;
+    rdfs:label "A Comment";
+    skos:definition "A comment".
+
+vdm:has_comment a skos:Concept;
+    a rdfs:Property;
+    rdfs:label "comment";
+    skos:definition "The comment associated with the concept".
