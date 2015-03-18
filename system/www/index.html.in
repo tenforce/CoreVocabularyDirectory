@@ -20,6 +20,30 @@
   <h1>Core Vocabulary Mapping Directory</h1>
 </header>
 
+<section id="creation">
+  <h2>Creating a mapping</h2>
+  <P>
+  Contributing information to the Core Vocabulary Mapping Directory starts from providing 
+  a mapping of between the Core Vocabularies and the newly targeted Core Data Model.
+  </P>
+  <P>This consists of four steps
+      <ol>
+        <li>download the mapping template document <a href="xxx">here</a>. </li>
+        <li>insert in the "Target Vocabularies" sheet the description of the target Core Data Model.</li>
+        <li>insert in the "Mappings" sheet the mapping between the Core Vocabulary and the taregt Core Data Model</li>
+        <li>submit the document to XXX</li>
+      </ol>
+  </P>
+  <P>After submission the document will be iterative refined in collaboration
+  </P?
+     
+  
+  <P>The <a href="https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf">Core Vocabularies handbook</a> 
+  provides more insight in the usage and objectives of the Core Vocabularies. 
+  Also visit the <a href="https://joinup.ec.europa.eu/asset/core_vocabularies/asset_release/core-vocabularies-v11">Core Vocabularies homepage</a> for more background information.
+  </P>
+</section>
+
 <section id="registry">
   <h2>Browse the mappings</h2>
 
