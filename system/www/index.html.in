@@ -60,16 +60,16 @@
 							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/5bc9674db0153b2bc6504561061629f7">Person Family Name</a> property (Core Vocabularies);</li>
 							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/55ce4ba4dd72952de7c7b0180ff9f9e9">Address Post Code</a> Property;</li>
 							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/5f244e4ceda0917c01ed4ebc6d28dc9e">Person Country Of Birth</a> Property;</li>
-							<li>
-								<a href="visualisation/cvtree.html">Tree visualisation of the core vocabulary mapping</a>
-							</li>
+							
 						</ul>
 					</p>
+				</li>
+				<li><a href="visualisation/cvtree.html">Tree visualisation of the core vocabulary mapping</a>
 				</li>
 		</ul>
 		</li>
 		<li>
-			<p>Target Vocabularies:
+			<p>Target Core Data Models:
 				<ul>
 					<li><a href="http://vocabs.tenforce.com/vdm/about/html/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/about/html/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
@@ -77,7 +77,7 @@
 			</p>
 		</li>
     <li>
-			DCAT-AP Open Data Support Mappings:
+			DCAT-AP <a href="http://data.opendatasupport.eu">Open Data Support</a> Mappings:
 			<ul>
 				<li><a href="/vdm/id/dcat/">Browsable View</a>,</li>
 				<li>
