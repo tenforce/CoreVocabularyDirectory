@@ -25,7 +25,7 @@
 
   <p>The platform has mappings available for the following vocabularies:
   <ul>
-    <li><a href="/vdm/id/cv/">Core Vocabularies</a>,
+    <li><a href="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae">Core Vocabularies</a>,
 			<ul>
 				<li>
 					<a href="Core_Vocabularies_v1.1_v0.31.xlsx">Core Vocabularies Mapping Table</a>
@@ -33,9 +33,9 @@
 				<li>
 					<p>Examples of some entry points are:
 						<ul>
-							<li>the <a href="/vdm/id/cv/property/PersonFamilyName">Person Familty Name</a> property (Core Vocabularies);</li>
-							<li>the <a href="/vdm/id/cv/property/AddressPostCode">Address Post Code</a> Property;</li>
-							<li>the <a href="/vdm/id/cv/property/PersonCountryOfBirth">Person Country Of Birth</a> Property;</li>
+							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/5bc9674db0153b2bc6504561061629f7">Person Family Name</a> property (Core Vocabularies);</li>
+							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/55ce4ba4dd72952de7c7b0180ff9f9e9">Address Post Code</a> Property;</li>
+							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/5f244e4ceda0917c01ed4ebc6d28dc9e">Person Country Of Birth</a> Property;</li>
 							<li>
 								<a href="visualisation/cvtree.html">Tree visualisation of the core vocabulary mapping</a>
 							</li>
