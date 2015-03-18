@@ -72,7 +72,7 @@
     <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:closeMatch or self::skos:narrowMatch)]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
-        <h2>Meta-data</h2>
+        <h2>Metadata</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
 						<xsl:sort select="//rdfs:label"/>
@@ -100,7 +100,11 @@
     <xsl:if test="count($elements[not(@rdf:resource=$subject/@rdf:about)]) &gt; 0">
       <section>
         <h2>Mappings</h2>
-        <table class="results"><tbody>
+        <table class="results">
+         <th>
+         <tr><td>Matching</td><td>Concept</td><td>Data Model</td></tr>
+         </th>
+         <tbody>
           <xsl:for-each select="$elements">
 						<xsl:sort select="//rdfs:label"/>
             <tr>
