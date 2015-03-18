@@ -1,13 +1,13 @@
 Core Vocabularies Mapping Pilot
 ===============================
 
-*Using a metadata registry for e-Document engineering*
+*Using a metadata repository for browsing mappings between Core Data Models*
 
 This repository contains the source code of the mini-pilot on e-Document
 engineering that was carried out in the context of [Action 2.15][] of the
 ISA Programme in the period February – March 2014.
 
-The pilot is available on <http://mdr.semic.eu/>.
+The pilot is available on <http://vocabs.tenforce.com/vdm/>.
 
 [Action 2.15]: http://ec.europa.eu/isa/actions/02-interoperability-architecture/2-15action_en.htm
 
