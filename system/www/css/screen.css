@@ -154,12 +154,13 @@ table.results ul {
 dl.properties dt {
   float: left;
   clear: left;
-  width: 100px;
+  width: 150px;
   text-align: right;
   font-weight: 300;
 }
 dl.properties dt:after {
-  content: ":";
+  content: ": ";
+  margin-right: 10px;
 }
 dl.properties dd {
   margin: 0 0 0 110px;
@@ -171,6 +172,7 @@ dl.properties dd {
 dl.links dt {
   clear: left;
   margin-left: 30px;
+  margin-right: 5px;
   margin-top: 1em;
 }
 dl.links dt.join {

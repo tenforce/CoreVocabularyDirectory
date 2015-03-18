@@ -75,6 +75,7 @@
         <h2>Meta-data</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
+						<xsl:sort select="//rdfs:label"/>
 						<tr>
 							<td>
 								<xsl:call-template name="rdf-property">
@@ -96,11 +97,12 @@
 
   <xsl:template name="skos-properties">
     <xsl:variable name="elements" select="//skos:exactMatch | //skos:narrowMatch | //skos:closeMatch | //skos:broadMatch " />
-    <xsl:if test="count($elements) &gt; 0">
+    <xsl:if test="count($elements[not(@rdf:resource=$subject/@rdf:about)]) &gt; 0">
       <section>
         <h2>Mappings</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
+						<xsl:sort select="//rdfs:label"/>
             <tr>
               <td>
                 <xsl:call-template name="rdf-property">
@@ -132,6 +134,7 @@
         <h2>Referenced by</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
+						<xsl:sort select="//rdfs:label"/>
             <tr>
               <td>
                 <xsl:call-template name="rdf-property">
@@ -144,9 +147,9 @@
                 </xsl:call-template>
               </td>
 							<td>
-                <xsl:call-template name="rdf-context">
+                <!-- <xsl:call-template name="rdf-context">
                   <xsl:with-param name="id" select="@rdf:resource"/>
-                </xsl:call-template>
+                </xsl:call-template> -->
 							</td>
             </tr>
           </xsl:for-each>

@@ -70,8 +70,9 @@ query := 'CONSTRUCT {
                  WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
     OPTIONAL { { SELECT ?o ?label AS ?olabel ?c ?clabel
                  WHERE { ?o rdfs:label ?label 
-								          OPTIONAL { ?o vdm:context ?c 
-													      OPTIONAL { ?c rdfs:label ?clabel } }
+								 				  OPTIONAL { { { ?o vdm:has_datamodel ?c }
+													               UNION { ?o vdm:context ?c } }
+																			 ?c rdfs:label ?clabel }
 								 } GROUP BY ?o } }
   } UNION {
     ?s ?p <URI>
@@ -79,8 +80,10 @@ query := 'CONSTRUCT {
                  WHERE { ?p rdfs:label ?label 
 								 } GROUP BY ?p } }
     OPTIONAL { { SELECT ?c ?clabel WHERE {
-								   OPTIONAL { <URI> vdm:context ?c .
-                              ?c rdfs:label ?clabel } } } }
+								   { OPTIONAL { { { <URI> vdm:has_datamodel ?c }
+   									                UNION { <URI> vdm:context ?c } }
+																	?c rdfs:label ?clabel } }
+             } } }
     OPTIONAL { { SELECT ?s ?label AS ?slabel
                  WHERE { ?s rdfs:label ?label } GROUP BY ?s } }
   }

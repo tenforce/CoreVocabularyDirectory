@@ -23,13 +23,12 @@ vdm:has_datamodel a skos:Concept;
     rdfs:label "part of data  Model";
     skos:definition "The data model to which the concept belongs".
 
-  
 vdm:InternalIdentifier a skos:Concept;
     a rdfs:Class;
     rdfs:label "Internal Identifier";
     skos:definition "An identifier used only in the context of the Core Vocabularies Mappings Directory".
 
-vdm:has_interalidentifier a skos:Concept;
+vdm:has_internalidentifier a skos:Concept;
     a rdfs:Property;
     rdfs:label "has internal identifier";
     skos:definition "The internal identifier of the concept".
@@ -45,12 +44,10 @@ vdm:has_termlabel a skos:Concept;
     rdfs:label "has label";
     skos:definition "The human readible term or label used for a concept".
 
-
 vdm:Type  a skos:Concept;
     a rdfs:Class;
     rdfs:label "A type";
     skos:definition "A concept class: property, class, attribute, association, ...".
-
 
 vdm:has_type a skos:Concept;
     a rdfs:Property;
@@ -68,7 +65,6 @@ vdm:has_datamodelclass a skos:Concept;
     rdfs:label "part of class";
     skos:definition "The grouping concept (mostly a class) of the concepts in a datamodel".
 
-
 vdm:DataType  a skos:Concept;
     a rdfs:Class;
     rdfs:label "Data Type";
@@ -78,7 +74,6 @@ vdm:has_datatype a skos:Concept;
     a rdfs:Property;
     rdfs:label "has data type";
     skos:definition "The data type of a concept".
-
 
 vdm:Definition a skos:Concept;
     a rdfs:Class;
@@ -90,7 +85,6 @@ vdm:has_definition a skos:Concept;
     rdfs:label "has definition";
     skos:definition "The definition of a concept".
 
-
 vdm:Description  a skos:Concept;
     a rdfs:Class;
     rdfs:label "Description";
@@ -100,7 +94,6 @@ vdm:has_description a skos:Concept;
     a rdfs:Property;
     rdfs:label "has description";
     skos:definition "The description of a concept".
-
 
 vdm:PublicIdentifier a skos:Concept;
     a rdfs:Class;
@@ -112,7 +105,6 @@ vdm:has_publicidentifier a skos:Concept;
     rdfs:label "has public idenfitier";
     skos:definition "the public identifier of a concept".
 
-
 vdm:Example  a skos:Concept;
     a rdfs:Class;
     rdfs:label "An example";
@@ -123,8 +115,7 @@ vdm:has_example a skos:Concept;
     rdfs:label "has example";
     skos:definition "the example of a concept".
 
-
-vdm:Comment  a skos:Concept;
+ vdm:Comment  a skos:Concept;
     a rdfs:Class;
     rdfs:label "A Comment";
     skos:definition "A comment".
@@ -133,3 +124,13 @@ vdm:has_comment a skos:Concept;
     a rdfs:Property;
     rdfs:label "comment";
     skos:definition "The comment associated with the concept".
+
+vdm:ObjectClass a vdm:Type;
+	  rdfs:label "Object Class" ;
+    skos:definition "Shared instances".
+
+vdm:Property a vdm:Type;
+	  rdfs:label "Class of Properties".
+
+vdm:DataType a vdm:Type;
+	  rdfs:label "Class of Datatypes".

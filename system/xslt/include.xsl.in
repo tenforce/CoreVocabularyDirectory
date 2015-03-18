@@ -152,6 +152,13 @@
   <!-- Add a small RDF description about $subject with links to raw data. -->
   <xsl:template name="rdf-info">
     <dl class="properties">
+			<dt>Internal Identifier</dt>
+			<dd>
+        <xsl:call-template name="rdf-value">
+          <xsl:with-param name="element" select="$subject/vdm:has_internalidentifier"/>
+          <xsl:with-param name="strip-uri" select="true()" />
+        </xsl:call-template>
+			</dd>
       <dt>URI</dt>
       <dd><a href="{$subject-uri}"><xsl:value-of select="$subject-uri" /></a></dd>
       <xsl:if test="$subject/rdf:type">
@@ -240,7 +247,7 @@
     <xsl:param name="strip-uri" select="false()" />
 
 		<xsl:variable name="cc" 
-									select="//rdf:Description[@rdf:about=$id]/vdm:context/@rdf:resource"/>
+									select="//rdf:Description[@rdf:about=$id]/*[self::vdm:context or self::vdm:has_datamodel]/@rdf:resource"/>
     <xsl:call-template name="rdf-value">
       <xsl:with-param name="element" 
 											select="//rdf:Description[@rdf:about=$cc]" />
