@@ -1,5 +1,5 @@
-e-Document engineering pilot
-=============================
+Core Vocabularies Mapping Pilot
+===============================
 
 *Using a metadata registry for e-Document engineering*
 
