@@ -101,9 +101,9 @@
       <section>
         <h2>Mappings</h2>
         <table class="results">
-         <th>
-         <tr><td>Matching</td><td>Concept</td><td>Data Model</td></tr>
-         </th>
+         <thead>
+					 <tr><th>Matching</th><th>Concept</th><th>Data Model</th></tr>
+         </thead>
          <tbody>
           <xsl:for-each select="$elements">
 						<xsl:sort select="//rdfs:label"/>

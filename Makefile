@@ -8,8 +8,8 @@ data: data2.ttl dcatods.ttl data.ttl
 data2.ttl: excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx system/scripts/cvxsl2mdr.py 
 	system/scripts/cvxsl2mdr.py excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx > data2.ttl
 
-data.ttl: excelfiles/Core_Vocabularies_v1.2.xlsx system/scripts/cvxsl2vdm.py 
-	system/scripts/cvxsl2vdm.py excelfiles/Core_Vocabularies_v1.2.xlsx > data.ttl
+data.ttl: excelfiles/Core_Vocabularies_v1.3.xlsx system/scripts/cvxsl2vdm.py 
+	system/scripts/cvxsl2vdm.py excelfiles/Core_Vocabularies_v1.3.xlsx > data.ttl
 
 dcatods.ttl: excelfiles/DCatVocabularies-v0.1.xlsx system/scripts/dcatxsl2mdr.py 
 	system/scripts/dcatxsl2mdr.py excelfiles/DCatVocabularies-v0.1.xlsx > dcatods.ttl
