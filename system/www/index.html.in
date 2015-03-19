@@ -88,9 +88,8 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </ul>
 </section>
   <section id="search">
-  <p>Use the box below to search the Core Vocabulary Mapping Directory.</p>
-  <p>It searches within the labels and definitions of the available concepts for a match</p>
-
+  <h2> Search the Core Vocabulary Mapping Directory</h2>
+  <p>It searches exactly the provided string within the labels and definitions of the available concepts for a match</p>
   <div>
     <form id="searchform">
       <input id="query" type="text" />
