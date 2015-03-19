@@ -18,6 +18,8 @@ vdm.tgz: data
 	mkdir vdm
 	cp -r system/* vdm
 	cp excelfiles/*.xlsx vdm/www
+	cp *.ttl vdm
+	cp system/data/vdm.ttl vdm
 	tar cvzf vdm.tgz vdm
 	rm -rf vdm
 

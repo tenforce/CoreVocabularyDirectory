@@ -121,6 +121,7 @@ class CommonVocabularySpreadsheet:
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
         g.add((uri, RDFS.label, self.text(label)))
         datamodel = self.uri(item["data model"])
+        g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel,RDFS.label,self.text(item["data model"])))
         g.add((uri, VDM.has_datamodel, datamodel))
 
@@ -138,6 +139,7 @@ class CommonVocabularySpreadsheet:
         g.add((uri, RDFS.label, self.text(label)))
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
         datamodel = self.uri(item["data model"])
+        g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
         g.add((datamodel,RDFS.label,self.text(item["data model"])))
         g.add((uri, VDM.has_datamodel, datamodel))
@@ -155,6 +157,7 @@ class CommonVocabularySpreadsheet:
         g.add((uri, VDM.has_datatype, self.uri(item["data type"].replace(" ",""))))
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
         datamodel = self.uri(item["data model"])
+        g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel,RDFS.label,self.text(item["data model"])))
         g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
         g.add((uri, VDM.has_datamodel, datamodel))
@@ -210,11 +213,14 @@ class CommonVocabularySpreadsheet:
             intid = item["identifier (internal)"]
             if label == "":
                 label = intid
+            pubid = item["public identifier (uri)"]
             g.add((uri, RDFS.label, self.text(label)))
             g.add((uri, VDM.has_termlabel, self.text(label)))
-            g.add((uri, VDM.has_publicidentifer, URIRef(item["public identifier (uri)"])))
+            if pubid != "":
+               g.add((uri, VDM.has_publicidentifer, URIRef(pubid)))
             g.add((uri, VDM.has_internalidentifier, self.text(intid)))
             datamodel = self.uri(item["data model"])
+            g.add((datamodel,RDF.type, VDM.DataModel))
             g.add((datamodel,RDFS.label,self.text(item["data model"])))
             g.add((uri, VDM.has_datamodel, datamodel))
             g.add((uri, VDM.has_definition, self.text(item["definition"])))
@@ -228,7 +234,7 @@ class CommonVocabularySpreadsheet:
                 self.tv_association(item,g)
             else:
                 x=1
-
+            
     def tv_class(self,uri,item,g):
         g.add((uri, RDF.type, VDM.ObjectClass))
         g.add((uri, VDM.has_type, VDM.ObjectClass))

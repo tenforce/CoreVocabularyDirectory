@@ -132,22 +132,22 @@
 
   <!-- Print the Inverse Properties table -->
   <xsl:template name="inverse-properties">
-    <xsl:variable name="elements" select="//rdf:Description/*[@rdf:resource=$subject-uri]" />
+    <xsl:variable name="elements" select="//rdf:Description[*/@rdf:resource=$subject-uri]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
         <h2>Referenced by</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
-						<xsl:sort select="//rdfs:label"/>
+						<xsl:sort select="lower-case(rdfs:label)"/>
             <tr>
               <td>
                 <xsl:call-template name="rdf-property">
-                  <xsl:with-param name="element" select="." />
+                  <xsl:with-param name="element" select="*[not(self::rdfs:label) and @rdf:resource=$subject-uri]"/>
                 </xsl:call-template>
               </td>
               <td>
                 <xsl:call-template name="rdf-value">
-                  <xsl:with-param name="element" select=".." />
+                  <xsl:with-param name="element" select="."/>
                 </xsl:call-template>
               </td>
 							<td>
