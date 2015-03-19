@@ -56,6 +56,10 @@ body > header h1 {
   font-weight: 600;
 }
 
+body > header h1 a {
+  color: white
+}
+
 body > header .subtitle {
   color: white;
   font-size: 28px;

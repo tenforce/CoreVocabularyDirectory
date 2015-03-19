@@ -17,7 +17,7 @@
       <img src="images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
     </a>
   </div>
-  <h1><a href="/vdm/">Core Vocabulary Mapping Directory</a></h1>
+  <h1><a href="/vdm/" color="white">Core Vocabulary Mapping Directory</a></h1>
 </header>
 
 <section id="intro">
@@ -45,7 +45,8 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   <ul>
     <li><a href="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae">Core Vocabularies</a>,
 			<ul>
-				<li><a href="Core_Vocabularies_v1.1_v0.31.xlsx">Core Vocabularies Mapping Table</a></li>
+
+				<li><a href="Core_Vocabularies_v1.3.xlsx">Core Vocabularies Mapping Table</a></li>
 				<li>Examples of some entry points are:
 						<ul>
 							<li>the <a href="http://vocabs.tenforce.com/vdm/id/cv/5bc9674db0153b2bc6504561061629f7">Person Family Name</a> property (Core Vocabularies);</li>
@@ -67,8 +68,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4">OASIS UBL Common Library 2.1</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec">KoSIT - XOV</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42">Swedish Company data model</a></li>
-					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be"><eIDAS minimum dataset/a></li>
-
+					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be">eIDAS minimum dataset</a></li>
 				</ul>
 			</p>
 		</li>
@@ -80,6 +80,8 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 					<a href="visualisation/tree.html">Tree Visualisation 
 						of the DCAT/ODS mapping</a>
 				</li>
+				<li>
+					<a href="DCatVocabularies-v0.1.xlsx">DCat Vocabularies Mapping Table</a></li>
 				<li>
 					<a href="EuroVocmappings_v0.03-1.xlsx">EuroVoc Value Mapping Table</a>
 				</li>
@@ -107,7 +109,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </P>
   <P>This consists of four steps
       <ol>
-        <li>download the mapping template document <a href="xxx">here</a>. </li>
+        <li>download the mapping template document <a href="Core_Vocabularies_Mapping_Template.xlsx">Core_Vocabularies_Mapping_Template.xlsx</a>. </li>
         <li>insert in the "Target Vocabularies" sheet the description of the target Core Data Model.</li>
         <li>insert in the "Mappings" sheet the mapping between the Core Vocabulary and the taregt Core Data Model</li>
         <li>submit the document to XXX</li>

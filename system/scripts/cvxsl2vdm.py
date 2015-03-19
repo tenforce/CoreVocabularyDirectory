@@ -128,6 +128,7 @@ class CommonVocabularySpreadsheet:
     def cv_property(self,item,g):
         uri = self.uri(item["identifier (internal)"])
         label = item["term / label"]
+        intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
         g.add((uri, VDM.context, URIRef(self.ns)))
         cluri = self.uri(item["class"])
@@ -136,8 +137,10 @@ class CommonVocabularySpreadsheet:
         g.add((uri, VDM.has_definition, self.text(item["definition"].strip())))
         g.add((uri, VDM.has_example, self.text(item["examples"])))
         g.add((uri, VDM.has_description, self.text(item["description"].strip())))
+        if label != intid:
+            label = label + " (" + intid + ")"
         g.add((uri, RDFS.label, self.text(label)))
-        g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
+        g.add((uri, VDM.has_internalidentifier, self.text(intid)))
         datamodel = self.uri(item["data model"])
         g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
@@ -147,15 +150,18 @@ class CommonVocabularySpreadsheet:
     def cv_association(self,item,g):
         uri = self.uri(item["identifier (internal)"])
         label = item["term / label"]
+        intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
         g.add((uri, VDM.has_termlabel, self.text(label)))
         cluri = self.uri(item["class"])
         g.add((uri, VDM.has_datamodelclass, cluri))
+        if label != intid:
+            label = label + " (" + intid + ")"
         g.add((uri, RDFS.label, self.text(label)))
         g.add((uri, VDM.has_definition, self.text(item["definition"])))
         g.add((uri, VDM.has_description, self.text(item["description"])))
         g.add((uri, VDM.has_datatype, self.uri(item["data type"].replace(" ",""))))
-        g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
+        g.add((uri, VDM.has_internalidentifier, self.text(intid)))
         datamodel = self.uri(item["data model"])
         g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel,RDFS.label,self.text(item["data model"])))
