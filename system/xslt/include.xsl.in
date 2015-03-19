@@ -74,7 +74,7 @@
               <img src="/vdm/images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
             </a>
           </div>
-          <h1>Core Vocabulary Mappings Directory</h1>
+          <h1><a href="/vdm/"> Core Vocabulary Mappings Directory</a></h1>
         </header>
 
         <xsl:copy-of select="$body" />
