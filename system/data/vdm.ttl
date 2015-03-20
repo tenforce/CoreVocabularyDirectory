@@ -20,6 +20,7 @@ vdm:DataModel a skos:Concept;
 
 vdm:has_datamodel a skos:Concept;
     a rdfs:Property;
+    a rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf>;
     rdfs:label "part of data  Model";
     skos:definition "The data model to which the concept belongs".
 
@@ -126,11 +127,11 @@ vdm:has_comment a skos:Concept;
     skos:definition "The comment associated with the concept".
 
 vdm:ObjectClass a vdm:Type;
-	  rdfs:label "Object Class" ;
+	  rdfs:label "Class" ;
     skos:definition "Shared instances".
 
 vdm:Property a vdm:Type;
-	  rdfs:label "Class of Properties".
+	  rdfs:label "Property".
 
 vdm:DataType a vdm:Type;
-	  rdfs:label "Class of Datatypes".
+	  rdfs:label "Datatype".
