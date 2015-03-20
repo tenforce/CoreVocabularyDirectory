@@ -61,8 +61,8 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 		<li>
 			<p>Target Core Data Models:
 				<ul>
-					<li><a href="http://vocabs.tenforce.com/vdm/about/html/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
-					<li><a href="http://vocabs.tenforce.com/vdm/about/html/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
+					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
+					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4">UN/CEFACT CCL 13B</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c">MUG- BII</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374">Core Vocabularies RDF Schemas</a></li>
