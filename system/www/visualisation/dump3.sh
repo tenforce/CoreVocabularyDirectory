@@ -1,80 +1,88 @@
 #!/bin/bash
 
 function name_link {
-		echo \"name\": \"$1\" ",";
-    l=`echo $1 | sed 's/_/%20/g'`;
-		echo \"link\": \"http://vocabs.tenforce.com/vdm/search?id=$l\",
+		echo \"link\": $1\",
+		shift;
+		dump=`echo $* | tr -d \" | sed 's/#//g'`
+		echo \"name\": \"$dump\",;
 }
 
 function end_comma {
- 		if [ $1 != $2 ] 
+		n1=`echo $1 | tr -d '[[:space:]]'`;
+    n2=`echo $2 | tr -d '[[:space:]]'`;
+ 		if [ "$n1" != "$n2" ] 
 		then
 				echo -n "," ;
 		fi;
 }
 
-# set -x 
-( echo "{";
-	echo \"name\": \"Core Vocabulary Mappings\" ",";
-	echo \"children\": "[" ;
-
-	fl=`cat all.links | awk -F"|" '{print $2;}' | sort -u`
-	lfl=`echo $fl | awk '{print $NF}'`
-	for f in $fl
+( cat all.links | awk -F\| 'BEGIN{OFS="|";}{print $2"#"$3,$4"#"$5,$6"#"$7,$8"#"$9,$10"#"$11,$12"#"$13;}' > all2.links;
+	cat all2.links | awk -F"|" '{print $1;}' | sort -u > c1.txt
+	lfl=`tail -1 c1.txt`
+	cat c1.txt | while read c1;
 	  do
 		  echo "{" 
-			name_link $f;
+			name_link \"$c1\";
 			echo \"children\": "["
 			 
-			  cl=`cat all.links | egrep $f"\|" | awk -F"|" '{print $4;}' | sort -u`
-				lcl=`echo $cl | awk '{print $NF}'`
-				for c in $cl
+			  cat all2.links | grep "$c1" | awk -F"|" '{print $2;}' | sort -u > c2.txt
+				lcl=`tail -1 c2.txt`
+				cat c2.txt | while read c2;
 				do	
 					  echo "{" 
-						name_link $c;
+						name_link \"$c2\";
 						echo \"children\": "["
 
-						pl=`cat all.links | egrep $f"\|" | egrep "\|"$c"\|" | awk -F"|" '{print $5;}' | sort -u`
-						lpl=`echo $pl | awk '{print $NF}'`
-						for p in $pl
+						cat all2.links | grep "$c1" | grep "$c2" | awk -F"|" '{print $3;}' | sort -u > c3.txt
+						lpl=`tail -1 c3.txt`
+						cat c3.txt | while read c3;
 						do	
 						  echo "{";
-							name_link $p;
+							name_link \"$c3\";
 							echo \"children\": "["
-
-							el=`cat all.links | egrep $f"\|" | egrep "\|"$c"\|" | egrep "\|"$p"\|" | awk -F"|" '{print $7;}' | sort -u`
-							lel=`echo $el| awk '{print $NF}'`
-							for e in $el
+							cat all2.links | grep "$c1" | grep "$c2" | grep "$c3" | awk -F"|" '{print $4;}' | sort -u > c4.txt
+						  lel=`tail -1 c4.txt`
+							cat c4.txt | while read c4;
 							do	
 							  echo -n "{"
-								name_link $e;
+								name_link \"$c4\";
 								echo \"children\": "["
 								# Children
 
-								el5=`cat all.links | egrep $f"\|" | egrep "\|"$c"\|" | egrep "\|"$p"\|" |  egrep "\|"$e"\|" | awk -F"|" '{print $9;}' | sort -u`
-								lel5=`echo $el5| awk '{print $NF}'`
-								for e5 in $el5
+								cat all2.links | grep "$c1" | grep "$c2" | grep "$c3" | grep "$c4" | awk -F"|" '{print $5;}' | sort -u > c5.txt
+								lel5=`tail -1 c5.txt `
+								cat c5.txt | while read c5;
 								do	
 										echo -n "{"
-										name_link $e5
-										echo -n \"size\": 200;
+										name_link \"$c5\"
+										echo \"children\": "["
+										
+										cat all2.links | grep "$c1" | grep "$c2" | grep "$c3" | grep "$c4" | grep "$c5" | awk -F"|" '{print $6;}' | sort -u > c6.txt
+										lel6=`tail -1 c6.txt`
+										cat c6.txt | while read c6;
+										do	
+												echo -n "{"
+												name_link \"$c6\"
+												echo -n \"size\": 200
+												# more here...
+												echo -n "}"
+												end_comma "$c6" "$lel6"
+       							done
 										# End
-                    echo -n "}"
-										end_comma $e5 $lel5
+                    echo -n "] }"
+										end_comma "$c5" "$lel5"
        					done
-								# End
-								
                 echo -n " ] }"
-								end_comma $e $lel
+								end_comma "$c4" "$lel"
        				done
   					  echo "] }";
-							end_comma $p $lpl
+							end_comma "$c3" "$lpl"
     				done
  		    	  echo "] }";
-						end_comma $c $lcl
+						end_comma "$c2" "$lcl"
  				done
 			  echo " ] }";
-				end_comma $f $lfl
+				end_comma "$c1" "$lfl"
 		done
-	echo "] }";
 )
+rm -rf c?.txt
