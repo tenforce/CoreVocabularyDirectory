@@ -21,8 +21,8 @@
 </header>
 
 <section id="intro">
-<p>The Core Vocabulary Mapping Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on Joinup
-< href=" https://joinup.ec.europa.eu/asset/core_vocabularies/description">
+<p>The Core Vocabulary Mapping Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on 
+<a href="https://joinup.ec.europa.eu/asset/core_vocabularies/description">Joinup</a>
 for more information. 
 The available data models and their connecting mappings can be explored by browsing through the Directory. 
 Also a visual expandeable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
@@ -118,7 +118,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </P>
   <P>After submission the document will be iterative refined in collaboration
   </P>
-  <P>The Core Vocabularies handbook < href=" https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf"> provides more insight in the objectives and the use of the Core Vocabularies. </P>
+  <P>The <a href="https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf">Core Vocabularies handbook</a> provides more insight in the objectives and the use of the Core Vocabularies. </P>
   
 </section>
 
