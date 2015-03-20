@@ -102,7 +102,7 @@
         <h2>Mappings</h2>
         <table class="results">
          <thead>
-					 <tr><th>Matching</th><th>Concept</th><th>Data Model</th></tr>
+					 <tr><th>Mapping Type</th><th>Element</th><th>Data Model</th></tr>
          </thead>
          <tbody>
           <xsl:for-each select="$elements">
@@ -140,11 +140,12 @@
           <xsl:for-each select="$elements">
 						<xsl:sort select="lower-case(rdfs:label)"/>
             <tr>
+							<!--
               <td>
                 <xsl:call-template name="rdf-property">
                   <xsl:with-param name="element" select="*[not(self::rdfs:label) and @rdf:resource=$subject-uri]"/>
                 </xsl:call-template>
-              </td>
+              </td> -->
               <td>
                 <xsl:call-template name="rdf-value">
                   <xsl:with-param name="element" select="."/>

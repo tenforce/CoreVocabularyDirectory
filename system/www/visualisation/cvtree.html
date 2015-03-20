@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link type="text/css" rel="stylesheet" href="tree_files/style.css">
-    <script type="text/javascript" src="tree_files/d3_002.js"></script>
-    <script type="text/javascript" src="tree_files/d3.js"></script>
-    <style type="text/css">
-
-
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Core Vocabulary Mappings Directory</title>
+  <link type="text/css" rel="stylesheet" href="tree_files/style.css">
+  <script type="text/javascript" src="tree_files/d3_002.js"></script>
+  <script type="text/javascript" src="tree_files/d3.js"></script>
+  <link rel="stylesheet" type="text/css" href="/vdm/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
+  <link rel="stylesheet" type="text/css" href="/vdm/css/screen.css" />
+  <style type="text/css">
 .node circle {
   cursor: pointer;
   fill: #fff;
@@ -23,20 +26,30 @@ path.link {
   stroke: #ccc;
   stroke-width: 1.5px;
 }
-
     </style>
-  </head>
-  <body>
-    <div id="body">
-      <div id="footer">
-        Core Vocabulary Mappings
-        <div class="hint">click or option-click to toggle sub-tree view (d3.layout.tree), double click will search for the identifier or string (separate window)</div>
-      </div>
-    <script type="text/javascript">
+
+</head>
+<body id="picturepage">
+
+<header>
+  <div class="logo">
+    <a href="https://www.semic.eu">
+      <img src="/vdm/images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
+    </a>
+  </div>
+  <h1><a href="/vdm/" color="white">Core Vocabulary Mapping Directory</a></h1>
+</header>
+
+<section id="picture">
+	<div id="body">
+		<div id="footer">
+			<div class="hint">click to toggle sub-tree view, double click open window on Element</div>
+		</div>
+		<script type="text/javascript">
 
 var m = [20, 120, 20, 120],
-    w = 1280 - m[1] - m[3],
-    h = 800 - m[0] - m[2],
+    w = 1200 - m[1] - m[3],
+    h = 600 - m[0] - m[2],
     i = 0,
     root;
 
@@ -175,6 +188,37 @@ function toggle(d) {
 }
 
     </script>
-  
+	</div>
+</section>
+<footer>
+  <p>This work is supported by
+  <a href="http://ec.europa.eu/isa/actions/01-trusted-information-exchange/1-1action_en.htm" target="_blank">Action 1.1</a>
+  of the
+  <a href="http://ec.europa.eu/isa/" target="_blank">Interoperability Solutions
+  for European Public Adminstrations (ISA)</a> Programme of the European
+  Commission.</p>
+
+  <p><strong>Linked Data pilots:</strong>
+    <a href="http://location.testproject.eu/BEL">Core Location pilot</a> |
+    <a href="http://data.ydmed.gov.gr/">Greek Pilot</a> |
+    <a href="http://cpsv.testproject.eu/CPSV">Core Public Service pilot</a> |
+    <a href="http://org.testproject.eu/MAREG">Organisation Ontology pilot</a> |
+    <a href="http://health.testproject.eu/PPP">Plant Protection Products pilot</a> |
+    <a href="http://maritime.testproject.eu/CISE">Maritime Surveillance pilot</a>
+  </p>
+
+  <p>
+    <a href="https://joinup.ec.europa.eu/asset/dcat_application_profile/description" target="_blank"><img alt="DCAT application profile for European data portals" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms/description" target="_blank"><img alt="Asset Description Metadata Schema (ADMS)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/adms_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms_foss/description" target="_blank"><img alt="Asset Description Metadata Schema for Software (ADMS.SW)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/ADMS_SW_Logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_business/description" target="_blank"><img alt="Core Business Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_business_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_person/description"><img alt="Core Person Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_person_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_location/description" target="_blank"><img alt="Core Location Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_location_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_public_service/description" target="_blank"><img alt="Core Public Service Vocabulary" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_public_service_logo.png" width="70" height="70" /></a>
+    <a href="http://ec.europa.eu/isa/" target="_blank"><img alt="isa" src="http://joinup.ec.europa.eu/sites/default/files/ckeditor_files/images/isa_logo.png" width="70" height="70" /></a>
+  </p>
+
+  <p>Some icons by <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com</a> used under CC-BY license.</p>
+</footer>
 
 </body></html>

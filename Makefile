@@ -2,7 +2,7 @@ DOCKER=docker
 
 SYSTEM=system
 
-data: data2.ttl dcatods.ttl data.ttl
+data: data2.ttl dcatods.ttl data.ttl system/www/visualisation/cvflare.json 
 	( cd system; ./configure.sh )
 
 data2.ttl: excelfiles/Core_Vocabularies_v1.1_v0.31.xlsx system/scripts/cvxsl2mdr.py 
@@ -13,6 +13,9 @@ data.ttl: excelfiles/Core_Vocabularies_v1.3.xlsx system/scripts/cvxsl2vdm.py
 
 dcatods.ttl: excelfiles/DCatVocabularies-v0.1.xlsx system/scripts/dcatxsl2mdr.py 
 	system/scripts/dcatxsl2mdr.py excelfiles/DCatVocabularies-v0.1.xlsx > dcatods.ttl
+
+system/www/visualisation/cvflare.json: system/www/visualisation/all.links system/www/visualisation/dump3.sh
+	( cd system/www/visualisation; ./dump3.sh > cvflare.json )
 
 vdm.tgz: data
 	mkdir vdm

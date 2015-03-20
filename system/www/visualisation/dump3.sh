@@ -3,7 +3,7 @@
 function name_link {
 		echo \"link\": $1\",
 		shift;
-		dump=`echo $* | tr -d \" | sed 's/#//g'`
+		dump=`echo $* | tr -d \" | sed 's/#//g' | sed 's?http://www.w3.org/2004/02/skos/core??'`
 		echo \"name\": \"$dump\",;
 }
 
@@ -23,6 +23,7 @@ function end_comma {
 	  do
 		  echo "{" 
 			name_link \"$c1\";
+			echo \"size\": \"100\",
 			echo \"children\": "["
 			 
 			  cat all2.links | grep "$c1" | awk -F"|" '{print $2;}' | sort -u > c2.txt
@@ -31,6 +32,7 @@ function end_comma {
 				do	
 					  echo "{" 
 						name_link \"$c2\";
+						echo \"size\": \"100\",
 						echo \"children\": "["
 
 						cat all2.links | grep "$c1" | grep "$c2" | awk -F"|" '{print $3;}' | sort -u > c3.txt
@@ -63,7 +65,7 @@ function end_comma {
 										do	
 												echo -n "{"
 												name_link \"$c6\"
-												echo -n \"size\": 200
+												echo -n \"size\": 150
 												# more here...
 												echo -n "}"
 												end_comma "$c6" "$lel6"

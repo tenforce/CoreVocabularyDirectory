@@ -219,6 +219,8 @@ class CommonVocabularySpreadsheet:
             intid = item["identifier (internal)"]
             if label == "":
                 label = intid
+            elif label != intid:
+                label = label + " (" + intid + ")"
             pubid = item["public identifier (uri)"]
             g.add((uri, RDFS.label, self.text(label)))
             g.add((uri, VDM.has_termlabel, self.text(label)))

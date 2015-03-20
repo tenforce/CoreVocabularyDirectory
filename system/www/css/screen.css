@@ -27,6 +27,18 @@ body > footer {
   padding: 30px 40px;
 }
 
+#picturepage {
+	overflow: auto;
+}
+#picturepage header h1 a {
+ color: white;
+}
+#picture {
+	padding: 0;
+  max-width: 978px;
+	overflow: auto;
+}
+
 body > header,
 body > section {
   border-radius: 10px;
