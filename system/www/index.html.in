@@ -77,7 +77,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 				<li><a href="/vdm/id/dcat/">Browsable View</a>,</li>
 				<li>
 					<a href="visualisation/tree.html">Tree Visualisation 
-						of the DCAT/ODS mapping</a>
+						of the DCAT-AP configuration mappings in Open Data Support</a>
 				</li>
 				<!--
 				<li>
