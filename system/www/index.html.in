@@ -21,17 +21,19 @@
 </header>
 
 <section id="intro">
-<p>The Core Vocabulary Mapping Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on 
-<a href="https://joinup.ec.europa.eu/asset/core_vocabularies/description">Joinup</a>
-for more information. 
+<p>The Core Vocabulary Mapping Directory is a repository for the Core Vocabularies and the associated Core Data Models.
 The available data models and their connecting mappings can be explored by browsing through the Directory. 
 Also a visual expandeable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
 and reuse the information is via the SPARQL endpoint for machine readeable access.
 </p>
-
+<P>The <a href="https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf">Core Vocabularies handbook</a> 
+  provides more insight in the usage and objectives of the Core Vocabularies. 
+  Also visit the <a href="https://joinup.ec.europa.eu/asset/core_vocabularies/asset_release/core-vocabularies-v11">Core Vocabularies homepage</a> for more background information.
+  </P>
   
  <h3>
-   <a href="#creation">How to contribute</a> | <a href="#registry">Browse the directory</a> | <a href="#search">Search for mappings</a> | <a href="/sparql">SPARQL endpoint</a> | <a href="#download">Downloadables</a>
+
+   <a href="#creation">How to contribute</a> | <a href="#registry">Browse the directory</a> | <a href="#search">Search for concept</a> | <a href="/sparql">SPARQL endpoint</a> | <a href="#download">Downloadables</a>
  </h3> 
 </section>
 
@@ -59,8 +61,8 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 		<li>
 			<p>Target Core Data Models:
 				<ul>
-					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
-					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
+					<li><a href="http://vocabs.tenforce.com/vdm/about/html/dcfce6b9b80785dd9ab8643040bcb443">NIEM 3.0</a></li>
+					<li><a href="http://vocabs.tenforce.com/vdm/about/html/2e68deedd01558073d0c81ae7e50710c">Stelselcatalogus</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4">UN/CEFACT CCL 13B</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c">MUG- BII</a></li>
 					<li><a href="http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374">Core Vocabularies RDF Schemas</a></li>
@@ -77,7 +79,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 				<li><a href="/vdm/id/dcat/">Browsable View</a>,</li>
 				<li>
 					<a href="visualisation/tree.html">Tree Visualisation 
-						of the DCAT-AP configuration mappings in Open Data Support</a>
+						of the DCAT/ODS mapping</a>
 				</li>
 				<!--
 				<li>
@@ -118,7 +120,6 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </P>
   <P>After submission the document will be iterative refined in collaboration
   </P>
-  <P>The <a href="https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf">Core Vocabularies handbook</a> provides more insight in the objectives and the use of the Core Vocabularies. </P>
   
 </section>
 
