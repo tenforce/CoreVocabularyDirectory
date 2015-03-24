@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Core Vocabulary Mappings Directory</title>
+  <title>Core Data Model Directory</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
@@ -17,16 +17,16 @@
       <img src="images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
     </a>
   </div>
-  <h1><a href="/vdm/" color="white">Core Vocabulary Mapping Directory</a></h1>
+  <h1><a href="/vdm/" color="white">Core Data Model Directory</a></h1>
 </header>
 
 <section id="intro">
-<p>The Core Vocabulary Mapping Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on 
+<p>The Core Data Model Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on 
 <a href="https://joinup.ec.europa.eu/asset/core_vocabularies/description">Joinup</a>
 for more information. 
 The available data models and their connecting mappings can be explored by browsing through the Directory. 
 <!--
-Also a visual expandeable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
+Also a visual expandable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
 and reuse the information is via the SPARQL endpoint for machine readeable access.
 --!>
 </p>
@@ -93,7 +93,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </ul>
 </section>
   <section id="search">
-  <h2> Search the Core Vocabulary Mapping Directory</h2>
+  <h2> Search the Core Data Model Directory</h2>
   <p>It searches exactly the provided string within the labels and definitions of the available concepts for a match</p>
   <div>
     <form id="searchform">
@@ -107,14 +107,14 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 <section id="creation">
   <h2>Creating a mapping</h2>
   <P>
-  Contributing information to the Core Vocabulary Mapping Directory starts from providing 
+  Contributing information to the Core Data Model Directory starts from providing 
   a mapping of between the Core Vocabularies and the newly targeted Core Data Model.
   </P>
   <P>This consists of four steps
       <ol>
         <li>download the mapping template document <a href="Core_Vocabularies_Mapping_Template.xlsx">Core_Vocabularies_Mapping_Template.xlsx</a>. </li>
         <li>insert in the "Target Vocabularies" sheet the description of the target Core Data Model.</li>
-        <li>insert in the "Mappings" sheet the mapping between the Core Vocabulary and the target Core Data Model</li>
+        <li>insert in the "Mappings" sheet the mapping between the Core Vocabularies and the target Core Data Model</li>
         <li>submit the document to XXX</li>
       </ol>
   </P>
