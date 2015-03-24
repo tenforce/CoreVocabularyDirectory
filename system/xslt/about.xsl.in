@@ -102,7 +102,7 @@
         <h2>Mappings</h2>
         <table class="results">
          <thead>
-					 <tr><th>Mapping Type</th><th>Element</th><th>Data Model</th></tr>
+					 <tr><th>Mapping Type</th><th>Element</th><th>Core Data Model</th></tr>
          </thead>
          <tbody>
           <xsl:for-each select="$elements">
