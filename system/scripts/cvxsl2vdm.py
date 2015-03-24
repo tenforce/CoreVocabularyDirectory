@@ -283,7 +283,7 @@ class CommonVocabularySpreadsheet:
                 g.add((uri,SKOS.exactMatch,targeturi))
             elif item["mapping relation"] == "Has close match":
                 g.add((uri,SKOS.closeMatch,targeturi))
-            elif item["mapping relation"] == "Has broard match":
+            elif item["mapping relation"] == "Has broad match":
                 g.add((uri,SKOS.broadMatch,targeturi))
             elif item["mapping relation"] == "Has narrow match":
                 g.add((uri,SKOS.narrowMatch,targeturi))

@@ -27,11 +27,11 @@ WHERE {
   ?coreproperty rdfs:label ?corepropertylabel .
 
   { { ?coreproperty skos:exactMatch ?target}
-  union
+   union
   { ?coreproperty skos:closeMatch ?target }
-  union
+   union
   { ?coreproperty skos:broaderMatch ?target }
-  union
+   union
   { ?coreproperty skos:narrowerMatch ?target } }
   ?coreproperty ?matchingprop ?target .
   ?target rdfs:label ?targetLabel .

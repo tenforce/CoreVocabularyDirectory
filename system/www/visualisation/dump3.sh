@@ -1,10 +1,10 @@
 #!/bin/bash
 
 function name_link {
-		echo \"link\": $1\",
-		shift;
-		dump=`echo $* | tr -d \" | sed 's/#//g' | sed 's?http://www.w3.org/2004/02/skos/core??'`
-		echo \"name\": \"$dump\",;
+		link=`echo $* | awk -F@ '{print $1;}' | tr -d \"`
+		name=`echo $* | awk -F@ '{print $2;}' | tr -d \" | sed 's?http://www.w3.org/2004/02/skos/core#??g'`
+		echo \"link\": \"$link\",
+		echo \"name\": \"$name\",;
 }
 
 function end_comma {
@@ -16,7 +16,7 @@ function end_comma {
 		fi;
 }
 
-( cat all.links | awk -F\| 'BEGIN{OFS="|";}{print $2"#"$3,$4"#"$5,$6"#"$7,$8"#"$9,$10"#"$11,$12"#"$13;}' > all2.links;
+( cat all.links | awk -F\| 'BEGIN{OFS="|";}{print $1"@"$2,$3"@"$4,$5"@"$6,$7"@"$8,$9"@"$10,$11"@"$12;}' > all2.links;
 	cat all2.links | awk -F"|" '{print $1;}' | sort -u > c1.txt
 	lfl=`tail -1 c1.txt`
 	cat c1.txt | while read c1;
