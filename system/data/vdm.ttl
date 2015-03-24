@@ -90,7 +90,7 @@ vdm:has_definition a skos:Concept;
 
 vdm:Description  a skos:Concept;
     a rdfs:Class;
-    a rfds:subPropertyOf dcterms:description;
+    a rdfs:subPropertyOf dcterms:description;
     rdfs:label "Description";
     skos:definition "A description".
 
