@@ -21,7 +21,7 @@ vdm:DataModel a skos:Concept;
 
 vdm:has_datamodel a skos:Concept;
     a rdfs:Property;
-    a rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf>;
+    rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf>;
     rdfs:label "part of";
     skos:definition "The Core Data Model to which the concept belongs".
 
@@ -84,13 +84,13 @@ vdm:Definition a skos:Concept;
 
 vdm:has_definition a skos:Concept;
     a rdfs:Property;
-    a rdfs:subPropertyOf skos:definition;
+    rdfs:subPropertyOf skos:definition;
     rdfs:label "has definition";
     skos:definition "The definition of a concept".
 
 vdm:Description  a skos:Concept;
     a rdfs:Class;
-    a rdfs:subPropertyOf dcterms:description;
+    rdfs:subPropertyOf dcterms:description;
     rdfs:label "Description";
     skos:definition "A description".
 
@@ -140,4 +140,5 @@ vdm:DataType a vdm:Type;
 	  rdfs:label "Datatype".
 	 
 rdf:type rdfs:label "type".
+rdfs:label rdfs:label "label". 
 
