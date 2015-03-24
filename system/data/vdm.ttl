@@ -4,6 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 # Basic RDF datatypes
 # Label and definitions are provided by the RDFS vocabulary.
@@ -15,14 +16,14 @@
 
 vdm:DataModel a skos:Concept;
     a rdfs:Class;
-    rdfs:label "Data Model";
-    skos:definition "A data model".
+    rdfs:label "Core Data Model";
+    skos:definition "“reusable data models that are defined, managed, promoted and maintained centrally to facilitate interoperability across different systems, applications and domains".
 
 vdm:has_datamodel a skos:Concept;
     a rdfs:Property;
     a rdfs:subPropertyOf <http://purl.org/dc/terms/isPartOf>;
-    rdfs:label "part of data  Model";
-    skos:definition "The data model to which the concept belongs".
+    rdfs:label "part of";
+    skos:definition "The Core Data Model to which the concept belongs".
 
 vdm:InternalIdentifier a skos:Concept;
     a rdfs:Class;
@@ -58,13 +59,13 @@ vdm:has_type a skos:Concept;
 
 vdm:DataModelClass  a skos:Concept;
     a rdfs:Class;
-    rdfs:label "A class in a data Model";
-    skos:definition "A class in a data model, used to group concepts within a data model".
+    rdfs:label "A class in a Core Data Model";
+    skos:definition "A class in a Core Data Model, used to group concepts within the data model".
 
 vdm:has_datamodelclass a skos:Concept;
     a rdfs:Property;
     rdfs:label "part of class";
-    skos:definition "The grouping concept (mostly a class) of the concepts in a datamodel".
+    skos:definition "The grouping concept (mostly a class) of the concepts in a Core Data Model".
 
 vdm:DataType  a skos:Concept;
     a rdfs:Class;
@@ -83,11 +84,13 @@ vdm:Definition a skos:Concept;
 
 vdm:has_definition a skos:Concept;
     a rdfs:Property;
+    a rdfs:subPropertyOf skos:definition;
     rdfs:label "has definition";
     skos:definition "The definition of a concept".
 
 vdm:Description  a skos:Concept;
     a rdfs:Class;
+    a rfds:subPropertyOf dcterms:description;
     rdfs:label "Description";
     skos:definition "A description".
 
@@ -135,3 +138,6 @@ vdm:Property a vdm:Type;
 
 vdm:DataType a vdm:Type;
 	  rdfs:label "Datatype".
+	 
+rdf:type rdfs:label "type".
+

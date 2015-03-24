@@ -23,8 +23,10 @@
 <section id="intro">
 <p>The Core Vocabulary Mapping Directory is a repository for the Core Vocabularies and the associated Core Data Models.
 The available data models and their connecting mappings can be explored by browsing through the Directory. 
+<!--
 Also a visual expandeable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
 and reuse the information is via the SPARQL endpoint for machine readeable access.
+--!>
 </p>
 <P>The <a href="https://joinup.ec.europa.eu/site/core_vocabularies/Core_Vocabularies_user_handbook/Handbook-for-using-the-Core-Vocabularies_v0.50.pdf">Core Vocabularies handbook</a> 
   provides more insight in the usage and objectives of the Core Vocabularies. 
