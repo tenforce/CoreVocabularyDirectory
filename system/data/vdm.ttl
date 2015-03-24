@@ -17,7 +17,7 @@
 vdm:DataModel a skos:Concept;
     a rdfs:Class;
     rdfs:label "Core Data Model";
-    skos:definition "“reusable data models that are defined, managed, promoted and maintained centrally to facilitate interoperability across different systems, applications and domains".
+    skos:definition "reusable data models that are defined, managed, promoted and maintained centrally to facilitate interoperability across different systems, applications and domains".
 
 vdm:has_datamodel a skos:Concept;
     a rdfs:Property;
