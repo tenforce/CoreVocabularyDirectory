@@ -131,7 +131,9 @@ class CommonVocabularySpreadsheet:
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
         g.add((uri, VDM.context, URIRef(self.ns)))
-        cluri = self.uri(item["class"])
+        # Note: The excel names can contain spaces, etc. remove them all
+        # before generating the ids, etc.
+        cluri = self.uri(item["class"].replace(" ",""))
         g.add((uri, VDM.has_datamodelclass, cluri))
         g.add((uri, VDM.has_termlabel, self.text(label)))
         g.add((uri, VDM.has_definition, self.text(item["definition"].strip())))
@@ -153,7 +155,7 @@ class CommonVocabularySpreadsheet:
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
         g.add((uri, VDM.has_termlabel, self.text(label)))
-        cluri = self.uri(item["class"])
+        cluri = self.uri(item["class"].replace(" ","")) 
         g.add((uri, VDM.has_datamodelclass, cluri))
         if label != intid:
             label = label + " (" + intid + ")"
@@ -249,7 +251,7 @@ class CommonVocabularySpreadsheet:
 
     def tv_property(self,uri,item,g):
         g.add((uri, RDF.type, VDM.Property))
-        cluri = self.uri(item["class"])
+        cluri = self.uri(item["class"],replace(" ",""))
         g.add((uri, VDM.has_datamodelclass, cluri))
 
 #        match = re.search(r'http://*',part)
