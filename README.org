@@ -1,7 +1,7 @@
 #+TITLE: Core Vocabulary Directory
 
 * Introduction
-Original code was taken from [mdr/github].
+Original code was taken from [https://github.com/SEMICeu/mdr].
 * Installation
 The assumption is that a linux system is being used for development
 and eventual deployment.
