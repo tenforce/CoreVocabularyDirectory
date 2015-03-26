@@ -159,8 +159,22 @@
           <xsl:with-param name="strip-uri" select="true()" />
         </xsl:call-template>
 			</dd>
-      <dt>URI</dt>
-      <dd><a href="{$subject-uri}"><xsl:value-of select="$subject-uri" /></a></dd>
+			<dt>Public ID</dt>
+			<dd>
+				<xsl:choose>
+					<xsl:when test="$subject/vdm:has_publicidentifier">
+						<a href="{$subject/vdm:has_publicidentifier/@rdf:resource}" 
+							 title="This is the Public Identifier for this resource">
+							<xsl:value-of select="$subject/vdm:has_publicidentifier/@rdf:resource"/>
+						</a>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>No public identifier</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+			</dd>
+      <dt>CDMD ID</dt>
+      <dd><a href="{$subject-uri}" title="This is the Core Data Model Directory (CDCM) Identifier, which will always point to this page"><xsl:value-of select="$subject-uri" /></a></dd>
       <xsl:if test="$subject/rdf:type">
         <dt>Type</dt>
         <dd>

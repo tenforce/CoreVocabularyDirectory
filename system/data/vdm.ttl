@@ -106,7 +106,7 @@ vdm:PublicIdentifier a skos:Concept;
 
 vdm:has_publicidentifier a skos:Concept;
     a rdfs:Property;
-    rdfs:label "has public idenfitier";
+    rdfs:label "has public identifier";
     skos:definition "the public identifier of a concept".
 
 vdm:Example  a skos:Concept;

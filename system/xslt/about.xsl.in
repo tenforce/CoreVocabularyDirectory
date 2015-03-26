@@ -54,7 +54,7 @@
       <!-- Header -->
       <h2><xsl:value-of select="$subject-label" /></h2>
       <!-- Description -->
-      <xsl:for-each select="$subject/rdfs:comment | $subject/dc:description | $subject/dcterms:description | $subject/skos:definition">
+      <xsl:for-each select="$subject/rdfs:comment | $subject/dc:description | $subject/dcterms:description | $subject/skos:definition |  $subject/vdm:has_publicidentifier">
         <p>
           <xsl:call-template name="rdf-value">
             <xsl:with-param name="element" select="." />
@@ -69,7 +69,7 @@
   <!-- Print the Properties table -->
   
   <xsl:template name="properties">
-    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:closeMatch or self::skos:narrowMatch)]" />
+    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:broadMatch or self::skos:closeMatch or self::skos:narrowMatch)]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
         <h2>Metadata</h2>

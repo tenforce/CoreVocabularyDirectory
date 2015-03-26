@@ -77,6 +77,12 @@ class CommonVocabularySpreadsheet:
         '''Return an RDF Literal with the text.'''
         return Literal(text, lang="en")
 
+    def sanitise_label(self, text):
+        '''Return a sanitised label - new newlines, tabs, '|' or ',' characters'''
+        str0 = text.replace("\n"," ").replace("\r"," ").replace("\t"," ")
+        str1 = str0.replace("|"," ").replace(","," ")
+        return str1;
+        
     def split(self, values):
         '''Split a comma-separated list of values.'''
         return re.split(r"\s*,\s*", values)
@@ -113,13 +119,16 @@ class CommonVocabularySpreadsheet:
         identifier = item["identifier (internal)"]
         label = item["term / label"]
         uri = self.uri(identifier)
-        g.add((uri, VDM.context, URIRef(self.ns)))
+        # g.add((uri, VDM.context, URIRef(self.ns)))
+        pubid = item["public identifier (uri)"]
+        if pubid != "":
+            g.add((uri, VDM.has_publicidentifier, URIRef(pubid)))
         g.add((uri, RDF.type, VDM.ObjectClass))
         g.add((uri, VDM.has_definition, self.text(item["definition"].strip())))
         g.add((uri, VDM.has_description, self.text(item["description"].strip())))
-        g.add((uri, VDM.has_termlabel, self.text(label)))
+        g.add((uri, VDM.has_termlabel, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
-        g.add((uri, RDFS.label, self.text(label)))
+        g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
         datamodel = self.uri(item["data model"])
         g.add((datamodel,RDF.type, VDM.DataModel))
         g.add((datamodel,RDFS.label,self.text(item["data model"])))
@@ -130,18 +139,21 @@ class CommonVocabularySpreadsheet:
         label = item["term / label"]
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
-        g.add((uri, VDM.context, URIRef(self.ns)))
+        # g.add((uri, VDM.context, URIRef(self.ns)))
         # Note: The excel names can contain spaces, etc. remove them all
         # before generating the ids, etc.
         cluri = self.uri(item["class"].replace(" ",""))
         g.add((uri, VDM.has_datamodelclass, cluri))
-        g.add((uri, VDM.has_termlabel, self.text(label)))
+        pubid = item["public identifier (uri)"]
+        if pubid != "":
+            g.add((uri, VDM.has_publicidentifier, URIRef(pubid)))
+        g.add((uri, VDM.has_termlabel, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_definition, self.text(item["definition"].strip())))
         g.add((uri, VDM.has_example, self.text(item["examples"])))
         g.add((uri, VDM.has_description, self.text(item["description"].strip())))
         if label != intid:
             label = label + " (" + intid + ")"
-        g.add((uri, RDFS.label, self.text(label)))
+        g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_internalidentifier, self.text(intid)))
         datamodel = self.uri(item["data model"])
         g.add((datamodel,RDF.type, VDM.DataModel))
@@ -154,12 +166,12 @@ class CommonVocabularySpreadsheet:
         label = item["term / label"]
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
-        g.add((uri, VDM.has_termlabel, self.text(label)))
+        g.add((uri, VDM.has_termlabel, self.text(self.sanitise_label(label))))
         cluri = self.uri(item["class"].replace(" ","")) 
         g.add((uri, VDM.has_datamodelclass, cluri))
         if label != intid:
             label = label + " (" + intid + ")"
-        g.add((uri, RDFS.label, self.text(label)))
+        g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_definition, self.text(item["definition"])))
         g.add((uri, VDM.has_description, self.text(item["description"])))
         g.add((uri, VDM.has_datatype, self.uri(item["data type"].replace(" ",""))))
@@ -223,11 +235,11 @@ class CommonVocabularySpreadsheet:
                 label = intid
             elif label != intid:
                 label = label + " (" + intid + ")"
+            g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
+            g.add((uri, VDM.has_termlabel, self.text(self.sanitise_label(label))))
             pubid = item["public identifier (uri)"]
-            g.add((uri, RDFS.label, self.text(label)))
-            g.add((uri, VDM.has_termlabel, self.text(label)))
             if pubid != "":
-               g.add((uri, VDM.has_publicidentifer, URIRef(pubid)))
+               g.add((uri, VDM.has_publicidentifier, URIRef(pubid)))
             g.add((uri, VDM.has_internalidentifier, self.text(intid)))
             datamodel = self.uri(item["data model"])
             g.add((datamodel,RDF.type, VDM.DataModel))

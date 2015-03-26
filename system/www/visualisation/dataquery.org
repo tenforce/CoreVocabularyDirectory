@@ -1,7 +1,51 @@
-#+TITLE: visualisation query
+#+TITLE: visualisation queries
 
-#+NAME: sparqlend
-#+begin_src roqet :endpoint http://vocabs.tenforce.com/sparql :exports both :file all.links
+#+NAME: datamodels
+#+begin_src roqet :endpoint http://vocabs.tenforce.com/sparql :exports both
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://vocabs.tenforce.com/def#>
+
+SELECT 
+  DISTINCT ?datamodel ?datamodellab 
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+#  FILTER(STR(?datamodel)="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae")
+}
+#+END_SRC
+
+#+RESULTS: datamodels
+| datamodel                                                             | datamodellab                  |
+| http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae | Core Vocabulary               |
+| http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4 | UN/CEFACT CCL 13B             |
+| http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c | MUG- BII                      |
+| http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443 | NIEM 3.0                      |
+| http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4 | OASIS UBL Common Library 2.1  |
+| http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec | KoSIT - XOV                   |
+| http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42 | Swedish Company data model    |
+| http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be | eIDAS minimum dataset         |
+| http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374 | Core Vocabularies RDF Schemas |
+| http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c | Stelselcatalogus              |
+| http://vocabs.tenforce.com/vdm/id/cv/34884a917711536741cf1da45b7f6b41 | DCAT-AP                       |
+| http://vocabs.tenforce.com/vdm/id/cv/82a9e4d26595c87ab6e442391d8c5bba | fr                            |
+| http://vocabs.tenforce.com/vdm/id/cv/25400724d7370b0b29c9369d9af3dd21 | ie                            |
+| http://vocabs.tenforce.com/vdm/id/cv/1a13105b7e4eb5fb2e7c9515ac06aa48 | nl                            |
+| http://vocabs.tenforce.com/vdm/id/cv/7885444af42e4b30c518c5be17c8850b | gb                            |
+| http://vocabs.tenforce.com/vdm/id/cv/75778bf8fde7266d416b0089e7b8b793 | fi                            |
+| http://vocabs.tenforce.com/vdm/id/cv/41d6ad0761a5d27a9e1bd567041ce9e9 | sk                            |
+| http://vocabs.tenforce.com/vdm/id/cv/12470fe406d44017d96eab37dd65fc14 | es                            |
+| http://vocabs.tenforce.com/vdm/id/cv/0d149b90e7394297301c90191ae775f0 | it                            |
+| http://vocabs.tenforce.com/vdm/id/cv/7d0db380a5b95a8ba1da0bca241abda1 | at                            |
+| http://vocabs.tenforce.com/vdm/id/cv/d692bc40d83423d24d3a37582f58468c | gr                            |
+| http://vocabs.tenforce.com/vdm/id/cv/dce46eeb80fc87bfd1881a81f0fc3afe | odp                           |
+| http://vocabs.tenforce.com/vdm/id/cv/5f02f0889301fd7be1ac972c11bf3e7d | de                            |
+| http://vocabs.tenforce.com/vdm/id/cv/3605c251087b88216c9bca890e07ad9c | ro                            |
+| http://vocabs.tenforce.com/vdm/id/cv/efad7abb323e3d4016284c8a6da076a1 | se                            |
+
+#+NAME: core_vocabs
+#+begin_src roqet :endpoint http://vocabs.tenforce.com/sparql :exports both :file all-my.links
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -17,6 +61,7 @@ SELECT DISTINCT ?datamodel ?datamodellab
 WHERE {
   ?datamodel rdf:type vdm:DataModel .
   ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae")
 
   ?coreclass vdm:has_datamodel ?datamodel .
   ?coreclass rdf:type vdm:ObjectClass .
@@ -43,9 +88,48 @@ WHERE {
 #+end_src
 
 #+RESULTS: sparqlend
-[[file:all.links]]
+[[file:all-my.links]]
 
-#+begin_src sh :exports both :file flare-all.json
+#+NAME: dcat_mappings
+#+begin_src roqet :endpoint http://vocabs.tenforce.com/sparql :exports both :file all-dcat.links
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://vocabs.tenforce.com/def#>
+prefix coreclass: <http://vocabs.tenforce.com/vdm/id/cv/class/>
+
+SELECT DISTINCT ?datamodel ?datamodellab 
+                ?coreclass ?coreclasslabel 
+                ?coreproperty ?corepropertylabel 
+                ?matchingprop ?matchingprop as ?label
+                ?targetdatamodel ?targetdatamodellabel
+		            ?target ?targetLabel 
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://vocabs.tenforce.com/vdm/id/cv/34884a917711536741cf1da45b7f6b41")
+
+  ?coreclass vdm:has_datamodel ?datamodel .
+  ?coreclass rdf:type vdm:ObjectClass .
+  ?coreclass rdfs:label ?coreclasslabel .
+
+  ?coreproperty a vdm:Property .
+  ?coreproperty vdm:has_datamodelclass ?coreclass .
+  ?coreproperty rdfs:label ?corepropertylabel .
+
+  { { ?coreproperty skos:exactMatch ?target}
+   union
+  { ?coreproperty skos:closeMatch ?target }
+   union
+  { ?coreproperty skos:broaderMatch ?target }
+   union
+  { ?coreproperty skos:narrowerMatch ?target } }
+  ?coreproperty ?matchingprop ?target .
+  ?target rdfs:label ?targetLabel .
+
+  ?target vdm:has_datamodel ?targetdatamodel .
+  ?targetdatamodel rdfs:label ?targetdatamodellabel .
+}
 
 #+end_src
 
