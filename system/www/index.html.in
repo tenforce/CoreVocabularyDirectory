@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Core Data Model Directory</title>
+  <title>Core Data Model Mapping Directory</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
@@ -17,14 +17,16 @@
       <img src="images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
     </a>
   </div>
-  <h1><a href="/vdm/" color="white">Core Data Model Directory</a></h1>
+  <h1><a href="/vdm/" color="white">Core Data Model Mapping Directory</a></h1>
 </header>
 
 <section id="intro">
-<p>The Core Data Model Directory hosts a collection of mappings between the Core Vocabularies and related Core Data Models. Visit the Core Vocabularies page on 
+<p>The <b><i>Core Data Model Mapping Directory</i></b> hosts a
+collection of mappings between the Core Vocabularies and related Core
+Data Models. Visit the Core Vocabularies page on
 <a href="https://joinup.ec.europa.eu/asset/core_vocabularies/description">Joinup</a>
-for more information. 
-The available data models and their connecting mappings can be explored by browsing through the Directory. 
+for more information.  The available data models and their connecting
+mappings can be explored by browsing through the Directory.
 <!--
 Also a visual expandable Tree overview starting from the Core Vocabularies is available. The last possibility to explore 
 and reuse the information is via the SPARQL endpoint for machine readeable access.

@@ -74,7 +74,7 @@
               <img src="/vdm/images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
             </a>
           </div>
-          <h1><a href="/vdm/">Core Data Model Directory</a></h1>
+          <h1><a href="/vdm/">Core Data Model Mapping Directory</a></h1>
         </header>
 
         <xsl:copy-of select="$body" />
@@ -173,8 +173,8 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</dd>
-      <dt>CDMD ID</dt>
-      <dd><a href="{$subject-uri}" title="This is the Core Data Model Directory (CDCM) Identifier, which will always point to this page"><xsl:value-of select="$subject-uri" /></a></dd>
+      <dt>CDMMD ID</dt>
+      <dd><a href="{$subject-uri}" title="This is the Core Data Model Mapping Directory (CDMMD) Identifier, which will always point to this page"><xsl:value-of select="$subject-uri" /></a></dd>
       <xsl:if test="$subject/rdf:type">
         <dt>Type</dt>
         <dd>

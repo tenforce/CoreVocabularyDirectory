@@ -28,7 +28,7 @@ IP=vocabs.tenforce.com
 BASEURI="http://${IP}/vdm/"
 ROOTURI="file://vdm/"
 DEFAULT_GRAPH="http://${IP}/DAV"
-GOOGLE_ANALYTICS="UA-38243808-1"
+GOOGLE_ANALYTICS="UA-61212072-1"
 
 GENERATE=true
 

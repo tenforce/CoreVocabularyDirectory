@@ -54,7 +54,7 @@
       <!-- Header -->
       <h2><xsl:value-of select="$subject-label" /></h2>
       <!-- Description -->
-      <xsl:for-each select="$subject/rdfs:comment | $subject/dc:description | $subject/dcterms:description | $subject/skos:definition |  $subject/vdm:has_publicidentifier">
+      <xsl:for-each select="$subject/rdfs:comment | $subject/dc:description | $subject/dcterms:description | $subject/skos:definition">
         <p>
           <xsl:call-template name="rdf-value">
             <xsl:with-param name="element" select="." />

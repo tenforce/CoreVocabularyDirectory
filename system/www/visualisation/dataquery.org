@@ -133,3 +133,6 @@ WHERE {
 
 #+end_src
 
+#+RESULTS: dcat_mappings
+[[file:all-dcat.links]]
+
