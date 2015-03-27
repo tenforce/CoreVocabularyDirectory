@@ -71,6 +71,8 @@ class CommonVocabularySpreadsheet:
 
     def uri(self, name):
         '''Return the URI of name.'''
+        # note: put a lower() before the encode() will mean a case will 
+        # be ignored in the original data sheet (or correct the data sheet).
         return self.ns.term(URIRef(hashlib.md5(name.encode()).hexdigest()))
 
     def text(self, text):
