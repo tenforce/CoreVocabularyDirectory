@@ -90,12 +90,12 @@ vdm:has_definition a skos:Concept;
 
 vdm:Description  a skos:Concept;
     a rdfs:Class;
-    rdfs:subPropertyOf dcterms:description;
     rdfs:label "Description";
     skos:definition "A description".
 
 vdm:has_description a skos:Concept;
     a rdfs:Property;
+    rdfs:subPropertyOf dcterms:description;
     rdfs:label "has description";
     skos:definition "The description of a concept".
 
@@ -126,6 +126,7 @@ vdm:has_example a skos:Concept;
 
 vdm:has_comment a skos:Concept;
     a rdfs:Property;
+    rdfs:subPropertyOf rdfs:comment;
     rdfs:label "comment";
     skos:definition "The comment associated with the concept".
 
