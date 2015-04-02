@@ -65,6 +65,8 @@ query := 'CONSTRUCT {
   ?c rdfs:label ?clabel .
   ?s vdm:has_datamodel ?d .
 	?d rdfs:label ?dlabel .
+  <http://www.w3.org/2004/02/skos/core#narrowMatch> rdfs:label "has narrow match" .
+  <http://www.w3.org/2004/02/skos/core#broadMatch> rdfs:label "has broad match" .
 } WHERE {
   {
     <URI> ?p ?o
