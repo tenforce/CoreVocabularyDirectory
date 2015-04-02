@@ -179,7 +179,7 @@ dl.properties dt:after {
   margin-right: 10px;
 }
 dl.properties dd {
-  margin: 0 0 0 110px;
+  margin: 0 0 0 150px;
   padding: 0 0 0.5em 0;
 }
 
@@ -187,7 +187,7 @@ dl.properties dd {
 
 dl.links dt {
   clear: left;
-  margin-left: 30px;
+  margin-left: 150px;
   margin-right: 5px;
   margin-top: 1em;
 }

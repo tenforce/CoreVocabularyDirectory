@@ -28,6 +28,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:locn="http://www.w3.org/ns/locn#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:vdm="http://vocabs.tenforce.com/def#"
   exclude-result-prefixes="xsl ns rdf rdfs locn">
 
@@ -154,10 +155,18 @@
     <dl class="properties">
 			<dt>Internal Identifier</dt>
 			<dd>
-        <xsl:call-template name="rdf-value">
-          <xsl:with-param name="element" select="$subject/vdm:has_internalidentifier"/>
-          <xsl:with-param name="strip-uri" select="true()" />
-        </xsl:call-template>
+        <xsl:choose>
+					<xsl:when test="$subject/vdm:has_internalidentifier">
+						<xsl:call-template name="rdf-value">
+							<xsl:with-param name="element" 
+															select="$subject/vdm:has_internalidentifier"/>
+							<xsl:with-param name="strip-uri" select="true()" />
+						</xsl:call-template>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>No internal identifier</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
 			</dd>
 			<dt>Public ID</dt>
 			<dd>
@@ -168,13 +177,28 @@
 							<xsl:value-of select="$subject/vdm:has_publicidentifier/@rdf:resource"/>
 						</a>
 					</xsl:when>
+					<xsl:when test="not($subject/vdm:has_internalidentifier)">
+						<a href="{$subject-uri}" 
+							 title="This is the Public Identifier for this resource">
+							<xsl:value-of select="$subject-uri"/>
+						</a>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:text>No public identifier</xsl:text>
 					</xsl:otherwise>
 				</xsl:choose>
 			</dd>
       <dt>CDMMD ID</dt>
-      <dd><a href="{$subject-uri}" title="This is the Core Data Model Mapping Directory (CDMMD) Identifier, which will always point to this page"><xsl:value-of select="$subject-uri" /></a></dd>
+			<dd>
+				<xsl:choose>
+					<xsl:when test="$subject/vdm:has_internalidentifier">
+						<a href="{$subject-uri}" title="This is the Core Data Model Mapping Directory (CDMMD) Identifier, which will always point to this page"><xsl:value-of select="$subject-uri" /></a>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:text>No CDMMD Id</xsl:text>
+					</xsl:otherwise>
+				</xsl:choose>
+				</dd>
       <xsl:if test="$subject/rdf:type">
         <dt>Type</dt>
         <dd>
@@ -228,6 +252,34 @@
     </xsl:call-template>
   </xsl:template>
 
+	<!-- Variant of rdf-property, except that references to skod:broardMatch and
+       skos:narrowMatch are replaced with their inverse property name -->
+
+  <xsl:template name="rdf-inverse-property">
+    <xsl:param name="element" />
+    <xsl:param name="strip-uri" select="false()" />
+		
+		<xsl:variable name="uri">
+			<xsl:choose>
+				<xsl:when test="local-name($element) = 'broadMatch'">
+					<xsl:value-of select="concat(namespace-uri($element), 'narrowMatch')"/>
+				</xsl:when>
+				<xsl:when test="local-name($element) = 'narrowMatch'">
+					<xsl:value-of select="concat(namespace-uri($element), 'broadMatch')"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of 
+							select="concat(namespace-uri($element), local-name($element))" />
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+
+    <xsl:call-template name="rdf-link">
+      <xsl:with-param name="uri" select="$uri"/>
+      <xsl:with-param name="strip" select="$strip-uri" />
+    </xsl:call-template>
+  </xsl:template>
+
   <!-- Print the value of an element, with link and label if possible. -->
   <xsl:template name="rdf-value">
     <xsl:param name="element" />
@@ -265,6 +317,15 @@
     <xsl:call-template name="rdf-value">
       <xsl:with-param name="element" 
 											select="//rdf:Description[@rdf:about=$cc]" />
+    </xsl:call-template>
+	</xsl:template>
+
+  <xsl:template name="rdf-context2">
+    <xsl:param name="id" />
+    <xsl:param name="strip-uri" select="false()" />
+    <xsl:call-template name="rdf-value">
+      <xsl:with-param name="element" 
+											select="//rdf:Description[@rdf:about=$id]" />
     </xsl:call-template>
 	</xsl:template>
 

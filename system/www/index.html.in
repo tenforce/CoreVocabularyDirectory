@@ -95,7 +95,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
   </ul>
 </section>
   <section id="search">
-  <h2> Search the Core Data Model Directory</h2>
+  <h2> Search the Core Data Model Mapping Directory</h2>
   <p>It searches exactly the provided string within the labels and definitions of the available concepts for a match</p>
   <div>
     <form id="searchform">
@@ -109,8 +109,9 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 <section id="creation">
   <h2>Creating a mapping</h2>
   <P>
-  Contributing information to the Core Data Model Directory starts from providing 
-  a mapping of between the Core Vocabularies and the newly targeted Core Data Model.
+  Contributing information to the Core Data Model Mapping Directory
+  starts from providing a mapping of between the Core Vocabularies and
+  the newly targeted Core Data Model.
   </P>
   <P>This consists of four steps
       <ol>

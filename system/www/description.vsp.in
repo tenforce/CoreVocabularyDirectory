@@ -61,8 +61,10 @@ query := 'CONSTRUCT {
   ?s rdfs:label ?slabel .
   ?p rdfs:label ?plabel .
   ?o rdfs:label ?olabel .
-  ?o vdm:context ?c .
-  ?c rdfs:label ?clabel.
+  ?o vdm:has_datamodel ?c .
+  ?c rdfs:label ?clabel .
+  ?s vdm:has_datamodel ?d .
+	?d rdfs:label ?dlabel .
 } WHERE {
   {
     <URI> ?p ?o
@@ -74,6 +76,9 @@ query := 'CONSTRUCT {
 													               UNION { ?o vdm:context ?c } }
 																			 ?c rdfs:label ?clabel }
 								 } GROUP BY ?o } }
+    OPTIONAL { { SELECT ?d ?dlabel 
+		             WHERE { <URI> vdm:has_datamodel ?d .
+								         ?d rdfs:label ?dlabel } } }
   } UNION {
     ?s ?p <URI>
     OPTIONAL { { SELECT ?p ?label AS ?plabel 
@@ -84,8 +89,12 @@ query := 'CONSTRUCT {
    									                UNION { <URI> vdm:context ?c } }
 																	?c rdfs:label ?clabel } }
              } } }
-    OPTIONAL { { SELECT ?s ?label AS ?slabel
-                 WHERE { ?s rdfs:label ?label } GROUP BY ?s } }
+    OPTIONAL { { SELECT ?s ?label AS ?slabel ?d ?dlabel 
+                 WHERE { ?s rdfs:label ?label 
+								   		   { OPTIONAL { { { ?s vdm:has_datamodel ?d }
+   								                    UNION { ?s vdm:context ?d } }
+													    				?d rdfs:label ?dlabel } } 
+												} GROUP BY ?s } } 
   }
 }';
 stylesheet := 'about.xsl';

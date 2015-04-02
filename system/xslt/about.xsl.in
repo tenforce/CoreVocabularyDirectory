@@ -97,7 +97,7 @@
 
   <xsl:template name="skos-properties">
     <xsl:variable name="elements" select="//skos:exactMatch | //skos:narrowMatch | //skos:closeMatch | //skos:broadMatch " />
-    <xsl:if test="count($elements[not(@rdf:resource=$subject/@rdf:about)]) &gt; 0">
+    <xsl:if test="count($elements[not(@rdf:resource=$subject/@rdf:about)]) &gt; 0 or count($elements[not(@rdf:resource!=$subject/@rdf:about)]) &gt; 0">
       <section>
         <h2>Mappings</h2>
         <table class="results">
@@ -105,7 +105,7 @@
 					 <tr><th>Mapping Type</th><th>Element</th><th>Core Data Model</th></tr>
          </thead>
          <tbody>
-          <xsl:for-each select="$elements">
+          <xsl:for-each select="$elements[not(@rdf:resource=$subject/@rdf:about)]">
 						<xsl:sort select="//rdfs:label"/>
             <tr>
               <td>
@@ -125,14 +125,37 @@
 							</td>
             </tr>
           </xsl:for-each>
+
+					<xsl:if test="count($elements[not(@rdf:resource!=$subject/@rdf:about)]) &gt; 0">
+						<xsl:for-each select="$elements[not(@rdf:resource!=$subject/@rdf:about)]">
+							<xsl:sort select="//rdfs:label"/>
+							<tr>
+								<td>
+									<xsl:call-template name="rdf-inverse-property">
+										<xsl:with-param name="element" select="." />
+                </xsl:call-template> (I)
+								</td>
+								<td>
+									<xsl:call-template name="rdf-value">
+										<xsl:with-param name="element" select=".." />
+									</xsl:call-template>
+								</td>
+								<td>
+									<xsl:call-template name="rdf-context2">
+										<xsl:with-param name="id" select="../vdm:has_datamodel/@rdf:resource"/>
+									</xsl:call-template>
+								</td>
+							</tr>
+						</xsl:for-each>
+					</xsl:if>
         </tbody></table>
       </section>
-    </xsl:if>
+		</xsl:if>
   </xsl:template>
 
   <!-- Print the Inverse Properties table -->
   <xsl:template name="inverse-properties">
-    <xsl:variable name="elements" select="//rdf:Description[*/@rdf:resource=$subject-uri]" />
+    <xsl:variable name="elements" select="//rdf:Description[*[@rdf:resource=$subject-uri and not(self::skos:exactMatch or self::skos:narrowMatch or self::skos:closeMatch or self::skos:broadMatch)]]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
         <h2>Referenced by</h2>

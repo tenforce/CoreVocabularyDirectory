@@ -21,6 +21,6 @@ EXPOSE 8890
 EXPOSE 1111
 RUN cd /var/lib/virtuoso-opensource-6.1/db \
     && virtuoso-t +wait -c /etc/virtuoso-opensource-6.1/virtuoso.ini \
-    && ( cat /var/lib/virtuoso-opensource-6.1/vsp/vdm/vhost_export.vspx.isql ; echo "ld_dir('/var/lib/virtuoso-opensource-6.1/db/data', '*.ttl', 'http://vocabs.tenforce.com/DAV');\nrdf_loader_run();\nexec('checkpoint');\nshutdown();registry_set ('__sparql_endpoint_debug', '1');" ) | isql-vt -U dba -P dba
+    && ( cat /var/lib/virtuoso-opensource-6.1/vsp/vdm/vhost_export.vspx.isql ; echo "ld_dir('/var/lib/virtuoso-opensource-6.1/db/data', '*.ttl', 'http://vocabs.tenforce.com/DAV');\nld_dir('/var/lib/virtuoso-opensource-6.1/db/data', '*.rdf', 'http://vocabs.tenforce.com/DAV');\nrdf_loader_run();\nexec('checkpoint');\nshutdown();registry_set ('__sparql_endpoint_debug', '1');" ) | isql-vt -U dba -P dba
 
 CMD ["/usr/bin/virtuoso-t","+wait", "+foreground","-c","/etc/virtuoso-opensource-6.1/virtuoso.ini"]
