@@ -100,7 +100,6 @@ class CommonVocabularySpreadsheet:
         g.bind("cv", str(CVNS))
         g.bind("ubl", str(UBLNS))
         g.bind("adms", str(ADMS))
-        g.add((URIRef(self.ns), RDF.type, VDM.Context))
         self.convert_core_vocabularies(g)
         self.convert_datatypes(g)
         self.convert_target_vocab(g)
@@ -123,7 +122,6 @@ class CommonVocabularySpreadsheet:
         identifier = item["identifier (internal)"]
         label = item["term / label"]
         uri = self.uri(identifier)
-        # g.add((uri, VDM.context, URIRef(self.ns)))
         pubid = item["public identifier (uri)"]
         if pubid != "":
             g.add((uri, DCTERMS.identifier, URIRef(pubid)))
@@ -143,7 +141,6 @@ class CommonVocabularySpreadsheet:
         label = item["term / label"]
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
-        # g.add((uri, VDM.context, URIRef(self.ns)))
         # Note: The excel names can contain spaces, etc. remove them all
         # before generating the ids, etc.
         cluri = self.uri(item["class"].replace(" ",""))
@@ -284,7 +281,10 @@ class CommonVocabularySpreadsheet:
     def cv_ubl(self, item, g):
         uri = self.uri(item["core vocabularies internal identifier"])
         targeturi = self.uri(item["target vocabulary internal identifier"])
-        if item["mapping relation"] != "Has no match":
+        if ( item["mapping relation"].strip() != "Has no match" 
+             and len(item["mapping relation"].strip()) != 0 ) :
+            if len(item["target identifier"].strip()) == 0:
+                sys.exit("*** Error: mapping sheet/target identifier is empty, row starting : " + item["core vocabularies internal identifier"] + " " + item["mapping relation"])
             if item["mapping relation"] == "Has exact match":
                 g.add((uri,SKOS.exactMatch,targeturi))
             elif item["mapping relation"] == "Has close match":
