@@ -16,7 +16,8 @@ function end_comma {
 		fi;
 }
 
-( cat $1 | awk -F\| 'BEGIN{OFS="|";}{print $1"@"$2,$3"@"$4,$5"@"$6,$7"@"$8,$9"@"$10,$11"@"$12;}' > all2.links;
+( cat $1 | tr "\t" "\|" > all1.links ;
+  cat all1.links | awk -F\| 'BEGIN{OFS="|";}{print $1"@"$2,$3"@"$4,$5"@"$6,$7"@"$8,$9"@"$10,$11"@"$12;}' > all2.links;
 	cat all2.links | awk -F"|" '{print $1;}' | sort -u > c1.txt
 	lfl=`tail -1 c1.txt`
 	cat c1.txt | while read c1;
@@ -87,5 +88,5 @@ function end_comma {
 				end_comma "$c1" "$lfl"
 		done
 )
-rm -rf c?.txt all2.links
+rm -rf c?.txt all?.links
 

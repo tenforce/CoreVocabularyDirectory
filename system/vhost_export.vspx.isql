@@ -82,3 +82,5 @@ NULL,
 
 DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);
 DB.DBA.XML_SET_NS_DECL ('vdm', 'http://vocabs.tenforce.com/def#', 2);
+DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
+DB.DBA.XML_SET_NS_DECL ('dcterms','http://purl.org/dc/terms/', 2);

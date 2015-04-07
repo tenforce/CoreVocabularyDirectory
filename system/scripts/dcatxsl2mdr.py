@@ -88,7 +88,6 @@ class CommonVocabularySpreadsheet:
         g = rdflib.Graph()
         g.bind("skos", str(SKOS))
         g.bind("vdm", str(VDM))
-        g.bind("dcat", str(DCATNS))
         g.bind("ubl", str(UBLNS))
         g.add((URIRef(self.ns), RDF.type, VDM.Context))
         self.convert_dcat_vocabularies(g)

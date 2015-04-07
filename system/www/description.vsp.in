@@ -61,10 +61,12 @@ query := 'CONSTRUCT {
   ?s rdfs:label ?slabel .
   ?p rdfs:label ?plabel .
   ?o rdfs:label ?olabel .
-  ?o vdm:has_datamodel ?c .
-  ?c rdfs:label ?clabel .
-  ?s vdm:has_datamodel ?d .
+	?o dcterms:isPartOf ?d .
 	?d rdfs:label ?dlabel .
+	<URI> dcterms:isPartOf ?e .
+	?e rdfs:label ?elabel .
+	?s dcterms:isPartOf ?sd .
+	?sd rdfs:label ?sdlabel .
   <http://www.w3.org/2004/02/skos/core#narrowMatch> rdfs:label "has narrow match" .
   <http://www.w3.org/2004/02/skos/core#broadMatch> rdfs:label "has broad match" .
 } WHERE {
@@ -72,32 +74,23 @@ query := 'CONSTRUCT {
     <URI> ?p ?o
     OPTIONAL { { SELECT ?p ?label AS ?plabel
                  WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
-    OPTIONAL { { SELECT ?o ?label AS ?olabel ?c ?clabel
-                 WHERE { ?o rdfs:label ?label 
-								 				  OPTIONAL { { { ?o vdm:has_datamodel ?c }
-													               UNION { ?o vdm:context ?c } }
-																			 ?c rdfs:label ?clabel }
-								 } GROUP BY ?o } }
-    OPTIONAL { { SELECT ?d ?dlabel 
-		             WHERE { <URI> vdm:has_datamodel ?d .
-								         ?d rdfs:label ?dlabel } } }
+    OPTIONAL { { SELECT ?o ?label AS ?olabel ?d ?alabel AS ?dlabel 
+                 WHERE { ?o rdfs:label ?label .
+		                     OPTIONAL { ?o dcterms:isPartOf ?d .
+           								          ?d rdfs:label ?alabel } } GROUP BY ?o } }
   } UNION {
     ?s ?p <URI>
-    OPTIONAL { { SELECT ?p ?label AS ?plabel 
-                 WHERE { ?p rdfs:label ?label 
-								 } GROUP BY ?p } }
-    OPTIONAL { { SELECT ?c ?clabel WHERE {
-								   { OPTIONAL { { { <URI> vdm:has_datamodel ?c }
-   									                UNION { <URI> vdm:context ?c } }
-																	?c rdfs:label ?clabel } }
-             } } }
-    OPTIONAL { { SELECT ?s ?label AS ?slabel ?d ?dlabel 
+    OPTIONAL { { SELECT ?p ?label AS ?plabel
+                 WHERE { ?p rdfs:label ?label } GROUP BY ?p } }
+    OPTIONAL { { SELECT ?s ?label AS ?slabel ?sd ?sdlabel
                  WHERE { ?s rdfs:label ?label 
-								   		   { OPTIONAL { { { ?s vdm:has_datamodel ?d }
-   								                    UNION { ?s vdm:context ?d } }
-													    				?d rdfs:label ?dlabel } } 
-												} GROUP BY ?s } } 
-  }
+								         OPTIONAL { ?s dcterms:isPartOf ?sd .
+												            ?sd rdfs:label ?sdlabel } } 
+								GROUP BY ?s } }
+		OPTIONAL { { SELECT ?e ?aelabel AS ?elabel
+		             WHERE { <URI> dcterms:isPartOf ?e .
+				             		 ?e rdfs:label ?aelabel } GROUP BY ?e } }
+  } 
 }';
 stylesheet := 'about.xsl';
 

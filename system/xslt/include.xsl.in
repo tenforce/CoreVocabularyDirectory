@@ -28,6 +28,8 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
   xmlns:locn="http://www.w3.org/ns/locn#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:adms="http://www.w3.org/ns/adms#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:vdm="http://vocabs.tenforce.com/def#"
   exclude-result-prefixes="xsl ns rdf rdfs locn">
@@ -171,10 +173,10 @@
 			<dt>Public ID</dt>
 			<dd>
 				<xsl:choose>
-					<xsl:when test="$subject/vdm:has_publicidentifier">
-						<a href="{$subject/vdm:has_publicidentifier/@rdf:resource}" 
+					<xsl:when test="$subject/dcterms:identifier">
+						<a href="{$subject/dcterms:identifier/@rdf:resource}" 
 							 title="This is the Public Identifier for this resource">
-							<xsl:value-of select="$subject/vdm:has_publicidentifier/@rdf:resource"/>
+							<xsl:value-of select="$subject/dcterms:identifier/@rdf:resource"/>
 						</a>
 					</xsl:when>
 					<xsl:when test="not($subject/vdm:has_internalidentifier)">
@@ -284,8 +286,11 @@
   <xsl:template name="rdf-value">
     <xsl:param name="element" />
     <xsl:param name="strip-uri" select="true()" />
-    <xsl:variable name="uri" select="string($element/@rdf:about | $element/@rdf:resource)" />
+
+    <xsl:variable name="uri"
+									select="string($element/@rdf:about | $element/@rdf:resource)"/>
     <xsl:variable name="node-id" select="string($element/@rdf:nodeID)" />
+
     <xsl:choose>
       <!-- URI -->
       <xsl:when test="$uri">
@@ -313,7 +318,8 @@
     <xsl:param name="strip-uri" select="false()" />
 
 		<xsl:variable name="cc" 
-									select="//rdf:Description[@rdf:about=$id]/*[self::vdm:context or self::vdm:has_datamodel]/@rdf:resource"/>
+									select="//rdf:Description[@rdf:about=$id]/*[self::dcterms:isPartOf or self::adms:includedAsset]/@rdf:resource"/>
+		<!-- <xsl:value-of select="$id"/> -->
     <xsl:call-template name="rdf-value">
       <xsl:with-param name="element" 
 											select="//rdf:Description[@rdf:about=$cc]" />

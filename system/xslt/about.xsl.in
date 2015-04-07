@@ -142,7 +142,7 @@
 								</td>
 								<td>
 									<xsl:call-template name="rdf-context2">
-										<xsl:with-param name="id" select="../vdm:has_datamodel/@rdf:resource"/>
+										<xsl:with-param name="id" select="../dcterms:isPartOf/@rdf:resource"/>
 									</xsl:call-template>
 								</td>
 							</tr>
