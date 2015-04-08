@@ -139,7 +139,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 	<h2>Machine Readable Data</h2>
 
 	<ul>
-		<li><a href="">mappingfrom Excel input to RDF</a></li>
+		<li><a href="public_data/MappingFromExcel.xlsx">mapping from Excel input to RDF</a></li>
 		<li><a href="public_data/skos.rdf">SKOS RDF definitions</a></li>
 		<li><a href="public_data/dcterms.rdf">Dublic Core RDF definitions</a></li>
 		<li><a href="public_data/vdm.ttl">VDM TTL definitions</a></li>
