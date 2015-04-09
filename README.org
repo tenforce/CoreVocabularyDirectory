@@ -114,21 +114,24 @@ make image
 There are two visualisation files which have to be created before
 deploying the final system. These are:
 
-- flare.json ::
 - cvflare.json ::
+                 the core vocabularies mapping tree data
+- flare.json :: the dcat-ap to ODS mapping tree.
 
 In both cases the following steps are required:
 
 1. Start the docker image on the development machine,
 2. Using emacs/org-mode execute the queries found in dataquery.org
 3. convert the query results files to the JSON format using
+
 #+BEGIN_SRC bash
 make image run
 #+END_SRC
+
 which will take the produced *link* files and using a script convert
-them into the .JSO description used in the visualisations (as well as
-start the docker image). The vistualisations are based on
-the d3.layer.XXX javascript facilities.
+them into the .JSON description used in the visualisations (as well as
+start the docker image). The visualisations are based on the [[http://d3js.org/][d3.js]]
+javascript facilities for data driven documents.
 
 Before doing the next step, the visualisations should be checked that the
 respective pages are accessible:
@@ -136,11 +139,13 @@ respective pages are accessible:
 - [[http://vocabs.tenforce.com/vdm/visualisation/cvtree.html][Core vocabularies Tree]]
 - [[http://vocabs.tenforce.com/vdm/visualisation/tree.html][DCAT-AP to ODS Mapping Tree view]]
 
-**** Copying the files across
+**** Copying the files across to the production/target system
+
 #+BEGIN_SRC bash
 make vdm.tgz
 scp vdm.tgz root@<ip-of-target-system>:
 #+END_SRC
+
 The *make vdm.tgz* command will create a directory called *vdm*
 which will contain a copy of all the files to be copied and installed
 on the target system. The *scp* will copy the files onto the remote

@@ -11,5 +11,7 @@ AC_CHECK_PROG(TR, [tr],[/usr/bin/tr])
 AC_CHECK_PROG(ROQET, [roqet],[/usr/bin/roqet])
 AC_CHECK_PROG(EMACS, [emacs],[/usr/bin/emacs])
 AC_CHECK_PROG(XSLTPROC, [xsltproc],[/usr/bin/xsltproc])
+AC_CHECK_PROG(SSH,[ssh],[/usr/bin/ssh])
+AC_CHECK_PROG(SCP,[scp],[/usr/bin/scp])
 AC_CONFIG_FILES([Makefile tests/Makefile])
 AC_OUTPUT
