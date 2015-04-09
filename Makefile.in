@@ -1,4 +1,4 @@
-TAR=/bin/tar
+TAR=@TAR@
 
 DOCKER=docker
 SYSTEM=system

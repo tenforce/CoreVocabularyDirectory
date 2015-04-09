@@ -6,7 +6,6 @@
 FROM ubuntu:latest
 MAINTAINER pma
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install apache2 -y
 RUN apt-get install virtuoso-opensource-6.1 -y
 RUN apt-get install virtuoso-vad-conductor -y
 RUN apt-get -y install rsyslog
@@ -14,6 +13,7 @@ ADD ./logentries.conf /etc/rsyslog.d/logentries.conf
 COPY system/data/* /var/lib/virtuoso-opensource-6.1/db/data/
 ADD data.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 ADD dcatods.ttl /var/lib/virtuoso-opensource-6.1/db/data/
+ADD dcatapsdmx.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 COPY system /var/lib/virtuoso-opensource-6.1/vsp/vdm
 RUN ls /var/lib/virtuoso-opensource-6.1/vsp/vdm
 COPY virtuoso-setup/virtuoso.ini /etc/virtuoso-opensource-6.1/virtuoso.ini

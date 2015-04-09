@@ -270,7 +270,7 @@ class CommonVocabularySpreadsheet:
 
     def tv_property(self,uri,item,g):
         g.add((uri, RDF.type, VDM.Property))
-        cluri = self.uri(item["class"],replace(" ",""))
+        cluri = self.uri(item["class"].replace(" ",""))
         g.add((uri, ADMS.includedAsset, cluri))
 
     def convert_mapping_file(self, g):
@@ -281,20 +281,22 @@ class CommonVocabularySpreadsheet:
     def cv_ubl(self, item, g):
         uri = self.uri(item["core vocabularies internal identifier"])
         targeturi = self.uri(item["target vocabulary internal identifier"])
-        if ( item["mapping relation"].strip() != "Has no match" 
+        if ( item["mapping relation"].lower().strip() != "has no match" 
              and len(item["mapping relation"].strip()) != 0 ) :
             if len(item["target identifier"].strip()) == 0:
                 sys.exit("*** Error: mapping sheet/target identifier is empty, row starting : " + item["core vocabularies internal identifier"] + " " + item["mapping relation"])
-            if item["mapping relation"] == "Has exact match":
+            if item["mapping relation"].lower() == "has exact match":
                 g.add((uri,SKOS.exactMatch,targeturi))
-            elif item["mapping relation"] == "Has close match":
+            elif item["mapping relation"].lower() == "has close match":
                 g.add((uri,SKOS.closeMatch,targeturi))
-            elif item["mapping relation"] == "Has broad match":
+            elif item["mapping relation"].lower() == "has broad match":
                 g.add((uri,SKOS.broadMatch,targeturi))
-            elif item["mapping relation"] == "Has narrow match":
+            elif item["mapping relation"].lower() == "has narrow match":
                 g.add((uri,SKOS.narrowMatch,targeturi))
+            elif item["mapping relation"].lower() == "has related match":
+                g.add((uri,SKOS.relatedMatch,targeturi))
             else:
-                x=1
+                sys.exit("*** Error: mapping description not known, row starting : " + item["mapping relation"] + item["core vocabularies internal identifier"])
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
