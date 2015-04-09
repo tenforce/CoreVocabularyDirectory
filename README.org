@@ -82,10 +82,10 @@ The developed system has two stages:
 - Make ::  This is used to group together the compilation/build steps
            when developing.
 - Git ::   Source control system, used to control updates.
-- Autoconf :: Build/Compilation control system, used to fill in the
+- [[https://www.gnu.org/software/autoconf/][Autoconf]] :: Build/Compilation control system, used to fill in the
               command names, etc. in the Makefile.in (before writing
-              to Makefile). This is used to make sure the require tools
-              are present on the system.
+              to Makefile). This is used to make sure the require
+              tools are present on the system.
 - Bash ::  Shell script which has been used (default system version).
 - Emacs :: At present org-mode is used to execute the queries on the 
            database once it has been created (dataquery.org).
@@ -130,7 +130,7 @@ autoconf
 make image
 #+END_SRC
 
-Autoconf will generate from the configure.ac file and configure
+[[https://www.gnu.org/software/autoconf/][Autoconf]] will generate from the configure.ac file and configure
 script.  The configure script, when executed will check that the
 needed tools have been installed and are in the PATH. *make image*
 will build the image from all the necessary components.
