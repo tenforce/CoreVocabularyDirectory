@@ -152,7 +152,6 @@ WHERE {
   ?coreclass dcterms:isPartOf ?datamodel .
   ?coreclass rdfs:label ?coreclasslabel .
 
-  ?coreproperty a vdm:Property .
   ?coreproperty adms:includedAsset ?coreclass .
   ?coreproperty rdfs:label ?corepropertylabel .
 

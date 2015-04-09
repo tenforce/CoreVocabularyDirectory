@@ -28,6 +28,9 @@ The repository has several directories:
       configuring virtuoso-opensource 6.1.
 
 ** Development Notes
+*** System Access Requirements
+This is mostly installation work, for which you will required 'root'
+access on the linux machines.
 *** Docker Usage
 A Dockerfile is available to allow the production system to be
 mimicked on the development system.
