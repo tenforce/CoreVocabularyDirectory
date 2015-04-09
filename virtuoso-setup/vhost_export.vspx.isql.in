@@ -78,7 +78,7 @@ NULL,
 );
 
 DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);
-DB.DBA.XML_SET_NS_DECL ('vdm', 'http://vocabs.tenforce.com/def#', 2);
+DB.DBA.XML_SET_NS_DECL ('vdm', 'http://@IPNAME@/def#', 2);
 DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
 
 DB.DBA.VHOST_REMOVE (
@@ -91,7 +91,7 @@ DB.DBA.VHOST_DEFINE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
 	 lpath=>'/',
-	 ppath=>'http://vocabs.tenforce.com/vdm/',
+	 ppath=>'http://@IPNAME@/vdm/',
 	 is_dav=>0,
 	 def_page=>'',
 	 ses_vars=>0,

@@ -1,6 +1,9 @@
 AC_INIT(vdm, 0.1, paul.massey@tenforce.com)
+AC_SUBST(IPNAME, vocabs.tenforce.com)
 AC_PROG_AWK
 AC_PROG_GREP
+AC_PROG_SED
+AC_CHECK_PROG(FIND, [find], [/usr/bin/find])
 AC_CHECK_PROG(PYTHON, [python],[/usr/bin/python])
 AC_CHECK_PROG(PYTHON3, [python3],[/usr/bin/python3])
 AC_CHECK_PROG(DOCKER, [docker],[/usr/bin/docker])
@@ -13,5 +16,5 @@ AC_CHECK_PROG(EMACS, [emacs],[/usr/bin/emacs])
 AC_CHECK_PROG(XSLTPROC, [xsltproc],[/usr/bin/xsltproc])
 AC_CHECK_PROG(SSH,[ssh],[/usr/bin/ssh])
 AC_CHECK_PROG(SCP,[scp],[/usr/bin/scp])
-AC_CONFIG_FILES([Makefile tests/Makefile])
+AC_CONFIG_FILES([Makefile tests/Makefile system/configure.sh virtuoso-setup/vhost_export.vspx.isql])
 AC_OUTPUT

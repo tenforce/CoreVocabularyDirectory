@@ -1,6 +1,7 @@
 # This will be converted to the Makefile via the configure script
 
 TAR=@TAR@
+IPNAME=@IPNAME@
 
 DOCKER=docker
 SYSTEM=system
@@ -8,7 +9,7 @@ CVXSL2VDM=system/scripts/cvxsl2vdm.py
 DUMP2SH=system/www/visualisation/dump3.sh
 
 data: ttldata visualisations
-	( cd system; ./configure.sh )
+	( cd system; chmod +x configure.sh ; ./configure.sh )
 
 # The following will create the .ttl data files from the respective
 # excel files. The excel files are required to have a fixed format and

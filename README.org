@@ -119,6 +119,8 @@ restarted in the event that the system is rebooted (or crashes).
 
 **** Compiling the system
 
+In the home directory type (of the git clone):
+
 #+BEGIN_SRC bash
 autoconf
 ./configure 
