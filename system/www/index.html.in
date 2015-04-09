@@ -83,20 +83,17 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 					<a href="visualisation/tree.html">Tree Visualisation 
 						of the DCAT-AP configuration mappings in Open Data Support</a>
 				</li>
-				<!--
-				<li>
-					<a href="DCatVocabularies-v0.1.xlsx">DCat Vocabularies Mapping Table</a></li>
-				<li>
-					<a href="EuroVocmappings_v0.03-1.xlsx">EuroVoc Value Mapping Table</a>
-				</li>
-				-->
 			</ul>
 		</li>
 		<li>
 			SDMX - DCAT-AP Mappings:
 			<ul>
-				<li><a href="/vdm/id/cv/0a7380a6c87798dc2d0db45ef1814630">Browsable View</a></li>
-  </ul>
+				<li>
+					<a href="/vdm/id/cv/0a7380a6c87798dc2d0db45ef1814630">Browsable View</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
 </section>
   <section id="search">
   <h2> Search the Core Data Model Mapping Directory</h2>
@@ -137,6 +134,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
     <li>The mapping template document <a href="public_data/Core_Vocabularies_Mapping_Template.xlsx">Core_Vocabularies_Mapping_Template.xlsx</a>. </li>
 		<li><a href="public_data/Core_Vocabularies_v1.3.xlsx">Core Vocabularies Mapping Table</a></li>
 		<li><a href="public_data/DCatVocabularies-v0.2.xlsx">DCAT-AP Vocabularies Mapping Table</a></li>
+		<li><a href="public_data/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx"> DCAT-AP to SDMX Vocabulary Mappings</a></li>
 		<li><a href="public_data/EuroVocmappings_v0.03-1.xlsx">EuroVoc to DCAT-AP theme mapping table</a></li>
 	</ul>
 

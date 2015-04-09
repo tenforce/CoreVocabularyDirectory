@@ -16,17 +16,221 @@ vocabs.tenforce.com machine (/etc/hosts)
 
 127.0.0.1             vocabs.tenforce.com
 * Deployment & Testing
-- Note :: First test using the Docker image
+* System Outline
+** Downloading the source code
+The source code is available at [[https://github.com/tenforce/CoreVocabularyDirectory.git][GitHub]] and is based on a code from a
+previous project. It can be checked out using the command
+#+BEGIN_VERSE
+ git clone https://github.com/tenforce/CoreVocabularyDirectory.git
+#+END_VERSE
+** Source Code
+The repository has several directories:
+- system :: containing all the scripts/xslt/vsp and html/css/js components
+- excelfiles :: containing all the base data files to be converted to TTL
+- virtuoso-setup :: which contains the SQL and initialisation files for
+      configuring virtuoso-opensource 6.1.
+* Semic Deployment
+** General Description
+The developed system has two stages:
+- Compilation Stage :: 
+    this stage comprises the transformation of the excel files into
+    the TTL/RDF form, the generation of the JSON files from the created
+    database and the setting of the paths to the various scripts.
 
-This consists of several actions
-- Tar the mdr directory (*tar cvzf mdr.tgz mdr*)
-- Copy the mdr.tgz file to the remote system
-Then on the remote sustem
-- switch off apache2 and tomcat7 services (virtuoso will be on port 80)
+    Note: this is circular, the development installation is used to 
+    generate the json files for the visualisation of the production 
+    system.
+- Display/Presentation Stage :: 
+    which concerns the presentation of the data to the user in a
+    standardised form. This stage follows from the first stage.
+** Components Required
+ The following description assumes an "GNU/Linux Ubuntu 14.04 (trusty)"
+ system is the target system and also the development system.
+*** runtime (target/production system)
+- GNU/Linux ::
+  Ubuntu 14.04 LTS
+- Virtuoso-opensource ::
+  Version 6.1
+- SSH ::
+  
+- Emacs ::
+  An editor
+*** development
+- Docker ::
+           This is used to create a container mimicking the final
+           installation system. It is best to install the latest
+           version of docker from [[http://docs.docker.com/][http://docs.docker.com/]].
+- Python3 ::
+           The default version is 2.7.6, but the scripts require the
+           python3 version. The scripts are used when transforming
+           the input datafiles into the TTL/RDF format suitable for
+           uploading to the virtuoso quad-store (th
+- Make ::  This is used to group together the compilation/build steps
+           when developing.
+- Git ::   Source control system, used to control updates.
+- Bash ::  Shell script which has been used (default system version).
+- Emacs :: At present org-mode is used to execute the queries on the 
+           database once it has been created (dataquery.org).
+*** general notes
+- Neither apache2 nor Tomcat should be running on the server - the
+  virtuoso service is setup to run on port 80 (for development and for
+  the target systems).
+** Installation Steps
+*** Initial Build/Setup
+The dockerfile description contains almost the same instructions
+to build and run the compiled code as that for deployment. The
+basic setup instructions are (on an Ubuntu 14.04 LTS system):
+#+BEGIN_VERSE
+apt-get update && apt-get upgrade -y
+apt-get install -y virtuoso-opensource-6.1 virtuoso-vad-conductor
+apt-get -y install rsyslog
+update.d virtuoso-opensource defaults
+#+END_VERSE
+Following the basic setup instructions the Core system needs to be
+compiled, copied across to the target system and then placed where it
+is needed. The following will document those steps which are required:
+**** Compiling the system
+
+#+BEGIN_VERSE
+autoconf
+./configure 
+make image
+#+END_VERSE
+
+**** Creating the visualisation JSON files
+There are two visualisation files which have to be created before
+deploying the final system. These are:
+
+- flare.json ::
+- cvflare.json ::
+
+In both cases the following steps are required:
+
+1. Start the docker image on the development machine,
+2. Using emacs/org-mode execute the queries found in dataquery.org
+3. convert the query results files to the JSON format using
+#+BEGIN_VERSE
+make image run
+#+END_VERSE
+which will take the produced *link* files and using a script convert
+them into the .JSO description used in the visualisations (as well as
+start the docker image). The vistualisations are based on
+the d3.layer.XXX javascript facilities.
+
+Before doing the next step, the visualisations should be checked that the
+respective pages are accessible:
+
+- [[http://vocabs.tenforce.com/vdm/visualisation/cvtree.html][Core vocabularies Tree]]
+- [[http://vocabs.tenforce.com/vdm/visualisation/tree.html][DCAT-AP to ODS Mapping Tree view]]
+
+**** Copying the files across
+#+BEGIN_VERSE
+make vdm.tgz
+scp vdm.tgz root@<ip-of-target-system>:
+#+END_VERSE
+The *make vdm.tgz* command will create a directory called *vdm*
+which will contain a copy of all the files to be copied and installed
+on the target system. The *scp* will copy the files onto the remote
+system (as root).
+**** Placement of the files
+On the target system (*ssh* would do) the following is required:
+- switch off the apache2 and tomcat7 services 
+  (virtuoso will be on port 80)
   - Note :: Other configuration will be needed if those services are needed.
-- Unpack the mdr.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp directory
-- Update the virtuoso.ini file,
-- execute the vhost_*.sql file using isql-vt
-- then using the virtuoso conductor, upload the datafiles into the
-  http://vocabs.tenforce.com/webDAV graph.
+- Unpack the vdm.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp directory
 Restart the virtuoso-opensource service.
+**** Virtuoso Setup
+***** Setup of the virtuoso redirects
+There are several URL mappings which are required. These are:
+#+BEGIN_VERSE
+.
+.
+.
+#+END_VERSE
+The file vhost_*.sql contains these definitions and doing the 
+following will load this file into virtuoso.
+#+BEGIN_VERSE
+.
+.
+.
+#+END_VERSE
+
+- Copy the virtuoso.ini file to the correct place (ie. /etc/where?)
+- execute the vhost_*.sql file using isql-vt[fn:3]
+Note: It is also recommended that the default virtuoso-opensource
+password be changed at this point.
+***** Files to load
+There are several data files[fn:4] which need to be uploaded into the
+virtuoso RDF store. The first are generated from the excel files:
+
+- data.ttl :: The core directory mapping directory data
+- dcatods.ttl :: The DCAT-AP ODS Mapping 
+
+While the following are static files which are included to enhance the
+view of the excel file data:
+
+- skos.rdf :: SKOS definitions
+- adms-v0.2.rdf :: ADMS definiions
+- etc. ::
+
+***** Loading into Virtuoso
+Using the virtuoso conductor>quad store, upload the datafiles into the
+http://vocabs.tenforce.com/webDAV graph.
+
+***** Cleaning the database
+When rebuilding the database (upgrade, etc.) the following command
+can be used in the conductor/isql window[fn:2]. 
+
+#+BEGIN_VERSE
+RDF_GLOBAL_RESET ();
+#+END_VERSE
+
+This will reset the database, so it has to be rebuilt from scratch.
+
+*** Monitoring the deployed service
+The easiest way to monitor the accessibility of the deployed service
+is to use one of the public monitoring tools (e.g. [[http://uptimerobot.com][Uptime Robot]]). This
+accepts a URL and pings that URL every hour or so, sending an email
+when the status changes (Up or Down).
+
+** Development
+The components required for developing the system are given above. 
+
+The main simplification in the development process has been the
+description of a docker container for the runtime part of the system.
+
+For local development, the dockerfile can be used to mimic the
+eventual system. This approach requires a *local* development system
+override of the IP of the vocabs.tenforce.com machine (i.e an additional 
+line in */etc/hosts*):
+
+#+BEGIN_VERSE
+127.0.0.1             vocabs.tenforce.com
+#+END_VERSE
+
+Note: This will mean accesses to http://vocabs.tenforce.com/vdm will
+go to the localhost, rather than the target machine[fn:1].
+* System Operation
+** Service control
+Once deployed on the target system, the semic system will run as a
+virtuoso based set of web-pages. For further information on the
+virtuoso, the documentation of virtuoso should be consulted. The
+virtuoso service will have the
+** Monitoring Accessibility
+This can be achieved using one of the commonly used online services to
+access a service page every hour or so (e.g. [[https://uptimerobot.com][uptimerobot]]).
+
+* Footnotes
+
+[fn:1] Suggestion would be to do development in a virtual machine, so
+testing of the target will be possible via the underlying OS.
+
+[fn:2] DBA password will be required.
+
+[fn:3] DBA password will be required for this.
+
+[fn:4] Note: since the ip address with likely be referencing the
+localhost, rather than the target machine. The target ip address will
+have to be used to access the conductor on the target machine
+(i.e. http://XXX.YY.ZZ.AA/conductor).
+

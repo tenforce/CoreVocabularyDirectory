@@ -1,8 +1,11 @@
+# This will be converted to the Makefile via the configure script
+
 TAR=@TAR@
 
 DOCKER=docker
 SYSTEM=system
 CVXSL2VDM=system/scripts/cvxsl2vdm.py
+DUMP2SH=system/www/visualisation/dump3.sh
 
 data: ttldata visualisations
 	( cd system; ./configure.sh )
@@ -30,11 +33,14 @@ dcatapsdmx.ttl: excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx ${CVXSL2VDM}
 
 visualisations: system/www/visualisation/cvflare.json system/www/visualisation/dcatflare.json 
 
-system/www/visualisation/cvflare.json: system/www/visualisation/all.links system/www/visualisation/dump3.sh
+system/www/visualisation/cvflare.json: ${DUMP2SH} system/www/visualisation/all.links 
 	( cd system/www/visualisation; ./dump3.sh all.links > cvflare.json )
 
-system/www/visualisation/dcatflare.json: system/www/visualisation/all-dcat.links system/www/visualisation/dump3.sh
+system/www/visualisation/dcatflare.json: system/www/visualisation/all-dcat.links ${DUMP2SH}
 	( cd system/www/visualisation; ./dump3.sh all-dcat.links > dcatflare.json )
+
+system/www/visualisation/sdmxdcatapflare.json: system/www/visualisation/all-dcat.links ${DUMP2SH}
+	( cd system/www/visualisation; ./dump3.sh all-sdmxdcatap.links > sdmxdcatapflare.json )
 
 # Gather together all the data which is intended to be made public
 # (refered to on the main page).
@@ -44,6 +50,7 @@ www/public_data:
 	cp excelfiles/Core_Vocabularies_v1.3.xlsx system/www/public_data
 	cp excelfiles/DCatVocabularies-v0.2.xlsx system/www/public_data
 	cp excelfiles/EuroVocmappings_v0.03-1.xlsx system/www/public_data
+	cp excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx system/www/public_data
 	cp excelfiles/Core_Vocabularies_Mapping_Template.xlsx system/www/public_data
 	cp system/data/vdm.ttl system/www/public_data
 	cp system/data/skos.rdf system/www/public_data
@@ -83,7 +90,7 @@ run: setup
 	sudo ${DOCKER} run -p 80:80 -p 1111:1111 mdrtest2
 
 clean:
-	-rm -rf system/www/public_data vdm.tgz *.ttl
+	-rm -rf system/www/public_data vdm.tgz *.ttl systems/www/visualisations/*.json
 	- sudo ${DOCKER} rm -f mdrtest2
 	- sudo ${DOCKER} rmi mdrtest2
 	- sudo service ${DOCKER} restart
@@ -92,3 +99,6 @@ cleanall:
 	sudo ${DOCKER} rm -f `sudo ${DOCKER} ps -a -q`
 	sudo ${DOCKER} rmi `sudo ${DOCKER} images -q`
 	sudo service ${DOCKER} restart
+
+alltests:
+	( cd tests ; make all )
