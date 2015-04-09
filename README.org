@@ -67,7 +67,7 @@ The developed system has two stages:
 - Virtuoso-opensource ::
   Version 6.1
 - SSH ::
-- Emacs ::
+- [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] ::
   The best editor on the planet.
 *** development
 - Docker ::
@@ -87,7 +87,7 @@ The developed system has two stages:
               to Makefile). This is used to make sure the require
               tools are present on the system.
 - Bash ::  Shell script which has been used (default system version).
-- Emacs :: At present org-mode is used to execute the queries on the 
+- [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] :: At present [[http://orgmode.org/][org-mode]] is used to execute the queries on the 
            database once it has been created (dataquery.org).
 *** general notes
 - Neither apache2 nor Tomcat should be running on the server - the
@@ -146,7 +146,7 @@ deploying the final system. These are:
 In both cases the following steps are required:
 
 1. Start the docker image on the development machine,
-2. Using emacs/org-mode execute the queries found in dataquery.org
+2. Using emacs/[[http://orgmode.org/][org-mode]] execute the queries found in dataquery.org
 3. convert the query results files to the JSON format using
 
 #+BEGIN_SRC bash
