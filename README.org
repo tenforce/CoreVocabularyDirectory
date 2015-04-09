@@ -69,7 +69,8 @@ The developed system has two stages:
 - Git ::   Source control system, used to control updates.
 - Autoconf :: Build/Compilation control system, used to fill in the
               command names, etc. in the Makefile.in (before writing
-              to Makefile).
+              to Makefile). This is used to make sure the require tools
+              are present on the system.
 - Bash ::  Shell script which has been used (default system version).
 - Emacs :: At present org-mode is used to execute the queries on the 
            database once it has been created (dataquery.org).
