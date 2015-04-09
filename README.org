@@ -1,34 +1,46 @@
 #+TITLE: Core Vocabulary Directory
 
 * Introduction
-Original code was taken from [https://github.com/SEMICeu/mdr].
-* Installation
-The assumption is that a linux system is being used for development
-and eventual deployment.
+This is based on the original code which was taken from
+[https://github.com/SEMICeu/mdr].
 
-* Development
-** Docker Usage
+The main assumptions is that an Ubuntu GNU/Linux system is being used
+for development and eventual is the target for the eventual
+deployment.
 
-** Network Configuration
+** Downloading the source code
+The source code is available at [[https://github.com/tenforce/CoreVocabularyDirectory.git][GitHub]] and is based on a code from a
+previous project. It can be checked out using the command:
+
+#+BEGIN_SRC bash
+git clone https://github.com/tenforce/CoreVocabularyDirectory.git
+#+END_SRC
+
+** Source Code Structure
+The repository has several directories:
+- system :: containing all the scripts/xslt/vsp and html/css/js
+            components (The structure of these files follows the
+            original project structure).
+- excelfiles :: containing all the base data files to be converted to
+                TTL.  These will also be made available on the
+                production system in the public_data directory.
+- virtuoso-setup :: which contains the SQL and initialisation files for
+      configuring virtuoso-opensource 6.1.
+
+** Development Notes
+*** Docker Usage
+A Dockerfile is available to allow the production system to be
+mimicked on the development system.
+*** Network Configuration
 For local development the dockerfile can be used to mimic the eventual
 system. This requires a local system override of the
 vocabs.tenforce.com machine (/etc/hosts)
 
-127.0.0.1             vocabs.tenforce.com
-* Deployment & Testing
-* System Outline
-** Downloading the source code
-The source code is available at [[https://github.com/tenforce/CoreVocabularyDirectory.git][GitHub]] and is based on a code from a
-previous project. It can be checked out using the command
 #+BEGIN_SRC bash
- git clone https://github.com/tenforce/CoreVocabularyDirectory.git
+127.0.0.1             vocabs.tenforce.com
 #+END_SRC
-** Source Code
-The repository has several directories:
-- system :: containing all the scripts/xslt/vsp and html/css/js components
-- excelfiles :: containing all the base data files to be converted to TTL
-- virtuoso-setup :: which contains the SQL and initialisation files for
-      configuring virtuoso-opensource 6.1.
+
+
 * Semic Deployment
 ** General Description
 The developed system has two stages:
