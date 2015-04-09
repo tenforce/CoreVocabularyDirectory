@@ -20,9 +20,9 @@ vocabs.tenforce.com machine (/etc/hosts)
 ** Downloading the source code
 The source code is available at [[https://github.com/tenforce/CoreVocabularyDirectory.git][GitHub]] and is based on a code from a
 previous project. It can be checked out using the command
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
  git clone https://github.com/tenforce/CoreVocabularyDirectory.git
-#+END_VERSE
+#+END_SRC
 ** Source Code
 The repository has several directories:
 - system :: containing all the scripts/xslt/vsp and html/css/js components
@@ -80,22 +80,24 @@ The developed system has two stages:
 The dockerfile description contains almost the same instructions
 to build and run the compiled code as that for deployment. The
 basic setup instructions are (on an Ubuntu 14.04 LTS system):
-#+BEGIN_VERSE
+
+#+BEGIN_SRC bash
 apt-get update && apt-get upgrade -y
 apt-get install -y virtuoso-opensource-6.1 virtuoso-vad-conductor
 apt-get -y install rsyslog
 update.d virtuoso-opensource defaults
-#+END_VERSE
+#+END_SRC
+
 Following the basic setup instructions the Core system needs to be
 compiled, copied across to the target system and then placed where it
 is needed. The following will document those steps which are required:
 **** Compiling the system
 
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 autoconf
 ./configure 
 make image
-#+END_VERSE
+#+END_SRC
 
 **** Creating the visualisation JSON files
 There are two visualisation files which have to be created before
@@ -109,9 +111,9 @@ In both cases the following steps are required:
 1. Start the docker image on the development machine,
 2. Using emacs/org-mode execute the queries found in dataquery.org
 3. convert the query results files to the JSON format using
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 make image run
-#+END_VERSE
+#+END_SRC
 which will take the produced *link* files and using a script convert
 them into the .JSO description used in the visualisations (as well as
 start the docker image). The vistualisations are based on
@@ -124,10 +126,10 @@ respective pages are accessible:
 - [[http://vocabs.tenforce.com/vdm/visualisation/tree.html][DCAT-AP to ODS Mapping Tree view]]
 
 **** Copying the files across
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 make vdm.tgz
 scp vdm.tgz root@<ip-of-target-system>:
-#+END_VERSE
+#+END_SRC
 The *make vdm.tgz* command will create a directory called *vdm*
 which will contain a copy of all the files to be copied and installed
 on the target system. The *scp* will copy the files onto the remote
@@ -142,23 +144,29 @@ Restart the virtuoso-opensource service.
 **** Virtuoso Setup
 ***** Setup of the virtuoso redirects
 There are several URL mappings which are required. These are:
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 .
 .
 .
-#+END_VERSE
+#+END_SRC
 The file vhost_*.sql contains these definitions and doing the 
 following will load this file into virtuoso.
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 .
 .
 .
-#+END_VERSE
+#+END_SRC
 
 - Copy the virtuoso.ini file to the correct place (ie. /etc/where?)
 - execute the vhost_*.sql file using isql-vt[fn:3]
-Note: It is also recommended that the default virtuoso-opensource
-password be changed at this point.
+
+Note(s):
+- It is also recommended that the default virtuoso-opensource password
+  be changed once it has been installed on the target system.
+- The vhost_*.sql file will also create a redirect from / to /vdm so
+  that access to http://vocabs.tenforce.com will be point to the root
+  of the system. It will need to be changed for a domain name other
+  than vocabs.tenforce.com.
 ***** Files to load
 There are several data files[fn:4] which need to be uploaded into the
 virtuoso RDF store. The first are generated from the excel files:
@@ -181,9 +189,9 @@ http://vocabs.tenforce.com/webDAV graph.
 When rebuilding the database (upgrade, etc.) the following command
 can be used in the conductor/isql window[fn:2]. 
 
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 RDF_GLOBAL_RESET ();
-#+END_VERSE
+#+END_SRC
 
 This will reset the database, so it has to be rebuilt from scratch.
 
@@ -193,6 +201,9 @@ is to use one of the public monitoring tools (e.g. [[http://uptimerobot.com][Upt
 accepts a URL and pings that URL every hour or so, sending an email
 when the status changes (Up or Down).
 
+Google-Analytics is also activated in this code, the key is found in
+system/configure.sh (can be changed as needed - at present this one at
+tenforce).
 ** Development
 The components required for developing the system are given above. 
 
@@ -204,9 +215,9 @@ eventual system. This approach requires a *local* development system
 override of the IP of the vocabs.tenforce.com machine (i.e an additional 
 line in */etc/hosts*):
 
-#+BEGIN_VERSE
+#+BEGIN_SRC bash
 127.0.0.1             vocabs.tenforce.com
-#+END_VERSE
+#+END_SRC
 
 Note: This will mean accesses to http://vocabs.tenforce.com/vdm will
 go to the localhost, rather than the target machine[fn:1].
