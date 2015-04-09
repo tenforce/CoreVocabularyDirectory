@@ -111,9 +111,12 @@ apt-get -y install rsyslog
 update.d virtuoso-opensource defaults
 #+END_SRC
 
-Following the basic setup instructions the Core system needs to be
-compiled, copied across to the target system and then placed where it
-is needed. The following will document those steps which are required:
+The following will document those steps which are required. Following
+the basic setup instructions the Core system needs to be compiled,
+copied across to the target system and then placed where it is needed.
+The *update.d* command will make sure that virtuoso-opensource-6.1 is
+restarted in the event that the system is rebooted (or crashes).
+
 **** Compiling the system
 
 #+BEGIN_SRC bash
@@ -121,6 +124,11 @@ autoconf
 ./configure 
 make image
 #+END_SRC
+
+Autoconf will generate from the configure.ac file and configure
+script.  The configure script, when executed will check that the
+needed tools have been installed and are in the PATH. *make image*
+will build the image from all the necessary components.
 
 **** Creating the visualisation JSON files
 There are two visualisation files which have to be created before
