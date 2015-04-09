@@ -76,7 +76,14 @@ The developed system has two stages:
   virtuoso service is setup to run on port 80 (for development and for
   the target systems).
 ** Installation Steps
-*** Initial Build/Setup
+The installation is a two stage approach:
+- Initial, development stage, when data-files, visualisations, etc. are built,
+- Publishing of the resulting files.
+The initial building of the system, is performed on a development 
+machine, before moving the resulting data files across to the 
+target (production or publishing machine).
+
+*** Initial Build/Setup (development stage)
 The dockerfile description contains almost the same instructions
 to build and run the compiled code as that for deployment. The
 basic setup instructions are (on an Ubuntu 14.04 LTS system):
@@ -143,14 +150,18 @@ On the target system (*ssh* would do) the following is required:
 Restart the virtuoso-opensource service.
 **** Virtuoso Setup
 ***** Setup of the virtuoso redirects
-There are several URL mappings which are required. These are:
-#+BEGIN_SRC bash
-.
-.
-.
-#+END_SRC
+There are several URL mappings which are required for the viewing of
+the data files to be successful. These are:
+
+| /vdm/id/(.*)                              | /vdm/doc/$s1                                       |
+| /vdm/doc/([^/.]*)(?:/([^/.]*))?(?:.(.*))? | /vdm/description.vsp?namespace=$U1&type=$U2&id=$U3 |
+| /vdm/about/([^/]*)/(.*)                   | /vdm/description.vsp?format=$U1&uri=$s2            |
+| /vdm/search(.*)                           | /vdm/search.vsp$s1                                 |
+| /                                         | /vdm/                                              |
+
 The file vhost_*.sql contains these definitions and doing the 
 following will load this file into virtuoso.
+
 #+BEGIN_SRC bash
 .
 .
