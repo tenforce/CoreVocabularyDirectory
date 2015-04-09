@@ -40,7 +40,7 @@ The developed system has two stages:
     Note: this is circular, the development installation is used to 
     generate the json files for the visualisation of the production 
     system.
-- Display/Presentation Stage :: 
+- Display/Presentation/Publication Stage :: 
     which concerns the presentation of the data to the user in a
     standardised form. This stage follows from the first stage.
 ** Components Required
@@ -76,7 +76,8 @@ The developed system has two stages:
   virtuoso service is setup to run on port 80 (for development and for
   the target systems).
 ** Installation Steps
-The installation is a two stage approach:
+The installation of the system ares are in the two stages described
+previously:
 - Initial, development stage, when data-files, visualisations, etc. are built,
 - Publishing of the resulting files.
 The initial building of the system, is performed on a development 
@@ -159,25 +160,36 @@ the data files to be successful. These are:
 | /vdm/search(.*)                           | /vdm/search.vsp$s1                                 |
 | /                                         | /vdm/                                              |
 
-The file vhost_*.sql contains these definitions and doing the 
-following will load this file into virtuoso.
+The file vhost_export_vspx.sql contains these definitions and doing
+the following will load this file into virtuoso (using isql-vt[fn:3])
 
 #+BEGIN_SRC bash
-.
-.
-.
+isql < vhost_export_vspx.sql
 #+END_SRC
 
-- Copy the virtuoso.ini file to the correct place (ie. /etc/where?)
-- execute the vhost_*.sql file using isql-vt[fn:3]
+These should then be visible in the virtuoso conductor (XXX). The
+vhost_export_vspx.sql file will also create a redirect from / to /vdm
+so that access to http://vocabs.tenforce.com will be point to the root
+of the system. It will need to be changed for a domain name other than
+vocabs.tenforce.com.
 
-Note(s):
+***** Update the port number setting
+
+#+BEGIN_SRC bash
+ServerPort                  = 80
+#+END_SRC
+
+The virtuoso.ini file can be moved to the correct place
+(ie. /etc/virtuoso-opensource-6.1)
+
+#+BEGIN_SRC bash
+service virtuoso-opensource-6.1 restart
+#+END_SRC
+
+****** Note(s) on Virtuoso
 - It is also recommended that the default virtuoso-opensource password
   be changed once it has been installed on the target system.
-- The vhost_*.sql file will also create a redirect from / to /vdm so
-  that access to http://vocabs.tenforce.com will be point to the root
-  of the system. It will need to be changed for a domain name other
-  than vocabs.tenforce.com.
+
 ***** Files to load
 There are several data files[fn:4] which need to be uploaded into the
 virtuoso RDF store. The first are generated from the excel files:
@@ -215,8 +227,8 @@ when the status changes (Up or Down).
 Google-Analytics is also activated in this code, the key is found in
 system/configure.sh (can be changed as needed - at present this one at
 tenforce).
-** Development
-The components required for developing the system are given above. 
+** Development Support
+The components required for developing the system are given above.
 
 The main simplification in the development process has been the
 description of a docker container for the runtime part of the system.
@@ -232,6 +244,16 @@ line in */etc/hosts*):
 
 Note: This will mean accesses to http://vocabs.tenforce.com/vdm will
 go to the localhost, rather than the target machine[fn:1].
+
+A second simplication is that a makefile has been created with basic
+targets:
+
+#+BEGIN_SRC bash
+make image run
+#+END_SRC
+
+This will build the docker image and will start the image for testing
+(i.e. the run target).
 * System Operation
 ** Service control
 Once deployed on the target system, the semic system will run as a
