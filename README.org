@@ -52,22 +52,24 @@ The developed system has two stages:
 - Virtuoso-opensource ::
   Version 6.1
 - SSH ::
-  
 - Emacs ::
-  An editor
+  The best editor on the planet.
 *** development
 - Docker ::
            This is used to create a container mimicking the final
            installation system. It is best to install the latest
            version of docker from [[http://docs.docker.com/][http://docs.docker.com/]].
 - Python3 ::
-           The default version is 2.7.6, but the scripts require the
-           python3 version. The scripts are used when transforming
-           the input datafiles into the TTL/RDF format suitable for
-           uploading to the virtuoso quad-store (th
+           The default installed version is 2.7.6, but the scripts
+            require the python3 version. The scripts are used when
+            transforming the input datafiles into the TTL/RDF format
+            suitable for uploading to the virtuoso quad-store (th
 - Make ::  This is used to group together the compilation/build steps
            when developing.
 - Git ::   Source control system, used to control updates.
+- Autoconf :: Build/Compilation control system, used to fill in the
+              command names, etc. in the Makefile.in (before writing
+              to Makefile).
 - Bash ::  Shell script which has been used (default system version).
 - Emacs :: At present org-mode is used to execute the queries on the 
            database once it has been created (dataquery.org).
