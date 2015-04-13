@@ -26,7 +26,6 @@ The repository has several directories:
                 production system in the public_data directory.
 - virtuoso-setup :: which contains the SQL and initialisation files for
       configuring virtuoso-opensource 6.1.
-
 ** Development Notes
 *** System Access Requirements
 This is mostly installation work, for which you will required 'root'
@@ -42,7 +41,6 @@ vocabs.tenforce.com machine (/etc/hosts)
 #+BEGIN_SRC bash
 127.0.0.1             vocabs.tenforce.com
 #+END_SRC
-
 
 * Semic Deployment
 ** General Description
@@ -61,14 +59,6 @@ The developed system has two stages:
 ** Components Required
  The following description assumes an "GNU/Linux Ubuntu 14.04 (trusty)"
  system is the target system and also the development system.
-*** runtime (target/production system)
-- GNU/Linux ::
-  Ubuntu 14.04 LTS
-- Virtuoso-opensource ::
-  Version 6.1
-- SSH ::
-- [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] ::
-  The best editor on the planet.
 *** development
 - Docker ::
            This is used to create a container mimicking the final
@@ -89,19 +79,30 @@ The developed system has two stages:
 - Bash ::  Shell script which has been used (default system version).
 - [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] :: At present [[http://orgmode.org/][org-mode]] is used to execute the queries on the 
            database once it has been created (dataquery.org).
+*** runtime (target/production system)
+The development is reduced to the following on the target system:
+- GNU/Linux ::
+  Ubuntu 14.04 LTS
+- Virtuoso-opensource ::
+  Version 6.1
+- SSH ::
+- [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] ::
+  The best editor on the planet.
 *** general notes
 - Neither apache2 nor Tomcat should be running on the server - the
   virtuoso service is setup to run on port 80 (for development and for
   the target systems).
+- Only ports 80 (virtuoso) and 22 (ssh) should be open and the ssh
+  should be only open to a limited range of hosts (install a firewall
+  tool).
 ** Installation Steps
 The installation of the system ares are in the two stages described
 previously:
 - Initial, development stage, when data-files, visualisations, etc. are built,
 - Publishing of the resulting files.
-The initial building of the system, is performed on a development 
-machine, before moving the resulting data files across to the 
-target (production or publishing machine).
-
+The initial building of the system to be deployed, is performed on the
+development machine and packaged before moving the resulting data
+files across to the target (production/publishing machine). 
 *** Initial Build/Setup (development stage)
 The dockerfile description contains almost the same instructions
 to build and run the compiled code as that for deployment. The
@@ -177,11 +178,12 @@ on the target system. The *scp* will copy the files onto the remote
 system (as root).
 **** Placement of the files
 On the target system (*ssh* would do) the following is required:
-- switch off the apache2 and tomcat7 services 
+- switch off/uninstall the apache2 and tomcat7 services 
   (virtuoso will be on port 80)
   - Note :: Other configuration will be needed if those services are needed.
-- Unpack the vdm.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp directory
-Restart the virtuoso-opensource service.
+- Unpack the vdm.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp
+  directory
+- Restart the virtuoso-opensource service.
 **** Virtuoso Setup
 ***** Setup of the virtuoso redirects
 There are several URL mappings which are required for the viewing of
@@ -220,15 +222,15 @@ service virtuoso-opensource-6.1 restart
 #+END_SRC
 
 ****** Note(s) on Virtuoso
-- It is also recommended that the default virtuoso-opensource password
-  be changed once it has been installed on the target system.
-
+It is also recommended that the default virtuoso-opensource password
+be changed once it has been installed on the target system.
 ***** Files to load
 There are several data files[fn:4] which need to be uploaded into the
 virtuoso RDF store. The first are generated from the excel files:
 
 - data.ttl :: The core directory mapping directory data
 - dcatods.ttl :: The DCAT-AP ODS Mapping 
+- dcatapsdmx.ttl :: The DCAT-AP SDMX Mappings
 
 While the following are static files which are included to enhance the
 view of the excel file data:
@@ -240,7 +242,6 @@ view of the excel file data:
 ***** Loading into Virtuoso
 Using the virtuoso conductor>quad store, upload the datafiles into the
 http://vocabs.tenforce.com/webDAV graph.
-
 ***** Cleaning the database
 When rebuilding the database (upgrade, etc.) the following command
 can be used in the conductor/isql window[fn:2]. 
@@ -264,22 +265,21 @@ tenforce).
 The components required for developing the system are given above.
 
 The main simplification in the development process has been the
-description of a docker container for the runtime part of the system.
+description of a *docker* container for the runtime part of the
+system, in a way which simulates the target machine.
 
 For local development, the dockerfile can be used to mimic the
 eventual system. This approach requires a *local* development system
-override of the IP of the vocabs.tenforce.com machine (i.e an additional 
-line in */etc/hosts*):
+override of the IP of the vocabs.tenforce.com machine (i.e an
+additional line in */etc/hosts*):
 
 #+BEGIN_SRC bash
-127.0.0.1             vocabs.tenforce.com
+ 127.0.0.1             vocabs.tenforce.com
 #+END_SRC
 
 Note: This will mean accesses to http://vocabs.tenforce.com/vdm will
-go to the localhost, rather than the target machine[fn:1].
-
-A second simplication is that a makefile has been created with basic
-targets:
+go to the localhost, rather than the target machine[fn:1]. A second
+simplication is that a makefile has been created with basic targets:
 
 #+BEGIN_SRC bash
 make image run
