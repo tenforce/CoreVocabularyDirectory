@@ -107,9 +107,9 @@ WHERE {
   ?coreclass dcterms:isPartOf ?datamodel .
   ?coreclass rdf:type vdm:ObjectClass .
   ?coreclass rdfs:label ?coreclasslabel .
-
+ 
+  ?coreclass adms:includedAsset ?coreproperty  .
   ?coreproperty a vdm:Property .
-  ?coreproperty adms:includedAsset ?coreclass .
   ?coreproperty rdfs:label ?corepropertylabel .
 
   { { ?coreproperty skos:exactMatch ?target}
@@ -124,6 +124,7 @@ WHERE {
 
   ?target dcterms:isPartOf ?targetdatamodel .
   ?targetdatamodel rdfs:label ?targetdatamodellabel .
+  FILTER(STR(?targetdatamodel)!="http://vocabs.tenforce.com/vdm/id/cv/0a7380a6c87798dc2d0db45ef1814630")
 }
 #+end_src
 
@@ -138,8 +139,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 prefix vdm: <http://vocabs.tenforce.com/def#>
 prefix coreclass: <http://vocabs.tenforce.com/vdm/id/cv/class/>
 
-SELECT DISTINCT ?datamodel ?datamodellab 
-                ?coreclass ?coreclasslabel 
+SELECT DISTINCT ?datamodel ?datamodellab
                 ?coreproperty ?corepropertylabel 
                 ?matchingprop ?matchingprop as ?label
                 ?targetdatamodel ?targetdatamodellabel
@@ -149,22 +149,28 @@ WHERE {
   ?datamodel rdfs:label ?datamodellab .
   FILTER(STR(?datamodel)="http://vocabs.tenforce.com/vdm/id/cv/0a7380a6c87798dc2d0db45ef1814630")
 
-  ?coreclass dcterms:isPartOf ?datamodel .
-  ?coreclass rdfs:label ?coreclasslabel .
-
-  ?coreproperty adms:includedAsset ?coreclass .
+  ?coreproperty dcterms:isPartOf ?datamodel .
   ?coreproperty rdfs:label ?corepropertylabel .
 
-  { { ?coreproperty skos:exactMatch ?target}
+  { { ?coreproperty skos:exactMatch ?target .
+      ?coreproperty ?matchingprop ?target }
    union
-  { ?coreproperty skos:closeMatch ?target }
+    { ?coreproperty skos:closeMatch ?target .
+      ?coreproperty ?matchingprop ?target }
    union
-  { ?coreproperty skos:broaderMatch ?target }
+    { ?coreproperty skos:broadMatch ?target .
+      ?coreproperty ?matchingprop ?target }
    union
-  { ?coreproperty skos:narrowerMatch ?target } }
-  ?coreproperty ?matchingprop ?target .
-  ?target rdfs:label ?targetLabel .
+    { ?target skos:broadMatch ?coreproperty .
+      ?target ?matchingprop ?coreproperty }
+   union
+    { ?coreproperty skos:narrowMatch ?target .
+      ?coreproperty ?matchingprop ?target }
+   union
+    { ?target skos:narrowMatch ?coreproperty .
+      ?target ?matchingprop ?coreproperty } }
 
+  ?target rdfs:label ?targetLabel .
   ?target dcterms:isPartOf ?targetdatamodel .
   ?targetdatamodel rdfs:label ?targetdatamodellabel .
 }

@@ -32,7 +32,7 @@ dcatapsdmx.ttl: excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx ${CVXSL2VDM}
 # The two queries are not automatically run, since the system needs to 
 # be installed and the data accessible for the queries to be correct.
 
-visualisations: system/www/visualisation/cvflare.json system/www/visualisation/dcatflare.json 
+visualisations: system/www/visualisation/cvflare.json system/www/visualisation/dcatflare.json system/www/visualisation/sdmxdcatapflare.json 
 
 system/www/visualisation/cvflare.json: ${DUMP2SH} system/www/visualisation/all.links 
 	( cd system/www/visualisation; ./dump3.sh all.links > cvflare.json )

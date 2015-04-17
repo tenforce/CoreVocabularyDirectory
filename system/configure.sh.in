@@ -69,7 +69,7 @@ for var in BASEURI ROOTURI DEFAULT_GRAPH GOOGLE_ANALYTICS; do
 done
 
 # Generate files
-find -name '*.in' |
+find -name '*.in' | egrep -v "configure.sh" |
 while read -r infile; do
     outfile=${infile%.in}
     if ${GENERATE}; then

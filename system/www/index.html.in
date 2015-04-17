@@ -91,6 +91,10 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 				<li>
 					<a href="/vdm/id/cv/0a7380a6c87798dc2d0db45ef1814630">Browsable View</a>
 				</li>
+				<li>
+					<a href="visualisation/sdmxtree.html">Tree Visualisation 
+						of the SDMX to DCAT-AP mappings</a>
+				</li>
 			</ul>
 		</li>
 	</ul>

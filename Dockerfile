@@ -16,6 +16,7 @@ ADD dcatods.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 ADD dcatapsdmx.ttl /var/lib/virtuoso-opensource-6.1/db/data/
 COPY system /var/lib/virtuoso-opensource-6.1/vsp/vdm
 RUN ls /var/lib/virtuoso-opensource-6.1/vsp/vdm
+COPY virtuoso-setup/vhost_export.vspx.isql /var/lib/virtuoso-opensource-6.1/vsp/vdm/vhost_export.vspx.isql
 COPY virtuoso-setup/virtuoso.ini /etc/virtuoso-opensource-6.1/virtuoso.ini
 EXPOSE 8890 
 EXPOSE 1111

@@ -1,6 +1,12 @@
 DB.DBA.VHOST_REMOVE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
+	 lpath=>'/'
+);
+
+DB.DBA.VHOST_REMOVE (
+	 lhost=>'*ini*',
+	 vhost=>'*ini*',
 	 lpath=>'/vdm'
 );
 
@@ -16,9 +22,6 @@ DB.DBA.VHOST_DEFINE (
 	 opts=>vector ('xml_templates', 'yes', 'executable', 'yes', 'browse_sheet', '', 'url_rewrite', 'http_rule_list_5'),
 	 is_default_host=>0
 );
-
-
-    
 
 DB.DBA.URLREWRITE_CREATE_RULELIST ( 
 'http_rule_list_5', 1, 
@@ -85,3 +88,14 @@ DB.DBA.XML_SET_NS_DECL ('vdm', 'http://vocabs.tenforce.com/def#', 2);
 DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
 DB.DBA.XML_SET_NS_DECL ('dcterms','http://purl.org/dc/terms/', 2);
 
+DB.DBA.VHOST_DEFINE (
+	 lhost=>'*ini*',
+	 vhost=>'*ini*',
+	 lpath=>'/',
+	 ppath=>'http://vocabs.tenforce.com/vdm/',
+	 is_dav=>0,
+	 def_page=>'',
+	 ses_vars=>0,
+	 opts=>vector ('browse_sheet', ''),
+	 is_default_host=>0
+);

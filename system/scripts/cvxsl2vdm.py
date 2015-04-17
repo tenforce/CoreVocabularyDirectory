@@ -144,7 +144,7 @@ class CommonVocabularySpreadsheet:
         # Note: The excel names can contain spaces, etc. remove them all
         # before generating the ids, etc.
         cluri = self.uri(item["class"].replace(" ",""))
-        g.add((uri, ADMS.includedAsset, cluri))
+        g.add((cluri, ADMS.includedAsset, uri))
         pubid = item["public identifier (uri)"]
         if pubid != "":
             g.add((uri, DCTERMS.identifier, URIRef(pubid)))
@@ -168,7 +168,7 @@ class CommonVocabularySpreadsheet:
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
         cluri = self.uri(item["class"].replace(" ","")) 
-        g.add((uri, ADMS.includedAsset, cluri))
+        g.add((cluri, ADMS.includedAsset, uri))
         if label != intid:
             label = label + " (" + intid + ")"
         g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))

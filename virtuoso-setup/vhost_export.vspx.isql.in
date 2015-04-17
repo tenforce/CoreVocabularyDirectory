@@ -1,6 +1,12 @@
 DB.DBA.VHOST_REMOVE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
+	 lpath=>'/'
+);
+
+DB.DBA.VHOST_REMOVE (
+	 lhost=>'*ini*',
+	 vhost=>'*ini*',
 	 lpath=>'/vdm'
 );
 
@@ -81,12 +87,6 @@ DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);
 DB.DBA.XML_SET_NS_DECL ('vdm', 'http://@IPNAME@/def#', 2);
 DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
 DB.DBA.XML_SET_NS_DECL ('dcterms','http://purl.org/dc/terms/', 2);
-
-DB.DBA.VHOST_REMOVE (
-	 lhost=>'*ini*',
-	 vhost=>'*ini*',
-	 lpath=>'/'
-);
 
 DB.DBA.VHOST_DEFINE (
 	 lhost=>'*ini*',
