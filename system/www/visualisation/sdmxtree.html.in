@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Core Data Model Mapping Directory</title>
+  <link type="text/css" rel="stylesheet" href="tree_files/style.css">
+  <script type="text/javascript" src="tree_files/d3_002.js"></script>
+  <script type="text/javascript" src="tree_files/d3.js"></script>
+  <link rel="stylesheet" type="text/css" href="/@SUBNAME@/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,300" />
+  <link rel="stylesheet" type="text/css" href="/@SUBNAME@/css/screen.css" />
+  <style type="text/css">
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+    </style>
+
+</head>
+<body id="picturepage">
+
+<header>
+  <div class="logo">
+    <a href="https://www.semic.eu">
+      <img src="/@SUBNAME@/images/semic_logo.png" alt="SEMIC logo" width="90" height="90" />
+    </a>
+  </div>
+  <h1><a href="/@SUBNAME@/" color="white">Core Data Model Mapping Directory</a></h1>
+</header>
+
+<section id="picture">
+	<div id="body">
+		<div id="footer">
+			<div class="hint">click to toggle sub-tree view, double click open window on Element</div>
+		</div>
+		<script type="text/javascript">
+
+var m = [20, 120, 20, 120],
+    w = 1200 - m[1] - m[3],
+    h = 600 - m[0] - m[2],
+    i = 0,
+    root;
+
+var tree = d3.layout.tree()
+    .size([h, w]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var vis = d3.select("#body").append("svg:svg")
+    .attr("width", w + m[1] + m[3])
+    .attr("height", h + m[0] + m[2])
+  .append("svg:g")
+    .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+
+d3.json("sdmxdcatapflare.json", function(json) {
+  root = json;
+  root.x0 = h / 2;
+  root.y0 = 0;
+
+  function toggleAll(d) {
+    if (d.children) {
+      d.children.forEach(toggleAll);
+      toggle(d);
+    }
+  }
+
+  // Initialize the display to show a few nodes.
+  root.children.forEach(toggleAll);
+  toggle(root.children[0]);
+  toggle(root.children[0].children[0]);
+  update(root);
+});
+
+function update(source) {
+  var duration = d3.event && d3.event.altKey ? 5000 : 500;
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse();
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 180; });
+
+  // Update the nodes…
+  var node = vis.selectAll("g.node")
+      .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("svg:g")
+      .attr("class", "node")
+      .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+       .on("dblclick", function(d) { window.open(d.link, "displaytab", "width=800, height=600, scrollbars=yes"); })
+       .on("click", function(d) { toggle(d); update(d); });
+
+  nodeEnter.append("svg:circle")
+      .attr("r", 1e-6)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("svg:text")
+      .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+      .attr("dy", ".35em")
+      .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+      .attr("xlink:href", function(d) { return d.link; })
+      .text(function(d) { return d.name; })
+      .style("fill-opacity", 1e-6);
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+      .attr("r", 4.5)
+      .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+      .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+      .duration(duration)
+      .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+      .remove();
+
+  nodeExit.select("circle")
+      .attr("r", 1e-6);
+
+  nodeExit.select("text")
+      .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = vis.selectAll("path.link")
+      .data(tree.links(nodes), function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("svg:path", "g")
+      .attr("class", "link")
+      .attr("d", function(d) {
+        var o = {x: source.x0, y: source.y0};
+        return diagonal({source: o, target: o});
+      })
+    .transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition links to their new position.
+  link.transition()
+      .duration(duration)
+      .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+      .duration(duration)
+      .attr("d", function(d) {
+        var o = {x: source.x, y: source.y};
+        return diagonal({source: o, target: o});
+      })
+      .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+// Toggle children.
+function toggle(d) {
+  if (d.children) {
+    d._children = d.children;
+    d.children = null;
+  } else {
+    d.children = d._children;
+    d._children = null;
+  }
+}
+
+    </script>
+	</div>
+</section>
+<footer>
+  <p>This work is supported by
+  <a href="http://ec.europa.eu/isa/actions/01-trusted-information-exchange/1-1action_en.htm" target="_blank">Action 1.1</a>
+  of the
+  <a href="http://ec.europa.eu/isa/" target="_blank">Interoperability Solutions
+  for European Public Adminstrations (ISA)</a> Programme of the European
+  Commission.</p>
+
+  <p><strong>Linked Data pilots:</strong>
+    <a href="http://location.testproject.eu/BEL">Core Location pilot</a> |
+    <a href="http://data.ydmed.gov.gr/">Greek Pilot</a> |
+    <a href="http://cpsv.testproject.eu/CPSV">Core Public Service pilot</a> |
+    <a href="http://org.testproject.eu/MAREG">Organisation Ontology pilot</a> |
+    <a href="http://health.testproject.eu/PPP">Plant Protection Products pilot</a> |
+    <a href="http://maritime.testproject.eu/CISE">Maritime Surveillance pilot</a>
+  </p>
+
+  <p>
+    <a href="https://joinup.ec.europa.eu/asset/dcat_application_profile/description" target="_blank"><img alt="DCAT application profile for European data portals" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/DCAT_application_profile_for_European_data_portals_logo_0.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms/description" target="_blank"><img alt="Asset Description Metadata Schema (ADMS)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/adms_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/adms_foss/description" target="_blank"><img alt="Asset Description Metadata Schema for Software (ADMS.SW)" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/ADMS_SW_Logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_business/description" target="_blank"><img alt="Core Business Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_business_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_person/description"><img alt="Core Person Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_person_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_location/description" target="_blank"><img alt="Core Location Vocabulary" src="http://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_location_logo.png" width="70" height="70" /></a>
+    <a href="https://joinup.ec.europa.eu/asset/core_public_service/description" target="_blank"><img alt="Core Public Service Vocabulary" src="https://joinup.ec.europa.eu/sites/default/files/imagecache/community_logo/core_public_service_logo.png" width="70" height="70" /></a>
+    <a href="http://ec.europa.eu/isa/" target="_blank"><img alt="isa" src="http://joinup.ec.europa.eu/sites/default/files/ckeditor_files/images/isa_logo.png" width="70" height="70" /></a>
+  </p>
+
+  <p>Some icons by <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam.com</a> used under CC-BY license.</p>
+</footer>
+
+</body></html>

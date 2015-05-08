@@ -24,10 +24,11 @@ set -e -u
 
 # Default values
 IP=@IPNAME@
-BASEURI="http://${IP}/vdm/"
-ROOTURI="file://vdm/"
+SUBNAME=@SUBNAME@
+GOOGLE_ANALYTICS="@GOOGLEANALYTICS@"
+BASEURI="http://${IP}/${SUBNAME}/"
+ROOTURI="file://${SUBNAME}/"
 DEFAULT_GRAPH="http://${IP}/DAV"
-GOOGLE_ANALYTICS="UA-61212072-1"
 
 GENERATE=true
 
@@ -63,13 +64,13 @@ done
 
 # Construct sed replacement script
 sed=""
-for var in BASEURI ROOTURI DEFAULT_GRAPH GOOGLE_ANALYTICS; do
+for var in BASEURI ROOTURI DEFAULT_GRAPH GOOGLE_ANALYTICS IP SUBNAME; do
     eval "value=\$${var}"
     sed="${sed}s|%${var}%|${value}|g;"
 done
 
 # Generate files
-find -name '*.in' | egrep -v "configure.sh" |
+find -name '*.in' | egrep -v "configure.sh|cvxsl2vdm.py|dataquery-isPartOf.org|tree.html" |
 while read -r infile; do
     outfile=${infile%.in}
     if ${GENERATE}; then

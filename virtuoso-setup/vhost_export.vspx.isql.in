@@ -1,20 +1,14 @@
 DB.DBA.VHOST_REMOVE (
 	 lhost=>'*ini*',
-	 vhost=>'*ini*',
+	 vhost=>'@IPNAME@',
 	 lpath=>'/'
-);
-
-DB.DBA.VHOST_REMOVE (
-	 lhost=>'*ini*',
-	 vhost=>'*ini*',
-	 lpath=>'/vdm'
 );
 
 DB.DBA.VHOST_DEFINE (
 	 lhost=>'*ini*',
-	 vhost=>'*ini*',
-	 lpath=>'/vdm',
-	 ppath=>'/vdm/www/',
+	 vhost=>'@IPNAME@',
+	 lpath=>'/@SUBNAME@/',
+	 ppath=>'/@SUBNAME@/www/',
 	 is_dav=>0,
 	 def_page=>'index.html',
 	 vsp_user=>'dba',
@@ -23,16 +17,28 @@ DB.DBA.VHOST_DEFINE (
 	 is_default_host=>0
 );
 
+// DB.DBA.VHOST_DEFINE (
+//	 lhost=>'*ini*',
+//	 vhost=>'*ini*',
+//	 lpath=>'/@SUBNAME@',
+//	 ppath=>'/@SUBNAME@/www/',
+//	 is_dav=>0,
+//	 def_page=>'index.html',
+//	 vsp_user=>'dba',
+//	 ses_vars=>1,
+//	 is_default_host=>0
+// );
+
 DB.DBA.URLREWRITE_CREATE_RULELIST ( 
 'http_rule_list_5', 1, 
   vector ('http_rule_9', 'http_rule_10', 'http_rule_11', 'http_rule_12'));
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_9', 1, 
-  '/vdm/id/(.*)', 
+  '/@SUBNAME@/id/(.*)', 
 vector ('par_1'), 
 1, 
-'/vdm/doc/%s', 
+'/@SUBNAME@/doc/%s', 
 vector ('par_1'), 
 NULL, 
 NULL, 
@@ -43,10 +49,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_10', 1, 
-  '/vdm/doc/([^/.]*)(?:/([^/.]*))?(?:\.(.*))?', 
+  '/@SUBNAME@/doc/([^/.]*)(?:/([^/.]*))?(?:\.(.*))?', 
 vector ('par_1', 'par_2', 'par_3', 'par_4'), 
 4, 
-'/vdm/description.vsp?namespace=%U&type=%U&id=%U&format=%U', 
+'/@SUBNAME@/description.vsp?namespace=%U&type=%U&id=%U&format=%U', 
 vector ('par_1', 'par_2', 'par_3', 'par_4'), 
 NULL, 
 NULL, 
@@ -57,10 +63,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_11', 1, 
-  '/vdm/about/([^/]*)/(.*)', 
+  '/@SUBNAME@/about/([^/]*)/(.*)', 
 vector ('par_1', 'par_2'), 
 2, 
-'/vdm/description.vsp?format=%U&uri=%s', 
+'/@SUBNAME@/description.vsp?format=%U&uri=%s', 
 vector ('par_1', 'par_2'), 
 NULL, 
 NULL, 
@@ -71,10 +77,10 @@ NULL,
 
 DB.DBA.URLREWRITE_CREATE_REGEX_RULE ( 
 'http_rule_12', 1, 
-  '/vdm/search(.*)', 
+  '/@SUBNAME@/search(.*)', 
 vector ('par_1'), 
 1, 
-'/vdm/search.vsp%s', 
+'/@SUBNAME@/search.vsp%s', 
 vector ('par_1'), 
 NULL, 
 NULL, 
@@ -83,19 +89,19 @@ NULL,
 '' 
 );
 
-DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);
-DB.DBA.XML_SET_NS_DECL ('vdm', 'http://@IPNAME@/def#', 2);
-DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
-DB.DBA.XML_SET_NS_DECL ('dcterms','http://purl.org/dc/terms/', 2);
-
 DB.DBA.VHOST_DEFINE (
 	 lhost=>'*ini*',
 	 vhost=>'*ini*',
 	 lpath=>'/',
-	 ppath=>'http://@IPNAME@/vdm/',
+	 ppath=>'http://@IPNAME@/@SUBNAME@/',
 	 is_dav=>0,
 	 def_page=>'',
 	 ses_vars=>0,
 	 opts=>vector ('browse_sheet', ''),
 	 is_default_host=>0
 );
+
+DB.DBA.XML_SET_NS_DECL ('vdm', 'http://mapping.semic.eu/def#', 2);
+DB.DBA.XML_SET_NS_DECL ('adms','http://www.w3.org/ns/adms#', 2);
+DB.DBA.XML_SET_NS_DECL ('dcterms','http://purl.org/dc/terms/', 2);
+DB.DBA.XML_SET_NS_DECL ('mdr', 'http://mdr.semic.eu/def#', 2);

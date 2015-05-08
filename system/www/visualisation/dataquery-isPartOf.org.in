@@ -1,0 +1,163 @@
+#+TITLE: visualisation queries
+
+#+NAME: datamodels
+#+begin_src roqet :endpoint http://@IPNAME@/sparql :exports both
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://mapping.semic.eu/def#>
+
+SELECT 
+  DISTINCT ?datamodel ?datamodellab ?coreclasslabel
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://@IPNAME@/@SUBNAME@/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae")
+
+  ?coreclass dcterms:isPartOf ?datamodel .
+  ?coreclass rdf:type vdm:ObjectClass .
+  ?coreclass rdfs:label ?coreclasslabel .
+}
+#+END_SRC
+
+#+RESULTS: datamodels
+
+
+#+NAME: core_vocabs
+#+begin_src roqet :endpoint http://@IPNAME@/sparql :exports both :file all.links
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://mapping.semic.eu/def#>
+prefix dcterms: <http://purl.org/dc/terms/>
+prefix coreclass: <http://@IPNAME@/@SUBNAME@/id/cv/class/>
+
+SELECT DISTINCT ?datamodel ?datamodellab 
+                ?coreclass ?coreclasslabel 
+                ?coreproperty ?corepropertylabel 
+                ?matchingprop ?matchingprop as ?label
+                ?targetdatamodel ?targetdatamodellabel
+		            ?target ?targetLabel 
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://@IPNAME@/@SUBNAME@/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae")
+
+  ?coreclass dcterms:isPartOf ?datamodel .
+  ?coreclass rdf:type vdm:ObjectClass .
+  ?coreclass rdfs:label ?coreclasslabel .
+
+  ?coreproperty a vdm:Property .
+  ?coreclass adms:includedAsset ?coreproperty.
+  ?coreproperty rdfs:label ?corepropertylabel .
+
+  { { ?coreproperty skos:exactMatch ?target}
+   union
+  { ?coreproperty skos:closeMatch ?target }
+   union
+  { ?coreproperty skos:broaderMatch ?target }
+   union
+  { ?coreproperty skos:narrowerMatch ?target } }
+  ?coreproperty ?matchingprop ?target .
+  ?target rdfs:label ?targetLabel .
+
+  ?target dcterms:isPartOf ?targetdatamodel .
+  ?targetdatamodel rdfs:label ?targetdatamodellabel .
+}
+
+#+end_src
+
+#+RESULTS: core_vocabs
+[[file:all.links]]
+
+#+NAME: dcat_@SUBNAME@s
+#+begin_src roqet :endpoint http://@IPNAME@/sparql :exports both :file all-dcat.links
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://mapping.semic.eu/def#>
+prefix coreclass: <http://@IPNAME@/@SUBNAME@/id/cv/class/>
+
+SELECT DISTINCT ?datamodel ?datamodellab 
+                ?coreclass ?coreclasslabel 
+                ?coreproperty ?corepropertylabel 
+                ?matchingprop ?matchingprop as ?label
+                ?targetdatamodel ?targetdatamodellabel
+		            ?target ?targetLabel 
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://@IPNAME@/@SUBNAME@/id/cv/34884a917711536741cf1da45b7f6b41")
+
+  ?coreclass dcterms:isPartOf ?datamodel .
+  ?coreclass rdf:type vdm:ObjectClass .
+  ?coreclass rdfs:label ?coreclasslabel .
+  ?coreclass adms:includedAsset ?coreproperty .
+
+  ?coreproperty a vdm:Property .
+  ?coreproperty rdfs:label ?corepropertylabel .
+
+  { { ?coreproperty skos:exactMatch ?target}
+   union
+  { ?coreproperty skos:closeMatch ?target }
+   union
+  { ?coreproperty skos:broaderMatch ?target }
+   union
+  { ?coreproperty skos:narrowerMatch ?target } }
+  ?coreproperty ?matchingprop ?target .
+  ?target rdfs:label ?targetLabel .
+
+  ?target dcterms:isPartOf ?targetdatamodel .
+  ?targetdatamodel rdfs:label ?targetdatamodellabel .
+  FILTER(STR(?targetdatamodel)!="http://@IPNAME@/@SUBNAME@/id/cv/0a7380a6c87798dc2d0db45ef1814630")
+}
+
+#+end_src
+
+#+RESULTS: dcat_mappings
+[[file:all-dcat.links]]
+
+#+NAME: sdmxdcatap_mappings
+#+begin_src roqet :endpoint http://@IPNAME@/sparql :exports both :file all-sdmxdcatap.links
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix vdm: <http://mapping.semic.eu/def#>
+prefix coreclass: <http://@IPNAME@/@SUBNAME@/id/cv/class/>
+
+SELECT DISTINCT ?datamodel ?datamodellab
+                ?coreproperty ?corepropertylabel 
+                ?matchingprop ?matchingprop as ?label
+                ?targetdatamodel ?targetdatamodellabel
+		            ?target ?targetLabel 
+WHERE {
+  ?datamodel rdf:type vdm:DataModel .
+  ?datamodel rdfs:label ?datamodellab .
+  FILTER(STR(?datamodel)="http://@IPNAME@/@SUBNAME@/id/cv/0a7380a6c87798dc2d0db45ef1814630")
+
+  ?coreproperty dcterms:isPartOf ?datamodel .
+  ?coreproperty rdfs:label ?corepropertylabel .
+
+  { { ?coreproperty skos:exactMatch ?target .
+      ?coreproperty ?matchingprop ?target }
+   union
+    { ?coreproperty skos:closeMatch ?target .
+      ?coreproperty ?matchingprop ?target }
+   union
+    { ?coreproperty skos:broadMatch ?target .
+      ?coreproperty ?matchingprop ?target }
+   union
+    { ?target skos:broadMatch ?coreproperty .
+      ?target ?matchingprop ?coreproperty }
+   union
+    { ?coreproperty skos:narrowMatch ?target .
+      ?coreproperty ?matchingprop ?target }
+   union
+    { ?target skos:narrowMatch ?coreproperty .
+      ?target ?matchingprop ?coreproperty } }
+
+  ?target rdfs:label ?targetLabel .
+  ?target dcterms:isPartOf ?targetdatamodel .
+  ?targetdatamodel rdfs:label ?targetdatamodellabel .
+}
+#+end_src
