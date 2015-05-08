@@ -2,6 +2,7 @@
 
 TAR=@TAR@
 IPNAME=@IPNAME@
+SUBNAME=@SUBNAME@
 
 DOCKER=docker
 SYSTEM=system
@@ -40,7 +41,7 @@ system/www/visualisation/cvflare.json: ${DUMP2SH} system/www/visualisation/all.l
 system/www/visualisation/dcatflare.json: system/www/visualisation/all-dcat.links ${DUMP2SH}
 	( cd system/www/visualisation; ./dump3.sh all-dcat.links > dcatflare.json )
 
-system/www/visualisation/sdmxdcatapflare.json: system/www/visualisation/all-dcat.links ${DUMP2SH}
+system/www/visualisation/sdmxdcatapflare.json: system/www/visualisation/all-sdmxdcatap.links ${DUMP2SH}
 	( cd system/www/visualisation; ./dump3.sh all-sdmxdcatap.links > sdmxdcatapflare.json )
 
 # Gather together all the data which is intended to be made public
@@ -53,6 +54,7 @@ www/public_data:
 	cp excelfiles/EuroVocmappings_v0.03-1.xlsx system/www/public_data
 	cp excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx system/www/public_data
 	cp excelfiles/Core_Vocabularies_Mapping_Template.xlsx system/www/public_data
+	cp excelfiles/MappingFromExcel.xlsx system/www/public_data
 	cp system/data/vdm.ttl system/www/public_data
 	cp system/data/skos.rdf system/www/public_data
 	cp system/data/adms*.rdf system/www/public_data
@@ -61,18 +63,18 @@ www/public_data:
 # This will create a 'tar' file with all the system components in it.
 # This can then be transfered to the remote system for installation.
 
-vdm.tgz: data www/public_data
-	mkdir -p vdm
-	cp -r system/* vdm
-	mkdir -p vdm/public_data
-	cp excelfiles/*.xlsx vdm/www/public_data
-	cp system/data/vdm.ttl vdm/www/public_data
-	cp system/data/skos.rdf vdm/www/public_data
-	cp system/data/adms*.rdf vdm/www/public_data
-	cp *.ttl vdm
-	cp system/data/vdm.ttl vdm
-	${TAR} cvzf vdm.tgz vdm
-	rm -rf vdm
+${SUBNAME}.tgz: data www/public_data
+	mkdir -p ${SUBNAME}
+	cp -r system/* ${SUBNAME}
+	mkdir -p ${SUBNAME}/public_data
+	cp excelfiles/*.xlsx ${SUBNAME}/www/public_data
+	cp system/data/vdm.ttl ${SUBNAME}/www/public_data
+	cp system/data/skos.rdf ${SUBNAME}/www/public_data
+	cp system/data/adms*.rdf ${SUBNAME}/www/public_data
+	cp *.ttl ${SUBNAME}
+	cp system/data/vdm.ttl ${SUBNAME}
+	${TAR} cvzf ${SUBNAME}.tgz ${SUBNAME}
+	rm -rf ${SUBNAME}
 
 # The following commands are to use the docker image while developing
 # the system. The main targets are: 
@@ -91,7 +93,8 @@ run: setup
 	sudo ${DOCKER} run -p 80:80 -p 1111:1111 mdrtest2
 
 clean:
-	-rm -rf system/www/public_data vdm.tgz *.ttl systems/www/visualisations/*.json
+	-rm -rf system/www/public_data ${SUBNAME}.tgz *.ttl systems/www/visualisations/*.json
+	-rm -rf system/scripts/cvxsl2vdm.py Dockerfile system/xslt/about.xsl system/xslt/search.xsl system/xslt/include.xsl system/www/visualisation/dataquery-isPartOf.org virtuoso-setup/vhost_export.vspx.isql
 	- sudo ${DOCKER} rm -f mdrtest2
 	- sudo ${DOCKER} rmi mdrtest2
 	- sudo service ${DOCKER} restart
