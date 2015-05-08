@@ -1,5 +1,7 @@
 AC_INIT(vdm, 0.1, paul.massey@tenforce.com)
-AC_SUBST(IPNAME, vocabs.tenforce.com)
+AC_SUBST(IPNAME, mapping.semic.eu)
+AC_SUBST(SUBNAME, vdm)
+AC_SUBST(GOOGLEANALYTICS, UA-61212072-1)
 AC_PROG_AWK
 AC_PROG_GREP
 AC_PROG_SED
@@ -16,5 +18,5 @@ AC_CHECK_PROG(EMACS, [emacs],[/usr/bin/emacs])
 AC_CHECK_PROG(XSLTPROC, [xsltproc],[/usr/bin/xsltproc])
 AC_CHECK_PROG(SSH,[ssh],[/usr/bin/ssh])
 AC_CHECK_PROG(SCP,[scp],[/usr/bin/scp])
-AC_CONFIG_FILES([Makefile tests/Makefile system/configure.sh virtuoso-setup/vhost_export.vspx.isql])
+AC_CONFIG_FILES([Makefile Dockerfile tests/Makefile system/configure.sh virtuoso-setup/vhost_export.vspx.isql system/scripts/cvxsl2vdm.py system/www/visualisation/dataquery-isPartOf.org system/www/visualisation/cvtree.html system/www/visualisation/tree.html system/www/visualisation/sdmxtree.html],[chmod +x system/scripts/cvxsl2vdm.py])
 AC_OUTPUT
