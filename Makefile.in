@@ -86,8 +86,9 @@ image:	data www/public_data
 	sudo service ${DOCKER} restart
 
 setup:
-	sudo service apache2 stop
-	sudo service virtuoso-opensource-6.1 stop
+	# Stop services which might collide (ignore errors)
+  -sudo service apache2 stop
+	-sudo service virtuoso-opensource-6.1 stop
 
 run: setup
 	sudo ${DOCKER} run -p 80:80 -p 1111:1111 mdrtest2
