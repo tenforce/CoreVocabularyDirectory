@@ -20,13 +20,13 @@ data: ttldata visualisations
 ttldata: dcatods.ttl data.ttl dcatapsdmx.ttl
 
 data.ttl: excelfiles/Core_Vocabularies_v1.3.xlsx 	${CVXSL2VDM} 
-	${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.3.xlsx > data.ttl
+	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.3.xlsx > data.ttl
 
 dcatods.ttl: excelfiles/DCatVocabularies-v0.2.xlsx ${CVXSL2VDM} 
-	${CVXSL2VDM} excelfiles/DCatVocabularies-v0.2.xlsx > dcatods.ttl
+	@PYTHON3@ ${CVXSL2VDM} excelfiles/DCatVocabularies-v0.2.xlsx > dcatods.ttl
 
 dcatapsdmx.ttl: excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx ${CVXSL2VDM} 
-	${CVXSL2VDM} excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx > dcatapsdmx.ttl
+	@PYTHON3@ ${CVXSL2VDM} excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx > dcatapsdmx.ttl
 
 # This will create the necessary .json files representing the results
 # of the two queries found in system/www/visualisation/dataquery.org
@@ -87,7 +87,7 @@ image:	data www/public_data
 
 setup:
 	# Stop services which might collide (ignore errors)
-  -sudo service apache2 stop
+	-sudo service apache2 stop
 	-sudo service virtuoso-opensource-6.1 stop
 
 run: setup
