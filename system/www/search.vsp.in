@@ -59,7 +59,7 @@ if(_limit > 0) {
 
 query := sprintf('CONSTRUCT {
                     ?s a ?class .
-                    ?s vdm:context ?context .
+                    ?s dcterms:isPartOf ?context .
 										?s rdfs:label ?label .
 										?s skos:definition ?definition .
                     ?context rdfs:label ?contextname .
@@ -67,7 +67,7 @@ query := sprintf('CONSTRUCT {
                     {
                       { SELECT * WHERE {
                           ?s a vdm:ObjectClass .
-                          OPTIONAL { ?s vdm:context ?context .
+                          OPTIONAL { ?s dcterms:isPartOf ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }
@@ -77,7 +77,7 @@ query := sprintf('CONSTRUCT {
                     } UNION {
                       { SELECT * WHERE {
 											    ?s a vdm:DataElement .
-                          OPTIONAL { ?s vdm:context ?context .
+                          OPTIONAL { ?s dcterms:isPartOf ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }
@@ -87,7 +87,7 @@ query := sprintf('CONSTRUCT {
                     } UNION {
                       { SELECT * WHERE {
 											    ?s a vdm:Property .
-                          OPTIONAL { ?s vdm:context ?context .
+                          OPTIONAL { ?s dcterms:isPartOf ?context .
                                      OPTIONAL { ?context rdfs:label ?contextname } }
                           OPTIONAL { ?s rdfs:label ?label }
                           OPTIONAL { ?s skos:definition ?definition }
