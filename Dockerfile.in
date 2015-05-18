@@ -1,6 +1,8 @@
 # SYSTEM
-#
+# 
 # VERSION				0.0.1
+
+# This is the main file (IPName gets released)
 
 # Use the lastest version of ubuntu 
 FROM ubuntu:latest

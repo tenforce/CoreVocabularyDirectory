@@ -12,9 +12,13 @@ apt-get install -y python-software-properties software-properties-common
 apt-get install -y docker python python3 emacs xsltproc make autoconf redland-utils
 apt-get install -y rasqal-utils gawk dos2unix
 dpkg-reconfigure gdm3
+# Python 3 tools and some libraries which will be needed
 apt-get install -y python3-setuptools
 easy_install3 rdflib
 easy_install3 xlrd
+
+# Docker setup (docker is a different think on wheezy), so take
+# from main site.
 curl -sSL https://get.docker.com/ | sh
 sudo groupadd docker
 
@@ -25,7 +29,7 @@ sudo groupadd docker
 $ sudo gpasswd -a ${USER} docker
 
 # Restart the Docker daemon.
-$ sudo service docker restart
+sudo service docker restart
 
 #################################################################
 # Setup the extra source lists (lod2 stack and prolog)

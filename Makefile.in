@@ -10,6 +10,7 @@ CVXSL2VDM=system/scripts/cvxsl2vdm.py
 DUMP2SH=system/www/visualisation/dump3.sh
 
 data: ttldata visualisations
+	-dos2unix system/configure.sh
 	( cd system; chmod +x configure.sh ; ./configure.sh )
 
 # The following will create the .ttl data files from the respective

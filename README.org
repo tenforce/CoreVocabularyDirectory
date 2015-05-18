@@ -4,7 +4,7 @@
 This is based on the original code which was taken from
 [https://github.com/SEMICeu/mdr].
 
-The main assumptions is that an Ubuntu GNU/Linux system is being used
+The main assumption is that an Ubuntu GNU/Linux system is being used
 for development and eventual is the target for the eventual
 deployment.
 
@@ -39,27 +39,58 @@ system. This requires a local system override of the
 vocabs.tenforce.com machine (/etc/hosts)
 
 #+BEGIN_SRC bash
-127.0.0.1             vocabs.tenforce.com
+ 127.0.0.1             vocabs.tenforce.com
 #+END_SRC
 
-* Semic Deployment
-** General Description
-The developed system has two stages:
-- Compilation Stage :: 
-    This stage comprises the transformation of the excel files into
-    the TTL/RDF form, the generation of the JSON files from the
-    created database and the setting of the paths to the various scripts.
+* Development Environment
+To ease the setting up of a development environent, a Vagrantfile is
+available. This will recreate a complete VM running Debian, which will
+have all the tools necessary to rebuild the CoreVocabularyDirectory
+installed.
 
-    Note: this is circular (or two phased), the development
-     installation is used to generate the json files for the
-     visualisation of the production system.
-- Display/Presentation/Publication Stage :: 
-    which concerns the presentation of the data to the user in a
-    standardised form. This stage follows from the first stage.
-** Components Required
- The following description assumes an "GNU/Linux Ubuntu 14.04 (trusty)"
- system is the target system and also the development system.
-*** development
+Using the vagrantfile will require the following to be installed
+on the base system:
+
+- [[https://www.vagrantup.com/][Vagrant]]
+- [[https://www.virtualbox.org/][Virtual Box]] (Not the 4.3.26 version as there are guest addition
+  problems)
+
+The following should be all that is required (bash commands have been
+given which have been tested with cygwin).
+
+#+BEGIN_SRC
+cd <directory where source was placed>
+vagrant up
+vagrant halt
+vagrant up
+#+END_SRC
+
+Note(s)
+- 1 :: the restart is deliberate to make sure that the desktop
+       interface is configured properly.
+- 2 :: want for the system to completely restart (and mount of the
+       files is complete - empty /vagrant directory means mount is 
+       not correct).
+
+Vagrant will create a system account with a well known
+userid/password:
+
+- userid:: vagrant
+- password:: vagrant
+
+The files in the underlying system can be found in /vagrant once
+you have logged in.
+
+Note: dos2unix is also installed in the case that there are line 
+endings which are incorrect. Once in /vagrant at the command line
+the previously described commands should allow building and packaging
+of the system.
+
+** development system requirements
+These will be installed by the vagrant/bootstrap.sh file if the
+Vagrant approach is used. The bootstrap,sh file can be executed
+directoy if a suitable (clean) debian system (wheezy) is available.
+
 - Docker ::
            This is used to create a container mimicking the final
            installation system. It is best to install the latest
@@ -79,6 +110,29 @@ The developed system has two stages:
 - Bash ::  Shell script which has been used (default system version).
 - [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] :: At present [[http://orgmode.org/][org-mode]] is used to execute the queries on the 
            database once it has been created (dataquery-isPartOf.org).
+
+Extra's are found in the bootstrap.sh file.
+
+* Semic Deployment
+** General Description
+The developed system has two stages:
+- Compilation Stage ::
+     This stage comprises the transformation of the excel files into
+     the TTL/RDF form (and testing of the basic interface).
+
+     Once the database is available, the JSON files for the
+     visualisation of the results can be generated.
+
+     Note: this is circular (or multi phased process), the development
+     installation is used to generate the json files for the
+     visualisation on the production system (the production system 
+     views are essientially static).
+- Display/Presentation/Publication Stage :: 
+     which concerns the presentation of the data to the user in a
+     standardised form. This stage follows from the first stage.
+** Components Required
+The following description assumes an "GNU/Linux Ubuntu 14.04 (trusty)"
+system is the target system and also the development system.
 *** runtime (target/production system)
 The development is reduced to the following on the target system:
 - GNU/Linux ::
@@ -98,7 +152,8 @@ The development is reduced to the following on the target system:
 ** Installation Steps
 The installation of the system ares are in the two stages described
 previously:
-- Initial, development stage, when data-files, visualisations, etc. are built,
+- Initial, development stage, when data-files, visualisations,
+  etc. are built,
 - Publishing of the resulting files.
 The initial building of the system to be deployed, is performed on the
 development machine and packaged before moving the resulting data
@@ -128,13 +183,21 @@ The following will install most of the basic packages required.
 apt-get install autoconf make tar git gzip
 #+END_SRC
 
+Any missed packages, etc. should then be trapped when initialising the
+build system.
+
+**** Initialising the Build system
+
+#+BEGIN_SRC bash
+autoconf
+./configure 
+#+END_SRC
+
 **** Compiling the system
 
 In the home directory type (of the git clone):
 
 #+BEGIN_SRC bash
-autoconf
-./configure 
 make image
 #+END_SRC
 
@@ -152,30 +215,54 @@ deploying the final system. These are:
 
 - cvflare.json ::
                  the core vocabularies mapping tree data
-- flare.json :: the dcat-ap to ODS mapping tree.
+- flare.json :: 
+                 the dcat-ap to ODS mapping tree.
 
 In both cases the following steps are required:
 
-1. Start the docker image on the development machine,
-2. Using emacs/[[http://orgmode.org/][org-mode]] execute the queries found in dataquery.org
-3. convert the query results files to the JSON format using
+1. Start the docker image on the development machine (make run)
+2. Using emacs/[[http://orgmode.org/][org-mode]] execute the queries found in
+   dataquery-isPartOf.org (C-c C-c within the blocks of
+   code)
+3. Stop the docker image (C-c will kill it)
+4. Convert the query results files to the JSON format using the *make
+   image* command which will take the produced *link* files and using
+   a script convert them into the .JSON description used in the
+   visualisations (as well as start the docker image). The
+   visualisations are based on the [[http://d3js.org/][d3.js]] javascript facilities for
+   data driven documents.
+
+The updated JSON file will now be available when the docker image is
+restarted using:
 
 #+BEGIN_SRC bash
 make image run
 #+END_SRC
 
-which will take the produced *link* files and using a script convert
-them into the .JSON description used in the visualisations (as well as
-start the docker image). The visualisations are based on the [[http://d3js.org/][d3.js]]
-javascript facilities for data driven documents.
+**** Testing the created file and service view
 
-Before doing the next step, the visualisations should be checked that the
-respective pages are accessible:
+The easiest way to test the created view is to open a browser at:
+
+http://mapping.semic.eu/
+
+which will (in the Vagrant machine) have been aliased to the
+localhost.  Simple browsing will then test if the files have been
+created correctly.
+
+The visualisations should also be checked that the respective pages
+are accessible:
 
 - [[http://vocabs.tenforce.com/vdm/visualisation/cvtree.html][Core vocabularies Tree]]
 - [[http://vocabs.tenforce.com/vdm/visualisation/tree.html][DCAT-AP to ODS Mapping Tree view]]
 
+If these files and the other links are working correctly the 
+created files can then be moved to the remote system. 
+
 **** Copying the files across to the production/target system
+
+Note: Production or Target system should be backed-up before moving
+the new version of the files across to the system. To create the
+structure of the files to be copied across, use the following command.
 
 #+BEGIN_SRC bash
 make vdm.tgz
@@ -191,7 +278,7 @@ On the target system (*ssh* would do) the following is required:
 - switch off/uninstall the apache2 and tomcat7 services 
   (virtuoso will be on port 80)
   - Note :: Other configuration will be needed if those services are needed.
-- Unpack the vdm.tgz file in the /var/lib/virtuoso-opensource-6.1/vsp
+- Unpack the vdm.tgz file in the /var/lib/<virtuoso-opensource>/vsp
   directory
 - Restart the virtuoso-opensource service.
 **** Virtuoso Setup
@@ -214,9 +301,9 @@ isql < vhost_export_vspx.sql
 
 These should then be visible in the virtuoso conductor (XXX). The
 vhost_export_vspx.sql file will also create a redirect from / to /vdm
-so that access to http://vocabs.tenforce.com will be point to the root
-of the system. It will need to be changed for a domain name other than
-vocabs.tenforce.com.
+so that access to http://mapping.semic.eu will be point to the root of
+the system. It will need to be changed for a domain name other than
+mapping.semic.eu.
 
 ***** Update the port number setting
 
@@ -251,7 +338,7 @@ view of the excel file data:
 
 ***** Loading into Virtuoso
 Using the virtuoso conductor>quad store, upload the datafiles into the
-http://vocabs.tenforce.com/webDAV graph.
+http://mapping.semic.eu/webDAV graph.
 ***** Cleaning the database
 When rebuilding the database (upgrade, etc.) the following command
 can be used in the conductor/isql window[fn:2]. 
@@ -261,7 +348,6 @@ RDF_GLOBAL_RESET ();
 #+END_SRC
 
 This will reset the database, so it has to be rebuilt from scratch.
-
 *** Monitoring the deployed service
 The easiest way to monitor the accessibility of the deployed service
 is to use one of the public monitoring tools (e.g. [[http://uptimerobot.com][Uptime Robot]]). This
@@ -306,7 +392,6 @@ virtuoso service will have the
 ** Monitoring Accessibility
 This can be achieved using one of the commonly used online services to
 access a service page every hour or so (e.g. [[https://uptimerobot.com][uptimerobot]]).
-
 * Footnotes
 
 [fn:1] Suggestion would be to do development in a virtual machine, so
