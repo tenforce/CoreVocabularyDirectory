@@ -73,7 +73,7 @@
   <xsl:template name="results">
     <xsl:param name="type" />
     <xsl:param name="title" />
-    <xsl:variable name="results" select="//rdf:Description[rdf:type/@rdf:resource = concat('http://vocabs.tenforce.com/def#', $type)]" />
+    <xsl:variable name="results" select="//rdf:Description[rdf:type/@rdf:resource = concat('http://%IP%/def#', $type)]" />
     <xsl:if test="$results">
       <table class="results">
         <thead>
