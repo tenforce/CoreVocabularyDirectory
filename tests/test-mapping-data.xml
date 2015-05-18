@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:vdm="http://vocabs.tenforce.com/def#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#" >
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+    <rdfs:label>type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+    <rdfs:label>label</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#Property">
+    <rdfs:label>Property</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_datamodel">
+    <rdfs:label>part of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae">
+    <rdfs:label xml:lang="en">Core Vocabulary</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_datamodelclass">
+    <rdfs:label>part of class</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_definition">
+    <rdfs:label>has definition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_description">
+    <rdfs:label>has description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_internalidentifier">
+    <rdfs:label>has internal identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_termlabel">
+    <rdfs:label>has label</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/def#has_example">
+    <rdfs:label>has example</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4">
+    <rdfs:label xml:lang="en">UN/CEFACT CCL 13B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c">
+    <rdfs:label xml:lang="en">MUG- BII</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/40bed7cf9b3d4bb3a3d7a7e3eb18c5eb">
+    <rdfs:label xml:lang="en">Person</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443">
+    <rdfs:label xml:lang="en">NIEM 3.0</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/545246b7430b11c37427bd48789139e3">
+    <rdf:type rdf:resource="http://vocabs.tenforce.com/def#Property" />
+    <rdfs:label xml:lang="en">Full Name (PersonFullName)</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae" />
+    <vdm:has_datamodelclass rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/40bed7cf9b3d4bb3a3d7a7e3eb18c5eb" />
+    <vdm:has_definition xml:lang="en">The complete name of the person as one string.</vdm:has_definition>
+    <vdm:has_description xml:lang="en">In addition to the content of Given Name, Family Name and, in some systems, Patronymic Name, this property can carry additional parts of a person’s name such as titles, middle names or suffixes like “the third” or names which are neither a given nor a family name. 
+
+The Full Name is the most reliable label for an individual and as such its use is strongly encouraged, irrespective of whether that name is broken down using the more granular elements. It is anticipated that some systems will only provide or process the full name of a person. Where an individual has more than one full legal name (a relatively rare but not unknown phenomenon), the full name property can be used more than once. In this case, however, the granular name elements should not be used since the intention is that these provide a breakdown of the full name and it will not be clear of which full name this is true. 
+
+Note that the vocabulary provides an Alternative Name property. This allows name(s) to be recorded that have no legal status but that nevertheless are the names by which an individual is generally known.</vdm:has_description>
+    <vdm:has_internalidentifier xml:lang="en">PersonFullName</vdm:has_internalidentifier>
+    <vdm:has_termlabel xml:lang="en">Full Name</vdm:has_termlabel>
+    <skos:broadMatch rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/76729c8d24bc6273f046079d9b9e6246" />
+    <vdm:has_example xml:lang="en"></vdm:has_example>
+    <skos:exactMatch rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/dfa00c0276c350e187d5eed548c32cfa" />
+    <skos:exactMatch rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/fc6fe7d1f25c9104a13a28479f2cfb86" />
+    <skos:exactMatch rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/778dd7a2c20c5ad32c82b66dd0954089" />
+    <skos:exactMatch rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/9c014e6183dd89677a103f1e1a0ef560" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/76729c8d24bc6273f046079d9b9e6246">
+    <rdfs:label xml:lang="en">Name (Person. Name. Text)</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/778dd7a2c20c5ad32c82b66dd0954089">
+    <rdfs:label xml:lang="en">EN: &quot;Name of Natural person&quot; (Namn på fysisk person)</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/9c014e6183dd89677a103f1e1a0ef560">
+    <rdfs:label xml:lang="en">nc:PersonFullName</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/dfa00c0276c350e187d5eed548c32cfa">
+    <rdfs:label xml:lang="en">Contact person name</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/fc6fe7d1f25c9104a13a28479f2cfb86">
+    <rdfs:label xml:lang="en">name (foaf:name)</rdfs:label>
+    <vdm:has_datamodel rdf:resource="http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42">
+    <rdfs:label xml:lang="en">Swedish Company data model</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374">
+    <rdfs:label xml:lang="en">Core Vocabularies RDF Schemas</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

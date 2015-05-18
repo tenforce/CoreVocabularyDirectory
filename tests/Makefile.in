@@ -1,0 +1,9 @@
+XSLTPROC=@XSLTPROC@
+
+all: test1
+
+xslts: 
+	( cd ../system; ./configure.sh )
+
+test1: xslts
+	XML_CATALOG_FILES=./catalog.xml ${XSLTPROC} --stringparam subject-uri "http://vocabs.tenforce.com/vdm/id/cv/545246b7430b11c37427bd48789139e3" test-mapping.xsl test-mapping-data.xml

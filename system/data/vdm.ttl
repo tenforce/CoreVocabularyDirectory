@@ -1,4 +1,4 @@
-@prefix vdm: <http://vocabs.tenforce.com/def#> .
+@prefix vdm: <http://mapping.semic.eu/def#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -8,7 +8,6 @@
 
 # Basic RDF datatypes
 # Label and definitions are provided by the RDFS vocabulary.
-
 
 # The vocabulary based on the Excel template for the core vocabularies
 # This vocabulary is an adhoc structure that only covers the information required for the 
