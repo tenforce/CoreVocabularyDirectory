@@ -1,3 +1,4 @@
+###############################################################################
 # This will be converted to the Makefile via the configure script
 
 TAR=@TAR@
@@ -9,10 +10,19 @@ SYSTEM=system
 CVXSL2VDM=system/scripts/cvxsl2vdm.py
 DUMP2SH=system/www/visualisation/dump3.sh
 
-data: ttldata visualisations
-	-dos2unix system/configure.sh
+data: cleanfiles ttldata visualisations
 	( cd system; chmod +x configure.sh ; ./configure.sh )
 
+###############################################################################
+# Some files are command files which need cleaning up if edited on windows.
+
+cleanfiles:
+	-dos2unix system/configure.sh 
+	-dos2unix system/www/visualisation/dump3.sh
+	# These are pre-created files which are provided to simplify the rebuild
+	-dos2unix system/www/visualisation/*.links
+
+###############################################################################
 # The following will create the .ttl data files from the respective
 # excel files. The excel files are required to have a fixed format and
 # changes in labels are not allowed (program will about if the sheets
