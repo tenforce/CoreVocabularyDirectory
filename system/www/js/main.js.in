@@ -31,10 +31,10 @@ function doSearch() {
   var query = $("#query").val();
   $("#results")
     .empty()
-    .append('<p class="more"><a href="/vdm/search?' +
+    .append('<p class="more"><a href="/%SUBNAME%/search?' +
             $.param({'q': query}) +
             '">See all results &raquo;</a></p>');
-  $.get("/vdm/search", {
+  $.get("/%SUBNAME%/search", {
     'q': query,
     'limit': 10
   }, function(data) {
