@@ -44,7 +44,7 @@ Vagrant.configure(2) do |config|
   # Example for VirtualBox:
   #
   config.vm.provider "virtualbox" do |vb|
-      vb.name = "RDFDataCubesVagrantUbuntuPrecise"
+      vb.name = "VagrantWheezySemic-Dev"
       vb.gui = true
       vb.customize ["modifyvm", :id, "--memory", 4096]
       vb.customize ["modifyvm", :id, "--vram", 64]
