@@ -33,13 +33,16 @@ access on the linux machines.
 A Dockerfile is available to allow the production system to be
 mimicked on the development system.
 *** Network Configuration
-For local development the dockerfile can be used to mimic the eventual
-system. This requires a local system override of the
-vocabs.tenforce.com machine (/etc/hosts)
+For local development the Dockerfile can be used to mimic the eventual
+production system. To test the docker service, a local system override
+of the mapping.semic.eu machine (/etc/hosts)
 
 #+BEGIN_SRC bash
- 127.0.0.1             vocabs.tenforce.com
+127.0.0.1             mapping.semic.eu
 #+END_SRC
+
+This ip/host mapping is already made in the development environment
+(see following section).
 
 * Development Environment
 To ease in the setting up of a suitable development environent, a
