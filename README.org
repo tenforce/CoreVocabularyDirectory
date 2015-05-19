@@ -4,9 +4,8 @@
 This is based on the original code which was taken from
 [https://github.com/SEMICeu/mdr].
 
-The main assumption is that an Ubuntu GNU/Linux system is being used
-for development and eventual is the target for the eventual
-deployment.
+The assumption used is that a Ubuntu/Debian GNU/Linux system is being
+used for development and is the intended deployment target.
 
 ** Downloading the source code
 The source code is available at [[https://github.com/tenforce/CoreVocabularyDirectory.git][GitHub]] and is based on a code from a
@@ -22,10 +21,10 @@ The repository has several directories:
             components (The structure of these files follows the
             original project structure).
 - excelfiles :: containing all the base data files to be converted to
-                TTL.  These will also be made available on the
-                production system in the public_data directory.
+            TTL.  These will also be made available on the
+            production system in the public_data directory.
 - virtuoso-setup :: which contains the SQL and initialisation files for
-      configuring virtuoso-opensource 6.1.
+          configuring virtuoso-opensource 6.1.
 ** Development Notes
 *** System Access Requirements
 This is mostly installation work, for which you will required 'root'
@@ -43,13 +42,12 @@ vocabs.tenforce.com machine (/etc/hosts)
 #+END_SRC
 
 * Development Environment
-To ease the setting up of a development environent, a Vagrantfile is
-available. This will recreate a complete VM running Debian, which will
-have all the tools necessary to rebuild the CoreVocabularyDirectory
-installed.
+To ease in the setting up of a suitable development environent, a
+Vagrant based appraoch is used. This will recreate a complete Debian
+Virtual Machine with all the tools installed which are necessary to
+rebuild the CoreVocabularyDirectory, to test it and to install it.
 
-Using the vagrantfile will require the following to be installed
-on the base system:
+The following are required to be installed on the base system:
 
 - [[https://www.vagrantup.com/][Vagrant]]
 - [[https://www.virtualbox.org/][Virtual Box]] (Not the 4.3.26 version as there are guest addition
@@ -120,7 +118,7 @@ The developed system has two stages:
      This stage comprises the transformation of the excel files into
      the TTL/RDF form (and testing of the basic interface).
 
-- Compilation Stage 2:: 
+- Compilation Stage 2 :: 
      Once the database is available, the JSON files
      for the visualisation of the results can be generated.
 
@@ -268,8 +266,12 @@ are accessible:
 - [[http://vocabs.tenforce.com/vdm/visualisation/cvtree.html][Core vocabularies Tree]]
 - [[http://vocabs.tenforce.com/vdm/visualisation/tree.html][DCAT-AP to ODS Mapping Tree view]]
 
-If these files and the other links are working correctly the 
-created files can then be moved to the remote system. 
+If these files and the other links are working correctly the created
+files can then be moved to the remote system. In addition to the /vdm/
+files, there should also be access to the virtuoso conductor
+application:
+
+- [[http://mapping.semic.eu/conductor][Virtuoso Conductor Access Point]]
 
 **** Copying the files across to the production/target system
 
@@ -332,8 +334,11 @@ service virtuoso-opensource-6.1 restart
 #+END_SRC
 
 ****** Note(s) on Virtuoso
-It is also recommended that the default virtuoso-opensource password
-be changed once it has been installed on the target system.
+- 1 :: It is also recommended that the default virtuoso-opensource password
+       be changed once it has been installed on the target system.
+- 2 :: The description of virtuoso is for a specific setup, changes
+       to that setup will require changes to the creation/initialisation 
+       setup scripts (possibly re-exporting as neede).
 ***** Files to load
 There are several data files[fn:4] which need to be uploaded into the
 virtuoso RDF store. The first are generated from the excel files:
@@ -396,7 +401,7 @@ make image run
 
 This will build the docker image and will start the image for testing
 (i.e. the run target).
-* System Operation
+* Production System Operation
 ** Service control
 Once deployed on the target system, the semic system will run as a
 virtuoso based set of web-pages. For further information on the
@@ -405,6 +410,27 @@ virtuoso service will have the
 ** Monitoring Accessibility
 This can be achieved using one of the commonly used online services to
 access a service page every hour or so (e.g. [[https://uptimerobot.com][uptimerobot]]).
+* Changing the Setup (Domain Name, etc.)
+** Changing the Domain Name
+
+Changing the domain name part of the build and installation should be
+easy enough, since the name is located in *configure.ac*
+(IPNAME). This is then used throughout the various files (filename
+extension typically *.in*).
+
+It will be necessary to completely rebuild the system for this change
+to take effect (and the configure.ac will have to be processed again 
+with *autoconf*). 
+
+The visualisation data will also have to be updated.
+
+** Changing the URL path (i.e. /vdm/ part of the URL). 
+
+This is more complex, but a regular expression search will find all the
+places which have to be updated (i.e. /egrep -R vdm */)
+
+Everything will have to be rebuild after such a change.
+
 * Footnotes
 
 [fn:1] Suggestion would be to do development in a virtual machine, so
@@ -418,4 +444,3 @@ testing of the target will be possible via the underlying OS.
 localhost, rather than the target machine. The target ip address will
 have to be used to access the conductor on the target machine
 (i.e. http://XXX.YY.ZZ.AA/conductor).
-
