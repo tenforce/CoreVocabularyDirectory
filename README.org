@@ -25,24 +25,14 @@ The repository has several directories:
             production system in the public_data directory.
 - virtuoso-setup :: which contains the SQL and initialisation files for
           configuring virtuoso-opensource 6.1.
+
 ** Development Notes
-*** System Access Requirements
-This is mostly installation work, for which you will required 'root'
-access on the linux machines.
-*** Docker Usage
-A Dockerfile is available to allow the production system to be
-mimicked on the development system.
-*** Network Configuration
-For local development the Dockerfile can be used to mimic the eventual
-production system. To test the docker service, a local system override
-of the mapping.semic.eu machine (/etc/hosts)
-
-#+BEGIN_SRC bash
-127.0.0.1             mapping.semic.eu
-#+END_SRC
-
-This ip/host mapping is already made in the development environment
-(see following section).
+- System Access Requirements ::
+  This is mostly installation work, for which you will required 'root'
+  access on the linux machines.
+- Docker Usage ::
+  A Dockerfile is available to allow the production system to be
+  mimicked on the development system.
 
 * Development Environment
 To ease in the setting up of a suitable development environent, a
@@ -113,6 +103,17 @@ directoy if a suitable (clean) debian system (wheezy) is available.
            database once it has been created (dataquery-isPartOf.org).
 
 Extra's are found in the bootstrap.sh file.
+** Network Configuration
+For local development the Dockerfile can be used to mimic the eventual
+production system. To test the docker service, a local system override
+of the mapping.semic.eu machine (/etc/hosts)
+
+#+BEGIN_SRC bash
+127.0.0.1             mapping.semic.eu
+#+END_SRC
+
+This ip/host mapping is already made in the development environment
+(see following section).
 
 * Semic Deployment
 ** General Description
