@@ -62,6 +62,12 @@ Note(s)
 - 2 :: wait for the system to completely restart (and mount of the
        files is complete - empty /vagrant directory means mount is 
        not correct).
+- 3 ::  dos2unix is also installed in the case that there are line
+        endings which are incorrect. Once in /vagrant at the command
+        line the previously described commands should allow building
+        and packaging of the system.
+
+** access account 
 
 Vagrant will create a system account with a well known
 userid/password:
@@ -71,11 +77,6 @@ userid/password:
 
 The files in the underlying system can be found in /vagrant once
 you have logged in (shared directory)
-
-Note: dos2unix is also installed in the case that there are line
-endings which are incorrect. Once in /vagrant at the command line the
-previously described commands should allow building and packaging of
-the system.
 
 ** development system requirements
 These will be installed by the vagrant/bootstrap.sh file if the
