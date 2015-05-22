@@ -417,6 +417,16 @@ The vagrant description will (pre)install and setup all the required
 components in the VM, to allow development of the interface and sparql
 scripts.
 
+** Development build requirements
+The following will install most of the basic packages required.
+
+#+BEGIN_SRC bash
+apt-get install autoconf make tar git gzip
+#+END_SRC
+
+Any missed packages, etc. should then be trapped when initialising the
+build system (using the configure command).
+
 ** Production system components required
 The following description assumes an "GNU/Linux Ubuntu 14.04 (trusty)"
 system is the target system and also the development system.
@@ -429,22 +439,12 @@ system the following are assumed to be present.
   Version 6.1
 - SSH ::
 - [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] ::  The best editor on the planet.
-*** general notes for development and production systems
+** General notes for development and production systems
 - Neither apache2 nor Tomcat should be running on the development or
   production system - the virtuoso service is setup to run on port 80.
 - Only ports 80 (virtuoso) and 22 (ssh) should be open and the ssh
   should be only open to a limited range of hosts (install a firewall
   tool).
-
-** Development build requirements
-The following will install most of the basic packages required.
-
-#+BEGIN_SRC bash
-apt-get install autoconf make tar git gzip
-#+END_SRC
-
-Any missed packages, etc. should then be trapped when initialising the
-build system (using the configure command).
 
 ** Virtuoso installation
 
