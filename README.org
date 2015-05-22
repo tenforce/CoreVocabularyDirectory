@@ -194,17 +194,16 @@ confugure script (typically anything with an /*.in/ filename). So
 changes to some of the files, will need a rerunning of the above
 commands.
 ** Compilation - Stage 1
-Compiling the system and build docker image
-
-In the home directory type (of the git clone):
+This stage is the compilation and building of the docker image.  In
+the home directory type (of the git clone):
 
 #+BEGIN_SRC bash
 make image
 #+END_SRC
 
-*make image* will build the image from all the necessary components.
-At this point it should be possible to test the access to the service
-(see Testing - Stage 3).
+The *make image* will build the image from all the necessary
+components (excel files, etc).  Following this stage, it should be
+possible to test the access to the service (see Testing - Stage 3).
 ** Compilation - Stage 2
 *** Creating the visualisation JSON files 
 There are two visualisation files which have to be created before
