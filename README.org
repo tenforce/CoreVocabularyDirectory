@@ -309,15 +309,16 @@ and made available when using the browser. Other specific changes are outlined
 below.
 ** Virtuoso Setup
 The semic system will run as a virtuoso based set of web-pages. For
-further information on the virtuoso, the documentation of virtuoso
-should be consulted. The virtuoso service will have the following
-configuration, changes to the production system structure should be
-duplicated here for development testing. The following are the current
-setup instructions, which are used by the current dockerfile.
+further information on virtuoso, the documentation of virtuoso
+opensource should be consulted. The virtuoso service will have the
+following configuration, changes to the production system structure
+should be duplicated here for development testing. The following are
+the current setup instructions, which are used by the current
+dockerfile.
 
 Note: the vagrant and docker usage will use these settings (the descriptions
 here are provided for documentation purposes).
-**** Setup of the virtuoso redirects
+*** Setup of the virtuoso redirects
 There are several URL mappings which are required for the viewing of
 the data files to be successful. These are:
 
@@ -340,7 +341,7 @@ so that access to http://mapping.semic.eu will be point to the root of
 the system. It will need to be changed for a domain name other than
 mapping.semic.eu.
 
-**** Update the port number setting
+*** Update the port number setting
 
 #+BEGIN_SRC bash
 ServerPort                  = 80
@@ -359,7 +360,7 @@ service virtuoso-opensource-6.1 restart
 - 2 :: The description of virtuoso is for a specific setup, changes
        to that setup will require changes to the creation/initialisation 
        setup scripts (possibly re-exporting as neede).
-**** Files to load
+*** Files to load
 There are several data files[fn:4] which need to be uploaded into the
 virtuoso RDF store. The first are generated from the excel files:
 
@@ -374,10 +375,10 @@ view of the excel file data:
 - adms-v0.2.rdf :: ADMS definiions
 - etc. ::
 
-**** Loading into Virtuoso
+*** Loading into Virtuoso
 Using the virtuoso conductor>quad store, upload the datafiles into the
 http://mapping.semic.eu/webDAV graph.
-**** Cleaning the database
+*** Cleaning the database
 When rebuilding the database (upgrade, etc.) the following command
 can be used in the conductor/isql window[fn:2]. 
 
@@ -401,15 +402,15 @@ with *autoconf*).
 
 The visualisation data will also have to be updated.
 
-* Monitoring the deployed service on the production system 
+* Monitoring the deployed production service
 The easiest way to monitor the accessibility of the deployed service
 is to use one of the public monitoring tools (e.g. [[http://uptimerobot.com][Uptime Robot]]). This
 accepts a URL and pings that URL every hour or so, sending an email
 when the status changes (Up or Down).
 
 Google-Analytics is also activated in this code, the key is found in
-system/configure.sh (can be changed as needed - at present this one at
-tenforce).
+system/configure.sh (can be changed as needed - at present this one is
+a tenforce one).
 
 * Installation Requirements
 
