@@ -16,7 +16,8 @@ git clone https://github.com/tenforce/CoreVocabularyDirectory.git
 #+END_SRC
 
 ** Source Code Structure
-The repository has several directories:
+The repository has several sub-directories:
+
 - system :: containing all the scripts/xslt/vsp and html/css/js
             components (The structure of these files follows the
             original project structure).
@@ -24,17 +25,20 @@ The repository has several directories:
             TTL.  These will also be made available on the
             production system in the public_data directory.
 - virtuoso-setup :: which contains the SQL and initialisation files for
-          configuring virtuoso-opensource 6.1.
+            configuring virtuoso-opensource 6.1.
 
 ** Development Notes
 - System Access Requirements ::
   This is mostly installation work, for which you will required 'root'
   access on the linux machines.
 - Docker Usage ::
-  A Dockerfile is available to allow the production system to be
-  mimicked on the development system.
+  A Dockerfile is used to allow the production system to be
+  mimicked on the development system. 
+- Vagrant Environment ::
+  This is used to mimic the production environment, but on a development
+  system.
 
-* Development Environment
+* Vagrant Development Environment
 To ease in the setting up of a suitable development environent, a
 Vagrant based appraoch is used. This will recreate a complete Debian
 Virtual Machine with all the tools installed which are necessary to
@@ -67,7 +71,7 @@ Note(s)
         command line the previously described commands should allow
         building and packaging of the system.
 
-** access account 
+** Access account 
 
 Vagrant will create a system account with a well known
 userid/password:
@@ -75,11 +79,11 @@ userid/password:
 - userid:: vagrant
 - password:: vagrant
 
-The files in the underlying system can be found in /vagrant once
-you have logged in (shared directory)
+The files required can be found in */vagrant* once you have logged in
+(this is a shared directory with the host environment).
 
-** development system requirements
-These will be installed by the vagrant/bootstrap.sh file if the
+** Development system requirements
+These will be (pre)installed by the vagrant/bootstrap.sh file if the
 Vagrant approach is used. The bootstrap,sh file can be executed
 directoy if a suitable (clean) debian system (wheezy) is available.
 
@@ -103,11 +107,13 @@ directoy if a suitable (clean) debian system (wheezy) is available.
 - [[Http://Www.Gnu.Org/Software/Emacs/][Emacs]] :: At present [[http://orgmode.org/][org-mode]] is used to execute the queries on the 
            database once it has been created (dataquery-isPartOf.org).
 
-Extra's are found in the bootstrap.sh file.
-** Network Configuration
+Any extra's are found in the bootstrap.sh file (and extensions should
+be placed there).
+
+** <<network-config>>Development Environment Network Configuration
 For local development the Dockerfile can be used to mimic the eventual
 production system. To test the docker service, a local system override
-of the mapping.semic.eu machine (/etc/hosts)
+of the mapping.semic.eu machine (*/etc/hosts*)
 
 #+BEGIN_SRC bash
 127.0.0.1             mapping.semic.eu
@@ -115,15 +121,14 @@ of the mapping.semic.eu machine (/etc/hosts)
 
 This ip/host mapping is already made in the development environment
 (see following section).
-
 * Semic Deployment
 ** General Description
 The developed system has two stages:
-- Compilation Stage 1 ::
+- Compilation - Stage 1 ::
      This stage comprises the transformation of the excel files into
      the TTL/RDF form (and testing of the basic interface).
 
-- Compilation Stage 2 :: 
+- Compilation - Stage 2 :: 
      Once the database is available, the JSON files
      for the visualisation of the results can be generated.
 
@@ -135,12 +140,12 @@ The developed system has two stages:
      visualisation on the production system (the production system views
      are essientially static).
 
-- Testing Stage ::
+- Testing - Stage 3 ::
      The Vagrant machine will mimic the deployment system, so 
      running the docker file and then using the browser (iceweasel)
      will accesses the localhost version.
 
-- Display/Presentation/Publication Stage :: 
+- Display/Presentation/Publication - Stage 4 :: 
      which concerns the presentation of the data to the user in a
      standardised form. This stage follows from the first stage.
 ** Components Required
@@ -200,7 +205,7 @@ apt-get install autoconf make tar git gzip
 Any missed packages, etc. should then be trapped when initialising the
 build system.
 
-**** Initialising the Build system
+**** <<initialised>>Initialising the Build system
 For this goto the /vagrant directory and execute the following command
 lines (when using the Vagrant created VM, there should be no errors).
 
@@ -390,7 +395,7 @@ description of a *docker* container for the runtime part of the
 system, in a way which simulates the target machine.
 
 For local development, the dockerfile can be used to mimic the
-eventual system. This approach requires a *local* development system
+eventual production system. This approach requires a *local* development system
 override of the IP of the vocabs.tenforce.com machine (i.e an
 additional line in */etc/hosts*):
 
@@ -398,7 +403,7 @@ additional line in */etc/hosts*):
 127.0.0.1             mapping.semic.eu
 #+END_SRC
 
-Note: This will mean accesses to http://mapping.semic.eu/vdm will
+Note: [[network-config]] This will mean accesses to http://mapping.semic.eu/vdm will
 go to the localhost, rather than the target machine[fn:1]. A second
 simplication is that a makefile has been created with basic targets:
 
