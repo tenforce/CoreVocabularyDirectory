@@ -71,12 +71,12 @@ Note(s)
         command line the previously described commands should allow
         building and packaging of the system.
 
-Following these steps the following actions will be required:
-- login to the system,
-- Initialise the build system,
-- Create the docker image,
-- Run the docker image,
-- Using a browser, test that the service is available.
+Following these steps, the actions listed here will be required:
+- login to the system (Access Account)
+- Initialise the build system (Stage 0),
+- Create the docker image (Stage 1),
+- Run the docker image (Stage 3),
+- Using a browser, test that the service is available (Stage 3).
 
 ** Access account 
 
@@ -402,7 +402,7 @@ with *autoconf*).
 
 The visualisation data will also have to be updated.
 
-* Monitoring the deployed production service
+* Monitoring the deployed service
 The easiest way to monitor the accessibility of the deployed service
 is to use one of the public monitoring tools (e.g. [[http://uptimerobot.com][Uptime Robot]]). This
 accepts a URL and pings that URL every hour or so, sending an email
