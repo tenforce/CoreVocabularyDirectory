@@ -163,6 +163,9 @@ The developed approach has the following basic stages:
 - Display/Presentation/Publication - Stage 4 :: 
      which concerns the presentation of the data to the user in a
      standardised form. This stage follows from the first stage.
+     
+If any source data is changed (i.e. the excel files) then the steps from Stage 1 have to be redone.
+
 ** Development Setup - Stage 0
 This stage is *normally* only done once, when starting the development
 or when some of the main files have been updated (i.e. typically
