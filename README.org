@@ -207,6 +207,9 @@ make image
 The *make image* will build the image from all the necessary
 components (excel files, etc).  Following this stage, it should be
 possible to test the access to the service (see Testing - Stage 3).
+
+Note: in case there is a new version of the source files (i.e. the Excel documents) with a different name then the scripts (i.e. Makefile) have to be adapted.
+
 ** Compilation - Stage 2
 *** Creating the visualisation JSON files 
 There are two visualisation files which have to be created before
