@@ -1,35 +1,26 @@
 #!/usr/bin/env bash
 #################################################################
-#################################################################
-echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list
-apt-get update -y --force-yes
-apt-get install -t wheezy-backports linux-image-amd64
-apt-get install -y xinit xterm iceweasel
-apt-get install -y gnome-terminal gnome-shell
+echo "deb http://http.debian.net/debian wheezy-backports main" >> /etc/apt/sources.list.d/wheezy-backports.list
+apt-get install -t wheezy-backports linux-image-amd65
+apt-get install -y ntp xinit xterm iceweasel gnome-terminal gnome-shell
 apt-get install -y dkms virtualbox-guest-dkms virtualbox-guest-x11
-apt-get install -y gdm3 
-apt-get install -y python-software-properties software-properties-common
-apt-get install -y docker python python3 emacs xsltproc make autoconf redland-utils
-apt-get install -y rasqal-utils gawk dos2unix
+apt-get install -y gdm3 python-software-properties software-properties-common
+apt-get install -y python python3 emacs xsltproc make autoconf redland-utils
+apt-get install -y rasqal-utils gawk dos2unix emacs curl
+apt-get remove -y docker
 dpkg-reconfigure gdm3
 # Python 3 tools and some libraries which will be needed
 apt-get install -y python3-setuptools
 easy_install3 rdflib
 easy_install3 xlrd
 
-# Docker setup (docker is a different think on wheezy), so take
+#################################################################
+# Docker setup (docker is a different thing on wheezy), so take
 # from main site.
-curl -sSL https://get.docker.com/ | sh
-sudo groupadd docker
-
-# Add the connected user "${USER}" to the docker group.
-# Change the user name to match your preferred user.
-# You may have to logout and log back in again for
-# this to take effect.
-$ sudo gpasswd -a ${USER} docker
-
-# Restart the Docker daemon.
-sudo service docker restart
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+curl -ksSL https://get.docker.com/ | sh
+groupadd docker
+gpasswd -a vagrant docker
 
 #################################################################
 # Setup the extra source lists (lod2 stack and prolog)

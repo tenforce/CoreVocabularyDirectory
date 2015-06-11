@@ -13,6 +13,9 @@ DUMP2SH=system/www/visualisation/dump3.sh
 data: cleanfiles ttldata visualisations
 	( cd system; chmod +x configure.sh ; ./configure.sh )
 
+configure: configure.ac
+	autoconf
+
 ###############################################################################
 # Some files are command files which need cleaning up if edited on windows.
 
@@ -27,6 +30,9 @@ cleanfiles:
 # excel files. The excel files are required to have a fixed format and
 # changes in labels are not allowed (program will about if the sheets
 # are not available or labels are not what are expected).
+
+${CVXSL2VDM}: ${CVXSL2VDM}.in configure
+	./configure
 
 ttldata: dcatods.ttl data.ttl dcatapsdmx.ttl
 

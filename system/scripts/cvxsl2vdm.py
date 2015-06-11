@@ -31,8 +31,8 @@ import hashlib
 
 from rdflib import URIRef, Literal
 from rdflib.namespace import RDF, RDFS, SKOS, DCTERMS
-VDM = rdflib.Namespace("http://vocabs.tenforce.com/def#")
-CVNS = rdflib.Namespace("http://vocabs.tenforce.com/vdm/id/")
+VDM = rdflib.Namespace("http://mapping.semic.eu/def#")
+CVNS = rdflib.Namespace("http://mapping.semic.eu/vdm/id/")
 UBLNS = rdflib.Namespace("http://ubl/terms#")
 ADMS = rdflib.Namespace("http://www.w3.org/ns/adms#")
 
@@ -118,22 +118,27 @@ class CommonVocabularySpreadsheet:
             else:
                 x=1
 
+    def cv_common(self,item,g,uri):
+        g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
+        g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
+        g.add((uri, ADMS.sample, self.text(item["examples"].strip())))
+        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"].strip())))
+        pubid = item["public identifier (uri)"]
+        if pubid != "":
+            g.add((uri, DCTERMS.identifier, URIRef(pubid)))
+        
     def cv_class(self,item,g):
         identifier = item["identifier (internal)"]
         label = item["term / label"]
         uri = self.uri(identifier)
-        pubid = item["public identifier (uri)"]
-        if pubid != "":
-            g.add((uri, DCTERMS.identifier, URIRef(pubid)))
         g.add((uri, RDF.type, VDM.ObjectClass))
-        g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
-        g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
+        self.cv_common(item,g,uri)
         g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
         g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
         datamodel = self.uri(item["data model"])
         g.add((datamodel,RDF.type, VDM.DataModel))
-        g.add((datamodel,RDFS.label,self.text(item["data model"])))
+        g.add((datamodel,RDFS.label,self.text(item["data model"].strip())))
         g.add((uri, DCTERMS.isPartOf, datamodel))
 
     def cv_property(self,item,g):
@@ -145,42 +150,34 @@ class CommonVocabularySpreadsheet:
         # before generating the ids, etc.
         cluri = self.uri(item["class"].replace(" ",""))
         g.add((cluri, ADMS.includedAsset, uri))
-        pubid = item["public identifier (uri)"]
-        if pubid != "":
-            g.add((uri, DCTERMS.identifier, URIRef(pubid)))
-        g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
-        g.add((uri, ADMS.sample, self.text(item["examples"])))
-        g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
+        self.cv_common(item,g,uri)
         if label != intid:
             label = label + " (" + intid + ")"
         g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
+        g.add((uri, RDFS.range, self.uri(item["data type"].replace(" ",""))))
         g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_internalidentifier, self.text(intid)))
         datamodel = self.uri(item["data model"])
-        g.add((datamodel,RDF.type, VDM.DataModel))
+        g.add((datamodel,RDF.type, VDM.Property))
         g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
-        g.add((datamodel,RDFS.label,self.text(item["data model"])))
         g.add((uri, DCTERMS.isPartOf, datamodel))
 
     def cv_association(self,item,g):
-        uri = self.uri(item["identifier (internal)"])
-        label = item["term / label"]
         intid = item["identifier (internal)"]
+        uri = self.uri(intid)
         g.add((uri, RDF.type, VDM.Property))
         cluri = self.uri(item["class"].replace(" ","")) 
         g.add((cluri, ADMS.includedAsset, uri))
+        label = item["term / label"]
         if label != intid:
             label = label + " (" + intid + ")"
         g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
+        self.cv_common(item,g,uri)
         g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
-        g.add((uri, SKOS.definition, self.text(item["definition"])))
-        g.add((uri, DCTERMS.description, self.text(item["description"])))
-        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"])))
         g.add((uri, RDFS.range, self.uri(item["data type"].replace(" ",""))))
         g.add((uri, VDM.has_internalidentifier, self.text(intid)))
         datamodel = self.uri(item["data model"])
-        g.add((datamodel,RDF.type, VDM.DataModel))
-        g.add((datamodel,RDFS.label,self.text(item["data model"])))
+        g.add((datamodel,RDF.type, VDM.Property))
         g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
         g.add((uri, DCTERMS.isPartOf, datamodel))
 
@@ -189,10 +186,24 @@ class CommonVocabularySpreadsheet:
         for item in self.read_sheet("Data Types", ""):
             if item["type"] == "Composite Type":
                 self.cv_composite_type(item,g)
+            elif item["type"] == "Primitive Type":
+                self.cv_primitive_type(item,g)
             elif item["type"] == "Attribute":
                 self.cv_attribute(item,g)
             else:
                 x=1
+
+    def cv_primitive_type(self,item,g):
+        uri = self.uri(item["identifier"])
+        g.add((uri, RDFS.label, self.text(item["term"])))
+        g.add((uri, RDF.type, VDM.DataType))
+        g.add((uri, DCTERMS.type, VDM.DataType))
+        g.add((uri, DCTERMS.title, self.text(item["term"])))
+        g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
+        g.add((uri, SKOS.definition, self.text(item["definition"])))
+        g.add((uri, VDM.dataType, self.text(item["data type"])))
+        g.add((uri, ADMS.sample, self.text(item["examples"])))
+        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"])))
 
     def cv_composite_type(self,item,g):
         uri = self.uri(item["identifier"])
@@ -244,6 +255,7 @@ class CommonVocabularySpreadsheet:
                 label = label + " (" + intid + ")"
             g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
             g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
+            g.add((uri, ADMS.versionNotes, self.text(item["comments"])))
             pubid = item["public identifier (uri)"]
             if pubid != "":
                g.add((uri, DCTERMS.identifier, URIRef(pubid)))
@@ -270,8 +282,12 @@ class CommonVocabularySpreadsheet:
 
     def tv_property(self,uri,item,g):
         g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, DCTERMS.type, VDM.Property))
         cluri = self.uri(item["class"].replace(" ",""))
         g.add((uri, ADMS.includedAsset, cluri))
+        # missing range if present
+        if item["data type"] != "":
+            g.add((uri, RDFS.range, self.uri(item["data type"].replace(" ",""))))
 
     def convert_mapping_file(self, g):
         '''Add the contents of the 'Mappings' sheet to the graph g.'''
@@ -303,7 +319,7 @@ if __name__ == "__main__":
     ap.description = "Convert a spreadsheet to VDM RDF."
     ap.add_argument("xlsfile", help="input XLS(X) file")
     ap.add_argument("-N", "--namespace",
-                    default="http://vocabs.tenforce.com/vdm/id/cv/",
+                    default="http://mapping.semic.eu/vdm/id/cv/",
                     help="output namespace (default: %(default)s)")
     ap.add_argument("-f", "--format", default="turtle",
                     help="serialization format (default: %(default)s)")

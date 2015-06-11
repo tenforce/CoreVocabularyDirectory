@@ -1,1823 +1,1828 @@
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae",
+"link": "http://mapping.semic.eu/vdm/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae",
 "name": "Core Vocabulary",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/18dc1527ca74aa2af599329a828dda38",
+"link": "http://mapping.semic.eu/vdm/id/cv/18dc1527ca74aa2af599329a828dda38",
 "name": "Legal Entity",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/0e4a1c367895066ca22ebcf8d5d3b23b",
+"link": "http://mapping.semic.eu/vdm/id/cv/0e4a1c367895066ca22ebcf8d5d3b23b",
 "name": "Company Activity (LegalEntityCompanyActivity)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/fb278726ffb5764e218edae3a8719062",
+{"link": "http://mapping.semic.eu/vdm/id/cv/fb278726ffb5764e218edae3a8719062",
 "name": "nc:OrganizationActivityText",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/19c21deb4de02e7a4590b567e3e1be90",
+{"link": "http://mapping.semic.eu/vdm/id/cv/19c21deb4de02e7a4590b567e3e1be90",
 "name": "Operations Scope (Organization. Operations Scope. Code)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2f7f2b2243e525acec07d846eb73b0aa",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2f7f2b2243e525acec07d846eb73b0aa",
 "name": "Maatschappelijke Activiteit (http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Maatschappelijke_Activiteit)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/42d9d4b13a8ab179056e20542f913757",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/42d9d4b13a8ab179056e20542f913757",
 "name": "KvK-Nummer (Maatschappelijke Activiteit) (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/KvK-Nummer-Maatschappelijke_Activiteit)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/3893eddba1babced3b55206a98f624a3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/3893eddba1babced3b55206a98f624a3",
 "name": "IndustryClassificationCode (Party. Industry Classification Code. Code)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9624378efa9a6d6875237b147f1461c0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9624378efa9a6d6875237b147f1461c0",
 "name": "Ã¶retag verksamhetsbeskrivning )",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/3ceb04e9ba060bba6aec44f8363a9490",
-"name": "company activity (rov:orgActivity,rdfs:subPropertyOf org:classification)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/3ceb04e9ba060bba6aec44f8363a9490",
+"name": "company activity (rov:orgActivity rdfs:subPropertyOf org:classification)",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a487feb6a0f782216b7c0b564a6ac2f5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a487feb6a0f782216b7c0b564a6ac2f5",
 "name": "zweck",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/24efa63ac4b1c21ec4ddb8417bd0a07a",
+"link": "http://mapping.semic.eu/vdm/id/cv/24efa63ac4b1c21ec4ddb8417bd0a07a",
 "name": "Company Status (LegalEntityCompanyStatus)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d97c0fb899cfaadea51296cbba1f049e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d97c0fb899cfaadea51296cbba1f049e",
 "name": "CompanyLiquidationStatusCode (Party Legal Entity. Company Liquidation Status Code. Code)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/00ae461ef7314867e06075130541cf6c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/00ae461ef7314867e06075130541cf6c",
 "name": "Ã¶rfarande)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/bf4518662aa533b15ccb02877a2b1c56",
+{"link": "http://mapping.semic.eu/vdm/id/cv/bf4518662aa533b15ccb02877a2b1c56",
 "name": "nc:OrganizationStatus",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1a4e269e22f537a97bac715e7a9661b1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1a4e269e22f537a97bac715e7a9661b1",
 "name": "company status (rov:orgStatus rdfs:subPropertyOf org:classification)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/28e92050e2d2395e1e23e802e3c8c754",
+"link": "http://mapping.semic.eu/vdm/id/cv/28e92050e2d2395e1e23e802e3c8c754",
 "name": "Legal Identifier (LegalEntityLegalIdentifier)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/90f049d5daa30f8cb9b5adf9c307d1e3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/90f049d5daa30f8cb9b5adf9c307d1e3",
 "name": "Ã¤nd fÃ¶r F-skatt hos Skatteverket)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/a2b2bfe1d2b9d9afb85bb429f17dc79d",
-"name": " (Momsregistrerad hos Skatteverket)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/d6a9801231e5a76e119d87bbe70c0b53",
-"name": " (Arbetsgivarregistrerad hos Skatteverket)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/e95760abb13b69d2714527b608d468f6",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/a2b2bfe1d2b9d9afb85bb429f17dc79d",
+"name": "(Momsregistrerad hos Skatteverket)",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/d6a9801231e5a76e119d87bbe70c0b53",
+"name": "(Arbetsgivarregistrerad hos Skatteverket)",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/e95760abb13b69d2714527b608d468f6",
 "name": "Ã¶retag hos Bolagsverket)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5c907f4b33c4872738731581a6f70ecc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5c907f4b33c4872738731581a6f70ecc",
 "name": "RSIN (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/RSIN-Niet_Natuurlijk_Persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4b75647a27d037b87944dc30677b4dde",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4b75647a27d037b87944dc30677b4dde",
 "name": "registration (rov:registration rdfs:subPropertyOf adms:identifier)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9207899a09b30dd21d65018f24740886",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9207899a09b30dd21d65018f24740886",
 "name": "Registierung.id",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/510ce33f8b20e03105fbd4a8d1079dc8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/510ce33f8b20e03105fbd4a8d1079dc8",
 "name": "Buyer legal registration identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/54bc6767d2f2158fb8b0ccbc089eca32",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/54bc6767d2f2158fb8b0ccbc089eca32",
 "name": "Seller legal registration identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/c465339f409a09a7659c3f9c5c185704",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/c465339f409a09a7659c3f9c5c185704",
 "name": "Payee legal registration identifier",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/2dfc865f2616fac0d120c7ed4477e0f0",
+"link": "http://mapping.semic.eu/vdm/id/cv/2dfc865f2616fac0d120c7ed4477e0f0",
 "name": "Company Type (LegalEntityCompanyType)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d974c51c33629b17e9d7f206e34f328a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d974c51c33629b17e9d7f206e34f328a",
 "name": "CompanyLegalFormCode (Party Legal Entity. Company Legal Form Code. Code)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8ed31ea3ee5e55e46cf48727847fc230",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8ed31ea3ee5e55e46cf48727847fc230",
 "name": "nc:OrganizationCategory",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7cd5c9d408298f334841545d0703a4f2",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7cd5c9d408298f334841545d0703a4f2",
 "name": "Legal Classification (Organization. Legal Classification. Code)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/571b5ca0dd0b587cfe7f3e6dc9f448be",
+{"link": "http://mapping.semic.eu/vdm/id/cv/571b5ca0dd0b587cfe7f3e6dc9f448be",
 "name": "Rechtsvorm (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/rechtsvorm-Rechtspersoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4bdb3fa8be81fa2f6fe7dbd8f50f1bbf",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4bdb3fa8be81fa2f6fe7dbd8f50f1bbf",
 "name": "Ã¶retag fÃ¶retagsform)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4a0ca50d2026ecd72323c41d1262b6be",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4a0ca50d2026ecd72323c41d1262b6be",
 "name": "company type (rov:orgType rdfs:subPropertyOf org:classification)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/938fbb59d09c3aa779ca5000ccef54f4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/938fbb59d09c3aa779ca5000ccef54f4",
 "name": "rechtsform",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/731a8e33661ca5c1c53eda2af94f3d5a",
+"link": "http://mapping.semic.eu/vdm/id/cv/731a8e33661ca5c1c53eda2af94f3d5a",
 "name": "Identifier (LegalEntityIdentifier)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/670d62f903a6ac03b661f0eb91315d61",
+{"link": "http://mapping.semic.eu/vdm/id/cv/670d62f903a6ac03b661f0eb91315d61",
 "name": "Vestigingsnummer (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/vestigingsnummer-Vestiging)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/3d9434a6c2f8de71a38675c05fd7b8da",
+{"link": "http://mapping.semic.eu/vdm/id/cv/3d9434a6c2f8de71a38675c05fd7b8da",
 "name": "CompanyID (Party Legal Entity. Company Identifier. Identifier)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/7ae8031c2b4baf9d47a937f01426c5ce",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/7ae8031c2b4baf9d47a937f01426c5ce",
 "name": "PartyIdentification (Party. Party Identification)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/427240d44be2f28dddb35da12d8e457b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/427240d44be2f28dddb35da12d8e457b",
 "name": "nc:OrganizationTaxIdentification",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/78ed1cb673b195a9c57f395367585cb0",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/78ed1cb673b195a9c57f395367585cb0",
 "name": "nc:OrganizationIdentification",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/93c0d043e0fd4cb85f3fc8dda4a68f9e",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/93c0d043e0fd4cb85f3fc8dda4a68f9e",
 "name": "j:OrganizationIdentification",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5a2b281157a44d3bf9b6f136e401e189",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5a2b281157a44d3bf9b6f136e401e189",
 "name": "Identification (Organization. Identification. Identifier)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/7635935b830d5494e657f6b7795c41d8",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/7635935b830d5494e657f6b7795c41d8",
 "name": "Tax Registration (Organization. Tax Registration. Identifier)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6d4796390375fdc87b18f18f2a779ab3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6d4796390375fdc87b18f18f2a779ab3",
 "name": "Seller tax representative VAT identifier",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e91128b85acdb33d9861f2bcef668bd3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e91128b85acdb33d9861f2bcef668bd3",
 "name": "Ã¶retag)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7a7616ab4ef6aa783bb3977f4ca8416b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7a7616ab4ef6aa783bb3977f4ca8416b",
 "name": "registration (rov:registration)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
 "name": "id",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/527460262be46bb62cd9718ba4a96e21",
+{"link": "http://mapping.semic.eu/vdm/id/cv/527460262be46bb62cd9718ba4a96e21",
 "name": "Buyer VAT identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/572935222bf4b19a943da62bb4d8a83b",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/572935222bf4b19a943da62bb4d8a83b",
 "name": "Payee identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/59edf354418491f68fddc02c92fdd9de",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/59edf354418491f68fddc02c92fdd9de",
 "name": "Financial institution branch identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/5c0db25482566855cfeb83e0985eb523",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/5c0db25482566855cfeb83e0985eb523",
 "name": "Buyer identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/913df9c6a846d08ce4674655acbb4ccd",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/913df9c6a846d08ce4674655acbb4ccd",
 "name": "Financial institution identifier",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/9cf4f7ce25c9aa92cfc76d5277090a5f",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/9cf4f7ce25c9aa92cfc76d5277090a5f",
 "name": "Seller identifier",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/b2a7e20647e647bec071b0650a54db07",
+"link": "http://mapping.semic.eu/vdm/id/cv/b2a7e20647e647bec071b0650a54db07",
 "name": "Address (LegalEntityAddress)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/18377f3ffda35a5be2ac562caf5c1ab8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/18377f3ffda35a5be2ac562caf5c1ab8",
 "name": "Postadres Buitenlandse Niet Natuurlijk Persoon (http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Buitenlandse_Niet_Natuurlijk_Persoon)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1027b9d0c289a61f7ece728a6cb9e7a2",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1027b9d0c289a61f7ece728a6cb9e7a2",
 "name": "Adres (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/adres-Adres)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/2c801f63eeeb1a135d2f5bf709610158",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/2c801f63eeeb1a135d2f5bf709610158",
 "name": "Postadres Vestiging (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/50e68727e8b6611ee109fd635d05bf07",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/50e68727e8b6611ee109fd635d05bf07",
 "name": "Postadres Rechtspersoon (http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Postadres_Rechtspersoon)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/da510ac97784247d77d3f436c9ae211f",
+"link": "http://mapping.semic.eu/vdm/id/cv/da510ac97784247d77d3f436c9ae211f",
 "name": "Legal Name (LegalEntityLegalName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7acf9ff47b189a38d5a0e42448985f76",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7acf9ff47b189a38d5a0e42448985f76",
 "name": "NameOrganisation.name",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7af592efea86569b33fbb4658cb3690e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7af592efea86569b33fbb4658cb3690e",
 "name": "Seller legal registration name",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/c8db63131f35c21a9658e8b436e56846",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/c8db63131f35c21a9658e8b436e56846",
 "name": "Seller tax representative name",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/43424b526612105f31233730aab31019",
+{"link": "http://mapping.semic.eu/vdm/id/cv/43424b526612105f31233730aab31019",
 "name": "Handelsna(a)men Vestiging (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Vestiging)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/ad9616430c766eb3c9914897cd16dbcb",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/ad9616430c766eb3c9914897cd16dbcb",
 "name": "Handelsna(a)men Onderneming (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/handelsnaamen-Onderneming)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/bd440cc7c61e9e135ce73aca32aaa285",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/bd440cc7c61e9e135ce73aca32aaa285",
 "name": "(Statutaire) naam van de Niet-Natuurlijk Persoon (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/statutairenaam-Niet_Natuurlijk_Persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/87222757609018b9b16e411325a200e1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/87222757609018b9b16e411325a200e1",
 "name": "RegistrationName (Party Legal Entity. Registration_ Name. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/762379da29e7718f5f860019ab6448c4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/762379da29e7718f5f860019ab6448c4",
 "name": "Ã¶retagsnamn)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/64d2fb75ffca2e3fd86f374521204467",
+{"link": "http://mapping.semic.eu/vdm/id/cv/64d2fb75ffca2e3fd86f374521204467",
 "name": "legal name (rov:legalName)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/e3ca54ca8dc0230b0a84630ec5bcedb9",
+"link": "http://mapping.semic.eu/vdm/id/cv/e3ca54ca8dc0230b0a84630ec5bcedb9",
 "name": "Registered Address (LegalEntityRegisteredAddress)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1d34584b4789547548735345111e4cb2",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1d34584b4789547548735345111e4cb2",
 "name": "Ã¤lle)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2c801f63eeeb1a135d2f5bf709610158",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2c801f63eeeb1a135d2f5bf709610158",
 "name": "Postadres Vestiging (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postadres-Vestiging)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8787d2a5b15cd6a5d92b775ab2f29c27",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8787d2a5b15cd6a5d92b775ab2f29c27",
 "name": "RegistrationAddress (Party Legal Entity. Registration_ Address. Address)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e46807ee443cc5cee3db66e956c3234c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e46807ee443cc5cee3db66e956c3234c",
 "name": "Ã¤lle)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/e7cbcffaaf765dd1652466bd0e3a8d34",
+"link": "http://mapping.semic.eu/vdm/id/cv/e7cbcffaaf765dd1652466bd0e3a8d34",
 "name": "Location (LegalEntityLocation)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/34ae478723d985a14cb22e74cf338757",
+{"link": "http://mapping.semic.eu/vdm/id/cv/34ae478723d985a14cb22e74cf338757",
 "name": "Locatie (http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Locatie)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/fce031a1a1da49394ed26d916ab92500",
+"link": "http://mapping.semic.eu/vdm/id/cv/fce031a1a1da49394ed26d916ab92500",
 "name": "Alternative Name (LegalEntityAlternativeName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8af55ff0e7cfc566b7b0bb18e905fce5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8af55ff0e7cfc566b7b0bb18e905fce5",
 "name": "Naam Vestiging (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/naam-Vestiging)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2c3dec7fbf1a1617dd71dc98c7770ec2",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2c3dec7fbf1a1617dd71dc98c7770ec2",
 "name": "Seller name",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/2f07dfc653b0cee8517a21bffd8a9434",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/2f07dfc653b0cee8517a21bffd8a9434",
 "name": "Payee name",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/74bd10d590af16ce428ef12f3eef17a6",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/74bd10d590af16ce428ef12f3eef17a6",
 "name": "Buyer name",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/3226cf847ceb4789450a5b7a031f2748",
+"link": "http://mapping.semic.eu/vdm/id/cv/3226cf847ceb4789450a5b7a031f2748",
 "name": "Public Service",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/1a00c2759fa723bdbf9901ea00dcfd92",
+"link": "http://mapping.semic.eu/vdm/id/cv/1a00c2759fa723bdbf9901ea00dcfd92",
 "name": "Physically Available At (PublicServicePhysicallyAvailableAt)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f0795193ea22ac1e18bbf1727f320bbe",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f0795193ea22ac1e18bbf1727f320bbe",
 "name": "physically available at (cpsv:physicallyAvailableAt)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/376a333610584a9665b07ce083c09485",
+"link": "http://mapping.semic.eu/vdm/id/cv/376a333610584a9665b07ce083c09485",
 "name": "Follows (PublicServiceFollows)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dbea48ec51c78d6cf02a8c3d8154f5fc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dbea48ec51c78d6cf02a8c3d8154f5fc",
 "name": "follows (cpsv:follows)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/3e9be34219543696d9c70da1ac620629",
+"link": "http://mapping.semic.eu/vdm/id/cv/3e9be34219543696d9c70da1ac620629",
 "name": "Channel (PublicServiceChannel)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c13322786cd45ebcf13f72c35bf7a9cc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c13322786cd45ebcf13f72c35bf7a9cc",
 "name": "has channel (cpsv:hasChannel)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/03d28e7b942a10ab05c36ee6c2f25719",
+{"link": "http://mapping.semic.eu/vdm/id/cv/03d28e7b942a10ab05c36ee6c2f25719",
 "name": "kanal",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/4c898e2216826de0ff57ed5f742d0355",
+"link": "http://mapping.semic.eu/vdm/id/cv/4c898e2216826de0ff57ed5f742d0355",
 "name": "Produces (PublicServiceProduces)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/66ab877e87b03c48f224dd369fb38fe3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/66ab877e87b03c48f224dd369fb38fe3",
 "name": "produces (cpsv:produces)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/777528c87c35a7a9b9e48bf5e764b084",
+"link": "http://mapping.semic.eu/vdm/id/cv/777528c87c35a7a9b9e48bf5e764b084",
 "name": "Language (PublicServiceLanguage)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4cc48883753cd7f0d5a7e5eb4aa8e70f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4cc48883753cd7f0d5a7e5eb4aa8e70f",
 "name": "Language (dcterms:language)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/886e36eccb45abcfd793cb14288d57cc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/886e36eccb45abcfd793cb14288d57cc",
 "name": "Sprache",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/7e6e8be4a077cd0f2ab2cddd18694235",
+"link": "http://mapping.semic.eu/vdm/id/cv/7e6e8be4a077cd0f2ab2cddd18694235",
 "name": "Type (PublicServiceType)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/83a721c8bf5b9f56044023cacf244b83",
+{"link": "http://mapping.semic.eu/vdm/id/cv/83a721c8bf5b9f56044023cacf244b83",
 "name": "nc:ActivityCategoryText",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7f7ed93f8c48f12ef3f5af226791a597",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7f7ed93f8c48f12ef3f5af226791a597",
 "name": "Type (dcterms:type)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0175569029b528d9582530f1340778e0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0175569029b528d9582530f1340778e0",
 "name": "Type (Service. Type. Code)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/8478690bf3a6d3ff5ff911ca0d43e43f",
+"link": "http://mapping.semic.eu/vdm/id/cv/8478690bf3a6d3ff5ff911ca0d43e43f",
 "name": "Name (PublicServiceName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6e4d27a58240efdf2fa28869a173f855",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6e4d27a58240efdf2fa28869a173f855",
 "name": "preferred label (skos:prefLabel)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/a2f4160716b121b4c6d471f674d29d0a",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/a2f4160716b121b4c6d471f674d29d0a",
 "name": "Title (dcterms:title)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7b0b650669fb1f1b962b65279ba77c80",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7b0b650669fb1f1b962b65279ba77c80",
 "name": "nc:ActivityName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d8780f3b0c178b88715ddfc1cd8f99bb",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d8780f3b0c178b88715ddfc1cd8f99bb",
 "name": "Name (Service. Name. Text)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/863597b66bf7807325eaba65f0ff689a",
+"link": "http://mapping.semic.eu/vdm/id/cv/863597b66bf7807325eaba65f0ff689a",
 "name": "Input (PublicServiceInput)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e207cabfc7127debeadaabff0aa28bd7",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e207cabfc7127debeadaabff0aa28bd7",
 "name": "has input (cpsv:hasInput)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/aa7e44af6fb80b62c2091be6f936e7a2",
+"link": "http://mapping.semic.eu/vdm/id/cv/aa7e44af6fb80b62c2091be6f936e7a2",
 "name": "Related (PublicServiceRelated)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6568979fd612a8506801f4a3329e5afc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6568979fd612a8506801f4a3329e5afc",
 "name": "Relation (dcterms:relation)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/ad54828475c1ec752df2b6f163075732",
+"link": "http://mapping.semic.eu/vdm/id/cv/ad54828475c1ec752df2b6f163075732",
 "name": "Description (PublicServiceDescription)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/424cb73b68e03c80a082d71bca09f023",
+{"link": "http://mapping.semic.eu/vdm/id/cv/424cb73b68e03c80a082d71bca09f023",
 "name": "cyfs:ServiceDescriptionText",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/634916fb20de98cae9739d2bbe39702c",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/634916fb20de98cae9739d2bbe39702c",
 "name": "nc:ActivityDescriptionText",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/00905840fe3a848d9b6eca814427bc03",
+{"link": "http://mapping.semic.eu/vdm/id/cv/00905840fe3a848d9b6eca814427bc03",
 "name": "Description (dcterms:description)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84ba7bdb4627a12abeaff86cf4dd2b5c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84ba7bdb4627a12abeaff86cf4dd2b5c",
 "name": "Description (Service. Description. Text)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/b89680e0ed85cd0f2972ea9645fb4033",
+"link": "http://mapping.semic.eu/vdm/id/cv/b89680e0ed85cd0f2972ea9645fb4033",
 "name": "Temporal (PublicServiceTemporal)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f2bd949fde804b5157d932cc831f4f10",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f2bd949fde804b5157d932cc831f4f10",
 "name": "Effective (Service. Effective. Period)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/c06b491127dcdb9f4007a38b6c7899a7",
+"link": "http://mapping.semic.eu/vdm/id/cv/c06b491127dcdb9f4007a38b6c7899a7",
 "name": "Homepage (PublicServiceHomepage)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e53b4109ef09a30ce9db8a929bebe980",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e53b4109ef09a30ce9db8a929bebe980",
 "name": "homepage (foaf:homepage)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/e30fd5b7a2578e2b0dc9640404032571",
+"link": "http://mapping.semic.eu/vdm/id/cv/e30fd5b7a2578e2b0dc9640404032571",
 "name": "Requires (PublicServiceRequires)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/151bd5c76f0f54bd1ae66ef85eb145c5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/151bd5c76f0f54bd1ae66ef85eb145c5",
 "name": "Requires (dcterms:requires)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/40bed7cf9b3d4bb3a3d7a7e3eb18c5eb",
+"link": "http://mapping.semic.eu/vdm/id/cv/40bed7cf9b3d4bb3a3d7a7e3eb18c5eb",
 "name": "Person",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/1841bc9da71a27ae10be13cf779a8820",
+"link": "http://mapping.semic.eu/vdm/id/cv/1841bc9da71a27ae10be13cf779a8820",
 "name": "Citizenship (PersonCitizenship)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/25b47338e1845990ea3919dc8d024126",
+{"link": "http://mapping.semic.eu/vdm/id/cv/25b47338e1845990ea3919dc8d024126",
 "name": "nc:PersonCitizenship",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/95b451c1f643e49b524ed47663b552de",
+{"link": "http://mapping.semic.eu/vdm/id/cv/95b451c1f643e49b524ed47663b552de",
 "name": "Nationaliteit persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Nationaliteit_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0d51a665258b4262bfc4ab3c17debce0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0d51a665258b4262bfc4ab3c17debce0",
 "name": "citizenship (person:citizenship)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/70f1a118762357ccaaef5583815dfa9f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/70f1a118762357ccaaef5583815dfa9f",
 "name": "staatsangehoerigkeit",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/1cb56882b48a60ef6bdbdae83de0b87a",
+"link": "http://mapping.semic.eu/vdm/id/cv/1cb56882b48a60ef6bdbdae83de0b87a",
 "name": "Residency (PersonResidency)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/75c4a0398acb450e13b2b5888e9f0a4c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/75c4a0398acb450e13b2b5888e9f0a4c",
 "name": "residency (person:residency)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/1cd41aaf5643425b8d54fc3e4ae36b94",
+"link": "http://mapping.semic.eu/vdm/id/cv/1cd41aaf5643425b8d54fc3e4ae36b94",
 "name": "Given Name (PersonGivenName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/199e06484de8efa1617f6fb151a7db14",
+{"link": "http://mapping.semic.eu/vdm/id/cv/199e06484de8efa1617f6fb151a7db14",
 "name": "Current first name(s)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b6d01df6e917eff39ef3605f342d71d7",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b6d01df6e917eff39ef3605f342d71d7",
 "name": "Voornamen persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Voornamen_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6d090c28600b8bdfa4770635b95ec425",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6d090c28600b8bdfa4770635b95ec425",
 "name": "FirstName (Person. First_ Name. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/954a640689274206c10877585d4d31ae",
+{"link": "http://mapping.semic.eu/vdm/id/cv/954a640689274206c10877585d4d31ae",
 "name": "given name (foaf:givenName)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/fbcfaf017ae723ae523c8302c7ddb376",
+{"link": "http://mapping.semic.eu/vdm/id/cv/fbcfaf017ae723ae523c8302c7ddb376",
 "name": "nc:PersonGivenName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b214558052af9b5f6a30f01bdc832ddd",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b214558052af9b5f6a30f01bdc832ddd",
 "name": "Given Name (Person. Given Name. Text)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/4135bdd7df97cddf49f8c58b0bfba593",
+"link": "http://mapping.semic.eu/vdm/id/cv/4135bdd7df97cddf49f8c58b0bfba593",
 "name": "Place Of Death (PersonPlaceOfDeath)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/60950093238879b0840ba7793784ed3b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/60950093238879b0840ba7793784ed3b",
 "name": "Plaats overlijden persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Plaats_overlijden_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6ad49f030e83f7880ba8d6c5edad9b29",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6ad49f030e83f7880ba8d6c5edad9b29",
 "name": "place of death (person:placeOfDeath)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ecfae9bc97d1fb4b637b6d455a9df37e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ecfae9bc97d1fb4b637b6d455a9df37e",
 "name": "Tod.sterbeort",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4f04416ee37f1df4f5fb113da1482a5a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4f04416ee37f1df4f5fb113da1482a5a",
 "name": "m:PersonDeathLocation",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/4ea4645421e402f1e1225c08598404b8",
+"link": "http://mapping.semic.eu/vdm/id/cv/4ea4645421e402f1e1225c08598404b8",
 "name": "Birth Name (PersonBirthName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/abb51b5780a8161f1c810f45a62220a4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/abb51b5780a8161f1c810f45a62220a4",
 "name": "birth name (person:birthName)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/493a25a1d0df330cb6d546d3312687c5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/493a25a1d0df330cb6d546d3312687c5",
 "name": "geburtsname",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c2fef50a5f2ca0ff1ac34a97028d34ae",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c2fef50a5f2ca0ff1ac34a97028d34ae",
 "name": "Name and family name at Birth",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/545246b7430b11c37427bd48789139e3",
+"link": "http://mapping.semic.eu/vdm/id/cv/545246b7430b11c37427bd48789139e3",
 "name": "Full Name (PersonFullName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/778dd7a2c20c5ad32c82b66dd0954089",
+{"link": "http://mapping.semic.eu/vdm/id/cv/778dd7a2c20c5ad32c82b66dd0954089",
 "name": "Ã¥ fysisk person)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/fc6fe7d1f25c9104a13a28479f2cfb86",
+{"link": "http://mapping.semic.eu/vdm/id/cv/fc6fe7d1f25c9104a13a28479f2cfb86",
 "name": "name (foaf:name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9c014e6183dd89677a103f1e1a0ef560",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9c014e6183dd89677a103f1e1a0ef560",
 "name": "nc:PersonFullName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dfa00c0276c350e187d5eed548c32cfa",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dfa00c0276c350e187d5eed548c32cfa",
 "name": "Contact person name",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/58e80ef7b5c56fc812bcf84d6bf54cc4",
+"link": "http://mapping.semic.eu/vdm/id/cv/58e80ef7b5c56fc812bcf84d6bf54cc4",
 "name": "Gender (PersonGender)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a270f5e15673f979ce1b571ba3df5c91",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a270f5e15673f979ce1b571ba3df5c91",
 "name": "nc:PersonSex",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/614783c56aaf3be5565c9bb3bb142832",
+{"link": "http://mapping.semic.eu/vdm/id/cv/614783c56aaf3be5565c9bb3bb142832",
 "name": "Geslachtsaanduiding persoon (http://data.stelselvanbasisregistraties.nl/gba/doc/gegevenselement/Geslachtsaanduiding_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5dcde2a635c4950abd00742032c7234b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5dcde2a635c4950abd00742032c7234b",
 "name": "GenderCode (Person. Gender Code. Code)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/669291daac1cf14a9544d264ce107494",
+{"link": "http://mapping.semic.eu/vdm/id/cv/669291daac1cf14a9544d264ce107494",
 "name": "gender (schema:gender)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8ec927e6fedbb8fa8812798b2d4d3275",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8ec927e6fedbb8fa8812798b2d4d3275",
 "name": "geschlecht",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8c7e0e16e6c5716d42b4b49d2cff442f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8c7e0e16e6c5716d42b4b49d2cff442f",
 "name": "Gender",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b6739a5033ff2dd9a83ade58d345aabe",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b6739a5033ff2dd9a83ade58d345aabe",
 "name": "Gender (Person. Gender. Code)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/5bc9674db0153b2bc6504561061629f7",
+"link": "http://mapping.semic.eu/vdm/id/cv/5bc9674db0153b2bc6504561061629f7",
 "name": "Family Name (PersonFamilyName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7c7fa36f88fe6eeb6d213c3c9e7248aa",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7c7fa36f88fe6eeb6d213c3c9e7248aa",
 "name": "familienname",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/97146b7582f0b1ac5c31c80fd6b930c1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/97146b7582f0b1ac5c31c80fd6b930c1",
 "name": "Current family name",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/de9c379f4fe783b70fde2d1367797961",
+{"link": "http://mapping.semic.eu/vdm/id/cv/de9c379f4fe783b70fde2d1367797961",
 "name": "Geslachtsnaam persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geslachtsnaam_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9b2fc507a515ed1f8c4a5cbf3a1f1499",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9b2fc507a515ed1f8c4a5cbf3a1f1499",
 "name": "FamilyName (Person. Family_ Name. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4ba7e893a4ac84bbea82d489bd98b6d8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4ba7e893a4ac84bbea82d489bd98b6d8",
 "name": "family name (foaf:familyName)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0792e526d933381f30226b4c683ecfab",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0792e526d933381f30226b4c683ecfab",
 "name": "nc:PersonSurName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2fe2b1584fd4f5514328ba5b4e512cda",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2fe2b1584fd4f5514328ba5b4e512cda",
 "name": "Family Name (Person. Family Name. Text)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/5f244e4ceda0917c01ed4ebc6d28dc9e",
+"link": "http://mapping.semic.eu/vdm/id/cv/5f244e4ceda0917c01ed4ebc6d28dc9e",
 "name": "Country Of Birth (PersonCountryOfBirth)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/13dcc1d710d7247569807128287f83a0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/13dcc1d710d7247569807128287f83a0",
 "name": "nc:PersonNationality",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c6943e62e30ada2c7286b842ec6128ad",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c6943e62e30ada2c7286b842ec6128ad",
 "name": "Birth Country (Person. Birth Country. Identifier)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/90ac607ec5d07c03982935c413e4656b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/90ac607ec5d07c03982935c413e4656b",
 "name": "Geboorteland persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteland_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5ed9a1cdc7ee4c0ccdf72dcf2f985f0f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5ed9a1cdc7ee4c0ccdf72dcf2f985f0f",
 "name": "country of birth (person:countryOfBirth)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5d353696b5653f80a6a1d54f1c04aac5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5d353696b5653f80a6a1d54f1c04aac5",
 "name": "Place of birth",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/81d40c36c315e7ac482da9654d077aa1",
+"link": "http://mapping.semic.eu/vdm/id/cv/81d40c36c315e7ac482da9654d077aa1",
 "name": "Identifier (PersonIdentifier)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f79e6699740308fbb489f8d1a8236f97",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f79e6699740308fbb489f8d1a8236f97",
 "name": "ID (Person. Identifier)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/34c8fa875ac6bb9bc3eb15748292608f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/34c8fa875ac6bb9bc3eb15748292608f",
 "name": "A uniqueness identifier",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ae7b1f3502186726742be6b8568bfa5f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ae7b1f3502186726742be6b8568bfa5f",
 "name": "Identification (Person. Identification. Identifier)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d04b1d36bac7e496612df86947979586",
-"name": " (person teknisk identitet (UUID))",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d04b1d36bac7e496612df86947979586",
+"name": "(person teknisk identitet (UUID))",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1becb4743e9d988d73b515bc3ff4ea93",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1becb4743e9d988d73b515bc3ff4ea93",
 "name": "NatuerlichePerson. identifikationsnummer",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
 "name": "id",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/9c91b9716624e828ee91bda109215818",
+"link": "http://mapping.semic.eu/vdm/id/cv/9c91b9716624e828ee91bda109215818",
 "name": "Patronymic Name (PersonPatronymicName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/87c939326734a1f7eeec6c3aba4b9481",
+{"link": "http://mapping.semic.eu/vdm/id/cv/87c939326734a1f7eeec6c3aba4b9481",
 "name": "patronymic name (person:patronymicName)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/a1d565417e12366de64936eb411ec744",
+"link": "http://mapping.semic.eu/vdm/id/cv/a1d565417e12366de64936eb411ec744",
 "name": "Place Of Birth (PersonPlaceOfBirth)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1d276471ef9e890c0e5e14d717d585f0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1d276471ef9e890c0e5e14d717d585f0",
 "name": "BirthplaceName (Person. Birthplace Name. Text)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/74355558eacfa35f0ba13a8c2efd62ad",
+{"link": "http://mapping.semic.eu/vdm/id/cv/74355558eacfa35f0ba13a8c2efd62ad",
 "name": "Birthplace Name (Person. Birthplace Name. Text)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd11902bbd5515fb03e56d446f901c49",
+{"link": "http://mapping.semic.eu/vdm/id/cv/fd11902bbd5515fb03e56d446f901c49",
 "name": "Geboorteplaats persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboorteplaats_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a2392fb51fdb1351df1ec75ef335679b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a2392fb51fdb1351df1ec75ef335679b",
 "name": "place of birth (person:placeOfBirth)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5234979b6a4489634b1121122123e816",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5234979b6a4489634b1121122123e816",
 "name": "Geburt.geburtsort",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6ede77b2fd38100a3dbb3b23c764993a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6ede77b2fd38100a3dbb3b23c764993a",
 "name": "nc:PersonBirthLocation",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/a63b10d2e1e0e0dc88192d4053032fd5",
+"link": "http://mapping.semic.eu/vdm/id/cv/a63b10d2e1e0e0dc88192d4053032fd5",
 "name": "Country Of Death (PersonCountryOfDeath)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e71a57a75d3cd08bcbf499fcb4b88e36",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e71a57a75d3cd08bcbf499fcb4b88e36",
 "name": "Land overlijden persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Land_overlijden_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/864df507d782d56d1175c57ac8fb8134",
+{"link": "http://mapping.semic.eu/vdm/id/cv/864df507d782d56d1175c57ac8fb8134",
 "name": "country of death (person:countryOfDeath)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/b86e8bef7420b5d3087a53ab6ea89a9b",
+"link": "http://mapping.semic.eu/vdm/id/cv/b86e8bef7420b5d3087a53ab6ea89a9b",
 "name": "Address (PersonAddress)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9d159299a22fc83149ff7f68450357cb",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9d159299a22fc83149ff7f68450357cb",
 "name": "Residence (Person. Residence. Address)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/769e5ac4b54d9413ee253d364186a3c8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/769e5ac4b54d9413ee253d364186a3c8",
 "name": "Woonadres in Nederland (http://data.stelselvanbasisregistraties.nl/gba/id/concept/Woonadres_in_Nederland)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/e004b127f8d140a9ef4dcca3620d1cba",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/e004b127f8d140a9ef4dcca3620d1cba",
 "name": "Briefadres in Nederland (http://data.stelselvanbasisregistraties.nl/gba/id/concept/Briefadres_in_Nederland)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8c8e3320a7f5a2b6d29729740b753110",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8c8e3320a7f5a2b6d29729740b753110",
 "name": "ResidenceAddress (Person. Residence_ Address. Address)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/47533c32cad46db9254180be9610fe7e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/47533c32cad46db9254180be9610fe7e",
 "name": "address (locn:address)",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"name": "KoSIT - XOV",
+"children": [
+{"link": "http://mapping.semic.eu/vdm/id/cv/8281a9cdd58f3e3e6609dc7875031c76",
+"name": "Anschrift",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/cb6adf4b2b237438105507d1089de6ba",
+"link": "http://mapping.semic.eu/vdm/id/cv/cb6adf4b2b237438105507d1089de6ba",
 "name": "Date Of Death (PersonDateOfDeath)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f274228520aac662f6ae5eb9102e1c5a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f274228520aac662f6ae5eb9102e1c5a",
 "name": "Datum overlijden persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Datum_overlijden_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/93c11c987e076bf596b6ae4904862cc7",
-"name": " (fysisk p avliden)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/b8be8ed6ad8b92a3002cdaf843fcd9e6",
+{"link": "http://mapping.semic.eu/vdm/id/cv/93c11c987e076bf596b6ae4904862cc7",
+"name": "(fysisk p avliden)",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/b8be8ed6ad8b92a3002cdaf843fcd9e6",
 "name": "Ã¶dfÃ¶rklarad )",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a26895384d6eca579d85c90cd1af5825",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a26895384d6eca579d85c90cd1af5825",
 "name": "date of death (schema:deathDate )",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ba9b575a2b058615e8d2f9c118f4485b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ba9b575a2b058615e8d2f9c118f4485b",
 "name": "Tod.datum",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e70e84c2a7b39bf51fbd90a007b2c91b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e70e84c2a7b39bf51fbd90a007b2c91b",
 "name": "nc:PersonDeathDate",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1386f0ba456ad969c029015a85768c32",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1386f0ba456ad969c029015a85768c32",
 "name": "Death (Person. Death. Date Time)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/fbd61f5b4665bf7d49b53c7eec7529ac",
+"link": "http://mapping.semic.eu/vdm/id/cv/fbd61f5b4665bf7d49b53c7eec7529ac",
 "name": "Date Of Birth (PersonDateOfBirth)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4b1c9fdeeb0fc0ce2eba92c58814673e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4b1c9fdeeb0fc0ce2eba92c58814673e",
 "name": "Geboortedatum persoon (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Geboortedatum_persoon-Natuurlijk_persoon)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/15dfc9870acadc7544b1a677ca728bca",
+{"link": "http://mapping.semic.eu/vdm/id/cv/15dfc9870acadc7544b1a677ca728bca",
 "name": "BirthDate (Person. Birth Date. Date)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/aa3cad9791609a9aba8529645e4c7272",
+{"link": "http://mapping.semic.eu/vdm/id/cv/aa3cad9791609a9aba8529645e4c7272",
 "name": "date of birth (schema:birthDate)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f55f5437862e2906aead4eb25025fa29",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f55f5437862e2906aead4eb25025fa29",
 "name": "Geburt.datum",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6c5537ca62cd902258c7a72b64ea23e8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6c5537ca62cd902258c7a72b64ea23e8",
 "name": "nc:PersonBirthDate",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/eb004434a93bbeaa2ba5968d26af06be",
 "name": "eIDAS minimum dataset",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9c86f69e2870a160bdb9f834bdfd921f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9c86f69e2870a160bdb9f834bdfd921f",
 "name": "Date of birth",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/557032453e1912e81e218566f5526e1a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/557032453e1912e81e218566f5526e1a",
 "name": "Birth (Person. Birth. Date Time)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/7446050b848d839fe9847073ff94cfd6",
+"link": "http://mapping.semic.eu/vdm/id/cv/7446050b848d839fe9847073ff94cfd6",
 "name": "Agent",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/14078240dfd2e08ec85dea81b8c6d5e8",
+"link": "http://mapping.semic.eu/vdm/id/cv/14078240dfd2e08ec85dea81b8c6d5e8",
 "name": "Plays Role (AgentPlaysRole)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b32dac696826eada8fc7ed28f11d2d4c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b32dac696826eada8fc7ed28f11d2d4c",
 "name": "has role (cpsv:hasRole)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/8af53cfa4fd5956173038ac5bfb7bb83",
+"link": "http://mapping.semic.eu/vdm/id/cv/8af53cfa4fd5956173038ac5bfb7bb83",
 "name": "Provides (AgentProvides)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ee47669fc381e32b6715385d452e6497",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ee47669fc381e32b6715385d452e6497",
 "name": "provides (cpsv:provides)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/f1c5ca49f8d6dd47502ff6444fdcb44c",
+"link": "http://mapping.semic.eu/vdm/id/cv/f1c5ca49f8d6dd47502ff6444fdcb44c",
 "name": "Uses (AgentUses)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1423dcb334681ac03acbd31feb0d5643",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1423dcb334681ac03acbd31feb0d5643",
 "name": "uses (cpsv:uses)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/a15182062e43a95f745c1c4e74dd0952",
+"link": "http://mapping.semic.eu/vdm/id/cv/a15182062e43a95f745c1c4e74dd0952",
 "name": "Jurisdiction",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/18c0db0607f12b7ca721248d7e80298c",
+"link": "http://mapping.semic.eu/vdm/id/cv/18c0db0607f12b7ca721248d7e80298c",
 "name": "Name (JurisdictionName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/bbb3d60ec38bf91356a1164bb3ce80dc",
+{"link": "http://mapping.semic.eu/vdm/id/cv/bbb3d60ec38bf91356a1164bb3ce80dc",
 "name": "Name (Country. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c74d7974a099f2bab6d7e46b63561e35",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c74d7974a099f2bab6d7e46b63561e35",
 "name": "Name (Country. Name. Text)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/ab7a485ebe75b6dd7243ad719f23c7de",
+"link": "http://mapping.semic.eu/vdm/id/cv/ab7a485ebe75b6dd7243ad719f23c7de",
 "name": "Rule",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/6e4dfa4f5bfc6825ad3e4e34eb3bc8ba",
+"link": "http://mapping.semic.eu/vdm/id/cv/6e4dfa4f5bfc6825ad3e4e34eb3bc8ba",
 "name": "Implements (RuleImplements)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b7f17061eadb8f61c592b2fe6310e1ce",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b7f17061eadb8f61c592b2fe6310e1ce",
 "name": "implements (cpsv:implements)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/7c84a4f3357185343a3eb63c0300e8ca",
+"link": "http://mapping.semic.eu/vdm/id/cv/7c84a4f3357185343a3eb63c0300e8ca",
 "name": "Creator (RuleCreator)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/66ab877e87b03c48f224dd369fb38fe3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/66ab877e87b03c48f224dd369fb38fe3",
 "name": "produces (cpsv:produces)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/ce5bf551379459c1c61d2a204061c455",
+"link": "http://mapping.semic.eu/vdm/id/cv/ce5bf551379459c1c61d2a204061c455",
 "name": "Location",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/61b52832bc20df027a124af8fcf96fe5",
+"link": "http://mapping.semic.eu/vdm/id/cv/61b52832bc20df027a124af8fcf96fe5",
 "name": "Geometry (LocationGeometry)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/1e37a83155b51a9a513a5ce037666888",
+{"link": "http://mapping.semic.eu/vdm/id/cv/1e37a83155b51a9a513a5ce037666888",
 "name": "Anschrift.goekodierung",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/3dfe62730eadb839b042b1439caa4ed7",
+{"link": "http://mapping.semic.eu/vdm/id/cv/3dfe62730eadb839b042b1439caa4ed7",
 "name": "nc:LocationGeospatialCoordinate",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/ff9ec4be91bbc9d9d749afd16794ebeb",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/ff9ec4be91bbc9d9d749afd16794ebeb",
 "name": "cbrn:GeographicPoint",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/cefa0709ff7d75d4b2d28837412f6369",
+{"link": "http://mapping.semic.eu/vdm/id/cv/cefa0709ff7d75d4b2d28837412f6369",
 "name": "geometry (locn:geometry)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/b2ae190f20beb4ff22f26c4331cda6ee",
+"link": "http://mapping.semic.eu/vdm/id/cv/b2ae190f20beb4ff22f26c4331cda6ee",
 "name": "Geographic Name (LocationGeographicName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/115b9a4a3d28eb6a2aee6569f6a2c566",
+{"link": "http://mapping.semic.eu/vdm/id/cv/115b9a4a3d28eb6a2aee6569f6a2c566",
 "name": "Ã¤genhetsadress populÃ¤rnamn )",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/254cfc3051b09672bf419a7ee73b852b",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/254cfc3051b09672bf419a7ee73b852b",
 "name": "Ã¤genhetsadress kommunnamn )",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/37ed9721d3899ccb2e86361046005cd5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/37ed9721d3899ccb2e86361046005cd5",
 "name": "Name (Location. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b26cba9afafdafb33caa0f2aa3849dac",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b26cba9afafdafb33caa0f2aa3849dac",
 "name": "geographic name (locn:geographicName)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5fc9f16ddd2f363893b0ffcdf81b2def",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5fc9f16ddd2f363893b0ffcdf81b2def",
 "name": "nc:LocationName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8effa954275ade36d9127c4295e5de7c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8effa954275ade36d9127c4295e5de7c",
 "name": "Name (Location. Name. Text)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/bfbf95355c66e250c69a9aaac1cdc023",
+"link": "http://mapping.semic.eu/vdm/id/cv/bfbf95355c66e250c69a9aaac1cdc023",
 "name": "Address (LocationAddress)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c6f5b11bb2a87b733ae06cc2cbf20441",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c6f5b11bb2a87b733ae06cc2cbf20441",
 "name": "nc:Address",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/92b96a3b023cc094bb7f0d2d3fddb2d8",
+{"link": "http://mapping.semic.eu/vdm/id/cv/92b96a3b023cc094bb7f0d2d3fddb2d8",
 "name": "Address (Location. Address)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d6f79931ff219ab021e3d76ef1b23a1f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d6f79931ff219ab021e3d76ef1b23a1f",
 "name": "Ã¤genhetadress)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/47533c32cad46db9254180be9610fe7e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/47533c32cad46db9254180be9610fe7e",
 "name": "address (locn:address)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/fddee044ce42573aaf6a63ecf3bd2eb9",
+"link": "http://mapping.semic.eu/vdm/id/cv/fddee044ce42573aaf6a63ecf3bd2eb9",
 "name": "Geographic Identifier (LocationGeographicIdentifier)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/bfc4e0bb2510f22619aee98bf3b55418",
+{"link": "http://mapping.semic.eu/vdm/id/cv/bfc4e0bb2510f22619aee98bf3b55418",
 "name": "ID (Location. Identifier)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
 "name": "id",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ebfc64e13f300ce37ac0ad6558d3b606",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ebfc64e13f300ce37ac0ad6558d3b606",
 "name": "nc:LocationIdentification",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/cde43e30c963e210e58394f45a5c6e09",
+{"link": "http://mapping.semic.eu/vdm/id/cv/cde43e30c963e210e58394f45a5c6e09",
 "name": "Identification (Location. Identification. Identifier)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5fc6f3e62bcab61468769a2a94aafdde",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5fc6f3e62bcab61468769a2a94aafdde",
 "name": "geographic identifier (rdfs:seeAlso)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ef918a80fe61a32f4d034b1d9b62cc63",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ef918a80fe61a32f4d034b1d9b62cc63",
 "name": "Delivered to location identifier",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/d9c6333623e6357515fcbf17be806273",
+"link": "http://mapping.semic.eu/vdm/id/cv/d9c6333623e6357515fcbf17be806273",
 "name": "Geometry",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/23cce6a35ffecefd4e09b722632c1575",
+"link": "http://mapping.semic.eu/vdm/id/cv/23cce6a35ffecefd4e09b722632c1575",
 "name": "CRS (GeometryCRS)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4742f18fdb650509363e8dad3831066f",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4742f18fdb650509363e8dad3831066f",
 "name": "CoordinateSystemCode (Location Coordinate. Coordinate System Code. Code)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/396601f81e63006d0708a92c94b19abf",
+{"link": "http://mapping.semic.eu/vdm/id/cv/396601f81e63006d0708a92c94b19abf",
 "name": "koordinatensystem",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/56f30ad09af469b0213582b0a00eb538",
+{"link": "http://mapping.semic.eu/vdm/id/cv/56f30ad09af469b0213582b0a00eb538",
 "name": "System (Geographical Coordinate. System. Identifier)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/dd76b27a1f7a1e82cca38b8dea85d560",
+"link": "http://mapping.semic.eu/vdm/id/cv/dd76b27a1f7a1e82cca38b8dea85d560",
 "name": "Coordinates (GeometryCoordinates)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/cefa0709ff7d75d4b2d28837412f6369",
+{"link": "http://mapping.semic.eu/vdm/id/cv/cefa0709ff7d75d4b2d28837412f6369",
 "name": "geometry (locn:geometry)",
 "size": 150}] } ] }] }
 ] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/dd7bf230fde8d4836917806aff6a6b27",
+"link": "http://mapping.semic.eu/vdm/id/cv/dd7bf230fde8d4836917806aff6a6b27",
 "name": "Address",
 "size": "100",
 "children": [
 {
-"link": "http://vocabs.tenforce.com/vdm/id/cv/0b74950768f721d21661e73b2b98b8dd",
+"link": "http://mapping.semic.eu/vdm/id/cv/0b74950768f721d21661e73b2b98b8dd",
 "name": "Address Area (AddressAddressArea)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/51fb77ef072fdf65fde45a71df1b828c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/51fb77ef072fdf65fde45a71df1b828c",
 "name": "Ã¤genhetsadress adressomrÃ¥de)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/262abf83915a1a9b7d6bcf82f85622e0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/262abf83915a1a9b7d6bcf82f85622e0",
 "name": "ortsteil",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4216257519f5c13ee8de9c95189dc4b2",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4216257519f5c13ee8de9c95189dc4b2",
 "name": "nc:AddressUrbanizationName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5dfd23c8d685fce3eecca06451f3a3f5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5dfd23c8d685fce3eecca06451f3a3f5",
 "name": "City Sub-Division Name (Address. City Sub-Division Name. Text)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ba0015fa76d6a93383f4ebba7180c20d",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ba0015fa76d6a93383f4ebba7180c20d",
 "name": "Gemeentedeel (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeentedeel-Briefadres_in_Nederland)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7c36b43a66715c38bec96d0d85b3f2e1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7c36b43a66715c38bec96d0d85b3f2e1",
 "name": "CitySubdivisionName (Address. City Subdivision Name. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/95ed3276da444afe7567430e9ba01879",
+{"link": "http://mapping.semic.eu/vdm/id/cv/95ed3276da444afe7567430e9ba01879",
 "name": "address area (locn:addressArea)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/255c5fcd34aa21f9fff4d652c8b9d87e",
+"link": "http://mapping.semic.eu/vdm/id/cv/255c5fcd34aa21f9fff4d652c8b9d87e",
 "name": "Thoroughfare (AddressThoroughfare)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a9ec6f5662584b5bc27a7a84bbd3e2b7",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a9ec6f5662584b5bc27a7a84bbd3e2b7",
 "name": "Address line 2",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6b244efd05e4c847d9997fbee13767ee",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6b244efd05e4c847d9997fbee13767ee",
 "name": "thoroughfare (locn:thoroughfare)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a113ec6faa4722ff3e35407a765f8124",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a113ec6faa4722ff3e35407a765f8124",
 "name": "strasse",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/77e7036e21a240694a1228d4aa334ae5",
+{"link": "http://mapping.semic.eu/vdm/id/cv/77e7036e21a240694a1228d4aa334ae5",
 "name": "Street Name (Address. Street Name. Text)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/bfa6acce750dfe09b07f40943414924a",
-"name": " (Address line 1)",
+{"link": "http://mapping.semic.eu/vdm/id/cv/bfa6acce750dfe09b07f40943414924a",
+"name": "(Address line 1)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/502089cf654e144364f004aa1f37c23f",
+"link": "http://mapping.semic.eu/vdm/id/cv/502089cf654e144364f004aa1f37c23f",
 "name": "Address ID (AddressAddressID)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5fa741551c7da88ddf62412563639f3e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5fa741551c7da88ddf62412563639f3e",
 "name": "ID (Address. Identifier)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/19b9a03b54b965c11c61745d49dbcc56",
+{"link": "http://mapping.semic.eu/vdm/id/cv/19b9a03b54b965c11c61745d49dbcc56",
 "name": "scr:AddressIdentification",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/80be4ef8fd9754acb8abde9235d38ded",
+{"link": "http://mapping.semic.eu/vdm/id/cv/80be4ef8fd9754acb8abde9235d38ded",
 "name": "Identification (Address. Identification. Identifier)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/48e02083ba4f6a7d191d6327f9f1ce64",
+{"link": "http://mapping.semic.eu/vdm/id/cv/48e02083ba4f6a7d191d6327f9f1ce64",
 "name": "address ID (locn:addressId)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7fbfce444ccce2085a21f71b232288f1",
 "name": "id",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/55ce4ba4dd72952de7c7b0180ff9f9e9",
+"link": "http://mapping.semic.eu/vdm/id/cv/55ce4ba4dd72952de7c7b0180ff9f9e9",
 "name": "Post Code (AddressPostCode)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/125b3176057882e3b267fa9e990ac834",
+{"link": "http://mapping.semic.eu/vdm/id/cv/125b3176057882e3b267fa9e990ac834",
 "name": "Postcode (Address. Postcode. Code)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7794a3ac6985ea9ce04272e45eae017b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7794a3ac6985ea9ce04272e45eae017b",
 "name": "postcode (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcode-Binnenlandsadres)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/7a3603ab7e9b757cdde8a44266f359a5",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/7a3603ab7e9b757cdde8a44266f359a5",
 "name": "postcodeWoonplaats (http://data.stelselvanbasisregistraties.nl/nhr/id/gegevenselement/postcodeWoonplaats-Buitenlandsadres)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/f0ac2b196904ca48762cae1f81210013",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/f0ac2b196904ca48762cae1f81210013",
 "name": "Postcode (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Briefadres_in_Nederland)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/f44efca4493e0d28a81654e3a46604ee",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/f44efca4493e0d28a81654e3a46604ee",
 "name": "Postcode (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Postcode-Woonadres_in_Nederland)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/49914533c0001b16f40949ff762cc869",
+{"link": "http://mapping.semic.eu/vdm/id/cv/49914533c0001b16f40949ff762cc869",
 "name": "PostalZone (Address. Postal_ Zone. Text)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d0ce5c0e2071a09f8db4efdfc3527e",
-"name": " (postadress postnummer)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/d9d0ce5c0e2071a09f8db4efdfc3527e",
+"name": "(postadress postnummer)",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/4180aed225ce702cd71ac3ca4c80c225",
+{"link": "http://mapping.semic.eu/vdm/id/cv/4180aed225ce702cd71ac3ca4c80c225",
 "name": "post code (locn:postCode)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/bca331637ab5b0daec80750d8a5b5d78",
+{"link": "http://mapping.semic.eu/vdm/id/cv/bca331637ab5b0daec80750d8a5b5d78",
 "name": "postleitzahl",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dacdaa65591319df4868d62498d04c4a",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dacdaa65591319df4868d62498d04c4a",
 "name": "nc:LocationPostalCode",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/719db661e790ecbb30144bd50ae07bcf",
+{"link": "http://mapping.semic.eu/vdm/id/cv/719db661e790ecbb30144bd50ae07bcf",
 "name": "Post code",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/63915929e74ac20f49eaa549ea877d92",
+"link": "http://mapping.semic.eu/vdm/id/cv/63915929e74ac20f49eaa549ea877d92",
 "name": "Locator Designator (AddressLocatorDesignator)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/df47ffcae2555e3b7b2c63f66be39fed",
+{"link": "http://mapping.semic.eu/vdm/id/cv/df47ffcae2555e3b7b2c63f66be39fed",
 "name": "locator designator (locn:locatorDesignator)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/51d78d7b089acb6e4a260d5b5af2fb17",
+{"link": "http://mapping.semic.eu/vdm/id/cv/51d78d7b089acb6e4a260d5b5af2fb17",
 "name": "hausnummer",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/7901ce249236c83af7e1da2ecb716aba",
+"link": "http://mapping.semic.eu/vdm/id/cv/7901ce249236c83af7e1da2ecb716aba",
 "name": "Full Address (AddressFullAddress)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c25ba55aa8e44d59117860289f309b3b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c25ba55aa8e44d59117860289f309b3b",
 "name": "Adres (attribute) (http://data.stelselvanbasisregistraties.nl/nhr/id/concept/Adres)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f307393a3608abd7e1e9a13031f57b53",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f307393a3608abd7e1e9a13031f57b53",
 "name": "full address (locn:fullAddress)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/23d9db10fb76a1b921bcce680566ad36",
+{"link": "http://mapping.semic.eu/vdm/id/cv/23d9db10fb76a1b921bcce680566ad36",
 "name": "nc:AddressFullText",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/92a9dcdf3497457f9bcb324c4cf85c36",
+"link": "http://mapping.semic.eu/vdm/id/cv/92a9dcdf3497457f9bcb324c4cf85c36",
 "name": "Locator Name (AddressLocatorName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ce1689c331efcca9c05a761511636c93",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ce1689c331efcca9c05a761511636c93",
 "name": "locator name (locn:locatorName)",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/9c913cf0ca4405ef77460581d46711b4",
+"link": "http://mapping.semic.eu/vdm/id/cv/9c913cf0ca4405ef77460581d46711b4",
 "name": "Admin Unit L1 (AddressAdminUnitL1)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/62e1c56136e5b44e5285c6d83e0249d4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/62e1c56136e5b44e5285c6d83e0249d4",
 "name": "Country (Address. Country)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0255ddaafceb50103039568739e28b28",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0255ddaafceb50103039568739e28b28",
 "name": "admin unit level 1 (locn:adminUnitL1)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/8f18531ecb44ae51c582e8e8d4bc5c34",
+{"link": "http://mapping.semic.eu/vdm/id/cv/8f18531ecb44ae51c582e8e8d4bc5c34",
 "name": "staat",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/617593a465c2453b51de2a0e36c43dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/617593a465c2453b51de2a0e36c43dc4",
 "name": "Country code",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/f1fd34c1706f5b27e9d322e1ea38a0f2",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/f1fd34c1706f5b27e9d322e1ea38a0f2",
 "name": "Item country or login",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/bd9806f7a033ac9b6911ba381bf7edd1",
+"link": "http://mapping.semic.eu/vdm/id/cv/bd9806f7a033ac9b6911ba381bf7edd1",
 "name": "Post Name (AddressPostName)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
+{"link": "http://mapping.semic.eu/vdm/id/cv/84e43483add551a8f41765f4e21afc42",
 "name": "Swedish Company data model",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/ba97d0b827e5f685c96893c570fee67d",
-"name": " (postadress postort )",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/ba97d0b827e5f685c96893c570fee67d",
+"name": "(postadress postort )",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6cc23b679c4e818eb0cc46a3474fabf3",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6cc23b679c4e818eb0cc46a3474fabf3",
 "name": "nc:LocationCityName",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0d6e35138f76928f2a377caa4f197c5c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0d6e35138f76928f2a377caa4f197c5c",
 "name": "City Name (Address. City Name. Text)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/6793fb94da2b54ea09563a334c07da38",
+{"link": "http://mapping.semic.eu/vdm/id/cv/6793fb94da2b54ea09563a334c07da38",
 "name": "Gemeente van inschrijving (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Briefadres_in_Nederland)",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/a724c2215ac53dbaece58e2de2ec8b01",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/a724c2215ac53dbaece58e2de2ec8b01",
 "name": "Gemeente van inschrijving (http://data.stelselvanbasisregistraties.nl/gba/id/gegevenselement/Gemeente_van_inschrijving-Woonadres_in_Nederland)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7350af3dc79e85f325367aefeaa9676b",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7350af3dc79e85f325367aefeaa9676b",
 "name": "CityName (Address. City Name. Name)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/0c99fc2c3c5cb084314aa9ea7247c79e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/0c99fc2c3c5cb084314aa9ea7247c79e",
 "name": "post name (locn:postName)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/19b3099aa99f176c6023504e8da13a87",
+{"link": "http://mapping.semic.eu/vdm/id/cv/19b3099aa99f176c6023504e8da13a87",
 "name": "ort",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/c00cc838768acd0e293422995c7abf6f",
+"link": "http://mapping.semic.eu/vdm/id/cv/c00cc838768acd0e293422995c7abf6f",
 "name": "Admin Unit L2 (AddressAdminUnitL2)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/c1ca34cd5d9a5937082520c0738c7f6e",
+{"link": "http://mapping.semic.eu/vdm/id/cv/c1ca34cd5d9a5937082520c0738c7f6e",
 "name": "Country Sub-Division Name (Address. Country Sub-Division Name. Text)",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/9a928549869dad64795ac8b73222efc7",
+{"link": "http://mapping.semic.eu/vdm/id/cv/9a928549869dad64795ac8b73222efc7",
 "name": "CountrySubentity (Address. Country Subentity. Text)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/45a3220205a4fe0d9c0be875cd389355",
+{"link": "http://mapping.semic.eu/vdm/id/cv/45a3220205a4fe0d9c0be875cd389355",
 "name": "admin unit level 2 (locn:adminUnitL2)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/fd73e3df8b3af1f0e7924826d6f8ff4c",
 "name": "MUG- BII",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/645c556aa6aa924b911a75a8470499be",
+{"link": "http://mapping.semic.eu/vdm/id/cv/645c556aa6aa924b911a75a8470499be",
 "name": "County subdivision",
 "size": 150}] } ] }] }
 ,{
-"link": "http://vocabs.tenforce.com/vdm/id/cv/d989a430faec246d1a093000602c9119",
+"link": "http://mapping.semic.eu/vdm/id/cv/d989a430faec246d1a093000602c9119",
 "name": "PO Box (AddressPOBox)",
 "children": [
 {"link": "http://www.w3.org/2004/02/skos/core#closeMatch",
 "name": "closeMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
+{"link": "http://mapping.semic.eu/vdm/id/cv/dcfce6b9b80785dd9ab8643040bcb443",
 "name": "NIEM 3.0",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7f8201ef88d920d7e9ef1e62d85920d0",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7f8201ef88d920d7e9ef1e62d85920d0",
 "name": "nc:AddressDeliveryPointID",
-"size": 150},{"link": "http://vocabs.tenforce.com/vdm/id/cv/8825573eb8094da4a273337864c872cb",
+"size": 150},{"link": "http://mapping.semic.eu/vdm/id/cv/8825573eb8094da4a273337864c872cb",
 "name": "nc:AddressDeliveryPointText",
 "size": 150}] } ] },{"link": "http://www.w3.org/2004/02/skos/core#exactMatch",
 "name": "exactMatch",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
+{"link": "http://mapping.semic.eu/vdm/id/cv/2e68deedd01558073d0c81ae7e50710c",
 "name": "Stelselcatalogus",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/04cf2c289d5b877684622f2300923d95",
+{"link": "http://mapping.semic.eu/vdm/id/cv/04cf2c289d5b877684622f2300923d95",
 "name": "postbusnummer (http://brk.kadaster.nl/def/gegevenselement/PostbusLocatie/postbusnummer)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/5253ba2b4c926f6d1bba2dbfd8583dc4",
 "name": "OASIS UBL Common Library 2.1",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/b1126d1384e1ed3d4a0322609c177d15",
+{"link": "http://mapping.semic.eu/vdm/id/cv/b1126d1384e1ed3d4a0322609c177d15",
 "name": "Postbox (Address. Postbox. Text)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/a0c35a8f05b397108f5512bf3e607374",
 "name": "Core Vocabularies RDF Schemas",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/812263e7e2be5f06c8de33ba4ebe2aaf",
+{"link": "http://mapping.semic.eu/vdm/id/cv/812263e7e2be5f06c8de33ba4ebe2aaf",
 "name": "po box (locn:poBox)",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/d9d81d7ce8c968ff9a4c276cc616e9ec",
 "name": "KoSIT - XOV",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/7947c0c302833d22abb53e682ddc9375",
+{"link": "http://mapping.semic.eu/vdm/id/cv/7947c0c302833d22abb53e682ddc9375",
 "name": "postfach",
-"size": 150}] },{"link": "http://vocabs.tenforce.com/vdm/id/cv/f63126b7756b24674a18627c950debc4",
+"size": 150}] },{"link": "http://mapping.semic.eu/vdm/id/cv/f63126b7756b24674a18627c950debc4",
 "name": "UN/CEFACT CCL 13B",
 "children": [
-{"link": "http://vocabs.tenforce.com/vdm/id/cv/e56e70788a5c0a62cd8cd1aa434e5054",
+{"link": "http://mapping.semic.eu/vdm/id/cv/e56e70788a5c0a62cd8cd1aa434e5054",
 "name": "Post Office Box (Address. Post Office Box. Text)",
 "size": 150}] } ] }] }
 ] }

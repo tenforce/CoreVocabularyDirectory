@@ -69,26 +69,26 @@
   <!-- Print the Properties table -->
   
   <xsl:template name="properties">
-    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:broadMatch or self::skos:closeMatch or self::skos:narrowMatch)]" />
+    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:broadMatch or self::skos:closeMatch or self::skos:narrowMatch or self::relatedMatch)]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
         <h2>Metadata</h2>
         <table class="results"><tbody>
           <xsl:for-each select="$elements">
-						<xsl:sort select="//rdfs:label"/>
-						<tr>
-							<td>
-								<xsl:call-template name="rdf-property">
-									<xsl:with-param name="element" select="." />
-								</xsl:call-template>
-							</td>
-							<td>
-								<xsl:call-template name="rdf-value">
-									<xsl:with-param name="element" select="." />
-									<xsl:with-param name="strip-uri" select="not(self::vdm:context)" />
-								</xsl:call-template>
-							</td>
-						</tr>
+	    <xsl:sort select="//rdfs:label"/>
+	    <tr>
+	      <td>
+		<xsl:call-template name="rdf-property">
+		  <xsl:with-param name="element" select="." />
+		</xsl:call-template>
+	      </td>
+	      <td>
+		<xsl:call-template name="rdf-value">
+		  <xsl:with-param name="element" select="." />
+		  <xsl:with-param name="strip-uri" select="not(self::vdm:context)" />
+		</xsl:call-template>
+	      </td>
+	    </tr>
           </xsl:for-each>
         </tbody></table>
       </section>

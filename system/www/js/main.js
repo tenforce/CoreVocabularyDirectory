@@ -47,7 +47,7 @@ function fillExample(key, sparql) {
   console.log("Executing query: " + sparql);
   $.get("/sparql", {
     'query': sparql,
-    'default-graph-uri': "http://vocabs.tenforce.com/DAV",
+    'default-graph-uri': "http://mapping.semic.eu/DAV",
     'format': "application/sparql-results+xml",
     'xslt-uri': "file://vdm/xslt/sparql-table.xsl"
   }, function(data) {

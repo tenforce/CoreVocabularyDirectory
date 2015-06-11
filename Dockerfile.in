@@ -5,7 +5,7 @@
 # This is the main file (IPName gets released)
 
 # Use the lastest version of ubuntu 
-FROM ubuntu:latest
+FROM ubuntu:14.04
 MAINTAINER pma
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install virtuoso-opensource-6.1 -y
