@@ -49,7 +49,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
     <li><a href="/%SUBNAME%/id/cv/0b0cb2485cb9429c5df6ec01d10a3dae">Core Vocabularies</a>,
 			<ul>
 
-				<!-- <li><a href="Core_Vocabularies_v1.3.xlsx">Core Vocabularies Mapping Table</a></li>-->
+				<!-- <li><a href="Core_Vocabularies_v1.4.xlsx">Core Vocabularies Mapping Table</a></li>-->
 				<li>Examples of some entry points are:
 						<ul>
 							<li>the <a href="/%SUBNAME%/id/cv/5bc9674db0153b2bc6504561061629f7">Person Family Name</a> property (Core Vocabularies);</li>
@@ -136,7 +136,7 @@ and reuse the information is via the SPARQL endpoint for machine readeable acces
 	<h2>Downloadables</h2>
 	<ul>
     <li>The mapping template document <a href="public_data/Core_Vocabularies_Mapping_Template.xlsx">Core_Vocabularies_Mapping_Template.xlsx</a>. </li>
-		<li><a href="public_data/Core_Vocabularies_v1.3.xlsx">Core Vocabularies Mapping Table</a></li>
+		<li><a href="public_data/Core_Vocabularies_v1.4.xlsx">Core Vocabularies Mapping Table</a></li>
 		<li><a href="public_data/DCatVocabularies-v0.2.xlsx">DCAT-AP Vocabularies Mapping Table</a></li>
 		<li><a href="public_data/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx"> DCAT-AP to SDMX Vocabulary Mappings</a></li>
 		<li><a href="public_data/EuroVocmappings_v0.03-1.xlsx">EuroVoc to DCAT-AP theme mapping table</a></li>
