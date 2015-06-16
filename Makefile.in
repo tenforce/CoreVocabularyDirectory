@@ -36,8 +36,8 @@ ${CVXSL2VDM}: ${CVXSL2VDM}.in configure
 
 ttldata: dcatods.ttl data.ttl dcatapsdmx.ttl
 
-data.ttl: excelfiles/Core_Vocabularies_v1.3.xlsx 	${CVXSL2VDM} 
-	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.3.xlsx > data.ttl
+data.ttl: excelfiles/Core_Vocabularies_v1.4.xlsx ${CVXSL2VDM} 
+	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.4.xlsx > data.ttl
 
 dcatods.ttl: excelfiles/DCatVocabularies-v0.2.xlsx ${CVXSL2VDM} 
 	@PYTHON3@ ${CVXSL2VDM} excelfiles/DCatVocabularies-v0.2.xlsx > dcatods.ttl
@@ -66,7 +66,7 @@ system/www/visualisation/sdmxdcatapflare.json: system/www/visualisation/all-sdmx
 
 www/public_data:
 	mkdir -p system/www/public_data
-	cp excelfiles/Core_Vocabularies_v1.3.xlsx system/www/public_data
+	cp excelfiles/Core_Vocabularies_v1.*.xlsx system/www/public_data
 	cp excelfiles/DCatVocabularies-v0.2.xlsx system/www/public_data
 	cp excelfiles/EuroVocmappings_v0.03-1.xlsx system/www/public_data
 	cp excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx system/www/public_data
@@ -114,12 +114,12 @@ clean:
 	-rm -rf system/www/public_data ${SUBNAME}.tgz *.ttl systems/www/visualisations/*.json
 	-rm -rf system/scripts/cvxsl2vdm.py Dockerfile system/xslt/about.xsl system/xslt/search.xsl system/xslt/include.xsl system/www/visualisation/dataquery-isPartOf.org virtuoso-setup/vhost_export.vspx.isql
 	- sudo ${DOCKER} rm -f mdrtest2
-	- sudo ${DOCKER} rmi mdrtest2
+	- sudo ${DOCKER} rmi -f mdrtest2
 	- sudo service ${DOCKER} restart
 
 cleanall:
 	sudo ${DOCKER} rm -f `sudo ${DOCKER} ps -a -q`
-	sudo ${DOCKER} rmi `sudo ${DOCKER} images -q`
+	sudo ${DOCKER} rmi -f `sudo ${DOCKER} images -q`
 	sudo service ${DOCKER} restart
 
 alltests:

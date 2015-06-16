@@ -132,6 +132,7 @@ class CommonVocabularySpreadsheet:
         label = item["term / label"]
         uri = self.uri(identifier)
         g.add((uri, RDF.type, VDM.ObjectClass))
+        g.add((uri, DCTERMS.type, VDM.ObjectClass))
         self.cv_common(item,g,uri)
         g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
         g.add((uri, VDM.has_internalidentifier, self.text(item["identifier (internal)"])))
@@ -146,6 +147,7 @@ class CommonVocabularySpreadsheet:
         label = item["term / label"]
         intid = item["identifier (internal)"]
         g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, DCTERMS.type, VDM.Property))
         # Note: The excel names can contain spaces, etc. remove them all
         # before generating the ids, etc.
         cluri = self.uri(item["class"].replace(" ",""))
@@ -166,6 +168,7 @@ class CommonVocabularySpreadsheet:
         intid = item["identifier (internal)"]
         uri = self.uri(intid)
         g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, DCTERMS.type, VDM.Property))
         cluri = self.uri(item["class"].replace(" ","")) 
         g.add((cluri, ADMS.includedAsset, uri))
         label = item["term / label"]
