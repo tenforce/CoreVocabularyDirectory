@@ -122,7 +122,6 @@ class CommonVocabularySpreadsheet:
         g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
         g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
         g.add((uri, ADMS.sample, self.text(item["examples"].strip())))
-        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"].strip())))
         pubid = item["public identifier (uri)"]
         if pubid != "":
             g.add((uri, DCTERMS.identifier, URIRef(pubid)))
@@ -206,7 +205,6 @@ class CommonVocabularySpreadsheet:
         g.add((uri, SKOS.definition, self.text(item["definition"])))
         g.add((uri, VDM.dataType, self.text(item["data type"])))
         g.add((uri, ADMS.sample, self.text(item["examples"])))
-        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"])))
 
     def cv_composite_type(self,item,g):
         uri = self.uri(item["identifier"])
@@ -218,7 +216,6 @@ class CommonVocabularySpreadsheet:
         g.add((uri, SKOS.definition, self.text(item["definition"])))
         g.add((uri, VDM.dataType, self.text(item["data type"])))
         g.add((uri, ADMS.sample, self.text(item["examples"])))
-        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"])))
 
     def cv_attribute(self,item,g):
         uri = self.uri(item["identifier"])
@@ -229,7 +226,6 @@ class CommonVocabularySpreadsheet:
         g.add((uri, RDFS.label, self.text(item["term"])))
         g.add((uri, SKOS.definition, self.text(item["definition"].strip())))
         g.add((uri, DCTERMS.description, self.text(item["description"].strip())))
-        g.add((uri, ADMS.versionNotes, self.text(item["comments for next version"])))
 
     def cv_ref(self, part, label):
         if part == "":
@@ -275,7 +271,7 @@ class CommonVocabularySpreadsheet:
             elif item["type"] == "Property":
                 self.tv_property(uri,item,g)
             elif item["type"] == "Association": 
-                self.tv_association(item,g)
+                self.tv_association(uri,item,g)
             else:
                 x=1
             
@@ -291,6 +287,25 @@ class CommonVocabularySpreadsheet:
         # missing range if present
         if item["data type"] != "":
             g.add((uri, RDFS.range, self.uri(item["data type"].replace(" ",""))))
+
+    def tv_association(self,uri,item,g):
+        intid = item["identifier (internal)"]
+        g.add((uri, RDF.type, VDM.Property))
+        g.add((uri, DCTERMS.type, VDM.Property))
+        cluri = self.uri(item["class"].replace(" ","")) 
+        g.add((cluri, ADMS.includedAsset, uri))
+        label = item["term/label"]
+        if label != intid:
+            label = label + " (" + intid + ")"
+        g.add((uri, RDFS.label, self.text(self.sanitise_label(label))))
+        self.cv_common(item,g,uri)
+        g.add((uri, DCTERMS.title, self.text(self.sanitise_label(label))))
+        g.add((uri, RDFS.range, self.uri(item["data type"].replace(" ",""))))
+        g.add((uri, VDM.has_internalidentifier, self.text(intid)))
+        datamodel = self.uri(item["data model"])
+        g.add((datamodel,RDF.type, VDM.Property))
+        g.add((datamodel, VDM.has_internalidentifier, self.text("cv")))
+        g.add((uri, DCTERMS.isPartOf, datamodel))
 
     def convert_mapping_file(self, g):
         '''Add the contents of the 'Mappings' sheet to the graph g.'''
