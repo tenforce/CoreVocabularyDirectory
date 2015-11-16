@@ -69,7 +69,7 @@
   <!-- Print the Properties table -->
   
   <xsl:template name="properties">
-    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:broadMatch or self::skos:closeMatch or self::skos:narrowMatch or self::relatedMatch)]" />
+    <xsl:variable name="elements" select="$subject/*[not(self::skos:exactMatch or self::skos:broadMatch or self::skos:closeMatch or self::skos:narrowMatch or self::skos:relatedMatch)]" />
     <xsl:if test="count($elements) &gt; 0">
       <section>
         <h2>Metadata</h2>
@@ -96,7 +96,7 @@
   </xsl:template>
 
   <xsl:template name="skos-properties">
-    <xsl:variable name="elements" select="//skos:exactMatch | //skos:narrowMatch | //skos:closeMatch | //skos:broadMatch " />
+    <xsl:variable name="elements" select="//skos:exactMatch | //skos:narrowMatch | //skos:closeMatch | //skos:broadMatch | //skos:relatedMatch" />
     <xsl:if test="count($elements[not(@rdf:resource=$subject/@rdf:about)]) &gt; 0 or count($elements[not(@rdf:resource!=$subject/@rdf:about)]) &gt; 0">
       <section>
         <h2>Mappings</h2>
