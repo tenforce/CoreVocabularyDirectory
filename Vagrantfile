@@ -15,7 +15,8 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "deimosfr/debian-wheezy"
+  # config.vm.box = "deimosfr/debian-wheezy"
+  config.vm.box = "box-cutter/debian78"
   # config.vm.box = "debian/jessie64"  
   # config.vm.box = "nfq/docker"
   config.vm.provision :shell, path: "bootstrap.sh"
