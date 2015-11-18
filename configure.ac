@@ -6,7 +6,9 @@ AC_PROG_AWK
 AC_PROG_GREP
 AC_PROG_SED
 AC_CHECK_PROG(FIND, [find], [/usr/bin/find])
+AC_CHECK_PROG(DOS2UNIX, [dos2unix], [/usr/bin/dos2unix])
 AC_CHECK_PROG(PYTHON, [python],[/usr/bin/python])
+AC_CHECK_PROG(PYTHON27, [python2.7],[/usr/bin/python2.7])
 AC_CHECK_PROG(PYTHON3, [python3],[/usr/bin/python3])
 AC_CHECK_PROG(DOCKER, [docker],[/usr/bin/docker])
 AC_CHECK_PROG(TAR, [tar],[/bin/tar])

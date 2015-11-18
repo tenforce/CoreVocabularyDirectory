@@ -223,10 +223,9 @@ deploying the final system. These are:
 In both cases the following steps are required:
 
 1. Start the docker image on the development machine (make run)
-2. Using emacs/[[http://orgmode.org/][org-mode]] execute the queries found in
-   dataquery-isPartOf.org (C-c C-c within the blocks of
-   code)
-3. Stop the docker image (C-c will kill it)
+2. In a separate terminal run the command *make rebuild-links* which will
+   call python2.7 and will regenerate the all.links file.
+3. Stop the development machine docker image (C-c will kill it)
 4. Convert the query results files to the JSON format using the *make
    image* command which will take the produced *link* files and using
    a script convert them into the .JSON description used in the
