@@ -20,8 +20,8 @@ configure: configure.ac
 # Some files are command files which need cleaning up if edited on windows.
 
 cleanfiles:
-	-dos2unix system/configure.sh 
-	-dos2unix system/www/visualisation/dump3.sh
+	-dos2unix system/configure.sh*
+	-dos2unix system/www/visualisation/dump3.sh*
 	# These are pre-created files which are provided to simplify the rebuild
 	-dos2unix system/www/visualisation/*.links
 
@@ -36,8 +36,11 @@ ${CVXSL2VDM}: ${CVXSL2VDM}.in configure
 
 ttldata: dcatods.ttl data.ttl dcatapsdmx.ttl
 
-data.ttl: excelfiles/Core_Vocabularies_v1.4.xlsx ${CVXSL2VDM} 
-	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.4.xlsx > data.ttl
+data.ttl: excelfiles/Core_Vocabularies_v1.8.xlsx ${CVXSL2VDM} 
+	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.8.xlsx > data.ttl
+
+# data.ttl: excelfiles/Core_Vocabularies_v1.5.xlsx ${CVXSL2VDM} 
+#	@PYTHON3@ ${CVXSL2VDM} excelfiles/Core_Vocabularies_v1.5.xlsx > data.ttl
 
 dcatods.ttl: excelfiles/DCatVocabularies-v0.2.xlsx ${CVXSL2VDM} 
 	@PYTHON3@ ${CVXSL2VDM} excelfiles/DCatVocabularies-v0.2.xlsx > dcatods.ttl
@@ -51,6 +54,10 @@ dcatapsdmx.ttl: excelfiles/DCAT-AP-SDMX-Vocabularies_v0.2.xlsx ${CVXSL2VDM}
 # be installed and the data accessible for the queries to be correct.
 
 visualisations: system/www/visualisation/cvflare.json system/www/visualisation/dcatflare.json system/www/visualisation/sdmxdcatapflare.json 
+
+# Note: This will require access to the sparql endpoint ....
+rebuild-links: 
+	( cd system/www/visualisation; python2.7 dataquery-ispartof.py )
 
 system/www/visualisation/cvflare.json: ${DUMP2SH} system/www/visualisation/all.links 
 	( cd system/www/visualisation; ./dump3.sh all.links > cvflare.json )
