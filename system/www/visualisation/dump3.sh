@@ -9,7 +9,7 @@ function name_link {
 
 function end_comma {
 		n1=`echo $1 | tr -d '[[:space:]]'`;
-    n2=`echo $2 | tr -d '[[:space:]]'`;
+		n2=`echo $2 | tr -d '[[:space:]]'`;
  		if [ "$n1" != "$n2" ] 
 		then
 				echo -n "," ;
